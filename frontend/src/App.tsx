@@ -1,13 +1,16 @@
 import "./index.css"
+import SearchBar from "./components/SearchBar"
 
-function App() 
-{
 
-  return (
-    <>
-    <h1>Hello</h1>
-    </>
-  )
+
+function App() {
+
+
+return(
+  <div className="min-h-screen bg-[#060816] flex items-center justify-center">
+    <SearchBar />
+  </div>
+)
 
 }
 
