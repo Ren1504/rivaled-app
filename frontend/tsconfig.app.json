@@ -21,5 +21,5 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"]
+  "include": ["src", "@/components/ui/combobox.tsx", "@/components/ui/textarea.tsx", "@/components/ui/input.tsx", "@/components/ui/input-group.tsx"]
 }

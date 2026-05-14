@@ -10,11 +10,8 @@ export interface Hero {
   primaryAttack: PrimaryAttack;
   hasPassive: boolean;
   isTeamUpAnchor: boolean;
-  /** Year the character first appeared in an MCU film or Disney+ show. null if never in MCU. */
   mcuDebutYear: number | null;
-  /** Year the character first appeared in Marvel Comics. */
   comicDebutYear: number;
-  /** Official in-game difficulty rating from 1 (easiest) to 5 (hardest). */
   difficulty: 0 | 1 | 2 | 3 | 4 | 5;
 }
 

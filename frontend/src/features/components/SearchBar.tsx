@@ -1,4 +1,5 @@
-import { heroes } from "../data/marvelRivalsData"
+import { heroes } from "../../data/marvelRivalsData"
+import { useState } from "react"
 
 import {
   Combobox,
@@ -7,9 +8,13 @@ import {
   ComboboxInput,
   ComboboxItem,
   ComboboxList,
-} from "../components/ui/combobox"
+} from "../../../@/components/ui/combobox"
+
+import { Button } from "../../../@/components/ui/button"
 
 function SearchBar() {
+
+ const [heroName,setheroName] = useState('')
 
   const data = Object.values(heroes).map(hero => hero.name)
 
@@ -23,7 +28,7 @@ function SearchBar() {
 
   return (
     
-
+    <div className="flex items-center">
       <div className="w-[376px]">
 
         <Combobox items={data}>
@@ -51,6 +56,7 @@ function SearchBar() {
                   key={item}
                   value={item}
                   className="flex items-center gap-5 px-5 py-3 rounded-none hover:bg-[#2a3347] cursor-pointer transition-colors"
+                  onClick={() => setheroName(item)}
                 >
 
                   <img
@@ -72,8 +78,11 @@ function SearchBar() {
           </ComboboxContent>
 
         </Combobox>
-
       </div>
+      <Button onClick={()=>console.log(heroName)} variant="outline" className="mx-5">→</Button>
+    </div>
+
+      
 
   )
 }
