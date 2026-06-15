@@ -73,7 +73,7 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
         
         {/* Win Rate Ring Chart */}
         <Card className="md:col-span-4 bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
-          <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-3">Win Rate</span>
+          <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3">Win Rate</span>
           
           <div className="relative flex items-center justify-center w-24 h-24">
             <svg className="w-full h-full transform -rotate-90">
@@ -99,19 +99,19 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
             </svg>
             <div className="absolute flex flex-col items-center justify-center">
               <span className="text-xl font-black text-white">{winRate}%</span>
-              <span className="text-[8px] font-bold text-muted-foreground uppercase">Won</span>
+              <span className="text-xs font-bold text-muted-foreground uppercase">Won</span>
             </div>
           </div>
 
           <div className="flex gap-6 mt-4 text-center">
             <div>
               <p className="text-sm font-bold text-white">{modeStats.gamesPlayed}</p>
-              <p className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">Played</p>
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Played</p>
             </div>
             <div className="h-6 w-px bg-white/10 self-center" />
             <div>
               <p className="text-sm font-bold text-white">{modeStats.gamesWon}</p>
-              <p className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">Won</p>
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Won</p>
             </div>
           </div>
         </Card>
@@ -120,16 +120,16 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
         <div className="md:col-span-8 grid grid-cols-2 gap-4">
           <Card className="bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
             <TrophyIcon className="size-6 text-rivals-gold mb-2 animate-bounce-subtle" />
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Current Streak</span>
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Current Streak</span>
             <span className="text-3xl font-black text-white">{modeStats.currentStreak}</span>
-            <span className="text-[9px] font-semibold text-muted-foreground mt-1">consecutive wins</span>
+            <span className="text-xs font-semibold text-muted-foreground mt-1">consecutive wins</span>
           </Card>
 
           <Card className="bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
             <StarIcon className="size-6 text-rivals-gold mb-2" />
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Max Streak</span>
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Max Streak</span>
             <span className="text-3xl font-black text-white">{modeStats.maxStreak}</span>
-            <span className="text-[9px] font-semibold text-muted-foreground mt-1">all-time record</span>
+            <span className="text-xs font-semibold text-muted-foreground mt-1">all-time record</span>
           </Card>
         </div>
 
@@ -154,7 +154,7 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
                     className="bg-gradient-to-r from-rivals-gold-dark to-rivals-gold h-full rounded-xs flex items-center justify-end pr-2.5 transition-all duration-1000 min-w-[20px]"
                     style={{ width: `${Math.max(percentage, 5)}%` }}
                   >
-                    {count > 0 && <span className="text-[9px] font-black text-rivals-obsidian">{count}</span>}
+                    {count > 0 && <span className="text-xs font-black text-rivals-obsidian">{count}</span>}
                   </div>
                 </div>
               </div>

@@ -1,13 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import 'tailwindcss';
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
+@font-face {
+  font-family: 'RefrigeratorDeluxeBold';
+  src: url("https://www.marvelrivals.com/pc/gw/20241128194803/font/RefrigeratorDeluxeBold_30fce753.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RefrigeratorDeluxeHeavy';
+  src: url("https://www.marvelrivals.com/pc/gw/20241128194803/font/RefrigeratorDeluxeHeavy_0b54d629.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RefrigeratorDeluxeExtrabold';
+  src: url("https://www.marvelrivals.com/pc/gw/20241128194803/font/RefrigeratorDeluxeExtrabold_fd7fc0ff.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-heading: 'Bebas Neue', sans-serif;
-  --font-sans: 'Nunito Sans', sans-serif;
+  --font-heading: 'RefrigeratorDeluxeHeavy', sans-serif;
+  --font-sans: 'RefrigeratorDeluxeBold', 'Nunito Sans', sans-serif;
+
+  --text-xs: 0.85rem;
+  --text-sm: 0.975rem;
+  --text-base: 1.125rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 1.875rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
   
   /* Standard Tailwind variables mappings */
   --color-ring: var(--ring);

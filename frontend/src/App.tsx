@@ -125,7 +125,7 @@ function App() {
             <h1 className="text-2xl md:text-3xl font-black tracking-widest text-gold-gradient uppercase flex items-center gap-1.5 leading-none">
               Lodle
             </h1>
-            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
           </div>
         </div>
 
@@ -196,7 +196,7 @@ function App() {
       </main>
 
       {/* Global Footer */}
-      <footer className="w-full border-t border-white/5 py-4 text-center text-[10px] text-muted-foreground mt-8">
+      <footer className="w-full border-t border-white/5 py-4 text-center text-xs text-muted-foreground mt-8">
         <p>© 2026 Lodle. Inspired by Loldle.net and Marvel Rivals. Fan-made project.</p>
       </footer>
 
@@ -248,7 +248,7 @@ function App() {
           <div className="flex items-center justify-between border-b border-white/5 pb-3">
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-white">Audio Sound FX</span>
-              <span className="text-[10px] text-muted-foreground">Synthesized game sounds for feedback</span>
+              <span className="text-xs text-muted-foreground">Synthesized game sounds for feedback</span>
             </div>
             <Button
               onClick={toggleMute}
@@ -274,7 +274,7 @@ function App() {
           <div className="flex items-center justify-between border-b border-white/5 pb-3">
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-white">Color Theme</span>
-              <span className="text-[10px] text-muted-foreground">Toggle light/dark screen styling</span>
+              <span className="text-xs text-muted-foreground">Toggle light/dark screen styling</span>
             </div>
             <Button
               onClick={toggleTheme}
@@ -300,7 +300,7 @@ function App() {
           <div className="flex items-center justify-between pb-1">
             <div className="flex flex-col">
               <span className="text-sm font-semibold text-rivals-crimson">Reset Progress</span>
-              <span className="text-[10px] text-muted-foreground">Clear game histories & statistics</span>
+              <span className="text-xs text-muted-foreground">Clear game histories & statistics</span>
             </div>
             <Button
               onClick={handleResetStats}

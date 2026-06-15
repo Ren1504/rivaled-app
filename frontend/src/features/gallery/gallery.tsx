@@ -183,7 +183,7 @@ export function HeroGallery() {
                 {/* Role label on top left of image */}
                 <div className="absolute top-2 left-2 bg-white border border-white/20 rounded-xs px-2 py-0.5 flex items-center gap-1 shadow-md">
                   {getRoleIcon(hero.role)}
-                  <span className="text-[9px] font-extrabold text-slate-900 uppercase">{hero.role}</span>
+                  <span className="text-xs font-extrabold text-slate-900 uppercase">{hero.role}</span>
                 </div>
               </div>
             </Card>
@@ -237,12 +237,12 @@ export function HeroGallery() {
               
               <div className="flex items-center gap-1.5 px-3 py-1 bg-white border border-white/20 rounded-xs mt-1">
                 {getRoleIcon(activeHero.role)}
-                <span className="text-[10px] font-extrabold text-slate-900 uppercase tracking-wider">{activeHero.role}</span>
+                <span className="text-xs font-extrabold text-slate-900 uppercase tracking-wider">{activeHero.role}</span>
               </div>
 
               {/* Difficulty indicators */}
               <div className="flex flex-col items-center mt-4 w-full">
-                <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Difficulty</span>
+                <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-1">Difficulty</span>
                 <div className="flex items-center gap-0.5">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <StarIcon
@@ -322,14 +322,14 @@ export function HeroGallery() {
                       className="bg-[#111632]/80 border border-white/5 rounded-xs p-3 flex flex-col gap-1 hover:border-white/10 transition-colors"
                     >
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-white">{ability.name}</span>
+                        <span className="text-sm font-bold text-white">{ability.name}</span>
                         {ability.key && (
-                          <span className="text-[9px] font-bold bg-white/10 text-rivals-gold border border-rivals-gold/20 px-2 py-0.5 rounded-xs uppercase">
+                          <span className="text-xs font-bold bg-white/10 text-rivals-gold border border-rivals-gold/20 px-2 py-0.5 rounded-xs uppercase">
                             {ability.key}
                           </span>
                         )}
                       </div>
-                      <p className="text-[11px] text-muted-foreground leading-relaxed mt-0.5">
+                      <p className="text-sm text-muted-foreground leading-relaxed mt-0.5">
                         {ability.description}
                       </p>
                     </div>
@@ -364,7 +364,7 @@ export function HeroGallery() {
                     {activeExtra.skins.map((skin) => (
                       <span
                         key={skin}
-                        className="text-[10px] font-semibold bg-white/5 border border-white/10 px-2.5 py-1 rounded-xs text-white/90 shadow-sm"
+                        className="text-xs font-semibold bg-white/5 border border-white/10 px-2.5 py-1 rounded-xs text-white/90 shadow-sm"
                       >
                         {skin}
                       </span>
