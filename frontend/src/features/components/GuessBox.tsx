@@ -1,8 +1,5 @@
-import React from 'react'
-import {Card,CardDescription} from '../../../@/components/ui/card'
+import {Card,CardDescription} from '@/components/ui/card'
 import { heroes } from "../../data/marvelRivalsData"
-
-const sample = heroes[0]
 
 const GuessBox = () => {
   return (

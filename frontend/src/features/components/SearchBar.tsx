@@ -8,9 +8,9 @@ import {
   ComboboxInput,
   ComboboxItem,
   ComboboxList,
-} from "../../../@/components/ui/combobox"
+} from "@/components/ui/combobox"
 
-import { Button } from "../../../@/components/ui/button"
+import { Button } from "@/components/ui/button"
 
 function SearchBar() {
 

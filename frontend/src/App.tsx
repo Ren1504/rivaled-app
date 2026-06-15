@@ -1,20 +1,321 @@
-import "./index.css"
-import SearchBar from "./features/components/SearchBar"
-import GuessBox from "./features/components/GuessBox"
+import * as React from "react"
+import { useLocalStorage } from "./hooks/useLocalStorage"
+import { audioSynth } from "./lib/audio"
+import { Tabs } from "./components/shared/tabs"
+import { Modal } from "./components/shared/modal"
+import { Button } from "./components/ui/button"
 
+// Game modes
+import { ClassicGame } from "./features/classic/classic"
+import { HeroGallery } from "./features/gallery/gallery"
+import { StatsTracker } from "./features/stats/stats"
 
+// Inline custom icons
+import {
+  TrophyIcon,
+  SettingsIcon,
+  VolumeUpIcon,
+  VolumeMuteIcon,
+  SunIcon,
+  MoonIcon,
+  HelpIcon,
+  StarIcon,
+  GridIcon
+} from "./components/shared/icons"
+
+const INITIAL_STATS = {
+  classic: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } }
+};
 
 function App() {
+  const [activeTab, setActiveTab] = React.useState<string>("classic");
+  const [isMuted, setIsMuted] = React.useState<boolean>(audioSynth.getMute());
+  const [theme, setTheme] = useLocalStorage<"light" | "dark">("lodle_theme", "dark");
+  
+  // Modals state
+  const [isStatsOpen, setIsStatsOpen] = React.useState<boolean>(false);
+  const [isSettingsOpen, setIsSettingsOpen] = React.useState<boolean>(false);
+  const [isInstructionsOpen, setIsInstructionsOpen] = React.useState<boolean>(false);
 
+  // Global Statistics state
+  const [stats, setStats] = useLocalStorage<any>("lodle_game_stats_v3", INITIAL_STATS);
 
-return(
-  <div className="position-fixed min-h-screen bg-[#060816] flex flex-col items-center justify-center">
-    <SearchBar />
-    {1===1 ? <div>Hello</div> : <GuessBox />}
-    <GuessBox />
-  </div>
-)
+  // Sync theme to DOM element
+  React.useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [theme]);
 
+  const toggleTheme = () => {
+    audioSynth.playClick();
+    setTheme(prev => (prev === "dark" ? "light" : "dark"));
+  };
+
+  const toggleMute = () => {
+    const newMute = !isMuted;
+    setIsMuted(newMute);
+    audioSynth.setMute(newMute);
+    audioSynth.playClick();
+  };
+
+  const handleResetStats = () => {
+    setStats(INITIAL_STATS);
+    // Also reset daily status value in localStorage
+    localStorage.removeItem("lodle_daily_state");
+    setIsSettingsOpen(false);
+  };
+
+  const updateStats = (mode: string, won: boolean, guesses: number) => {
+    setStats((prevStats: any) => {
+      const copy = { ...prevStats };
+      if (!copy[mode]) {
+        copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } };
+      }
+      
+      const mStats = copy[mode];
+      mStats.gamesPlayed += 1;
+      
+      if (won) {
+        mStats.gamesWon += 1;
+        mStats.currentStreak += 1;
+        mStats.maxStreak = Math.max(mStats.maxStreak, mStats.currentStreak);
+        
+        // Add guess bucket
+        if (!mStats.guessDistribution[guesses]) {
+          mStats.guessDistribution[guesses] = 0;
+        }
+        mStats.guessDistribution[guesses] += 1;
+      } else {
+        mStats.currentStreak = 0;
+      }
+      
+      return copy;
+    });
+  };
+
+  const handleWin = () => {
+    // Left empty for compile hook
+  };
+
+  const handleLose = () => {
+    // Left empty for compile hook
+  };
+
+  const tabOptions = [
+    { id: "classic", label: "Play Game", icon: <StarIcon className="size-4" /> },
+    { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-4" /> }
+  ];
+
+  return (
+    <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors duration-300">
+      
+      {/* Top Header Section */}
+      <header className="w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-4 flex items-center justify-between">
+        
+        {/* Title / Logo */}
+        <div className="flex items-center gap-3">
+          <div className="bg-rivals-gold/15 p-2 rounded-xl border border-rivals-gold/30">
+            <span className="text-xl font-black text-rivals-gold tracking-widest">L</span>
+          </div>
+          <div>
+            <h1 className="text-xl md:text-2xl font-black tracking-widest text-gold-gradient uppercase flex items-center gap-1.5 leading-none">
+              Lodle
+            </h1>
+            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
+          </div>
+        </div>
+
+        {/* Action Controls */}
+        <div className="flex items-center gap-2">
+          {/* Help Instructions */}
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            onClick={() => {
+              audioSynth.playClick();
+              setIsInstructionsOpen(true);
+            }}
+            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            title="How to Play"
+          >
+            <HelpIcon className="size-5" />
+          </Button>
+
+          {/* Statistics Toggle */}
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            onClick={() => {
+              audioSynth.playClick();
+              setIsStatsOpen(true);
+            }}
+            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            title="Stats"
+          >
+            <TrophyIcon className="size-5" />
+          </Button>
+
+          {/* Settings Toggle */}
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            onClick={() => {
+              audioSynth.playClick();
+              setIsSettingsOpen(true);
+            }}
+            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            title="Settings"
+          >
+            <SettingsIcon className="size-5" />
+          </Button>
+        </div>
+      </header>
+
+      {/* Main Tab Options Navigation */}
+      <Tabs
+        options={tabOptions}
+        activeTab={activeTab}
+        onChange={setActiveTab}
+        className="w-full bg-[#060814]/30"
+      />
+
+      {/* Primary Content Container */}
+      <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
+        {activeTab === "classic" && (
+          <ClassicGame
+            onWin={handleWin}
+            onLose={handleLose}
+            updateStats={updateStats}
+          />
+        )}
+        {activeTab === "gallery" && <HeroGallery />}
+      </main>
+
+      {/* Global Footer */}
+      <footer className="w-full border-t border-white/5 py-4 text-center text-[10px] text-muted-foreground mt-8">
+        <p>© 2026 Lodle. Inspired by Loldle.net and Marvel Rivals. Fan-made project.</p>
+      </footer>
+
+      {/* MODAL: How to Play Instructions */}
+      <Modal
+        isOpen={isInstructionsOpen}
+        onClose={() => setIsInstructionsOpen(false)}
+        title="How to Play Lodle"
+        size="md"
+      >
+        <div className="flex flex-col gap-4 text-sm text-white/90 leading-relaxed">
+          <div>
+            <h4 className="font-bold text-rivals-gold uppercase tracking-wider mb-2">Classic Guessing Game</h4>
+            <p className="text-xs text-muted-foreground mb-3">
+              Guess the secret hero. With each guess, columns update showing matching traits:
+            </p>
+            <ul className="list-disc pl-5 text-xs text-muted-foreground flex flex-col gap-1.5">
+              <li><strong className="text-white">Green:</strong> Exact match for that character trait.</li>
+              <li><strong className="text-white">Orange:</strong> Near match (e.g. debut year is within 10 years of target).</li>
+              <li><strong className="text-white">Red:</strong> Incorrect trait.</li>
+              <li><strong className="text-white">Arrows (↑/↓):</strong> Indicates if the target debut year is higher or lower than your guess.</li>
+            </ul>
+            <p className="text-xs text-muted-foreground mt-3">
+              <strong>Loldle Hint:</strong> The target hero's difficulty rating (out of 5 stars) will be revealed as a special hint after 6 incorrect attempts.
+            </p>
+          </div>
+        </div>
+      </Modal>
+
+      {/* MODAL: Statistics */}
+      <Modal
+        isOpen={isStatsOpen}
+        onClose={() => setIsStatsOpen(false)}
+        title="Player Statistics"
+        size="md"
+      >
+        <StatsTracker stats={stats} onReset={handleResetStats} />
+      </Modal>
+
+      {/* MODAL: Settings */}
+      <Modal
+        isOpen={isSettingsOpen}
+        onClose={() => setIsSettingsOpen(false)}
+        title="Settings & Adjustments"
+        size="sm"
+      >
+        <div className="flex flex-col gap-5">
+          {/* Sound Synthesizer */}
+          <div className="flex items-center justify-between border-b border-white/5 pb-3">
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold text-white">Audio Sound FX</span>
+              <span className="text-[10px] text-muted-foreground">Synthesized game sounds for feedback</span>
+            </div>
+            <Button
+              onClick={toggleMute}
+              variant="outline"
+              size="sm"
+              className="border-white/10 text-white rounded-xl cursor-pointer"
+            >
+              {isMuted ? (
+                <>
+                  <VolumeMuteIcon className="mr-1.5 size-4 text-rivals-crimson" />
+                  Muted
+                </>
+              ) : (
+                <>
+                  <VolumeUpIcon className="mr-1.5 size-4 text-rivals-gold" />
+                  Enabled
+                </>
+              )}
+            </Button>
+          </div>
+
+          {/* Theme Switcher */}
+          <div className="flex items-center justify-between border-b border-white/5 pb-3">
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold text-white">Color Theme</span>
+              <span className="text-[10px] text-muted-foreground">Toggle light/dark screen styling</span>
+            </div>
+            <Button
+              onClick={toggleTheme}
+              variant="outline"
+              size="sm"
+              className="border-white/10 text-white rounded-xl cursor-pointer"
+            >
+              {theme === "dark" ? (
+                <>
+                  <MoonIcon className="mr-1.5 size-4 text-rivals-gold" />
+                  Dark Mode
+                </>
+              ) : (
+                <>
+                  <SunIcon className="mr-1.5 size-4 text-yellow-400" />
+                  Light Mode
+                </>
+              )}
+            </Button>
+          </div>
+
+          {/* Stats cleaner */}
+          <div className="flex items-center justify-between pb-1">
+            <div className="flex flex-col">
+              <span className="text-sm font-semibold text-rivals-crimson">Reset Progress</span>
+              <span className="text-[10px] text-muted-foreground">Clear game histories & statistics</span>
+            </div>
+            <Button
+              onClick={handleResetStats}
+              variant="destructive"
+              size="sm"
+              className="rounded-xl cursor-pointer"
+            >
+              Reset All
+            </Button>
+          </div>
+        </div>
+      </Modal>
+
+    </div>
+  );
 }
 
-export default App
+export default App;
