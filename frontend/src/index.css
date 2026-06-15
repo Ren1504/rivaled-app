@@ -204,12 +204,14 @@
 .text-gold-gradient {
   background: linear-gradient(135deg, #fcd92d 0%, #b89c18 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-cyan-gradient {
   background: linear-gradient(135deg, #4cbeff 0%, #0097a7 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
