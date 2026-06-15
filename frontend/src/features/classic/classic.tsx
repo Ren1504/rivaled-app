@@ -298,37 +298,50 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
       {/* Autocomplete Input Search */}
       {!gameOver ? (
-        <div className="w-full max-w-md flex items-center gap-3 mb-10 z-30">
+        <div className="w-full max-w-lg flex items-center gap-3 mb-10 z-30">
           <div className="flex-1">
             <Combobox key={comboboxKey} items={autocompleteList}>
               <ComboboxInput
                 placeholder="Type hero name..."
-                className="h-12 w-full rounded-xs border border-rivals-gold/20 bg-[#0e1227] text-white text-lg px-4 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
+                className="h-14 w-full rounded-xs border border-rivals-gold/20 bg-[#0e1227] text-white text-xl px-5 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
               />
-              <ComboboxContent className="mt-1 max-h-60 overflow-hidden rounded-xs border border-white/10 bg-[#0e1227] shadow-2xl backdrop-blur-md">
+              <ComboboxContent className="mt-1 max-h-[380px] overflow-hidden rounded-xs border border-white/10 bg-[#0e1227] shadow-2xl backdrop-blur-md">
                 <ComboboxEmpty className="p-3 text-sm text-gray-400 text-center">
                   No hero matches search.
                 </ComboboxEmpty>
-                <ComboboxList className="max-h-52 overflow-y-auto">
+                <ComboboxList className="max-h-[360px] overflow-y-auto">
                   {(item) => (
                     <ComboboxItem
                       key={item}
                       value={item}
-                      className="flex items-center justify-between px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors border-b border-white/[0.03]"
+                      className="flex items-center justify-between px-5 py-4 hover:bg-white/5 cursor-pointer transition-colors border-b border-white/[0.03]"
                       onClick={() => handleGuess(item)}
                     >
                       <div className="flex items-center gap-3">
                         <img
                           src={getHeroImage(item)}
                           alt={item}
-                          className="w-10 h-10 rounded-xs border border-white/10 object-cover"
+                          className="w-12 h-12 rounded-xs border border-white/10 object-cover"
                           onError={(e) => {
                             (e.target as HTMLImageElement).src = `https://placehold.co/100x100/171b35/ffffff?text=${item[0]}`;
                           }}
                         />
-                        <span className="text-white text-base font-bold">{item}</span>
+                        <span className="text-white text-lg font-bold tracking-wide">{item}</span>
                       </div>
-                      <span className="text-xs text-muted-foreground bg-white/5 px-2.5 py-0.5 rounded-xs">
+                      <span className="flex items-center gap-1.5 text-xs font-bold text-white bg-white/10 px-3 py-1 rounded-xs uppercase tracking-wider">
+                        {(() => {
+                          const role = heroes.find(h => h.name === item)?.role;
+                          if (role === "Vanguard") {
+                            return <img src="/vanguard.png" alt="Vanguard" className="size-4 object-contain inline" />;
+                          }
+                          if (role === "Duelist") {
+                            return <img src="/duelist.png" alt="Duelist" className="size-4 object-contain inline" />;
+                          }
+                          if (role === "Strategist") {
+                            return <img src="/strategist.png" alt="Strategist" className="size-4 object-contain inline" />;
+                          }
+                          return null;
+                        })()}
                         {heroes.find(h => h.name === item)?.role}
                       </span>
                     </ComboboxItem>
@@ -347,7 +360,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                 }
               }}
               variant="outline"
-              className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs h-12 w-12 p-0 flex items-center justify-center cursor-pointer shadow-lg"
+              className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs h-14 w-14 p-0 flex items-center justify-center cursor-pointer shadow-lg"
               title="Reset Practice Session"
             >
               <RefreshIcon className="size-5" />
