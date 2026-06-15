@@ -68,7 +68,15 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     targetName: ""
   });
 
-  // Load Daily State on mount / mode toggle
+  // Unlimited state persistence
+  const [unlimitedState, setUnlimitedState] = useLocalStorage<any>("lodle_unlimited_state", {
+    guesses: [],
+    gameOver: false,
+    won: false,
+    targetName: ""
+  });
+
+  // Load State on mount / mode toggle
   React.useEffect(() => {
     if (isDaily) {
       const todayStr = new Date().toDateString();
@@ -95,9 +103,19 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
         });
       }
     } else {
-      // For Unlimited: pick random hero
-      startUnlimited();
+      // Load Unlimited State
+      if (unlimitedState.targetName && heroes.some(h => h.name === unlimitedState.targetName)) {
+        const target = heroes.find(h => h.name === unlimitedState.targetName)!;
+        setTargetHero(target);
+        setGuesses(unlimitedState.guesses.map((name: string) => heroes.find(h => h.name === name)!));
+        setGameOver(unlimitedState.gameOver);
+        setWonState(unlimitedState.won);
+      } else {
+        // Start new unlimited practice game
+        startUnlimited();
+      }
     }
+    setComboboxKey(prev => prev + 1);
   }, [isDaily]);
 
   const startUnlimited = () => {
@@ -107,6 +125,12 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     setGameOver(false);
     setWonState(false);
     setComboboxKey(prev => prev + 1);
+    setUnlimitedState({
+      guesses: [],
+      gameOver: false,
+      won: false,
+      targetName: randomHero.name
+    });
   };
 
   const handleGuess = (heroName: string) => {
@@ -146,10 +170,17 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
       audioSynth.playClick();
     }
 
-    // Persist daily state if daily mode
+    // Persist state
     if (isDaily) {
       setDailyState({
         date: new Date().toDateString(),
+        guesses: newGuesses.map(g => g.name),
+        gameOver: isGameOver,
+        won: isMatch,
+        targetName: targetHero.name
+      });
+    } else {
+      setUnlimitedState({
         guesses: newGuesses.map(g => g.name),
         gameOver: isGameOver,
         won: isMatch,
@@ -306,6 +337,22 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               </ComboboxContent>
             </Combobox>
           </div>
+
+          {/* Reset Practice Session Option */}
+          {!isDaily && guesses.length > 0 && (
+            <Button
+              onClick={() => {
+                if (confirm("Reset practice session and start a new game?")) {
+                  startUnlimited();
+                }
+              }}
+              variant="outline"
+              className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs h-14 w-14 p-0 flex items-center justify-center cursor-pointer shadow-lg"
+              title="Reset Practice Session"
+            >
+              <RefreshIcon className="size-5" />
+            </Button>
+          )}
         </div>
       ) : (
         <div className="w-full max-w-md flex flex-col items-center bg-[#0e1227]/90 border border-gold-500/20 rounded-xs p-6 mb-8 text-center animate-in fade-in-50 duration-500">

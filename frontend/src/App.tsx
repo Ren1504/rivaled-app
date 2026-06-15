@@ -189,14 +189,16 @@ function App() {
 
       {/* Primary Content Container */}
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
-        {activeTab === "classic" && (
+        <div className={activeTab === "classic" ? "w-full" : "hidden"}>
           <ClassicGame
             onWin={handleWin}
             onLose={handleLose}
             updateStats={updateStats}
           />
-        )}
-        {activeTab === "gallery" && <HeroGallery />}
+        </div>
+        <div className={activeTab === "gallery" ? "w-full" : "hidden"}>
+          <HeroGallery />
+        </div>
       </main>
 
       {/* Global Footer */}
