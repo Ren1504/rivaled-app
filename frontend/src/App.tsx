@@ -114,23 +114,27 @@ function App() {
     <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors duration-300">
       
       {/* Top Header Section */}
-      <header className="w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-4 flex items-center justify-between">
+      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-4 flex items-center justify-between">
         
-        {/* Title / Logo */}
-        <div className="flex items-center gap-3">
+        {/* Title / Logo (Left) */}
+        <div className="flex items-center gap-3 hidden sm:flex">
           <div className="bg-rivals-gold/15 p-2 rounded-xs border border-rivals-gold/30">
-            <span className="text-2xl font-black text-rivals-gold tracking-widest">L</span>
-          </div>
-          <div>
-            <h1 className="text-2xl md:text-3xl font-black tracking-widest text-gold-gradient uppercase flex items-center gap-1.5 leading-none">
-              Lodle
-            </h1>
-            <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
+            <span className="text-2xl font-black text-rivals-gold tracking-widest">R</span>
           </div>
         </div>
 
-        {/* Action Controls */}
-        <div className="flex items-center gap-2">
+        {/* Centered App Title */}
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
+          <h1 className="text-3xl md:text-4xl font-black tracking-widest text-gold-gradient uppercase leading-none">
+            RIVALED
+          </h1>
+          <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest block mt-1 hidden md:block">
+            Marvel Rivals Guessing Game
+          </span>
+        </div>
+
+        {/* Action Controls (Right) */}
+        <div className="flex items-center gap-2 z-10">
           {/* Help Instructions */}
           <Button
             variant="ghost"
