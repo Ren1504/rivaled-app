@@ -60,7 +60,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
 
   // Daily state persistence
-  const [dailyState, setDailyState] = useLocalStorage<any>("lodle_daily_state", {
+  const [dailyState, setDailyState] = useLocalStorage<any>("rivaled_daily_state", {
     date: "",
     guesses: [],
     gameOver: false,
@@ -69,7 +69,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
   });
 
   // Unlimited state persistence
-  const [unlimitedState, setUnlimitedState] = useLocalStorage<any>("lodle_unlimited_state", {
+  const [unlimitedState, setUnlimitedState] = useLocalStorage<any>("rivaled_unlimited_state", {
     guesses: [],
     gameOver: false,
     won: false,
@@ -278,7 +278,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
         <div className="w-full max-w-2xl bg-amber-500/10 border border-amber-500/30 rounded-xs p-4 mb-6 text-center animate-in zoom-in-95 duration-300">
           <p className="text-xs font-bold text-amber-400 uppercase tracking-widest flex items-center justify-center gap-2">
             <StarIcon className="size-4 animate-spin-slow" />
-            Loldle Hint: Target Hero Difficulty
+            Rivaled Hint: Target Hero Difficulty
             <StarIcon className="size-4 animate-spin-slow" />
           </p>
           <div className="flex items-center justify-center gap-1 mt-2">

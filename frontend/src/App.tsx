@@ -30,15 +30,15 @@ const INITIAL_STATS = {
 function App() {
   const [activeTab, setActiveTab] = React.useState<string>("classic");
   const [isMuted, setIsMuted] = React.useState<boolean>(audioSynth.getMute());
-  const [theme, setTheme] = useLocalStorage<"light" | "dark">("lodle_theme", "dark");
-  
+  const [theme, setTheme] = useLocalStorage<"light" | "dark">("rivaled_theme", "dark");
+
   // Modals state
   const [isStatsOpen, setIsStatsOpen] = React.useState<boolean>(false);
   const [isSettingsOpen, setIsSettingsOpen] = React.useState<boolean>(false);
   const [isInstructionsOpen, setIsInstructionsOpen] = React.useState<boolean>(false);
 
   // Global Statistics state
-  const [stats, setStats] = useLocalStorage<any>("lodle_game_stats_v3", INITIAL_STATS);
+  const [stats, setStats] = useLocalStorage<any>("rivaled_game_stats_v3", INITIAL_STATS);
 
   // Sync theme to DOM element
   React.useEffect(() => {
@@ -65,7 +65,7 @@ function App() {
   const handleResetStats = () => {
     setStats(INITIAL_STATS);
     // Also reset daily status value in localStorage
-    localStorage.removeItem("lodle_daily_state");
+    localStorage.removeItem("rivaled_daily_state");
     setIsSettingsOpen(false);
   };
 
@@ -75,15 +75,15 @@ function App() {
       if (!copy[mode]) {
         copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } };
       }
-      
+
       const mStats = copy[mode];
       mStats.gamesPlayed += 1;
-      
+
       if (won) {
         mStats.gamesWon += 1;
         mStats.currentStreak += 1;
         mStats.maxStreak = Math.max(mStats.maxStreak, mStats.currentStreak);
-        
+
         // Add guess bucket
         if (!mStats.guessDistribution[guesses]) {
           mStats.guessDistribution[guesses] = 0;
@@ -92,7 +92,7 @@ function App() {
       } else {
         mStats.currentStreak = 0;
       }
-      
+
       return copy;
     });
   };
@@ -111,11 +111,11 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors duration-300">
-      
+    <div className="min-h-screen flex flex-col bg-transparent text-foreground transition-colors duration-300">
+
       {/* Top Header Section */}
       <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-3 flex items-center justify-between">
-        
+
         {/* Title / Logo (Left) */}
         <div className="flex items-center gap-3 hidden sm:flex">
           <div className="bg-rivals-gold/15 p-1.5 rounded-xs border border-rivals-gold/30">
@@ -203,14 +203,14 @@ function App() {
 
       {/* Global Footer */}
       <footer className="w-full border-t border-white/5 py-4 text-center text-xs text-muted-foreground mt-8">
-        <p>© 2026 Lodle. Inspired by Loldle.net and Marvel Rivals. Fan-made project.</p>
+        <p>© 2026 Rivaled. Inspired by LoLdle.net and Marvel Rivals. Fan-made project.</p>
       </footer>
 
       {/* MODAL: How to Play Instructions */}
       <Modal
         isOpen={isInstructionsOpen}
         onClose={() => setIsInstructionsOpen(false)}
-        title="How to Play Lodle"
+        title="How to Play Rivaled"
         size="md"
       >
         <div className="flex flex-col gap-4 text-sm text-white/90 leading-relaxed">
@@ -226,7 +226,7 @@ function App() {
               <li><strong className="text-white">Arrows (↑/↓):</strong> Indicates if the target debut year is higher or lower than your guess.</li>
             </ul>
             <p className="text-xs text-muted-foreground mt-3">
-              <strong>Loldle Hint:</strong> The target hero's difficulty rating (out of 5 stars) will be revealed as a special hint after 6 incorrect attempts.
+              The target hero's difficulty rating (out of 5 stars) will be revealed as a special hint after 6 incorrect attempts.
             </p>
           </div>
         </div>

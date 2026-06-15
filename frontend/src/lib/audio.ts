@@ -1,4 +1,4 @@
-// Lodle Web Audio API Synthesizer
+// Rivaled Web Audio API Synthesizer
 // Zero-dependency audio effects for micro-interactions
 
 let audioCtx: AudioContext | null = null;
@@ -6,7 +6,7 @@ let isMuted = false;
 
 // Check localStorage for initial mute state
 if (typeof window !== "undefined") {
-  const savedMute = localStorage.getItem("lodle_muted");
+  const savedMute = localStorage.getItem("rivaled_muted");
   isMuted = savedMute === "true";
 }
 
@@ -23,7 +23,7 @@ function getAudioContext(): AudioContext {
 export const audioSynth = {
   setMute(mute: boolean) {
     isMuted = mute;
-    localStorage.setItem("lodle_muted", String(mute));
+    localStorage.setItem("rivaled_muted", String(mute));
   },
 
   getMute(): boolean {
