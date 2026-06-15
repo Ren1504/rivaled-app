@@ -19,7 +19,12 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path Aliases */
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src", "@/components/ui/combobox.tsx", "@/components/ui/textarea.tsx", "@/components/ui/input.tsx", "@/components/ui/input-group.tsx"]
+  "include": ["src"]
 }
