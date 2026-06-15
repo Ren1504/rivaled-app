@@ -21,14 +21,14 @@ export const heroes: Hero[] = [
     "role": "Strategist",
     "primaryAttack": "Hitscan",
     "hasPassive": true,
-    "isTeamUpAnchor": false,
+    "isTeamUpAnchor": true,
     "mcuDebutYear": 2023,
     "comicDebutYear": 1967,
     "difficulty": 3
   },
   {
     "name": "Angela",
-    "role": "Duelist",
+    "role": "Vanguard",
     "primaryAttack": "Melee",
     "hasPassive": true,
     "isTeamUpAnchor": true,
@@ -218,7 +218,7 @@ export const heroes: Hero[] = [
   },
   {
     "name": "Iron Fist",
-    "role": "Vanguard",
+    "role": "Duelist",
     "primaryAttack": "Melee",
     "hasPassive": true,
     "isTeamUpAnchor": false,
@@ -298,7 +298,7 @@ export const heroes: Hero[] = [
   },
   {
     "name": "Mister Fantastic",
-    "role": "Vanguard",
+    "role": "Duelist",
     "primaryAttack": "Melee",
     "hasPassive": true,
     "isTeamUpAnchor": false,
@@ -515,8 +515,8 @@ export const heroByName: Record<string, Hero> = Object.fromEntries(
 
 // Heroes grouped by role
 export const heroesByRole: Record<Role, Hero[]> = {
-  Vanguard:   heroes.filter((h) => h.role === "Vanguard"),
-  Duelist:    heroes.filter((h) => h.role === "Duelist"),
+  Vanguard: heroes.filter((h) => h.role === "Vanguard"),
+  Duelist: heroes.filter((h) => h.role === "Duelist"),
   Strategist: heroes.filter((h) => h.role === "Strategist"),
   Versatile: heroes.filter((h) => h.role === "Versatile")
 };
