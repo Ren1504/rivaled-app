@@ -72,7 +72,7 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         
         {/* Win Rate Ring Chart */}
-        <Card className="md:col-span-4 bg-[#111632]/80 border border-white/5 rounded-2xl p-5 flex flex-col items-center justify-center shadow-lg">
+        <Card className="md:col-span-4 bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
           <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-3">Win Rate</span>
           
           <div className="relative flex items-center justify-center w-24 h-24">
@@ -118,14 +118,14 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
 
         {/* Streaks counters */}
         <div className="md:col-span-8 grid grid-cols-2 gap-4">
-          <Card className="bg-[#111632]/80 border border-white/5 rounded-2xl p-5 flex flex-col items-center justify-center shadow-lg">
+          <Card className="bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
             <TrophyIcon className="size-6 text-rivals-gold mb-2 animate-bounce-subtle" />
             <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Current Streak</span>
             <span className="text-3xl font-black text-white">{modeStats.currentStreak}</span>
             <span className="text-[9px] font-semibold text-muted-foreground mt-1">consecutive wins</span>
           </Card>
 
-          <Card className="bg-[#111632]/80 border border-white/5 rounded-2xl p-5 flex flex-col items-center justify-center shadow-lg">
+          <Card className="bg-[#111632]/80 border border-white/5 rounded-xs p-5 flex flex-col items-center justify-center shadow-lg">
             <StarIcon className="size-6 text-rivals-gold mb-2" />
             <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Max Streak</span>
             <span className="text-3xl font-black text-white">{modeStats.maxStreak}</span>
@@ -136,7 +136,7 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
       </div>
 
       {/* Guess Distribution Histogram */}
-      <Card className="bg-[#111632]/50 border border-white/5 rounded-2xl p-5 shadow-lg">
+      <Card className="bg-[#111632]/50 border border-white/5 rounded-xs p-5 shadow-lg">
         <h4 className="text-xs font-bold text-rivals-gold uppercase tracking-widest border-b border-white/5 pb-2 mb-4">
           Guess Distribution
         </h4>
@@ -149,9 +149,9 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
             return (
               <div key={guessNum} className="flex items-center gap-3 text-xs">
                 <span className="font-bold text-muted-foreground w-4 text-center">{guessNum}</span>
-                <div className="flex-1 bg-white/5 rounded-full h-5 overflow-hidden">
+                <div className="flex-1 bg-white/5 rounded-xs h-5 overflow-hidden">
                   <div
-                    className="bg-gradient-to-r from-rivals-gold-dark to-rivals-gold h-full rounded-full flex items-center justify-end pr-2.5 transition-all duration-1000 min-w-[20px]"
+                    className="bg-gradient-to-r from-rivals-gold-dark to-rivals-gold h-full rounded-xs flex items-center justify-end pr-2.5 transition-all duration-1000 min-w-[20px]"
                     style={{ width: `${Math.max(percentage, 5)}%` }}
                   >
                     {count > 0 && <span className="text-[9px] font-black text-rivals-obsidian">{count}</span>}
@@ -169,7 +169,7 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
           onClick={handleClear}
           variant="outline"
           size="sm"
-          className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xl cursor-pointer"
+          className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs cursor-pointer"
         >
           <DeleteIcon className="mr-1.5 size-3.5" />
           Reset All Statistics

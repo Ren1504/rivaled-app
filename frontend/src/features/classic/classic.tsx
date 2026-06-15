@@ -201,13 +201,13 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-6">
       
       {/* Daily vs Unlimited Select Toggle */}
-      <div className="flex bg-[#111632] border border-white/5 rounded-full p-1 mb-8 shadow-inner">
+      <div className="flex bg-[#111632] border border-white/5 rounded-xs p-1 mb-8 shadow-inner">
         <button
           onClick={() => {
             audioSynth.playClick();
             setIsDaily(true);
           }}
-          className={`px-5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-6 py-2 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
             isDaily 
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg" 
               : "text-muted-foreground hover:text-white"
@@ -220,7 +220,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             audioSynth.playClick();
             setIsDaily(false);
           }}
-          className={`px-5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-6 py-2 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
             !isDaily 
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg" 
               : "text-muted-foreground hover:text-white"
@@ -244,7 +244,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
       {/* Difficulty Hint reveal after 6 incorrect guesses */}
       {guesses.length >= 6 && !wonState && (
-        <div className="w-full max-w-2xl bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 mb-6 text-center animate-in zoom-in-95 duration-300">
+        <div className="w-full max-w-2xl bg-amber-500/10 border border-amber-500/30 rounded-xs p-4 mb-6 text-center animate-in zoom-in-95 duration-300">
           <p className="text-xs font-bold text-amber-400 uppercase tracking-widest flex items-center justify-center gap-2">
             <StarIcon className="size-4 animate-spin-slow" />
             Loldle Hint: Target Hero Difficulty
@@ -272,9 +272,9 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             <Combobox key={comboboxKey} items={autocompleteList}>
               <ComboboxInput
                 placeholder="Type hero name..."
-                className="h-12 w-full rounded-lg border border-rivals-gold/20 bg-[#0e1227] text-white text-md px-4 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
+                className="h-14 w-full rounded-xs border border-rivals-gold/20 bg-[#0e1227] text-white text-lg px-4 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
               />
-              <ComboboxContent className="mt-1 max-h-60 overflow-hidden rounded-lg border border-white/10 bg-[#0e1227] shadow-2xl backdrop-blur-md">
+              <ComboboxContent className="mt-1 max-h-60 overflow-hidden rounded-xs border border-white/10 bg-[#0e1227] shadow-2xl backdrop-blur-md">
                 <ComboboxEmpty className="p-3 text-sm text-gray-400 text-center">
                   No hero matches search.
                 </ComboboxEmpty>
@@ -283,21 +283,21 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                     <ComboboxItem
                       key={item}
                       value={item}
-                      className="flex items-center justify-between px-4 py-2.5 hover:bg-white/5 cursor-pointer transition-colors border-b border-white/[0.03]"
+                      className="flex items-center justify-between px-4 py-3 hover:bg-white/5 cursor-pointer transition-colors border-b border-white/[0.03]"
                       onClick={() => handleGuess(item)}
                     >
                       <div className="flex items-center gap-3">
                         <img
                           src={getHeroImage(item)}
                           alt={item}
-                          className="w-8 h-8 rounded-full border border-white/10 object-cover"
+                          className="w-10 h-10 rounded-xs border border-white/10 object-cover"
                           onError={(e) => {
                             (e.target as HTMLImageElement).src = `https://placehold.co/100x100/171b35/ffffff?text=${item[0]}`;
                           }}
                         />
-                        <span className="text-white text-sm font-medium">{item}</span>
+                        <span className="text-white text-base font-bold">{item}</span>
                       </div>
-                      <span className="text-xs text-muted-foreground bg-white/5 px-2 py-0.5 rounded-full">
+                      <span className="text-xs text-muted-foreground bg-white/5 px-2.5 py-0.5 rounded-xs">
                         {heroes.find(h => h.name === item)?.role}
                       </span>
                     </ComboboxItem>
@@ -308,20 +308,20 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
           </div>
         </div>
       ) : (
-        <div className="w-full max-w-md flex flex-col items-center bg-[#0e1227]/90 border border-gold-500/20 rounded-2xl p-6 mb-8 text-center animate-in fade-in-50 duration-500">
+        <div className="w-full max-w-md flex flex-col items-center bg-[#0e1227]/90 border border-gold-500/20 rounded-xs p-6 mb-8 text-center animate-in fade-in-50 duration-500">
           {wonState ? (
             <>
-              <p className="text-xs font-bold text-rivals-gold uppercase tracking-widest mb-1">Victory!</p>
-              <h3 className="text-2xl font-black text-white uppercase tracking-wider">You Got It!</h3>
-              <p className="text-xs text-muted-foreground mt-2">
+              <p className="text-sm font-bold text-rivals-gold uppercase tracking-widest mb-1">Victory!</p>
+              <h3 className="text-3xl font-black text-white uppercase tracking-wider">You Got It!</h3>
+              <p className="text-sm text-muted-foreground mt-2">
                 The target hero was <span className="text-white font-bold">{targetHero.name}</span>!
               </p>
             </>
           ) : (
             <>
-              <p className="text-xs font-bold text-rivals-crimson uppercase tracking-widest mb-1">Defeat</p>
-              <h3 className="text-2xl font-black text-white uppercase tracking-wider">Out of Guesses</h3>
-              <p className="text-xs text-muted-foreground mt-2">
+              <p className="text-sm font-bold text-rivals-crimson uppercase tracking-widest mb-1">Defeat</p>
+              <h3 className="text-3xl font-black text-white uppercase tracking-wider">Out of Guesses</h3>
+              <p className="text-sm text-muted-foreground mt-2">
                 The target hero was <span className="text-white font-bold">{targetHero.name}</span>.
               </p>
             </>
@@ -331,7 +331,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             <img
               src={getHeroImage(targetHero.name)}
               alt={targetHero.name}
-              className="w-20 h-20 rounded-2xl border-2 border-rivals-gold shadow-lg object-cover"
+              className="w-28 h-28 rounded-xs border-2 border-rivals-gold shadow-lg object-cover"
               onError={(e) => {
                 (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${targetHero.name[0]}`;
               }}
@@ -342,7 +342,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             <Button
               onClick={startUnlimited}
               variant="outline"
-              className="mt-6 border-rivals-gold text-rivals-gold hover:bg-rivals-gold hover:text-rivals-obsidian rounded-xl cursor-pointer"
+              className="mt-6 border-rivals-gold text-rivals-gold hover:bg-rivals-gold hover:text-rivals-obsidian rounded-xs cursor-pointer h-11 px-6 text-sm"
             >
               <RefreshIcon className="mr-2 size-4" />
               Play Again
@@ -356,7 +356,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
         <div className="w-full overflow-x-auto pb-4 no-scrollbar">
           <div className="min-w-[700px] flex flex-col gap-2.5">
             {/* Headers row */}
-            <div className="grid grid-cols-6 gap-2 px-1 text-center font-black text-xs tracking-wider uppercase text-muted-foreground">
+            <div className="grid grid-cols-6 gap-2 px-1 text-center font-black text-base tracking-wider uppercase text-muted-foreground">
               <div>Hero</div>
               <div>Attack Type</div>
               <div>Has Passive</div>
@@ -373,50 +373,50 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               >
                 {/* 1. Hero Card */}
                 <div 
-                  className="flex flex-col items-center justify-center p-2 rounded-xl border border-white/5 bg-[#171b35]/40 text-center h-24 duration-500 animate-card-reveal"
+                  className="flex flex-col items-center justify-between overflow-hidden rounded-xs border border-white/5 bg-[#171b35]/40 text-center h-32 duration-500 animate-card-reveal"
                   style={{ animationDelay: '0ms' }}
                 >
                   <img
                     src={getHeroImage(guess.name)}
                     alt={guess.name}
-                    className="w-11 h-11 rounded-full border border-white/10 mb-1 object-cover"
+                    className="w-full h-24 object-cover border-b border-white/5"
                     onError={(e) => {
-                      (e.target as HTMLImageElement).src = `https://placehold.co/100x100/171b35/ffffff?text=${guess.name[0]}`;
+                      (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${guess.name[0]}`;
                     }}
                   />
-                  <span className="text-xs font-black truncate w-full text-white">{guess.name}</span>
+                  <span className="text-sm font-black truncate w-full text-white py-1.5 px-0.5">{guess.name}</span>
                 </div>
 
                 {/* 2. Primary Attack Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.primaryAttack, targetHero.primaryAttack)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.primaryAttack, targetHero.primaryAttack)}`}
                   style={{ animationDelay: '150ms' }}
                 >
-                  <span className="text-sm font-black">{guess.primaryAttack}</span>
+                  <span className="text-lg font-black">{guess.primaryAttack}</span>
                 </div>
 
                 {/* 3. Has Passive Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.hasPassive, targetHero.hasPassive)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.hasPassive, targetHero.hasPassive)}`}
                   style={{ animationDelay: '300ms' }}
                 >
-                  <span className="text-sm font-black">{guess.hasPassive ? "Yes" : "No"}</span>
+                  <span className="text-lg font-black">{guess.hasPassive ? "Yes" : "No"}</span>
                 </div>
 
                 {/* 4. Team-Up Anchor Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
                   style={{ animationDelay: '450ms' }}
                 >
-                  <span className="text-sm font-black">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
+                  <span className="text-lg font-black">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
                 </div>
 
                 {/* 5. MCU Debut Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
                   style={{ animationDelay: '600ms' }}
                 >
-                  <span className="text-sm font-black">
+                  <span className="text-lg font-black">
                     {guess.mcuDebutYear ?? "N/A"}
                     {getArrowIcon(guess.mcuDebutYear, targetHero.mcuDebutYear)}
                   </span>
@@ -424,10 +424,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
                 {/* 6. Comic Debut Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
                   style={{ animationDelay: '750ms' }}
                 >
-                  <span className="text-sm font-black">
+                  <span className="text-lg font-black">
                     {guess.comicDebutYear}
                     {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
                   </span>

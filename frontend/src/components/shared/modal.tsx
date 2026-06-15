@@ -60,7 +60,7 @@ export function Modal({
       <div
         role="dialog"
         aria-modal="true"
-        className={`relative w-full ${sizeClasses[size]} rounded-2xl bg-[#0e1227]/95 border border-gold-500/20 text-white shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-4 duration-300`}
+        className={`relative w-full ${sizeClasses[size]} rounded-xs bg-[#0e1227]/95 border border-gold-500/20 text-white shadow-2xl overflow-hidden animate-in zoom-in-95 slide-in-from-bottom-4 duration-300`}
       >
         {/* Glowing border accent */}
         <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-rivals-gold to-transparent" />
@@ -81,7 +81,7 @@ export function Modal({
               audioSynth.playClick();
               onClose();
             }}
-            className="text-muted-foreground hover:text-white hover:bg-white/10 rounded-full"
+            className="text-muted-foreground hover:text-white hover:bg-white/10 rounded-xs"
             aria-label="Close modal"
           >
             <HugeiconsIcon icon={Cancel01Icon} strokeWidth={2.5} className="size-4" />

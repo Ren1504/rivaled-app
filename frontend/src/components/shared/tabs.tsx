@@ -36,14 +36,14 @@ export function Tabs({
             <button
               key={option.id}
               onClick={() => handleTabClick(option.id)}
-              className={`relative flex items-center gap-2 px-3 py-3 text-sm font-semibold tracking-wider uppercase transition-all duration-200 cursor-pointer outline-hidden select-none
+              className={`relative flex items-center gap-2.5 px-6 py-4 text-base font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer outline-hidden select-none
                 ${isActive 
                   ? "text-rivals-gold" 
                   : "text-muted-foreground hover:text-white"
                 }
               `}
             >
-              {option.icon && <span className="size-4 flex items-center justify-center">{option.icon}</span>}
+              {option.icon && <span className="size-5 flex items-center justify-center">{option.icon}</span>}
               <span>{option.label}</span>
               
               {/* Active Indicator Underline */}

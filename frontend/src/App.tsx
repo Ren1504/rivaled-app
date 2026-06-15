@@ -106,8 +106,8 @@ function App() {
   };
 
   const tabOptions = [
-    { id: "classic", label: "Play Game", icon: <StarIcon className="size-4" /> },
-    { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-4" /> }
+    { id: "classic", label: "Play Game", icon: <StarIcon className="size-5" /> },
+    { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-5" /> }
   ];
 
   return (
@@ -118,14 +118,14 @@ function App() {
         
         {/* Title / Logo */}
         <div className="flex items-center gap-3">
-          <div className="bg-rivals-gold/15 p-2 rounded-xl border border-rivals-gold/30">
-            <span className="text-xl font-black text-rivals-gold tracking-widest">L</span>
+          <div className="bg-rivals-gold/15 p-2 rounded-xs border border-rivals-gold/30">
+            <span className="text-2xl font-black text-rivals-gold tracking-widest">L</span>
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl font-black tracking-widest text-gold-gradient uppercase flex items-center gap-1.5 leading-none">
+            <h1 className="text-2xl md:text-3xl font-black tracking-widest text-gold-gradient uppercase flex items-center gap-1.5 leading-none">
               Lodle
             </h1>
-            <span className="text-[9px] font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
+            <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Marvel Rivals Guessing Game</span>
           </div>
         </div>
 
@@ -134,43 +134,43 @@ function App() {
           {/* Help Instructions */}
           <Button
             variant="ghost"
-            size="icon-sm"
+            size="icon-lg"
             onClick={() => {
               audioSynth.playClick();
               setIsInstructionsOpen(true);
             }}
-            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="How to Play"
           >
-            <HelpIcon className="size-5" />
+            <HelpIcon className="size-6" />
           </Button>
 
           {/* Statistics Toggle */}
           <Button
             variant="ghost"
-            size="icon-sm"
+            size="icon-lg"
             onClick={() => {
               audioSynth.playClick();
               setIsStatsOpen(true);
             }}
-            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="Stats"
           >
-            <TrophyIcon className="size-5" />
+            <TrophyIcon className="size-6" />
           </Button>
 
           {/* Settings Toggle */}
           <Button
             variant="ghost"
-            size="icon-sm"
+            size="icon-lg"
             onClick={() => {
               audioSynth.playClick();
               setIsSettingsOpen(true);
             }}
-            className="text-muted-foreground hover:text-white rounded-xl cursor-pointer"
+            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="Settings"
           >
-            <SettingsIcon className="size-5" />
+            <SettingsIcon className="size-6" />
           </Button>
         </div>
       </header>
@@ -253,17 +253,17 @@ function App() {
             <Button
               onClick={toggleMute}
               variant="outline"
-              size="sm"
-              className="border-white/10 text-white rounded-xl cursor-pointer"
+              size="lg"
+              className="border-white/10 text-white rounded-xs cursor-pointer"
             >
               {isMuted ? (
                 <>
-                  <VolumeMuteIcon className="mr-1.5 size-4 text-rivals-crimson" />
+                  <VolumeMuteIcon className="mr-1.5 size-5 text-rivals-crimson" />
                   Muted
                 </>
               ) : (
                 <>
-                  <VolumeUpIcon className="mr-1.5 size-4 text-rivals-gold" />
+                  <VolumeUpIcon className="mr-1.5 size-5 text-rivals-gold" />
                   Enabled
                 </>
               )}
@@ -279,17 +279,17 @@ function App() {
             <Button
               onClick={toggleTheme}
               variant="outline"
-              size="sm"
-              className="border-white/10 text-white rounded-xl cursor-pointer"
+              size="lg"
+              className="border-white/10 text-white rounded-xs cursor-pointer"
             >
               {theme === "dark" ? (
                 <>
-                  <MoonIcon className="mr-1.5 size-4 text-rivals-gold" />
+                  <MoonIcon className="mr-1.5 size-5 text-rivals-gold" />
                   Dark Mode
                 </>
               ) : (
                 <>
-                  <SunIcon className="mr-1.5 size-4 text-yellow-400" />
+                  <SunIcon className="mr-1.5 size-5 text-yellow-400" />
                   Light Mode
                 </>
               )}
@@ -305,8 +305,8 @@ function App() {
             <Button
               onClick={handleResetStats}
               variant="destructive"
-              size="sm"
-              className="rounded-xl cursor-pointer"
+              size="lg"
+              className="rounded-xs cursor-pointer"
             >
               Reset All
             </Button>

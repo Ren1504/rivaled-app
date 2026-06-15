@@ -71,22 +71,22 @@ export function HeroGallery() {
     <div className="w-full max-w-6xl mx-auto px-4 py-6">
       
       {/* Search & Filter Bar */}
-      <div className="bg-[#0e1227]/90 border border-white/5 rounded-2xl p-6 mb-8 flex flex-col gap-4 shadow-xl">
-        <h3 className="text-sm font-bold text-rivals-gold uppercase tracking-widest">Filter Hero Database</h3>
+      <div className="bg-[#0e1227]/90 border border-white/5 rounded-xs p-8 mb-8 flex flex-col gap-4 shadow-xl">
+        <h3 className="text-base font-bold text-rivals-gold uppercase tracking-widest">Filter Hero Database</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           
           {/* Search input */}
           <div className="relative md:col-span-1">
             <span className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-muted-foreground">
-              <SearchIcon className="size-4" />
+              <SearchIcon className="size-4.5" />
             </span>
             <Input
               type="text"
               placeholder="Search hero..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 h-10 bg-[#111632] border-white/10 rounded-xl text-white placeholder-muted-foreground focus-visible:border-rivals-gold text-sm"
+              className="pl-10 h-12 bg-[#111632] border-white/10 rounded-xs text-white placeholder-muted-foreground focus-visible:border-rivals-gold text-base"
             />
           </div>
 
@@ -95,7 +95,7 @@ export function HeroGallery() {
             <select
               value={selectedRole}
               onChange={(e) => setSelectedRole(e.target.value)}
-              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xl px-3 text-sm focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Roles</option>
               <option value="Vanguard">Vanguard (Tank)</option>
@@ -110,7 +110,7 @@ export function HeroGallery() {
             <select
               value={selectedAttack}
               onChange={(e) => setSelectedAttack(e.target.value)}
-              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xl px-3 text-sm focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Attack Types</option>
               <option value="Hitscan">Hitscan</option>
@@ -124,7 +124,7 @@ export function HeroGallery() {
             <select
               value={selectedDifficulty}
               onChange={(e) => setSelectedDifficulty(e.target.value)}
-              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xl px-3 text-sm focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Difficulties</option>
               <option value="0">0 Stars (Very Easy)</option>
@@ -138,7 +138,7 @@ export function HeroGallery() {
         </div>
 
         {/* Total Results */}
-        <p className="text-xs text-muted-foreground text-right">
+        <p className="text-xs text-muted-foreground text-right font-medium">
           Showing {filteredHeroes.length} of {heroes.length} heroes
         </p>
       </div>
@@ -150,9 +150,9 @@ export function HeroGallery() {
             <Card
               key={hero.name}
               onClick={() => handleHeroClick(hero)}
-              className="group bg-[#0e1227]/90 border border-white/5 hover:border-rivals-gold/40 rounded-xl overflow-hidden cursor-pointer shadow-md hover:shadow-rivals-gold/10 transition-all duration-300 transform hover:-translate-y-1"
+              className="group bg-[#0e1227]/90 border border-white/5 hover:border-rivals-gold/40 rounded-xs overflow-hidden cursor-pointer shadow-md hover:shadow-rivals-gold/10 transition-all duration-300 transform hover:-translate-y-1 aspect-[3/4]"
             >
-              <div className="relative aspect-square w-full overflow-hidden bg-[#111632]/50">
+              <div className="relative w-full h-full bg-[#111632]/50">
                 <img
                   src={getHeroImage(hero.name)}
                   alt={hero.name}
@@ -163,35 +163,35 @@ export function HeroGallery() {
                   }}
                 />
                 
+                {/* Black Gradient Overlay at the bottom for text */}
+                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-black/85 to-transparent flex flex-col justify-end pb-3 pt-6 px-2 text-center pointer-events-none">
+                  <h4 className="font-black text-sm text-white group-hover:text-rivals-gold transition-colors truncate tracking-wide">
+                    {hero.name}
+                  </h4>
+                  
+                  {/* Star rating preview */}
+                  <div className="flex items-center justify-center gap-0.5 mt-1">
+                    {Array.from({ length: 5 }).map((_, i) => (
+                      <StarIcon
+                        key={i}
+                        className={`size-3 ${i < hero.difficulty ? "text-rivals-gold" : "text-white/10"}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+
                 {/* Role label on top left of image */}
-                <div className="absolute top-2 left-2 bg-white border border-white/20 rounded-full px-2 py-0.5 flex items-center gap-1 shadow-md">
+                <div className="absolute top-2 left-2 bg-white border border-white/20 rounded-xs px-2 py-0.5 flex items-center gap-1 shadow-md">
                   {getRoleIcon(hero.role)}
                   <span className="text-[9px] font-extrabold text-slate-900 uppercase">{hero.role}</span>
-                </div>
-              </div>
-
-              {/* Card Footer Info */}
-              <div className="p-3 text-center border-t border-white/5 bg-[#0e1227]">
-                <h4 className="font-bold text-sm text-white group-hover:text-rivals-gold transition-colors truncate">
-                  {hero.name}
-                </h4>
-                
-                {/* Star rating preview */}
-                <div className="flex items-center justify-center gap-0.5 mt-1">
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <StarIcon
-                      key={i}
-                      className={`size-3 ${i < hero.difficulty ? "text-rivals-gold" : "text-white/10"}`}
-                    />
-                  ))}
                 </div>
               </div>
             </Card>
           ))}
         </div>
       ) : (
-        <div className="bg-[#0e1227]/50 border border-white/5 rounded-2xl p-16 text-center shadow-lg">
-          <p className="text-muted-foreground text-sm">No heroes match your filters.</p>
+        <div className="bg-[#0e1227]/50 border border-white/5 rounded-xs p-16 text-center shadow-lg">
+          <p className="text-muted-foreground text-base">No heroes match your filters.</p>
           <Button
             onClick={() => {
               audioSynth.playClick();
@@ -201,7 +201,7 @@ export function HeroGallery() {
               setSelectedDifficulty("All");
             }}
             variant="link"
-            className="mt-2 text-rivals-gold hover:underline"
+            className="mt-2 text-rivals-gold hover:underline text-base font-bold"
           >
             Clear Filters
           </Button>
@@ -220,7 +220,7 @@ export function HeroGallery() {
             
             {/* Left Column: Picture & Quick Stats */}
             <div className="md:col-span-4 flex flex-col items-center">
-              <div className="relative w-36 h-36 md:w-full md:aspect-square rounded-2xl border border-rivals-gold/30 shadow-xl overflow-hidden bg-[#111632]">
+              <div className="relative w-44 h-44 md:w-full md:aspect-square rounded-xs border border-rivals-gold/30 shadow-xl overflow-hidden bg-[#111632]">
                 <img
                   src={getHeroImage(activeHero.name)}
                   alt={activeHero.name}
@@ -235,7 +235,7 @@ export function HeroGallery() {
                 {activeHero.name}
               </h2>
               
-              <div className="flex items-center gap-1.5 px-3 py-1 bg-white border border-white/20 rounded-full mt-1">
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-white border border-white/20 rounded-xs mt-1">
                 {getRoleIcon(activeHero.role)}
                 <span className="text-[10px] font-extrabold text-slate-900 uppercase tracking-wider">{activeHero.role}</span>
               </div>
@@ -258,7 +258,7 @@ export function HeroGallery() {
             <div className="md:col-span-8 flex flex-col gap-6">
               
               {/* Profile Details Sheet */}
-              <div className="bg-[#111632]/50 border border-white/5 rounded-xl p-4">
+              <div className="bg-[#111632]/50 border border-white/5 rounded-xs p-4">
                 <h4 className="text-xs font-bold text-rivals-gold uppercase tracking-widest border-b border-white/5 pb-2 mb-3">
                   Specifications
                 </h4>
@@ -319,12 +319,12 @@ export function HeroGallery() {
                   {activeExtra?.abilities.map((ability) => (
                     <div
                       key={ability.name}
-                      className="bg-[#111632]/80 border border-white/5 rounded-xl p-3 flex flex-col gap-1 hover:border-white/10 transition-colors"
+                      className="bg-[#111632]/80 border border-white/5 rounded-xs p-3 flex flex-col gap-1 hover:border-white/10 transition-colors"
                     >
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-white">{ability.name}</span>
                         {ability.key && (
-                          <span className="text-[9px] font-bold bg-white/10 text-rivals-gold border border-rivals-gold/20 px-2 py-0.5 rounded-md uppercase">
+                          <span className="text-[9px] font-bold bg-white/10 text-rivals-gold border border-rivals-gold/20 px-2 py-0.5 rounded-xs uppercase">
                             {ability.key}
                           </span>
                         )}
@@ -346,7 +346,7 @@ export function HeroGallery() {
                   {activeExtra?.quotes.map((q, idx) => (
                     <blockquote
                       key={idx}
-                      className="text-xs italic text-white/80 bg-[#111632]/20 border-l-2 border-rivals-gold pl-3 py-1.5 rounded-r-md leading-relaxed"
+                      className="text-xs italic text-white/80 bg-[#111632]/20 border-l-2 border-rivals-gold pl-3 py-1.5 rounded-r-xs leading-relaxed"
                     >
                       "{q}"
                     </blockquote>
@@ -364,7 +364,7 @@ export function HeroGallery() {
                     {activeExtra.skins.map((skin) => (
                       <span
                         key={skin}
-                        className="text-[10px] font-semibold bg-white/5 border border-white/10 px-2.5 py-1 rounded-full text-white/90 shadow-sm"
+                        className="text-[10px] font-semibold bg-white/5 border border-white/10 px-2.5 py-1 rounded-xs text-white/90 shadow-sm"
                       >
                         {skin}
                       </span>
