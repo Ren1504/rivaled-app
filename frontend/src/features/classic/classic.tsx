@@ -190,9 +190,9 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
   const getArrowIcon = (guessValue: number | null, targetValue: number | null) => {
     if (!guessValue || !targetValue || guessValue === targetValue) return null;
     return targetValue > guessValue ? (
-      <ArrowUpIcon className="inline size-3.5 text-white animate-bounce-subtle ml-1" />
+      <ArrowUpIcon className="inline size-6 text-white animate-bounce-subtle ml-1" />
     ) : (
-      <ArrowDownIcon className="inline size-3.5 text-white animate-bounce-subtle ml-1" />
+      <ArrowDownIcon className="inline size-6 text-white animate-bounce-subtle ml-1" />
     );
   };
 
@@ -379,7 +379,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   <img
                     src={getHeroImage(guess.name)}
                     alt={guess.name}
-                    className="w-full h-24 object-cover border-b border-white/5"
+                    className="w-full h-24 object-cover border-b-3 border-rivals-gold"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${guess.name[0]}`;
                     }}

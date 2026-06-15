@@ -156,7 +156,7 @@ export function HeroGallery() {
                 <img
                   src={getHeroImage(hero.name)}
                   alt={hero.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 border-b-3 border-rivals-gold"
                   loading="lazy"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${hero.name[0]}`;
@@ -224,7 +224,7 @@ export function HeroGallery() {
                 <img
                   src={getHeroImage(activeHero.name)}
                   alt={activeHero.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover border-b-3 border-rivals-gold"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = `https://placehold.co/200x200/171b35/ffffff?text=${activeHero.name[0]}`;
                   }}
