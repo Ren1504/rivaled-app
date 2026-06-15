@@ -9,11 +9,8 @@ import { Input } from "../../components/ui/input"
 import { Button } from "../../components/ui/button"
 import { audioSynth } from "../../lib/audio"
 
-// Custom inline SVG icons
 import {
   ShieldIcon,
-  SwordIcon,
-  HelpIcon,
   StarIcon,
   SearchIcon,
   CalendarIcon,
@@ -43,13 +40,13 @@ export function HeroGallery() {
   const getRoleIcon = (role: Role) => {
     switch (role) {
       case "Vanguard":
-        return <ShieldIcon className="size-4 text-role-vanguard mr-1 inline" />;
+        return <img src="/vanguard.png" alt="Vanguard" className="size-4 object-contain inline mr-1" />;
       case "Duelist":
-        return <SwordIcon className="size-4 text-role-duelist mr-1 inline" />;
+        return <img src="/duelist.png" alt="Duelist" className="size-4 object-contain inline mr-1" />;
       case "Strategist":
-        return <HelpIcon className="size-4 text-role-strategist mr-1 inline" />;
+        return <img src="/strategist.png" alt="Strategist" className="size-4 object-contain inline mr-1" />;
       default:
-        return <StarIcon className="size-4 text-role-versatile mr-1 inline" />;
+        return <StarIcon className="size-4 text-rivals-gold mr-1 inline" />;
     }
   };
 
@@ -167,9 +164,9 @@ export function HeroGallery() {
                 />
                 
                 {/* Role label on top left of image */}
-                <div className="absolute top-2 left-2 bg-[#060814]/80 backdrop-blur-xs border border-white/10 rounded-full px-2 py-0.5 flex items-center gap-1 shadow-md">
+                <div className="absolute top-2 left-2 bg-white border border-white/20 rounded-full px-2 py-0.5 flex items-center gap-1 shadow-md">
                   {getRoleIcon(hero.role)}
-                  <span className="text-[9px] font-bold text-white uppercase">{hero.role}</span>
+                  <span className="text-[9px] font-extrabold text-slate-900 uppercase">{hero.role}</span>
                 </div>
               </div>
 
@@ -238,9 +235,9 @@ export function HeroGallery() {
                 {activeHero.name}
               </h2>
               
-              <div className="flex items-center gap-1.5 px-3 py-1 bg-white/5 border border-white/10 rounded-full mt-1">
+              <div className="flex items-center gap-1.5 px-3 py-1 bg-white border border-white/20 rounded-full mt-1">
                 {getRoleIcon(activeHero.role)}
-                <span className="text-[10px] font-bold text-white uppercase tracking-wider">{activeHero.role}</span>
+                <span className="text-[10px] font-extrabold text-slate-900 uppercase tracking-wider">{activeHero.role}</span>
               </div>
 
               {/* Difficulty indicators */}

@@ -1,6 +1,6 @@
 import * as React from "react"
 import { heroes } from "../../data/marvelRivalsData"
-import type { Hero, Role } from "../../data/marvelRivalsData"
+import type { Hero } from "../../data/marvelRivalsData"
 import { audioSynth } from "../../lib/audio"
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import { Button } from "../../components/ui/button"
@@ -16,10 +16,7 @@ import {
 // Use custom inline icons to ensure successful compilation
 import {
   StarIcon,
-  HelpIcon,
   RefreshIcon,
-  ShieldIcon,
-  SwordIcon,
   SparklesIcon
 } from "../../components/shared/icons"
 
@@ -199,18 +196,6 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     );
   };
 
-  const getRoleIcon = (role: Role) => {
-    switch (role) {
-      case "Vanguard":
-        return <ShieldIcon className="size-4 text-role-vanguard mr-1 inline" />;
-      case "Duelist":
-        return <SwordIcon className="size-4 text-role-duelist mr-1 inline" />;
-      case "Strategist":
-        return <HelpIcon className="size-4 text-role-strategist mr-1 inline" />;
-      default:
-        return <StarIcon className="size-4 text-role-versatile mr-1 inline" />;
-    }
-  };
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-6">
@@ -371,9 +356,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
         <div className="w-full overflow-x-auto pb-4 no-scrollbar">
           <div className="min-w-[700px] flex flex-col gap-2.5">
             {/* Headers row */}
-            <div className="grid grid-cols-7 gap-2 px-1 text-center font-bold text-[10px] tracking-wider uppercase text-muted-foreground">
+            <div className="grid grid-cols-6 gap-2 px-1 text-center font-black text-xs tracking-wider uppercase text-muted-foreground">
               <div>Hero</div>
-              <div>Role</div>
               <div>Attack Type</div>
               <div>Has Passive</div>
               <div>Team-Up Anchor</div>
@@ -385,7 +369,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             {guesses.map((guess) => (
               <div
                 key={guess.name}
-                className="grid grid-cols-7 gap-2"
+                className="grid grid-cols-6 gap-2"
               >
                 {/* 1. Hero Card */}
                 <div 
@@ -395,64 +379,55 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   <img
                     src={getHeroImage(guess.name)}
                     alt={guess.name}
-                    className="w-10 h-10 rounded-full border border-white/10 mb-1 object-cover"
+                    className="w-11 h-11 rounded-full border border-white/10 mb-1 object-cover"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/100x100/171b35/ffffff?text=${guess.name[0]}`;
                     }}
                   />
-                  <span className="text-[10px] font-bold truncate w-full text-white">{guess.name}</span>
+                  <span className="text-xs font-black truncate w-full text-white">{guess.name}</span>
                 </div>
 
-                {/* 2. Role Card */}
-                <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.role, targetHero.role)}`}
-                  style={{ animationDelay: '150ms' }}
-                >
-                  {getRoleIcon(guess.role)}
-                  <span className="text-[10px] font-semibold mt-1">{guess.role}</span>
-                </div>
-
-                {/* 3. Primary Attack Card */}
+                {/* 2. Primary Attack Card */}
                 <div 
                   className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.primaryAttack, targetHero.primaryAttack)}`}
-                  style={{ animationDelay: '300ms' }}
+                  style={{ animationDelay: '150ms' }}
                 >
-                  <span className="text-xs font-bold">{guess.primaryAttack}</span>
+                  <span className="text-sm font-black">{guess.primaryAttack}</span>
                 </div>
 
-                {/* 4. Has Passive Card */}
+                {/* 3. Has Passive Card */}
                 <div 
                   className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.hasPassive, targetHero.hasPassive)}`}
-                  style={{ animationDelay: '450ms' }}
+                  style={{ animationDelay: '300ms' }}
                 >
-                  <span className="text-xs font-bold">{guess.hasPassive ? "Yes" : "No"}</span>
+                  <span className="text-sm font-black">{guess.hasPassive ? "Yes" : "No"}</span>
                 </div>
 
-                {/* 5. Team-Up Anchor Card */}
+                {/* 4. Team-Up Anchor Card */}
                 <div 
                   className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
-                  style={{ animationDelay: '600ms' }}
+                  style={{ animationDelay: '450ms' }}
                 >
-                  <span className="text-xs font-bold">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
+                  <span className="text-sm font-black">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
                 </div>
 
-                {/* 6. MCU Debut Card */}
+                {/* 5. MCU Debut Card */}
                 <div 
                   className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
-                  style={{ animationDelay: '750ms' }}
+                  style={{ animationDelay: '600ms' }}
                 >
-                  <span className="text-xs font-bold">
+                  <span className="text-sm font-black">
                     {guess.mcuDebutYear ?? "N/A"}
                     {getArrowIcon(guess.mcuDebutYear, targetHero.mcuDebutYear)}
                   </span>
                 </div>
 
-                {/* 7. Comic Debut Card */}
+                {/* 6. Comic Debut Card */}
                 <div 
                   className={`flex flex-col items-center justify-center p-2 rounded-xl border text-center h-24 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
-                  style={{ animationDelay: '900ms' }}
+                  style={{ animationDelay: '750ms' }}
                 >
-                  <span className="text-xs font-bold">
+                  <span className="text-sm font-black">
                     {guess.comicDebutYear}
                     {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
                   </span>

@@ -1,13 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import 'tailwindcss';
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-@import "@fontsource-variable/figtree";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-heading: 'Figtree Variable', sans-serif;
-  --font-sans: 'Figtree Variable', sans-serif;
+  --font-heading: 'Bebas Neue', sans-serif;
+  --font-sans: 'Nunito Sans', sans-serif;
   
   /* Standard Tailwind variables mappings */
   --color-ring: var(--ring);
@@ -29,25 +29,15 @@
   --color-foreground: var(--foreground);
   --color-background: var(--background);
 
-  --color-gold-50: #fdfaf2;
-  --color-gold-100: #fbf2db;
-  --color-gold-200: #f5deaf;
-  --color-gold-300: #eec67c;
-  --color-gold-400: #e7aa4e;
-  --color-gold-500: #df8d27;
-  --color-gold-600: #c4701d;
-  --color-gold-700: #a35619;
-  --color-gold-800: #834217;
-  --color-gold-900: #6c3516;
-
-  --color-rivals-gold: #f0d38d;
-  --color-rivals-gold-dark: #b88a38;
-  --color-rivals-obsidian: #060814;
-  --color-rivals-card: #0e1227;
-  --color-rivals-card-hover: #151a38;
-  --color-rivals-cyan: #00e5ff;
+  /* Marvel Rivals Theme styling colors */
+  --color-rivals-gold: #fcd92d;       /* Brand Yellow */
+  --color-rivals-gold-dark: #b89c18;
+  --color-rivals-obsidian: #0e1017;   /* Brand Dark Background */
+  --color-rivals-card: #1b1f2e;       /* Brand Slate Card Background */
+  --color-rivals-card-hover: #262c40;
+  --color-rivals-cyan: #4cbeff;       /* Brand Info Blue */
   --color-rivals-purple: #c084fc;
-  --color-rivals-crimson: #ef4444;
+  --color-rivals-crimson: #f0131e;    /* Brand Highlight Red */
 
   --color-role-vanguard: #3b82f6;
   --color-role-duelist: #ef4444;
@@ -56,46 +46,46 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(0.98 0.01 240);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.6 0.18 45); /* Goldish */
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.95 0.01 240);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.95 0.01 240);
-  --muted-foreground: oklch(0.45 0.01 240);
-  --accent: oklch(0.95 0.01 240);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.85 0.01 240);
-  --input: oklch(0.9 0.01 240);
-  --ring: oklch(0.6 0.18 45);
+  --background: #f0f1f5;
+  --foreground: #181a26;
+  --card: #ffffff;
+  --card-foreground: #181a26;
+  --popover: #ffffff;
+  --popover-foreground: #181a26;
+  --primary: #fcd92d;
+  --primary-foreground: #181a26;
+  --secondary: #e2e8f0;
+  --secondary-foreground: #181a26;
+  --muted: #e2e8f0;
+  --muted-foreground: #64748b;
+  --accent: #e2e8f0;
+  --accent-foreground: #181a26;
+  --destructive: #f0131e;
+  --border: #cbd5e1;
+  --input: #e2e8f0;
+  --ring: #fcd92d;
   --radius: 0.75rem;
 }
 
 .dark {
-  --background: #060814;
+  --background: #0e1017;
   --foreground: #f3f4f6;
-  --card: #0e1227;
+  --card: #1b1f2e;
   --card-foreground: #f3f4f6;
-  --popover: #0e1227;
+  --popover: #1b1f2e;
   --popover-foreground: #f3f4f6;
-  --primary: #f0d38d;
-  --primary-foreground: #060814;
-  --secondary: #171b35;
+  --primary: #fcd92d;
+  --primary-foreground: #0e1017;
+  --secondary: #262c40;
   --secondary-foreground: #f3f4f6;
-  --muted: #171b35;
-  --muted-foreground: #9ca3af;
-  --accent: #171b35;
+  --muted: #262c40;
+  --muted-foreground: #bec1d1;
+  --accent: #262c40;
   --accent-foreground: #f3f4f6;
-  --destructive: #ef4444;
-  --border: rgba(240, 211, 141, 0.15);
-  --input: rgba(240, 211, 141, 0.1);
-  --ring: #f0d38d;
+  --destructive: #f0131e;
+  --border: rgba(252, 217, 45, 0.15);
+  --input: rgba(252, 217, 45, 0.1);
+  --ring: #fcd92d;
 }
 
 @layer base {
@@ -103,13 +93,13 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground transition-colors duration-300 overflow-x-hidden;
-    background-image: radial-gradient(circle at 50% 0%, rgba(240, 211, 141, 0.06) 0%, transparent 60%);
+    @apply bg-background text-foreground transition-colors duration-300 overflow-x-hidden font-sans;
+    background-image: radial-gradient(circle at 50% 0%, rgba(252, 217, 45, 0.06) 0%, transparent 60%);
   }
   .dark body {
     background-image: 
-      radial-gradient(circle at 50% -20%, rgba(240, 211, 141, 0.12) 0%, transparent 50%),
-      radial-gradient(circle at 0% 100%, rgba(0, 229, 255, 0.03) 0%, transparent 40%),
+      radial-gradient(circle at 50% -20%, rgba(252, 217, 45, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(76, 190, 255, 0.03) 0%, transparent 40%),
       radial-gradient(circle at 100% 100%, rgba(192, 132, 252, 0.03) 0%, transparent 40%);
   }
   html {
@@ -144,38 +134,38 @@
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(240, 211, 141, 0.2);
+  background: rgba(252, 217, 45, 0.2);
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(240, 211, 141, 0.4);
+  background: rgba(252, 217, 45, 0.4);
 }
 
 /* Glow effects */
 .glow-gold-hover:hover {
-  box-shadow: 0 0 15px rgba(240, 211, 141, 0.45);
+  box-shadow: 0 0 15px rgba(252, 217, 45, 0.45);
 }
 .glow-cyan-hover:hover {
-  box-shadow: 0 0 15px rgba(0, 229, 255, 0.45);
+  box-shadow: 0 0 15px rgba(76, 190, 255, 0.45);
 }
 
 .glow-card-gold {
-  box-shadow: 0 0 20px rgba(240, 211, 141, 0.15);
+  box-shadow: 0 0 20px rgba(252, 217, 45, 0.15);
 }
 
 .glow-card-cyan {
-  box-shadow: 0 0 20px rgba(0, 229, 255, 0.15);
+  box-shadow: 0 0 20px rgba(76, 190, 255, 0.15);
 }
 
 /* Premium Card text styling */
 .text-gold-gradient {
-  background: linear-gradient(135deg, #f0d38d 0%, #b88a38 100%);
+  background: linear-gradient(135deg, #fcd92d 0%, #b89c18 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-cyan-gradient {
-  background: linear-gradient(135deg, #00e5ff 0%, #0097a7 100%);
+  background: linear-gradient(135deg, #4cbeff 0%, #0097a7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
