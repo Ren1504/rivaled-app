@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button"
 
 function SearchBar() {
 
- const [heroName,setheroName] = useState('')
+  const [heroName, setheroName] = useState('')
 
   const data = Object.values(heroes).map(hero => hero.name)
 
@@ -27,7 +27,7 @@ function SearchBar() {
   }
 
   return (
-    
+
     <div className="flex items-center">
       <div className="w-[376px]">
 
@@ -79,10 +79,10 @@ function SearchBar() {
 
         </Combobox>
       </div>
-      <Button onClick={()=>console.log(heroName)} variant="outline" className="mx-5">→</Button>
+      <Button onClick={() => console.log(heroName)} variant="outline" className="mx-5">→</Button>
     </div>
 
-      
+
 
   )
 }

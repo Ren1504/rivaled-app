@@ -71,7 +71,7 @@ export function HeroGallery() {
     <div className="w-full max-w-6xl mx-auto px-4 py-6">
       
       {/* Search & Filter Bar */}
-      <div className="bg-[#0e1227]/90 border border-white/5 rounded-xs p-8 mb-8 flex flex-col gap-4 shadow-xl">
+      <div className="bg-[#0e1227]/90 border border-white/5 rounded-xs p-6 mb-8 flex flex-col gap-4 shadow-xl">
         <h3 className="text-base font-bold text-rivals-gold uppercase tracking-widest">Filter Hero Database</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
@@ -86,7 +86,7 @@ export function HeroGallery() {
               placeholder="Search hero..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 h-12 bg-[#111632] border-white/10 rounded-xs text-white placeholder-muted-foreground focus-visible:border-rivals-gold text-base"
+              className="pl-10 h-10 bg-[#111632] border-white/10 rounded-xs text-white placeholder-muted-foreground focus-visible:border-rivals-gold text-base"
             />
           </div>
 
@@ -95,7 +95,7 @@ export function HeroGallery() {
             <select
               value={selectedRole}
               onChange={(e) => setSelectedRole(e.target.value)}
-              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Roles</option>
               <option value="Vanguard">Vanguard (Tank)</option>
@@ -110,7 +110,7 @@ export function HeroGallery() {
             <select
               value={selectedAttack}
               onChange={(e) => setSelectedAttack(e.target.value)}
-              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Attack Types</option>
               <option value="Hitscan">Hitscan</option>
@@ -124,7 +124,7 @@ export function HeroGallery() {
             <select
               value={selectedDifficulty}
               onChange={(e) => setSelectedDifficulty(e.target.value)}
-              className="w-full h-12 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
+              className="w-full h-10 bg-[#111632] border border-white/10 text-white rounded-xs px-3 text-base focus:outline-hidden focus:border-rivals-gold cursor-pointer"
             >
               <option value="All">All Difficulties</option>
               <option value="0">0 Stars (Very Easy)</option>
@@ -220,7 +220,7 @@ export function HeroGallery() {
             
             {/* Left Column: Picture & Quick Stats */}
             <div className="md:col-span-4 flex flex-col items-center">
-              <div className="relative w-44 h-44 md:w-full md:aspect-square rounded-xs border border-rivals-gold/30 shadow-xl overflow-hidden bg-[#111632]">
+              <div className="relative w-36 h-36 md:w-full md:aspect-square rounded-xs border border-rivals-gold/30 shadow-xl overflow-hidden bg-[#111632]">
                 <img
                   src={getHeroImage(activeHero.name)}
                   alt={activeHero.name}

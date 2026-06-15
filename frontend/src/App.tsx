@@ -114,11 +114,11 @@ function App() {
     <div className="min-h-screen flex flex-col bg-background text-foreground transition-colors duration-300">
       
       {/* Top Header Section */}
-      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-4 flex items-center justify-between">
+      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-3 flex items-center justify-between">
         
         {/* Title / Logo (Left) */}
         <div className="flex items-center gap-3 hidden sm:flex">
-          <div className="bg-rivals-gold/15 p-2 rounded-xs border border-rivals-gold/30">
+          <div className="bg-rivals-gold/15 p-1.5 rounded-xs border border-rivals-gold/30">
             <span className="text-2xl font-black text-rivals-gold tracking-widest">R</span>
           </div>
         </div>
@@ -138,7 +138,7 @@ function App() {
           {/* Help Instructions */}
           <Button
             variant="ghost"
-            size="icon-lg"
+            size="icon-sm"
             onClick={() => {
               audioSynth.playClick();
               setIsInstructionsOpen(true);
@@ -146,13 +146,13 @@ function App() {
             className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="How to Play"
           >
-            <HelpIcon className="size-6" />
+            <HelpIcon className="size-5" />
           </Button>
 
           {/* Statistics Toggle */}
           <Button
             variant="ghost"
-            size="icon-lg"
+            size="icon-sm"
             onClick={() => {
               audioSynth.playClick();
               setIsStatsOpen(true);
@@ -160,13 +160,13 @@ function App() {
             className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="Stats"
           >
-            <TrophyIcon className="size-6" />
+            <TrophyIcon className="size-5" />
           </Button>
 
           {/* Settings Toggle */}
           <Button
             variant="ghost"
-            size="icon-lg"
+            size="icon-sm"
             onClick={() => {
               audioSynth.playClick();
               setIsSettingsOpen(true);
@@ -174,7 +174,7 @@ function App() {
             className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
             title="Settings"
           >
-            <SettingsIcon className="size-6" />
+            <SettingsIcon className="size-5" />
           </Button>
         </div>
       </header>

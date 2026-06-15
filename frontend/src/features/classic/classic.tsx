@@ -238,7 +238,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             audioSynth.playClick();
             setIsDaily(true);
           }}
-          className={`px-6 py-2 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
             isDaily 
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg" 
               : "text-muted-foreground hover:text-white"
@@ -251,7 +251,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             audioSynth.playClick();
             setIsDaily(false);
           }}
-          className={`px-6 py-2 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
             !isDaily 
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg" 
               : "text-muted-foreground hover:text-white"
@@ -303,7 +303,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             <Combobox key={comboboxKey} items={autocompleteList}>
               <ComboboxInput
                 placeholder="Type hero name..."
-                className="h-14 w-full rounded-xs border border-rivals-gold/20 bg-[#0e1227] text-white text-lg px-4 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
+                className="h-12 w-full rounded-xs border border-rivals-gold/20 bg-[#0e1227] text-white text-lg px-4 focus-visible:border-rivals-gold focus-visible:ring-1 focus-visible:ring-rivals-gold"
               />
               <ComboboxContent className="mt-1 max-h-60 overflow-hidden rounded-xs border border-white/10 bg-[#0e1227] shadow-2xl backdrop-blur-md">
                 <ComboboxEmpty className="p-3 text-sm text-gray-400 text-center">
@@ -347,7 +347,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                 }
               }}
               variant="outline"
-              className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs h-14 w-14 p-0 flex items-center justify-center cursor-pointer shadow-lg"
+              className="border-rivals-crimson/30 hover:border-rivals-crimson text-rivals-crimson hover:bg-rivals-crimson/10 rounded-xs h-12 w-12 p-0 flex items-center justify-center cursor-pointer shadow-lg"
               title="Reset Practice Session"
             >
               <RefreshIcon className="size-5" />
@@ -420,23 +420,23 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               >
                 {/* 1. Hero Card */}
                 <div 
-                  className="flex flex-col items-center justify-between overflow-hidden rounded-xs border border-white/5 bg-[#171b35]/40 text-center h-32 duration-500 animate-card-reveal"
+                  className="flex flex-col items-center justify-between overflow-hidden rounded-xs border border-white/5 bg-[#171b35]/40 text-center h-28 duration-500 animate-card-reveal"
                   style={{ animationDelay: '0ms' }}
                 >
                   <img
                     src={getHeroImage(guess.name)}
                     alt={guess.name}
-                    className="w-full h-24 object-cover border-b-3 border-rivals-gold"
+                    className="w-full h-20 object-cover border-b-3 border-rivals-gold"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${guess.name[0]}`;
                     }}
                   />
-                  <span className="text-sm font-black truncate w-full text-white py-1.5 px-0.5">{guess.name}</span>
+                  <span className="text-sm font-black truncate w-full text-white py-1 px-0.5">{guess.name}</span>
                 </div>
 
                 {/* 2. Primary Attack Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.primaryAttack, targetHero.primaryAttack)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.primaryAttack, targetHero.primaryAttack)}`}
                   style={{ animationDelay: '150ms' }}
                 >
                   <span className="text-lg font-black">{guess.primaryAttack}</span>
@@ -444,7 +444,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
                 {/* 3. Has Passive Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.hasPassive, targetHero.hasPassive)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.hasPassive, targetHero.hasPassive)}`}
                   style={{ animationDelay: '300ms' }}
                 >
                   <span className="text-lg font-black">{guess.hasPassive ? "Yes" : "No"}</span>
@@ -452,7 +452,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
                 {/* 4. Team-Up Anchor Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
                   style={{ animationDelay: '450ms' }}
                 >
                   <span className="text-lg font-black">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
@@ -460,7 +460,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
                 {/* 5. MCU Debut Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
                   style={{ animationDelay: '600ms' }}
                 >
                   <span className="text-lg font-black">
@@ -471,7 +471,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
                 {/* 6. Comic Debut Card */}
                 <div 
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-32 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
                   style={{ animationDelay: '750ms' }}
                 >
                   <span className="text-lg font-black">
