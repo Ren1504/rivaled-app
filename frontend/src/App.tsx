@@ -7,6 +7,7 @@ import { Button } from "./components/ui/button"
 
 // Game modes
 import { ClassicGame } from "./features/classic/classic"
+import { SplashGame } from "./features/splash/splash"
 import { HeroGallery } from "./features/gallery/gallery"
 import { StatsTracker } from "./features/stats/stats"
 
@@ -24,7 +25,8 @@ import {
 } from "./components/shared/icons"
 
 const INITIAL_STATS = {
-  classic: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } }
+  classic: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } },
+  splash: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 } }
 };
 
 function App() {
@@ -73,7 +75,10 @@ function App() {
     setStats((prevStats: any) => {
       const copy = { ...prevStats };
       if (!copy[mode]) {
-        copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } };
+        const dist = mode === "splash" 
+          ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
+          : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+        copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: dist };
       }
 
       const mStats = copy[mode];
@@ -106,7 +111,8 @@ function App() {
   };
 
   const tabOptions = [
-    { id: "classic", label: "Play Game", icon: <StarIcon className="size-5" /> },
+    { id: "classic", label: "Classic Mode", icon: <StarIcon className="size-5" /> },
+    { id: "splash", label: "Splash Mode", icon: <HelpIcon className="size-5" /> },
     { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-5" /> }
   ];
 
@@ -193,6 +199,11 @@ function App() {
           <ClassicGame
             onWin={handleWin}
             onLose={handleLose}
+            updateStats={updateStats}
+          />
+        </div>
+        <div className={activeTab === "splash" ? "w-full" : "hidden"}>
+          <SplashGame
             updateStats={updateStats}
           />
         </div>

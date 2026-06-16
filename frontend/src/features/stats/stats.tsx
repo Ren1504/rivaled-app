@@ -35,12 +35,16 @@ interface StatsTrackerProps {
 }
 
 export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
-  const modeStats = stats.classic || {
+  const [activeMode, setActiveMode] = React.useState<"classic" | "splash">("classic");
+
+  const modeStats = stats[activeMode] || {
     gamesPlayed: 0,
     gamesWon: 0,
     currentStreak: 0,
     maxStreak: 0,
-    guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 }
+    guessDistribution: activeMode === "splash"
+      ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
+      : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 }
   };
 
   const winRate = modeStats.gamesPlayed > 0 
@@ -68,6 +72,34 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
   return (
     <div className="w-full flex flex-col gap-6">
       
+      {/* Mode selection toggle in stats */}
+      <div className="flex bg-[#111632] border border-white/5 rounded-xs p-1 mb-2 shadow-inner w-full justify-center">
+        <button
+          onClick={() => {
+            audioSynth.playClick();
+            setActiveMode("classic");
+          }}
+          className={`flex-1 text-center py-1.5 rounded-xs text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeMode === "classic"
+              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+              : "text-muted-foreground hover:text-white"
+            }`}
+        >
+          Classic Stats
+        </button>
+        <button
+          onClick={() => {
+            audioSynth.playClick();
+            setActiveMode("splash");
+          }}
+          className={`flex-1 text-center py-1.5 rounded-xs text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeMode === "splash"
+              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+              : "text-muted-foreground hover:text-white"
+            }`}
+        >
+          Splash Stats
+        </button>
+      </div>
+
       {/* Main Stats Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         
