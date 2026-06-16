@@ -97,6 +97,16 @@ export const heroes: Hero[] = [
     "difficulty": 3
   },
   {
+    "name": "Cyclops",
+    "role": "Duelist",
+    "primaryAttack": "Hitscan",
+    "hasPassive": true,
+    "isTeamUpAnchor": true,
+    "mcuDebutYear": null,
+    "comicDebutYear": 1963,
+    "difficulty": 3
+  },
+  {
     "name": "Daredevil",
     "role": "Duelist",
     "primaryAttack": "Melee",
@@ -116,6 +126,18 @@ export const heroes: Hero[] = [
     "comicDebutYear": 1991,
     "difficulty": 0
   },
+
+  {
+    "name": "Devil Dinosaur",
+    "role": "Vanguard",
+    "primaryAttack": "Melee",
+    "hasPassive": true,
+    "isTeamUpAnchor": true,
+    "mcuDebutYear": null,
+    "comicDebutYear": 1978,
+    "difficulty": 3
+  },
+
   {
     "name": "Doctor Strange",
     "role": "Vanguard",
