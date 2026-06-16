@@ -34,7 +34,7 @@ function getDailyHero(): Hero {
   const y = today.getFullYear();
   const m = today.getMonth() + 1;
   const d = today.getDate();
-  
+
   // Deterministic seed mixing
   let seed = y * 367 + m * 31 + d;
   seed = seed ^ (seed >> 16);
@@ -42,7 +42,7 @@ function getDailyHero(): Hero {
   seed = seed ^ (seed >> 13);
   seed = Math.imul(seed, 0xc2b2ae35);
   seed = seed ^ (seed >> 16);
-  
+
   const index = Math.abs(seed) % heroes.length;
   return heroes[index];
 }
@@ -252,8 +252,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             setIsDaily(true);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Daily Challenge
@@ -264,8 +264,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             setIsDaily(false);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${!isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Unlimited Practice
@@ -291,8 +291,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
           <div className="w-full flex justify-between items-center mb-3 text-xs font-bold text-white/50 uppercase tracking-widest">
             <span>Guesses Made: {guesses.length} / 8</span>
             <div className="w-32 h-1.5 bg-[#111632] border border-white/5 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-rivals-gold transition-all duration-300" 
+              <div
+                className="h-full bg-rivals-gold transition-all duration-300"
                 style={{ width: `${(guesses.length / 8) * 100}%` }}
               />
             </div>
@@ -376,21 +376,20 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             <div className="flex justify-around items-start gap-4">
               {/* Clue 1: Difficulty */}
               <div className="flex flex-col items-center text-center flex-1">
-                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
-                  guesses.length >= 4 
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle" 
+                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 4
+                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
                     : "bg-[#0c0f24] border-white/10 text-white/20"
-                }`}>
+                  }`}>
                   <StarIcon className="size-8" />
                 </div>
-                <span className="text-xs font-bold text-white/80 mt-2">Difficulty</span>
-                <span className="text-[10px] font-semibold text-muted-foreground mt-1 min-h-[16px] flex items-center justify-center">
+                <span className="text-sm font-extrabold text-white mt-2.5">Difficulty</span>
+                <span className="text-xs font-bold text-muted-foreground mt-1.5 min-h-[18px] flex items-center justify-center">
                   {guesses.length >= 4 ? (
                     <div className="flex items-center justify-center gap-0.5 mt-0.5">
                       {Array.from({ length: 5 }).map((_, i) => (
                         <StarIcon
                           key={i}
-                          className={`size-3 ${i < targetHero.difficulty ? "text-rivals-gold" : "text-white/10"}`}
+                          className={`size-4 ${i < targetHero.difficulty ? "text-rivals-gold" : "text-white/10"}`}
                           fill={i < targetHero.difficulty ? "currentColor" : "none"}
                         />
                       ))}
@@ -403,11 +402,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
               {/* Clue 2: Role */}
               <div className="flex flex-col items-center text-center flex-1">
-                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
-                  guesses.length >= 6 
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle" 
+                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 6
+                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
                     : "bg-[#0c0f24] border-white/10 text-white/20"
-                }`}>
+                  }`}>
                   {guesses.length >= 6 ? (
                     (() => {
                       const role = targetHero.role;
@@ -420,10 +418,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                     <ShieldIcon className="size-8" />
                   )}
                 </div>
-                <span className="text-xs font-bold text-white/80 mt-2">Role Clue</span>
-                <span className="text-[10px] font-semibold text-muted-foreground mt-1 min-h-[16px]">
+                <span className="text-sm font-extrabold text-white mt-2.5">Role Clue</span>
+                <span className="text-xs font-bold text-muted-foreground mt-1.5 min-h-[18px]">
                   {guesses.length >= 6 ? (
-                    <span className="text-rivals-gold font-bold">{targetHero.role}</span>
+                    <span className="text-rivals-gold font-extrabold">{targetHero.role}</span>
                   ) : (
                     `In ${6 - guesses.length} ${6 - guesses.length === 1 ? "try" : "tries"}`
                   )}
@@ -432,17 +430,16 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
 
               {/* Clue 3: First Letter */}
               <div className="flex flex-col items-center text-center flex-1">
-                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${
-                  guesses.length >= 7 
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle" 
+                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 7
+                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
                     : "bg-[#0c0f24] border-white/10 text-white/20"
-                }`}>
+                  }`}>
                   <UserIcon className="size-8" />
                 </div>
-                <span className="text-xs font-bold text-white/80 mt-2">First Letter</span>
-                <span className="text-[10px] font-semibold text-muted-foreground mt-1 min-h-[16px]">
+                <span className="text-sm font-extrabold text-white mt-2.5">First Letter</span>
+                <span className="text-xs font-bold text-muted-foreground mt-1.5 min-h-[18px]">
                   {guesses.length >= 7 ? (
-                    <span className="text-rivals-gold font-bold">Starts with '{targetHero.name[0]}'</span>
+                    <span className="text-rivals-gold font-extrabold">Starts with '{targetHero.name[0]}'</span>
                   ) : (
                     `In ${7 - guesses.length} ${7 - guesses.length === 1 ? "try" : "tries"}`
                   )}
