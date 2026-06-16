@@ -205,6 +205,7 @@ function App() {
         <div className={activeTab === "splash" ? "w-full" : "hidden"}>
           <SplashGame
             updateStats={updateStats}
+            isActive={activeTab === "splash"}
           />
         </div>
         <div className={activeTab === "gallery" ? "w-full" : "hidden"}>

@@ -21,6 +21,7 @@ import {
 
 interface SplashGameProps {
   updateStats: (mode: string, won: boolean, guesses: number) => void
+  isActive: boolean
 }
 
 interface FocalPoint {
@@ -100,7 +101,7 @@ function getUnlimitedSplashTarget(): TargetInfo {
   };
 }
 
-export function SplashGame({ updateStats }: SplashGameProps) {
+export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   const [isDaily, setIsDaily] = React.useState<boolean>(true);
   const [target, setTarget] = React.useState<TargetInfo>(getDailySplashTarget);
   const [guesses, setGuesses] = React.useState<Hero[]>([]);
@@ -112,6 +113,31 @@ export function SplashGame({ updateStats }: SplashGameProps) {
   // Force reset autocomplete input
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
   const [bonusKey, setBonusKey] = React.useState<number>(0);
+
+  // Ref to the splash image so we can directly toggle its CSS transition.
+  // Direct DOM writes are synchronous and bypass React batching, making them
+  // reliable for suppressing the zoom-in animation before React commits new state.
+  const imgRef = React.useRef<HTMLImageElement>(null);
+
+  // Instantly snaps the image to whatever scale React is about to render,
+  // then re-enables the smooth transition after the browser has painted.
+  // Double RAF: first frame gives React time to commit, second lets the browser paint.
+  const snapTransition = React.useCallback(() => {
+    const el = imgRef.current;
+    if (!el) return;
+    el.style.transition = 'none';
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (imgRef.current) imgRef.current.style.transition = '';
+      });
+    });
+  }, []);
+
+  // Reset transition whenever the tab becomes visible (display:none -> block
+  // causes the browser to repaint from scratch, replaying the scale animation).
+  React.useEffect(() => {
+    if (isActive) snapTransition();
+  }, [isActive, snapTransition]);
 
   // Persistence for Daily Mode
   const [dailyState, setDailyState] = useLocalStorage<any>("rivaled_splash_daily_state", {
@@ -136,6 +162,9 @@ export function SplashGame({ updateStats }: SplashGameProps) {
 
   // Sync state with Daily vs Practice toggle
   React.useEffect(() => {
+    // Snap transition when swapping modes so the new scale appears instantly
+    snapTransition();
+
     if (isDaily) {
       const todayStr = new Date().toDateString();
       const dailyTarget = getDailySplashTarget();
@@ -184,6 +213,8 @@ export function SplashGame({ updateStats }: SplashGameProps) {
 
   const startUnlimited = () => {
     const randomTarget = getUnlimitedSplashTarget();
+    // Snap transition so the new random target appears instantly without animation
+    snapTransition();
     setTarget(randomTarget);
     setGuesses([]);
     setGameOver(false);
@@ -360,6 +391,7 @@ export function SplashGame({ updateStats }: SplashGameProps) {
       {/* Zoomed Splash Art frame */}
       <div className="relative w-full aspect-video max-w-xl overflow-hidden rounded-xs border-2 border-rivals-gold/20 bg-[#0e1227]/90 shadow-2xl mb-8 flex items-center justify-center">
         <img
+          ref={imgRef}
           src={imageUrl}
           alt="Splash Art Clue"
           className="w-full h-full object-cover transition-all duration-700 ease-out"
