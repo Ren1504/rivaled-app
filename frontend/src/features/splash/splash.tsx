@@ -41,7 +41,7 @@ function getDailySplashTarget(): TargetInfo {
   const y = today.getFullYear();
   const m = today.getMonth() + 1;
   const d = today.getDate();
-  const seed = y * 367 + m * 31 + d;
+  const seed = (y * 367 + m * 31 + d) ^ 0x1f2e3d4c;
   
   // Mix seed for hero selection
   let seed1 = seed ^ (seed >> 16);

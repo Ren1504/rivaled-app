@@ -38,7 +38,7 @@ function getDailyAbilityTarget(): AbilityTarget {
   const y = today.getFullYear();
   const m = today.getMonth() + 1;
   const d = today.getDate();
-  const seed = y * 367 + m * 31 + d;
+  const seed = (y * 367 + m * 31 + d) ^ 0x5a6b7c8d;
   
   // Mix seed for hero selection
   let seed1 = seed ^ (seed >> 16);
