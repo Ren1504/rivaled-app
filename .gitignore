@@ -1,3 +1,5 @@
 # Exclude large scraped assets from version control
 /mvp_last_frames/
 /frontend/public/mvp_last_frames/
+/ability_images/
+/frontend/public/ability_images/
