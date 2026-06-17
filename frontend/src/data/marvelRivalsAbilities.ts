@@ -12186,11 +12186,11 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       ]
     },
     {
-      "name": "Karmic Revival",
-      "slug": "karmic-revival",
+      "name": "Karmic Flight",
+      "slug": "karmic-flight",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260311/6c4e7eed-03e0-472a-a3a5-8f81cbd9cf4a.png",
-      "localImgUrl": "/ability_images/adam-warlock/karmic-revival.png",
+      "localImgUrl": "/ability_images/adam-warlock/karmic-flight.png",
       "properties": [
         {
           "key": "MOVEMENT BOOST",
