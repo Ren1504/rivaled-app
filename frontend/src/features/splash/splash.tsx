@@ -285,13 +285,13 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   };
 
   const handleSkinGuess = (skinName: string) => {
-    if (bonusWon) return;
+    if (bonusGuesses.length > 0) return; // Prevent multiple guesses
 
     // strip extension for comparison
     const targetCleanName = target.skinFilename.replace(/\.(png|webp)$/i, '');
     const isCorrect = skinName.toLowerCase() === targetCleanName.toLowerCase();
 
-    const newBonusGuesses = [...bonusGuesses, skinName];
+    const newBonusGuesses = [skinName];
     setBonusGuesses(newBonusGuesses);
     setBonusKey(prev => prev + 1);
 
@@ -496,25 +496,27 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
                   <StarIcon className="size-4 text-rivals-gold animate-bounce-subtle" />
                 </h4>
                 
-                {bonusWon ? (
-                  <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-4 mt-3 animate-in zoom-in-95 duration-300">
-                    <p className="text-sm font-bold text-emerald-400 uppercase tracking-widest">Bonus Completed!</p>
-                    <p className="text-xs text-white/90 mt-1">
-                      You guessed it! The skin is <strong className="text-white font-black">{target.skinFilename.replace(/\.(png|webp)$/i, '')}</strong>!
-                    </p>
-                  </div>
+                {bonusGuesses.length > 0 ? (
+                  bonusWon ? (
+                    <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-4 mt-3 animate-in zoom-in-95 duration-300">
+                      <p className="text-sm font-bold text-emerald-400 uppercase tracking-widest">Bonus Completed!</p>
+                      <p className="text-xs text-white/90 mt-1">
+                        You guessed it! The skin is <strong className="text-white font-black">{target.skinFilename.replace(/\.(png|webp)$/i, '')}</strong>!
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="bg-rivals-crimson/10 border border-rivals-crimson/25 rounded-xs p-4 mt-3 animate-in zoom-in-95 duration-300">
+                      <p className="text-sm font-bold text-rivals-crimson uppercase tracking-widest">Bonus Failed!</p>
+                      <p className="text-xs text-white/90 mt-1">
+                        Incorrect! The correct skin was <strong className="text-white font-black">{target.skinFilename.replace(/\.(png|webp)$/i, '')}</strong>.
+                      </p>
+                    </div>
+                  )
                 ) : (
                   <div className="w-full flex flex-col items-center mt-4 z-20">
-                    {bonusGuesses.length > 0 && (
-                      <div className="w-full mb-3 flex flex-wrap gap-2 justify-center">
-                        {bonusGuesses.map((bg, idx) => (
-                          <span key={idx} className="bg-rivals-crimson/15 border border-rivals-crimson/30 text-rivals-crimson text-xs font-bold px-3 py-1 rounded-xs uppercase tracking-wider animate-in fade-in duration-300">
-                            {bg}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    
+                    <p className="text-xs text-muted-foreground mb-4">
+                      Select which skinline this splash art belongs to (You only have 1 chance!):
+                    </p>
                     <div className="w-full">
                       <Combobox key={bonusKey} items={bonusAutocompleteList}>
                         <ComboboxInput

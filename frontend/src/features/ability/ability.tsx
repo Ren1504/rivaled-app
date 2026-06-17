@@ -267,10 +267,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
   };
 
   const handleBonusGuess = (keybind: string) => {
-    if (bonusWon) return;
+    if (bonusGuesses.length > 0) return; // Prevent multiple guesses
 
     const isCorrect = keybind.toLowerCase() === target.button.toLowerCase();
-    const newBonusGuesses = [...bonusGuesses, keybind];
+    const newBonusGuesses = [keybind];
     setBonusGuesses(newBonusGuesses);
 
     if (isCorrect) {
@@ -481,64 +481,82 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                   <StarIcon className="size-4 text-rivals-gold animate-bounce-subtle" />
                 </h4>
                 
-                {bonusWon ? (
-                  <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-4 mt-3 animate-in zoom-in-95 duration-300">
-                    <p className="text-sm font-bold text-emerald-400 uppercase tracking-widest">Bonus Completed!</p>
-                    <p className="text-xs text-white/90 mt-1.5 flex items-center justify-center gap-2">
-                      Awesome! This ability is bound to: 
-                      {target.button.toLowerCase() === "left click" ? (
-                        <img src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbzj_5901af42.png" alt="Left Click" className="h-7 object-contain inline-block bg-white/10 p-0.5 rounded-xs border border-white/20" />
-                      ) : target.button.toLowerCase() === "right click" ? (
-                        <img src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbyj_ec1b2d5e.png" alt="Right Click" className="h-7 object-contain inline-block bg-white/10 p-0.5 rounded-xs border border-white/20" />
-                      ) : (
-                        <strong className="text-white text-base font-black px-2.5 py-1 bg-white/5 border border-white/10 rounded-xs uppercase">{target.button}</strong>
-                      )}
-                    </p>
-                  </div>
-                ) : (
-                  <div className="w-full flex flex-col items-center mt-4">
-                    <p className="text-xs text-muted-foreground mb-4">
-                      Select which control button triggers this ability:
-                    </p>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
-                      {displayButtons.map((btn) => {
-                        const isGuessed = bonusGuesses.some(bg => bg.toLowerCase() === btn.toLowerCase());
-                        const isLeftClick = btn.toLowerCase() === "left click";
-                        const isRightClick = btn.toLowerCase() === "right click";
-                        
-                        let btnClass = "bg-[#111632] border-white/10 hover:border-rivals-gold text-white hover:bg-white/5 cursor-pointer";
-                        if (isGuessed) {
-                          btnClass = "bg-rivals-crimson/15 border-rivals-crimson/30 text-rivals-crimson line-through opacity-60 cursor-not-allowed";
-                        }
-                        
-                        return (
-                          <button
-                            key={btn}
-                            disabled={isGuessed || bonusWon}
-                            onClick={() => handleBonusGuess(btn)}
-                            className={`py-3 px-2 rounded-xs border text-xs font-black tracking-wider uppercase transition-all duration-200 shadow-md flex items-center justify-center gap-2 ${btnClass}`}
-                          >
-                            {isLeftClick ? (
-                              <img
-                                src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbzj_5901af42.png"
-                                alt="Left Click"
-                                className={`h-6 object-contain ${isGuessed ? "opacity-40 grayscale" : ""}`}
-                              />
-                            ) : isRightClick ? (
-                              <img
-                                src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbyj_ec1b2d5e.png"
-                                alt="Right Click"
-                                className={`h-6 object-contain ${isGuessed ? "opacity-40 grayscale" : ""}`}
-                              />
-                            ) : (
-                              btn
-                            )}
-                          </button>
-                        );
-                      })}
+                {bonusGuesses.length > 0 ? (
+                  bonusWon ? (
+                    <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-3 mt-3 mb-1 animate-in zoom-in-95 duration-300">
+                      <p className="text-sm font-black text-emerald-400 uppercase tracking-widest">Bonus Completed!</p>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="bg-rivals-crimson/10 border border-rivals-crimson/25 rounded-xs p-3 mt-3 mb-1 animate-in zoom-in-95 duration-300">
+                      <p className="text-sm font-black text-rivals-crimson uppercase tracking-widest">Bonus Failed!</p>
+                    </div>
+                  )
+                ) : (
+                  <p className="text-xs text-muted-foreground mb-1">
+                    Select which control button triggers this ability (You only have 1 chance!):
+                  </p>
                 )}
+
+                <div className="w-full flex flex-col items-center mt-4">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full">
+                    {displayButtons.map((btn) => {
+                      const isLeftClick = btn.toLowerCase() === "left click";
+                      const isRightClick = btn.toLowerCase() === "right click";
+                      const isCorrect = btn.toLowerCase() === target.button.toLowerCase();
+                      const isGuessed = bonusGuesses.some(bg => bg.toLowerCase() === btn.toLowerCase());
+
+                      let btnClass = "";
+                      if (bonusGuesses.length > 0) {
+                        if (isCorrect) {
+                          btnClass = "bg-emerald-500/20 border-emerald-500 text-emerald-400 cursor-not-allowed";
+                        } else if (isGuessed) {
+                          btnClass = "bg-rivals-crimson/20 border-rivals-crimson text-rivals-crimson line-through cursor-not-allowed";
+                        } else {
+                          btnClass = "bg-[#111632]/50 border-white/5 text-white/30 opacity-30 cursor-not-allowed";
+                        }
+                      } else {
+                        btnClass = "bg-[#111632] border-white/10 hover:border-rivals-gold text-white hover:bg-white/5 cursor-pointer";
+                      }
+
+                      return (
+                        <button
+                          key={btn}
+                          disabled={bonusGuesses.length > 0}
+                          onClick={() => handleBonusGuess(btn)}
+                          className={`py-3 px-2 rounded-xs border text-xs font-black tracking-wider uppercase transition-all duration-200 shadow-md flex items-center justify-center gap-2 ${btnClass}`}
+                        >
+                          {isLeftClick ? (
+                            <img
+                              src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbzj_5901af42.png"
+                              alt="Left Click"
+                              className={`h-6 object-contain transition-all ${
+                                bonusGuesses.length > 0
+                                  ? isCorrect
+                                    ? "brightness-125"
+                                    : "opacity-25 grayscale"
+                                  : ""
+                              }`}
+                            />
+                          ) : isRightClick ? (
+                            <img
+                              src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbyj_ec1b2d5e.png"
+                              alt="Right Click"
+                              className={`h-6 object-contain transition-all ${
+                                bonusGuesses.length > 0
+                                  ? isCorrect
+                                    ? "brightness-125"
+                                    : "opacity-25 grayscale"
+                                  : ""
+                              }`}
+                            />
+                          ) : (
+                            btn
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             </>
           ) : (
