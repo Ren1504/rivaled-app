@@ -8,6 +8,7 @@ import { Button } from "./components/ui/button"
 // Game modes
 import { ClassicGame } from "./features/classic/classic"
 import { SplashGame } from "./features/splash/splash"
+import { AbilityGame } from "./features/ability/ability"
 import { HeroGallery } from "./features/gallery/gallery"
 import { StatsTracker } from "./features/stats/stats"
 
@@ -21,12 +22,14 @@ import {
   MoonIcon,
   HelpIcon,
   StarIcon,
-  GridIcon
+  GridIcon,
+  BookOpenIcon
 } from "./components/shared/icons"
 
 const INITIAL_STATS = {
   classic: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } },
-  splash: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 } }
+  splash: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 } },
+  ability: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 } }
 };
 
 function App() {
@@ -77,6 +80,8 @@ function App() {
       if (!copy[mode]) {
         const dist = mode === "splash" 
           ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
+          : mode === "ability"
+          ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
           : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
         copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: dist };
       }
@@ -113,6 +118,7 @@ function App() {
   const tabOptions = [
     { id: "classic", label: "Classic Mode", icon: <StarIcon className="size-5" /> },
     { id: "splash", label: "Splash Mode", icon: <HelpIcon className="size-5" /> },
+    { id: "ability", label: "Ability Mode", icon: <BookOpenIcon className="size-5" /> },
     { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-5" /> }
   ];
 
@@ -208,6 +214,12 @@ function App() {
             isActive={activeTab === "splash"}
           />
         </div>
+        <div className={activeTab === "ability" ? "w-full" : "hidden"}>
+          <AbilityGame
+            updateStats={updateStats}
+            isActive={activeTab === "ability"}
+          />
+        </div>
         <div className={activeTab === "gallery" ? "w-full" : "hidden"}>
           <HeroGallery />
         </div>
@@ -225,7 +237,7 @@ function App() {
         title="How to Play Rivaled"
         size="md"
       >
-        <div className="flex flex-col gap-4 text-sm text-white/90 leading-relaxed">
+        <div className="flex flex-col gap-5 text-sm text-white/90 leading-relaxed max-h-[450px] overflow-y-auto pr-1">
           <div>
             <h4 className="font-bold text-rivals-gold uppercase tracking-wider mb-2">Classic Guessing Game</h4>
             <p className="text-xs text-muted-foreground mb-3">
@@ -240,6 +252,24 @@ function App() {
             <p className="text-xs text-muted-foreground mt-3">
               The target hero's difficulty rating (out of 5 stars) will be revealed as a special hint after 6 incorrect attempts.
             </p>
+          </div>
+
+          <div className="border-t border-white/5 pt-4">
+            <h4 className="font-bold text-rivals-gold uppercase tracking-wider mb-2">Splash Guessing Game</h4>
+            <p className="text-xs text-muted-foreground">
+              Guess the hero from a cropped section of their splash art. The image zooms out slightly on each wrong attempt. You have up to 15 attempts.
+            </p>
+          </div>
+
+          <div className="border-t border-white/5 pt-4">
+            <h4 className="font-bold text-rivals-gold uppercase tracking-wider mb-2">Ability Guessing Game</h4>
+            <p className="text-xs text-muted-foreground">
+              Identify the hero purely from one of their ability icon images. You have a maximum of 10 attempts.
+            </p>
+            <ul className="list-disc pl-5 text-xs text-muted-foreground flex flex-col gap-1.5 mt-2">
+              <li><strong className="text-white">Hint:</strong> After 6 wrong guesses, the name of the ability is revealed.</li>
+              <li><strong className="text-white">Bonus Round:</strong> Once you guess the hero correctly, you can try to guess which keybind triggers that ability!</li>
+            </ul>
           </div>
         </div>
       </Modal>

@@ -35,7 +35,7 @@ interface StatsTrackerProps {
 }
 
 export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
-  const [activeMode, setActiveMode] = React.useState<"classic" | "splash">("classic");
+  const [activeMode, setActiveMode] = React.useState<"classic" | "splash" | "ability">("classic");
 
   const modeStats = stats[activeMode] || {
     gamesPlayed: 0,
@@ -44,6 +44,8 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
     maxStreak: 0,
     guessDistribution: activeMode === "splash"
       ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
+      : activeMode === "ability"
+      ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
       : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 }
   };
 
@@ -97,6 +99,18 @@ export function StatsTracker({ stats, onReset }: StatsTrackerProps) {
             }`}
         >
           Splash Stats
+        </button>
+        <button
+          onClick={() => {
+            audioSynth.playClick();
+            setActiveMode("ability");
+          }}
+          className={`flex-1 text-center py-1.5 rounded-xs text-xs font-bold uppercase tracking-wider transition-all duration-200 cursor-pointer ${activeMode === "ability"
+              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+              : "text-muted-foreground hover:text-white"
+            }`}
+        >
+          Ability Stats
         </button>
       </div>
 
