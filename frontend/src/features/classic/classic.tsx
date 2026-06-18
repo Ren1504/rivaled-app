@@ -515,18 +515,18 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               >
                 {/* 1. Hero Card */}
                 <div
-                  className="flex flex-col items-center justify-between overflow-hidden rounded-xs border border-white/5 bg-[#171b35]/40 text-center h-28 duration-500 animate-card-reveal"
+                  className="flex flex-col items-center justify-center p-1.5 overflow-hidden rounded-xs border border-white/5 bg-[#171b35]/40 text-center h-28 duration-500 animate-card-reveal"
                   style={{ animationDelay: '0ms' }}
                 >
                   <img
                     src={getHeroImage(guess.name)}
                     alt={guess.name}
-                    className="w-full h-20 object-cover border-b-3 border-rivals-gold"
+                    className="w-20 h-20 object-cover rounded-xs border border-white/10 mb-1"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src = `https://placehold.co/150x150/171b35/ffffff?text=${guess.name[0]}`;
                     }}
                   />
-                  <span className="text-sm font-black truncate w-full text-white py-1 px-0.5">{guess.name}</span>
+                  <span className="text-xs font-black truncate w-full text-white leading-none">{guess.name}</span>
                 </div>
 
                 {/* 2. Primary Attack Card */}
