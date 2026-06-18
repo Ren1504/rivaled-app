@@ -78,11 +78,11 @@ function App() {
     setStats((prevStats: any) => {
       const copy = { ...prevStats };
       if (!copy[mode]) {
-        const dist = mode === "splash" 
+        const dist = mode === "splash"
           ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
           : mode === "ability"
-          ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
-          : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+            ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
+            : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
         copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: dist };
       }
 
@@ -130,9 +130,12 @@ function App() {
 
         {/* Title / Logo (Left) */}
         <div className="flex items-center gap-3 hidden sm:flex">
-          <div className="bg-rivals-gold/15 p-1.5 rounded-xs border border-rivals-gold/30">
-            <span className="text-2xl font-black text-rivals-gold tracking-widest">R</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Rivaled Logo"
+            className="h-9 w-auto object-contain"
+            draggable={false}
+          />
         </div>
 
         {/* Centered App Title */}
