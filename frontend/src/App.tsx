@@ -126,14 +126,14 @@ function App() {
     <div className="min-h-screen flex flex-col bg-transparent text-foreground transition-colors duration-300">
 
       {/* Top Header Section */}
-      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-3 flex items-center justify-between">
+      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-5 flex items-center justify-between">
 
         {/* Title / Logo (Left) */}
-        <div className="flex items-center gap-3 hidden sm:flex">
+        <div className="w-36 flex items-center gap-3">
           <img
             src="/logo.png"
             alt="Rivaled Logo"
-            className="h-9 w-auto object-contain"
+            className="h-9 w-auto object-contain hidden sm:block"
             draggable={false}
           />
         </div>
@@ -149,7 +149,7 @@ function App() {
         </div>
 
         {/* Action Controls (Right) */}
-        <div className="flex items-center gap-2 z-10">
+        <div className="w-36 flex items-center justify-end gap-2 z-10">
           {/* Help Instructions */}
           <Button
             variant="ghost"
