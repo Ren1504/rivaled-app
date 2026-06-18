@@ -144,9 +144,10 @@ export function HeroGallery() {
   const getHeroImage = (name: string) => {
     const formattedName = name
       .toLowerCase()
+      .replace(/\s*&\s*/g, "-and-")
       .replace(/\s+/g, "-")
-      .replace(/[.&]/g, "");
-    return `https://rivalskins.com/wp-content/uploads/marvel-assets/assets/hero-icons-avatars/${formattedName}_avatar.png`;
+      .replace(/[.']/g, "");
+    return `/hero-icons/${formattedName}_avatar.png`;
   };
 
   const getRoleIcon = (role: Role) => {

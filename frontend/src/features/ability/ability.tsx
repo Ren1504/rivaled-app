@@ -313,9 +313,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
   const getHeroImage = (name: string) => {
     const formattedName = name
       .toLowerCase()
+      .replace(/\s*&\s*/g, "-and-")
       .replace(/\s+/g, "-")
-      .replace(/[.&]/g, "");
-    return `https://rivalskins.com/wp-content/uploads/marvel-assets/assets/hero-icons-avatars/${formattedName}_avatar.png`;
+      .replace(/[.']/g, "");
+    return `/hero-icons/${formattedName}_avatar.png`;
   };
 
   const showHint = guesses.length >= 6 && !wonState;
