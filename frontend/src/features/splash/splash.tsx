@@ -338,7 +338,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   };
 
   // Target image path inside the public/mvp_last_frames folder
-  const imageUrl = `/mvp_last_frames/${encodeURIComponent(target.heroName)}/${encodeURIComponent(target.skinFilename)}`;
+  const folderName = target.heroName.replace(/&/g, "and");
+  const imageUrl = `/mvp_last_frames/${encodeURIComponent(folderName)}/${encodeURIComponent(target.skinFilename)}`;
 
   // Math formula to decrease zoom: starts at 4.0x zoom, steps down slightly on each wrong guess, but never hits 1.0x until game over.
   // We use Math.max(1.3, ...) so it stays zoomed in at least 1.3x during all 15 tries.

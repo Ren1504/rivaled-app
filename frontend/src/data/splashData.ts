@@ -287,7 +287,7 @@ export const heroSplashData: HeroSplashData = {
     "Floral Frights.png",
     "Peni Parker- The Freshman.png",
     "Snow-sp--dr.png",
-    "Ven#m.png",
+    "Venom.png",
     "Wasteland Mech.png",
     "Yatsukahagi.png"
   ],
@@ -444,7 +444,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Wolverine": [
     "Blood Berserker.png",
-    "Deadpool & Wolverine.png",
+    "Deadpool and Wolverine.png",
     "Default.png",
     "Dog Brother X.png",
     "Patch.png",
