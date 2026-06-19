@@ -211,6 +211,34 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
     setBonusKey(prev => prev + 1);
   }, [isDaily]);
 
+  const [timeLeft, setTimeLeft] = React.useState<string>("");
+
+  React.useEffect(() => {
+    if (!isDaily || !gameOver) return;
+
+    const updateTimer = () => {
+      const now = new Date();
+      const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+      const msRemaining = nextMidnight.getTime() - now.getTime();
+      
+      const hours = Math.floor((msRemaining / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((msRemaining / (1000 * 60)) % 60);
+      const seconds = Math.floor((msRemaining / 1000) % 60);
+
+      setTimeLeft(
+        [
+          String(hours).padStart(2, '0'),
+          String(minutes).padStart(2, '0'),
+          String(seconds).padStart(2, '0')
+        ].join(':')
+      );
+    };
+
+    updateTimer();
+    const interval = setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
+  }, [isDaily, gameOver]);
+
   const startUnlimited = () => {
     const randomTarget = getUnlimitedSplashTarget();
     // Snap transition so the new random target appears instantly without animation
@@ -568,6 +596,16 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
               Play Again
             </Button>
           )}
+        </div>
+      )}
+
+      {isDaily && gameOver && (
+        <div className="text-center mb-8 bg-gradient-to-r from-rivals-gold/5 via-rivals-gold/10 to-rivals-gold/5 border border-rivals-gold/20 rounded-xs py-3.5 px-6 max-w-lg w-full animate-in fade-in-50 duration-500">
+          <p className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2">
+            <span className="inline-block w-2 h-2 rounded-full bg-rivals-gold animate-pulse" />
+            The next daily challenge will be on
+            <span className="text-rivals-gold font-mono font-black text-sm tracking-normal">{timeLeft}</span>
+          </p>
         </div>
       )}
 
