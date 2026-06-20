@@ -140,7 +140,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
       const now = new Date();
       const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
       const msRemaining = nextMidnight.getTime() - now.getTime();
-      
+
       const hours = Math.floor((msRemaining / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((msRemaining / (1000 * 60)) % 60);
       const seconds = Math.floor((msRemaining / 1000) % 60);
@@ -406,8 +406,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               {/* Clue 1: Difficulty */}
               <div className="flex flex-col items-center text-center flex-1">
                 <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 4
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
-                    : "bg-[#0c0f24] border-white/10 text-white/20"
+                  ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
+                  : "bg-[#0c0f24] border-white/10 text-white/20"
                   }`}>
                   <StarIcon className="size-8" />
                 </div>
@@ -432,8 +432,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               {/* Clue 2: Role */}
               <div className="flex flex-col items-center text-center flex-1">
                 <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 6
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
-                    : "bg-[#0c0f24] border-white/10 text-white/20"
+                  ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
+                  : "bg-[#0c0f24] border-white/10 text-white/20"
                   }`}>
                   {guesses.length >= 6 ? (
                     (() => {
@@ -460,8 +460,8 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
               {/* Clue 3: First Letter */}
               <div className="flex flex-col items-center text-center flex-1">
                 <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 7
-                    ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
-                    : "bg-[#0c0f24] border-white/10 text-white/20"
+                  ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
+                  : "bg-[#0c0f24] border-white/10 text-white/20"
                   }`}>
                   <UserIcon className="size-8" />
                 </div>

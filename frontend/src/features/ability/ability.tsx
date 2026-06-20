@@ -612,11 +612,13 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
       )}
 
       {isDaily && gameOver && (
-        <div className="text-center mb-8 bg-gradient-to-r from-rivals-gold/5 via-rivals-gold/10 to-rivals-gold/5 border border-rivals-gold/20 rounded-xs py-3.5 px-6 max-w-lg w-full animate-in fade-in-50 duration-500">
-          <p className="text-xs font-bold uppercase tracking-widest text-white/70 flex items-center justify-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-rivals-gold animate-pulse" />
-            The next daily challenge will be on
-            <span className="text-rivals-gold font-mono font-black text-sm tracking-normal">{timeLeft}</span>
+        <div className="text-center mb-8 bg-gradient-to-r from-rivals-gold/5 via-rivals-gold/10 to-rivals-gold/5 border border-rivals-gold/20 rounded-xs py-4 sm:py-5 px-6 sm:px-8 max-w-lg w-full animate-in fade-in-50 duration-500">
+          <p className="text-[11px] sm:text-xs md:text-sm font-bold uppercase tracking-widest text-white/70 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+            <span className="flex items-center gap-1.5 sm:gap-2">
+              <span className="inline-block w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full bg-rivals-gold animate-pulse" />
+              The next daily challenge will be on
+            </span>
+            <span className="text-rivals-gold font-mono font-black text-base sm:text-xl md:text-2xl tracking-wide">{timeLeft}</span>
           </p>
         </div>
       )}
