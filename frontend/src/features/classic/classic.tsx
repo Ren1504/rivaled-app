@@ -259,6 +259,26 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     return "bg-[#1e293b] border-white/10 text-white/80"; // No Match
   };
 
+  const getAffiliationsColor = (guessAffs: string[] | undefined, targetAffs: string[] | undefined) => {
+    if (!guessAffs || !targetAffs || guessAffs.length === 0 || targetAffs.length === 0) {
+      return "bg-[#1e293b] border-white/10 text-white/80";
+    }
+
+    const sortedGuess = [...guessAffs].sort();
+    const sortedTarget = [...targetAffs].sort();
+    const isExact = sortedGuess.length === sortedTarget.length && sortedGuess.every((val, index) => val === sortedTarget[index]);
+    if (isExact) {
+      return "bg-[#10b981] border-[#10b981]/50 text-white animate-pulse-subtle"; // Exact match (Green)
+    }
+
+    const hasOverlap = guessAffs.some(aff => targetAffs.includes(aff));
+    if (hasOverlap) {
+      return "bg-amber-500 border-amber-500/50 text-white"; // Partial match (Orange)
+    }
+
+    return "bg-[#1e293b] border-white/10 text-white/80"; // No Match
+  };
+
   const getArrowIcon = (guessValue: number | null, targetValue: number | null) => {
     if (!guessValue || !targetValue || guessValue === targetValue) return null;
     return targetValue > guessValue ? (
@@ -514,22 +534,23 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
       {/* Columns Headers */}
       {guesses.length > 0 && (
         <div className="w-full overflow-x-auto pb-4 no-scrollbar">
-          <div className="min-w-[700px] flex flex-col gap-2.5">
+          <div className="min-w-[850px] flex flex-col gap-2.5">
             {/* Headers row */}
-            <div className="grid grid-cols-6 gap-2 px-1 text-center font-black text-base tracking-wider uppercase text-muted-foreground">
+            <div className="grid grid-cols-7 gap-2 px-1 text-center font-black text-base tracking-wider uppercase text-muted-foreground">
               <div>Hero</div>
               <div>Attack Type</div>
               <div>Has Passive</div>
               <div>Team-Up Anchor</div>
               <div>MCU Debut</div>
               <div>Comic Debut</div>
+              <div>Affiliations</div>
             </div>
 
             {/* Guesses Cards Grid */}
             {guesses.map((guess) => (
               <div
                 key={guess.name}
-                className="grid grid-cols-6 gap-2"
+                className="grid grid-cols-7 gap-2"
               >
                 {/* 1. Hero Card */}
                 <div
@@ -590,6 +611,24 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   <span className="text-lg font-black">
                     {guess.comicDebutYear}
                     {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
+                  </span>
+                </div>
+
+                {/* 7. Team Affiliations Card */}
+                <div
+                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 overflow-y-auto no-scrollbar duration-500 animate-card-reveal ${getAffiliationsColor(guess.affiliations, targetHero.affiliations)}`}
+                  style={{ animationDelay: '900ms' }}
+                >
+                  <span className="text-xs font-black leading-tight uppercase tracking-wider">
+                    {guess.affiliations && guess.affiliations.length > 0 ? (
+                      guess.affiliations.map((aff, i) => (
+                        <div key={aff} className={i > 0 ? "mt-0.5" : ""}>
+                          {aff}
+                        </div>
+                      ))
+                    ) : (
+                      "None"
+                    )}
                   </span>
                 </div>
               </div>

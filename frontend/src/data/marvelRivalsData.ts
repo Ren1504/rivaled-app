@@ -13,6 +13,7 @@ export interface Hero {
   mcuDebutYear: number | null;
   comicDebutYear: number;
   difficulty: 0 | 1 | 2 | 3 | 4 | 5;
+  affiliations: string[];
 }
 
 export const heroes: Hero[] = [
@@ -24,7 +25,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2023,
     "comicDebutYear": 1967,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Infinity Watch",
+      "Cosmic Avengers"
+    ]
   },
   {
     "name": "Angela",
@@ -34,7 +40,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 2013,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Asgardians",
+      "Heven"
+    ]
   },
   {
     "name": "Black Cat",
@@ -44,7 +55,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1979,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Heroes for Hire",
+      "Defenders",
+      "Spider-Man Ally"
+    ]
   },
   {
     "name": "Black Panther",
@@ -54,7 +70,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2018,
     "comicDebutYear": 1966,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Avengers",
+      "Illuminati",
+      "Defenders",
+      "Wakanda"
+    ]
   },
   {
     "name": "Black Widow",
@@ -64,7 +86,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2010,
     "comicDebutYear": 1964,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Avengers",
+      "SHIELD",
+      "Thunderbolts",
+      "Heroes for Hire"
+    ]
   },
   {
     "name": "Blade",
@@ -74,7 +102,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1973,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Midnight Sons",
+      "Avengers",
+      "Defenders"
+    ]
   },
   {
     "name": "Captain America",
@@ -84,7 +117,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2011,
     "comicDebutYear": 1941,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Avengers",
+      "Invaders",
+      "SHIELD"
+    ]
   },
   {
     "name": "Cloak & Dagger",
@@ -94,7 +132,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1982,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Runaways",
+      "Marvel Knights",
+      "Defenders"
+    ]
   },
   {
     "name": "Cyclops",
@@ -104,7 +147,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1963,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "X-Factor",
+      "Champions"
+    ]
   },
   {
     "name": "Daredevil",
@@ -114,7 +162,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2015,
     "comicDebutYear": 1964,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Defenders",
+      "Marvel Knights",
+      "Avengers"
+    ]
   },
   {
     "name": "Deadpool",
@@ -124,9 +177,15 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2024,
     "comicDebutYear": 1991,
-    "difficulty": 0
+    "difficulty": 0,
+    "affiliations": [
+      "X-Force",
+      "Avengers",
+      "Thunderbolts",
+      "Heroes for Hire",
+      "Weapon X"
+    ]
   },
-
   {
     "name": "Devil Dinosaur",
     "role": "Vanguard",
@@ -135,9 +194,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1978,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Pet Avengers",
+      "Champions"
+    ]
   },
-
   {
     "name": "Doctor Strange",
     "role": "Vanguard",
@@ -146,7 +208,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2016,
     "comicDebutYear": 1963,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Defenders",
+      "Midnight Sons",
+      "Illuminati",
+      "Avengers"
+    ]
   },
   {
     "name": "Elsa Bloodstone",
@@ -156,7 +224,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2022,
     "comicDebutYear": 1976,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Midnight Sons",
+      "Nextwave",
+      "Defenders"
+    ]
   },
   {
     "name": "Emma Frost",
@@ -166,7 +239,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1980,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "Hellfire Club",
+      "Cabal"
+    ]
   },
   {
     "name": "Gambit",
@@ -176,7 +254,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1990,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "X-Men",
+      "X-Factor",
+      "Thieves Guild"
+    ]
   },
   {
     "name": "Groot",
@@ -186,7 +269,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2014,
     "comicDebutYear": 1960,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "SHIELD"
+    ]
   },
   {
     "name": "Hawkeye",
@@ -196,7 +283,14 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2011,
     "comicDebutYear": 1964,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Avengers",
+      "West Coast Avengers",
+      "Thunderbolts",
+      "Defenders",
+      "SHIELD"
+    ]
   },
   {
     "name": "Hela",
@@ -206,7 +300,10 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2017,
     "comicDebutYear": 1964,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Asgardians"
+    ]
   },
   {
     "name": "Hulk",
@@ -216,7 +313,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2008,
     "comicDebutYear": 1962,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Avengers",
+      "Defenders",
+      "Illuminati"
+    ]
   },
   {
     "name": "Human Torch",
@@ -226,7 +328,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2025,
     "comicDebutYear": 1961,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Fantastic Four",
+      "Avengers"
+    ]
   },
   {
     "name": "Invisible Woman",
@@ -236,7 +342,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2025,
     "comicDebutYear": 1961,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Fantastic Four",
+      "Avengers",
+      "SHIELD"
+    ]
   },
   {
     "name": "Iron Fist",
@@ -246,7 +357,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1974,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Heroes for Hire",
+      "Defenders",
+      "Avengers"
+    ]
   },
   {
     "name": "Iron Man",
@@ -256,7 +372,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2008,
     "comicDebutYear": 1963,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Avengers",
+      "Illuminati",
+      "SHIELD",
+      "Guardians of the Galaxy"
+    ]
   },
   {
     "name": "Jeff the Land Shark",
@@ -266,7 +388,10 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 2016,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "West Coast Avengers"
+    ]
   },
   {
     "name": "Loki",
@@ -276,7 +401,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2011,
     "comicDebutYear": 1962,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Asgardians",
+      "Young Avengers",
+      "Cabal"
+    ]
   },
   {
     "name": "Luna Snow",
@@ -286,7 +416,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 2018,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Agents of Atlas",
+      "Tiger Division"
+    ]
   },
   {
     "name": "Magik",
@@ -296,7 +430,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1975,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "New Mutants",
+      "Midnight Sons"
+    ]
   },
   {
     "name": "Magneto",
@@ -306,7 +445,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1963,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "X-Men",
+      "Brotherhood of Mutants",
+      "Hellfire Club"
+    ]
   },
   {
     "name": "Mantis",
@@ -316,7 +460,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2017,
     "comicDebutYear": 1973,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Avengers"
+    ]
   },
   {
     "name": "Mister Fantastic",
@@ -326,7 +474,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2025,
     "comicDebutYear": 1961,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Fantastic Four",
+      "Illuminati",
+      "Avengers",
+      "Future Foundation"
+    ]
   },
   {
     "name": "Moon Knight",
@@ -336,7 +490,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2022,
     "comicDebutYear": 1975,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Midnight Sons",
+      "Avengers",
+      "Defenders",
+      "West Coast Avengers"
+    ]
   },
   {
     "name": "Namor",
@@ -346,7 +506,14 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2022,
     "comicDebutYear": 1939,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Invaders",
+      "Defenders",
+      "Avengers",
+      "Illuminati",
+      "X-Men"
+    ]
   },
   {
     "name": "Peni Parker",
@@ -356,7 +523,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1992,
-    "difficulty": 4
+    "difficulty": 4,
+    "affiliations": [
+      "Spider-Verse",
+      "Web-Warriors"
+    ]
   },
   {
     "name": "Phoenix",
@@ -366,7 +537,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1963,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "Avengers"
+    ]
   },
   {
     "name": "Psylocke",
@@ -376,7 +551,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1976,
-    "difficulty": 5
+    "difficulty": 5,
+    "affiliations": [
+      "X-Men",
+      "X-Force"
+    ]
   },
   {
     "name": "Rocket Raccoon",
@@ -386,7 +565,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2014,
     "comicDebutYear": 1976,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Avengers"
+    ]
   },
   {
     "name": "Rogue",
@@ -396,7 +579,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1981,
-    "difficulty": 5
+    "difficulty": 5,
+    "affiliations": [
+      "X-Men",
+      "Avengers",
+      "Brotherhood of Mutants"
+    ]
   },
   {
     "name": "Scarlet Witch",
@@ -406,7 +594,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2015,
     "comicDebutYear": 1964,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Avengers",
+      "West Coast Avengers",
+      "Brotherhood of Mutants"
+    ]
   },
   {
     "name": "Spider-Man",
@@ -416,7 +609,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2016,
     "comicDebutYear": 1962,
-    "difficulty": 5
+    "difficulty": 5,
+    "affiliations": [
+      "Avengers",
+      "Fantastic Four",
+      "Spider-Verse",
+      "Web-Warriors"
+    ]
   },
   {
     "name": "Squirrel Girl",
@@ -426,7 +625,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1992,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Great Lakes Avengers",
+      "Avengers",
+      "Champions"
+    ]
   },
   {
     "name": "Star-Lord",
@@ -436,7 +640,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2014,
     "comicDebutYear": 1976,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Guardians of the Galaxy",
+      "Ravagers"
+    ]
   },
   {
     "name": "Storm",
@@ -446,7 +654,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1975,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "Avengers",
+      "Fantastic Four",
+      "Wakanda"
+    ]
   },
   {
     "name": "The Punisher",
@@ -456,7 +670,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": null,
     "comicDebutYear": 1974,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Thunderbolts",
+      "Defenders"
+    ]
   },
   {
     "name": "The Thing",
@@ -466,7 +684,12 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2025,
     "comicDebutYear": 1961,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Fantastic Four",
+      "Avengers",
+      "Guardians of the Galaxy"
+    ]
   },
   {
     "name": "Thor",
@@ -476,7 +699,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2011,
     "comicDebutYear": 1962,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Avengers",
+      "Asgardians"
+    ]
   },
   {
     "name": "Ultron",
@@ -486,7 +713,10 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2015,
     "comicDebutYear": 1968,
-    "difficulty": 2
+    "difficulty": 2,
+    "affiliations": [
+      "Masters of Evil"
+    ]
   },
   {
     "name": "Venom",
@@ -496,7 +726,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 1988,
-    "difficulty": 1
+    "difficulty": 1,
+    "affiliations": [
+      "Thunderbolts",
+      "Avengers",
+      "Guardians of the Galaxy",
+      "Spider-Verse"
+    ]
   },
   {
     "name": "White Fox",
@@ -506,7 +742,11 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": null,
     "comicDebutYear": 2012,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Agents of Atlas",
+      "Tiger Division"
+    ]
   },
   {
     "name": "Winter Soldier",
@@ -516,7 +756,13 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": false,
     "mcuDebutYear": 2011,
     "comicDebutYear": 1968,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "Avengers",
+      "Invaders",
+      "Thunderbolts",
+      "SHIELD"
+    ]
   },
   {
     "name": "Wolverine",
@@ -526,9 +772,16 @@ export const heroes: Hero[] = [
     "isTeamUpAnchor": true,
     "mcuDebutYear": 2024,
     "comicDebutYear": 1974,
-    "difficulty": 3
+    "difficulty": 3,
+    "affiliations": [
+      "X-Men",
+      "Avengers",
+      "X-Force",
+      "Fantastic Four"
+    ]
   }
 ];
+;
 
 // Lookup map by name for O(1) access
 export const heroByName: Record<string, Hero> = Object.fromEntries(

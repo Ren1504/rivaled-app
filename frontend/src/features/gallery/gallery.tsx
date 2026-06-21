@@ -19,7 +19,8 @@ import {
   BookOpenIcon,
   GlobeIcon,
   UserIcon,
-  SettingsIcon
+  SettingsIcon,
+  TrophyIcon
 } from "../../components/shared/icons"
 
 // ---------- Abilities Helpers ----------
@@ -403,6 +404,16 @@ export function HeroGallery() {
                     <ShieldIcon className="size-3.5 text-rivals-gold/60" /> Team-Up
                   </span>
                   <span className="font-bold text-white">{activeHero.isTeamUpAnchor ? "Anchor" : "—"}</span>
+                </div>
+                <div className="flex flex-col px-2 py-1.5 bg-[#111632]/60 rounded-xs border border-white/5 gap-1">
+                  <span className="text-muted-foreground flex items-center gap-1.5">
+                    <TrophyIcon className="size-3.5 text-rivals-gold/60" /> Affiliations
+                  </span>
+                  <span className="font-bold text-white text-[11px] leading-normal">
+                    {activeHero.affiliations && activeHero.affiliations.length > 0
+                      ? activeHero.affiliations.join(", ")
+                      : "None"}
+                  </span>
                 </div>
               </div>
             </div>

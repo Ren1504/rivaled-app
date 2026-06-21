@@ -39,20 +39,20 @@ function getDailyAbilityTarget(): AbilityTarget {
   const m = today.getMonth() + 1;
   const d = today.getDate();
   const seed = (y * 367 + m * 31 + d) ^ 0x5a6b7c8d;
-  
+
   // Mix seed for hero selection
   let seed1 = seed ^ (seed >> 16);
   seed1 = Math.imul(seed1, 0x85ebca6b);
   seed1 = seed1 ^ (seed1 >> 13);
   seed1 = Math.imul(seed1, 0xc2b2ae35);
   seed1 = seed1 ^ (seed1 >> 16);
-  
+
   const heroIndex = Math.abs(seed1) % heroes.length;
   const targetHero = heroes[heroIndex];
   const heroKey = targetHero.name.toUpperCase();
-  
+
   const abilities = heroAbilitiesData[heroKey] || [];
-  
+
   // Mix seed for ability selection
   let seed2 = seed ^ 0x55555555;
   seed2 = seed2 ^ (seed2 >> 16);
@@ -60,7 +60,7 @@ function getDailyAbilityTarget(): AbilityTarget {
   seed2 = seed2 ^ (seed2 >> 13);
   seed2 = Math.imul(seed2, 0x1a8b9d6f);
   seed2 = seed2 ^ (seed2 >> 16);
-  
+
   if (abilities.length === 0) {
     // Fallback in case of missing data
     return {
@@ -71,10 +71,10 @@ function getDailyAbilityTarget(): AbilityTarget {
       localImgUrl: "/ability_images/hulk/radioactive-lockdown.png"
     };
   }
-  
+
   const abilityIndex = Math.abs(seed2) % abilities.length;
   const ability = abilities[abilityIndex];
-  
+
   return {
     heroName: targetHero.name,
     abilityName: ability.name,
@@ -90,7 +90,7 @@ function getUnlimitedAbilityTarget(): AbilityTarget {
     const list = heroAbilitiesData[h.name.toUpperCase()];
     return list && list.length > 0;
   });
-  
+
   if (heroesWithAbilities.length === 0) {
     return {
       heroName: "Hulk",
@@ -100,11 +100,11 @@ function getUnlimitedAbilityTarget(): AbilityTarget {
       localImgUrl: "/ability_images/hulk/radioactive-lockdown.png"
     };
   }
-  
+
   const targetHero = heroesWithAbilities[Math.floor(Math.random() * heroesWithAbilities.length)];
   const abilities = heroAbilitiesData[targetHero.name.toUpperCase()];
   const ability = abilities[Math.floor(Math.random() * abilities.length)];
-  
+
   return {
     heroName: targetHero.name,
     abilityName: ability.name,
@@ -124,7 +124,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
   const [wonState, setWonState] = React.useState<boolean>(false);
   const [bonusWon, setBonusWon] = React.useState<boolean>(false);
   const [bonusGuesses, setBonusGuesses] = React.useState<string[]>([]);
-  
+
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
 
   // Persistence for Daily Mode
@@ -155,8 +155,8 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
       const dailyTarget = getDailyAbilityTarget();
 
       if (
-        dailyState.date === todayStr && 
-        dailyState.target && 
+        dailyState.date === todayStr &&
+        dailyState.target &&
         dailyState.target.abilityName === dailyTarget.abilityName
       ) {
         setTarget(dailyState.target);
@@ -206,7 +206,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
       const now = new Date();
       const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
       const msRemaining = nextMidnight.getTime() - now.getTime();
-      
+
       const hours = Math.floor((msRemaining / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((msRemaining / (1000 * 60)) % 60);
       const seconds = Math.floor((msRemaining / 1000) % 60);
@@ -352,7 +352,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-6">
-      
+
       {/* Mode Select Tabs */}
       <div className="flex bg-[#111632] border border-white/5 rounded-xs p-1 mb-8 shadow-inner">
         <button
@@ -360,11 +360,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
             audioSynth.playClick();
             setIsDaily(true);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
-            isDaily
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${isDaily
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
               : "text-muted-foreground hover:text-white"
-          }`}
+            }`}
         >
           Daily Challenge
         </button>
@@ -373,11 +372,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
             audioSynth.playClick();
             setIsDaily(false);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
-            !isDaily
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${!isDaily
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
               : "text-muted-foreground hover:text-white"
-          }`}
+            }`}
         >
           Unlimited Practice
         </button>
@@ -431,8 +429,8 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
           <div className="w-full flex justify-between items-center mb-3 text-xs font-bold text-white/50 uppercase tracking-widest">
             <span>Guesses: {guesses.length} / {maxAttempts}</span>
             <div className="w-40 h-1.5 bg-[#111632] border border-white/5 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-rivals-gold transition-all duration-300" 
+              <div
+                className="h-full bg-rivals-gold transition-all duration-300"
                 style={{ width: `${(guesses.length / maxAttempts) * 100}%` }}
               />
             </div>
@@ -509,7 +507,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                   Bonus Round: Guess the Keybind/Button!
                   <StarIcon className="size-4 text-rivals-gold animate-bounce-subtle" />
                 </h4>
-                
+
                 {bonusGuesses.length > 0 ? (
                   bonusWon ? (
                     <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-3 mt-3 mb-1 animate-in zoom-in-95 duration-300">
@@ -517,7 +515,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                     </div>
                   ) : (
                     <div className="bg-rivals-crimson/10 border border-rivals-crimson/25 rounded-xs p-3 mt-3 mb-1 animate-in zoom-in-95 duration-300">
-                      <p className="text-sm font-black text-rivals-crimson uppercase tracking-widest">Bonus Failed!</p>
+                      <p className="text-sm font-black text-rivals-crimson uppercase tracking-widest">Be</p>
                     </div>
                   )
                 ) : (
@@ -558,25 +556,23 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                             <img
                               src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbzj_5901af42.png"
                               alt="Left Click"
-                              className={`h-6 object-contain transition-all ${
-                                bonusGuesses.length > 0
+                              className={`h-6 object-contain transition-all ${bonusGuesses.length > 0
                                   ? isCorrect
                                     ? "brightness-125"
                                     : "opacity-25 grayscale"
                                   : ""
-                              }`}
+                                }`}
                             />
                           ) : isRightClick ? (
                             <img
                               src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbyj_ec1b2d5e.png"
                               alt="Right Click"
-                              className={`h-6 object-contain transition-all ${
-                                bonusGuesses.length > 0
+                              className={`h-6 object-contain transition-all ${bonusGuesses.length > 0
                                   ? isCorrect
                                     ? "brightness-125"
                                     : "opacity-25 grayscale"
                                   : ""
-                              }`}
+                                }`}
                             />
                           ) : (
                             btn
@@ -634,11 +630,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
             return (
               <div
                 key={guess.name}
-                className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${
-                  isTarget
+                className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${isTarget
                     ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
                     : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
-                }`}
+                  }`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xs font-bold opacity-60 w-5">#{idx + 1}</span>
