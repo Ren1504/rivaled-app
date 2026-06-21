@@ -620,15 +620,9 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   style={{ animationDelay: '900ms' }}
                 >
                   <span className="text-xs font-black leading-tight uppercase tracking-wider">
-                    {guess.affiliations && guess.affiliations.length > 0 ? (
-                      guess.affiliations.map((aff, i) => (
-                        <div key={aff} className={i > 0 ? "mt-0.5" : ""}>
-                          {aff}
-                        </div>
-                      ))
-                    ) : (
-                      "None"
-                    )}
+                    {guess.affiliations && guess.affiliations.length > 0
+                      ? guess.affiliations.join(", ")
+                      : "None"}
                   </span>
                 </div>
               </div>
