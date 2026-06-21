@@ -293,8 +293,7 @@ function App() {
               Identify the hero based on in-game chatter or character interaction quotes. You have a maximum of 6 attempts.
             </p>
             <ul className="list-disc pl-5 text-xs text-muted-foreground flex flex-col gap-1.5 mt-2">
-              <li><strong className="text-white">Hint 1:</strong> After 3 wrong guesses, the interaction partner or chatter trigger condition is revealed.</li>
-              <li><strong className="text-white">Hint 2:</strong> After 5 wrong guesses, the first letter of the target hero's name is revealed.</li>
+              <li><strong className="text-white">Hint:</strong> After 3 wrong guesses, the interaction partner or chatter trigger condition is revealed.</li>
             </ul>
           </div>
         </div>

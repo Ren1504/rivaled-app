@@ -225,7 +225,6 @@ export function QuoteGame({ updateStats }: QuoteGameProps) {
 
   // Clue conditions
   const showPartnerClue = guesses.length >= 3 && !wonState;
-  const showLetterClue = guesses.length >= 5 && !wonState;
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-6">
@@ -297,36 +296,21 @@ export function QuoteGame({ updateStats }: QuoteGameProps) {
       </div>
 
       {/* Progressive Hints */}
-      {(showPartnerClue || showLetterClue) && (
+      {showPartnerClue && (
         <div className="w-full max-w-lg flex flex-col gap-3 mb-6 animate-in zoom-in-95 duration-300">
-          
-          {showPartnerClue && (
-            <div className="bg-amber-500/10 border border-amber-500/30 rounded-xs p-4 text-center">
-              <p className="text-xs font-bold text-amber-400 uppercase tracking-widest flex items-center justify-center gap-2">
-                <HelpIcon className="size-4 animate-bounce-subtle" />
-                Hint 1: Context Partner / Trigger
-              </p>
-              <p className="text-sm font-black text-white mt-1.5 uppercase tracking-wide">
-                {target.type === 'interaction' ? (
-                  <>Interaction Partner: <strong className="text-rivals-gold font-black">{target.clue}</strong></>
-                ) : (
-                  <>Trigger Condition: <strong className="text-rivals-gold font-black">{target.clue}</strong></>
-                )}
-              </p>
-            </div>
-          )}
-
-          {showLetterClue && (
-            <div className="bg-amber-500/10 border border-amber-500/30 rounded-xs p-4 text-center">
-              <p className="text-xs font-bold text-amber-400 uppercase tracking-widest">
-                Hint 2: First Letter
-              </p>
-              <p className="text-sm font-black text-white mt-1.5 uppercase tracking-wide">
-                Hero Name Starts with: <strong className="text-rivals-gold font-black">"{target.character[0]}"</strong>
-              </p>
-            </div>
-          )}
-
+          <div className="bg-amber-500/10 border border-amber-500/30 rounded-xs p-4 text-center">
+            <p className="text-xs font-bold text-amber-400 uppercase tracking-widest flex items-center justify-center gap-2">
+              <HelpIcon className="size-4 animate-bounce-subtle" />
+              Hint: Context Partner / Trigger
+            </p>
+            <p className="text-sm font-black text-white mt-1.5 uppercase tracking-wide">
+              {target.type === 'interaction' ? (
+                <>Interaction Partner: <strong className="text-rivals-gold font-black">{target.clue}</strong></>
+              ) : (
+                <>Trigger Condition: <strong className="text-rivals-gold font-black">{target.clue}</strong></>
+              )}
+            </p>
+          </div>
         </div>
       )}
 

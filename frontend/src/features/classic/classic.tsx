@@ -18,8 +18,7 @@ import {
   StarIcon,
   RefreshIcon,
   SparklesIcon,
-  ShieldIcon,
-  UserIcon
+  ShieldIcon
 } from "../../components/shared/icons"
 
 interface ClassicGameProps {
@@ -428,7 +427,6 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   )}
                 </span>
               </div>
-
               {/* Clue 2: Role */}
               <div className="flex flex-col items-center text-center flex-1">
                 <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 6
@@ -453,24 +451,6 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                     <span className="text-rivals-gold font-extrabold">{targetHero.role}</span>
                   ) : (
                     `In ${6 - guesses.length} ${6 - guesses.length === 1 ? "try" : "tries"}`
-                  )}
-                </span>
-              </div>
-
-              {/* Clue 3: First Letter */}
-              <div className="flex flex-col items-center text-center flex-1">
-                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all duration-500 ${guesses.length >= 7
-                  ? "bg-rivals-gold/20 border-rivals-gold text-rivals-gold shadow-[0_0_12px_rgba(212,175,55,0.3)] animate-pulse-subtle"
-                  : "bg-[#0c0f24] border-white/10 text-white/20"
-                  }`}>
-                  <UserIcon className="size-8" />
-                </div>
-                <span className="text-sm font-extrabold text-white mt-2.5">First Letter</span>
-                <span className="text-xs font-bold text-muted-foreground mt-1.5 min-h-[18px]">
-                  {guesses.length >= 7 ? (
-                    <span className="text-rivals-gold font-extrabold">Starts with '{targetHero.name[0]}'</span>
-                  ) : (
-                    `In ${7 - guesses.length} ${7 - guesses.length === 1 ? "try" : "tries"}`
                   )}
                 </span>
               </div>
