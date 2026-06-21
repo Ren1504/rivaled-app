@@ -9,6 +9,7 @@ import { Button } from "./components/ui/button"
 import { ClassicGame } from "./features/classic/classic"
 import { SplashGame } from "./features/splash/splash"
 import { AbilityGame } from "./features/ability/ability"
+import { QuoteGame } from "./features/quote/quote"
 import { HeroGallery } from "./features/gallery/gallery"
 import { StatsTracker } from "./features/stats/stats"
 
@@ -23,13 +24,15 @@ import {
   HelpIcon,
   StarIcon,
   GridIcon,
-  BookOpenIcon
+  BookOpenIcon,
+  QuoteIcon
 } from "./components/shared/icons"
 
 const INITIAL_STATS = {
   classic: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 } },
   splash: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 } },
-  ability: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 } }
+  ability: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 } },
+  quote: { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 } }
 };
 
 function App() {
@@ -82,7 +85,9 @@ function App() {
           ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0, 11: 0, 12: 0, 13: 0, 14: 0, 15: 0 }
           : mode === "ability"
             ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0, 9: 0, 10: 0 }
-            : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
+            : mode === "quote"
+              ? { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 }
+              : { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0, 7: 0, 8: 0 };
         copy[mode] = { gamesPlayed: 0, gamesWon: 0, currentStreak: 0, maxStreak: 0, guessDistribution: dist };
       }
 
@@ -119,6 +124,7 @@ function App() {
     { id: "classic", label: "Classic Mode", icon: <StarIcon className="size-5" /> },
     { id: "splash", label: "Splash Mode", icon: <HelpIcon className="size-5" /> },
     { id: "ability", label: "Ability Mode", icon: <BookOpenIcon className="size-5" /> },
+    { id: "quote", label: "Quote Mode", icon: <QuoteIcon className="size-5" /> },
     { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-5" /> }
   ];
 
@@ -223,6 +229,12 @@ function App() {
             isActive={activeTab === "ability"}
           />
         </div>
+        <div className={activeTab === "quote" ? "w-full" : "hidden"}>
+          <QuoteGame
+            updateStats={updateStats}
+            isActive={activeTab === "quote"}
+          />
+        </div>
         <div className={activeTab === "gallery" ? "w-full" : "hidden"}>
           <HeroGallery />
         </div>
@@ -272,6 +284,17 @@ function App() {
             <ul className="list-disc pl-5 text-xs text-muted-foreground flex flex-col gap-1.5 mt-2">
               <li><strong className="text-white">Hint:</strong> After 6 wrong guesses, the name of the ability is revealed.</li>
               <li><strong className="text-white">Bonus Round:</strong> Once you guess the hero correctly, you can try to guess which keybind triggers that ability!</li>
+            </ul>
+          </div>
+
+          <div className="border-t border-white/5 pt-4">
+            <h4 className="font-bold text-rivals-gold uppercase tracking-wider mb-2">Quote Guessing Game</h4>
+            <p className="text-xs text-muted-foreground">
+              Identify the hero based on in-game chatter or character interaction quotes. You have a maximum of 6 attempts.
+            </p>
+            <ul className="list-disc pl-5 text-xs text-muted-foreground flex flex-col gap-1.5 mt-2">
+              <li><strong className="text-white">Hint 1:</strong> After 3 wrong guesses, the interaction partner or chatter trigger condition is revealed.</li>
+              <li><strong className="text-white">Hint 2:</strong> After 5 wrong guesses, the first letter of the target hero's name is revealed.</li>
             </ul>
           </div>
         </div>
