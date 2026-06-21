@@ -43,8 +43,7 @@ export const heroes: Hero[] = [
     "difficulty": 4,
     "affiliations": [
       "Guardians of the Galaxy",
-      "Asgardians",
-      "Heven"
+      "League of Realms"
     ]
   },
   {
@@ -58,8 +57,7 @@ export const heroes: Hero[] = [
     "difficulty": 4,
     "affiliations": [
       "Heroes for Hire",
-      "Defenders",
-      "Spider-Man Ally"
+      "Defenders"
     ]
   },
   {
@@ -74,8 +72,7 @@ export const heroes: Hero[] = [
     "affiliations": [
       "Avengers",
       "Illuminati",
-      "Defenders",
-      "Wakanda"
+      "Defenders"
     ]
   },
   {
@@ -301,9 +298,7 @@ export const heroes: Hero[] = [
     "mcuDebutYear": 2017,
     "comicDebutYear": 1964,
     "difficulty": 3,
-    "affiliations": [
-      "Asgardians"
-    ]
+    "affiliations": []
   },
   {
     "name": "Hulk",
@@ -403,7 +398,6 @@ export const heroes: Hero[] = [
     "comicDebutYear": 1962,
     "difficulty": 4,
     "affiliations": [
-      "Asgardians",
       "Young Avengers",
       "Cabal"
     ]
@@ -525,7 +519,6 @@ export const heroes: Hero[] = [
     "comicDebutYear": 1992,
     "difficulty": 4,
     "affiliations": [
-      "Spider-Verse",
       "Web-Warriors"
     ]
   },
@@ -613,7 +606,6 @@ export const heroes: Hero[] = [
     "affiliations": [
       "Avengers",
       "Fantastic Four",
-      "Spider-Verse",
       "Web-Warriors"
     ]
   },
@@ -658,8 +650,7 @@ export const heroes: Hero[] = [
     "affiliations": [
       "X-Men",
       "Avengers",
-      "Fantastic Four",
-      "Wakanda"
+      "Fantastic Four"
     ]
   },
   {
@@ -702,7 +693,7 @@ export const heroes: Hero[] = [
     "difficulty": 3,
     "affiliations": [
       "Avengers",
-      "Asgardians"
+      "League of Realms"
     ]
   },
   {
@@ -730,8 +721,7 @@ export const heroes: Hero[] = [
     "affiliations": [
       "Thunderbolts",
       "Avengers",
-      "Guardians of the Galaxy",
-      "Spider-Verse"
+      "Guardians of the Galaxy"
     ]
   },
   {
@@ -781,6 +771,7 @@ export const heroes: Hero[] = [
     ]
   }
 ];
+;
 ;
 
 // Lookup map by name for O(1) access
