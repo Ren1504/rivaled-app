@@ -114,10 +114,10 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
   const [bonusKey, setBonusKey] = React.useState<number>(0);
 
-  // Ref to the splash image so we can directly toggle its CSS transition.
+  // Ref to the splash image container so we can directly toggle its CSS transition.
   // Direct DOM writes are synchronous and bypass React batching, making them
   // reliable for suppressing the zoom-in animation before React commits new state.
-  const imgRef = React.useRef<HTMLImageElement>(null);
+  const imgRef = React.useRef<HTMLDivElement>(null);
 
   // Instantly snaps the image to whatever scale React is about to render,
   // then re-enables the smooth transition after the browser has painted.
@@ -420,22 +420,25 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
 
       {/* Zoomed Splash Art frame */}
       <div className="relative w-full aspect-video max-w-xl overflow-hidden rounded-xs border-2 border-rivals-gold/20 bg-[#0e1227]/90 shadow-2xl mb-8 flex items-center justify-center">
-        <img
+        <div
           ref={imgRef}
-          src={imageUrl}
-          alt="Splash Art Clue"
-          className="w-full h-full object-cover transition-all duration-700 ease-out"
+          className="w-full h-full bg-cover bg-no-repeat transition-all duration-700 ease-out"
           style={{
+            backgroundImage: `url("${imageUrl.replace(/"/g, '\\"')}")`,
             transform: `scale(${currentScale})`,
             transformOrigin: currentOrigin
           }}
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = `https://placehold.co/800x450/171b35/ffffff?text=${encodeURIComponent(target.heroName)}`;
-          }}
+        />
+
+        {/* Transparent overlay that blocks drag, text selection, and right clicks */}
+        <div
+          className="absolute inset-0 z-10 w-full h-full select-none"
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
         />
         
         {/* Help icon showing the random focal coordinates in developmental test if required */}
-        <div className="absolute top-3 right-3 bg-black/50 text-white/50 text-[10px] px-2 py-1 rounded-xs uppercase tracking-wider backdrop-blur-sm pointer-events-none">
+        <div className="absolute top-3 right-3 bg-black/50 text-white/50 text-[10px] px-2 py-1 rounded-xs uppercase tracking-wider backdrop-blur-sm pointer-events-none z-20">
           Try {guesses.length + 1} / 15
         </div>
       </div>

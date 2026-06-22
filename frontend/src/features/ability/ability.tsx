@@ -395,15 +395,21 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
 
       {/* Redacted Clue Panel */}
       <div className="relative w-40 h-40 overflow-hidden rounded-xs border-2 border-rivals-gold/25 bg-white shadow-2xl mb-8 flex flex-col items-center justify-center p-3 animate-in fade-in duration-300">
-        <img
-          src={target.localImgUrl}
-          alt="Ability Clue Icon"
-          className="w-24 h-24 object-contain transition-all hover:scale-105 duration-300 filter drop-shadow-[0_0_8px_rgba(0,0,0,0.15)]"
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = `https://placehold.co/150x150/ffffff/000000?text=?`;
+        <div
+          className="w-24 h-24 bg-contain bg-no-repeat bg-center transition-all hover:scale-105 duration-300 filter drop-shadow-[0_0_8px_rgba(0,0,0,0.15)]"
+          style={{
+            backgroundImage: `url("${target.localImgUrl.replace(/"/g, '\\"')}")`
           }}
         />
-        <div className="absolute top-2 right-2 bg-black/45 text-white/90 text-[10px] px-1.5 py-0.5 rounded-xs font-bold uppercase tracking-wider">
+
+        {/* Transparent overlay that blocks drag, text selection, and right clicks */}
+        <div
+          className="absolute inset-0 z-10 w-full h-full select-none"
+          onContextMenu={(e) => e.preventDefault()}
+          draggable={false}
+        />
+
+        <div className="absolute top-2 right-2 bg-black/45 text-white/90 text-[10px] px-1.5 py-0.5 rounded-xs font-bold uppercase tracking-wider z-20">
           Clue
         </div>
       </div>
