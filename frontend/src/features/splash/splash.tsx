@@ -42,18 +42,18 @@ function getDailySplashTarget(): TargetInfo {
   const m = today.getMonth() + 1;
   const d = today.getDate();
   const seed = (y * 367 + m * 31 + d) ^ 0x1f2e3d4c;
-  
+
   // Mix seed for hero selection
   let seed1 = seed ^ (seed >> 16);
   seed1 = Math.imul(seed1, 0x85ebca6b);
   seed1 = seed1 ^ (seed1 >> 13);
   seed1 = Math.imul(seed1, 0xc2b2ae35);
   seed1 = seed1 ^ (seed1 >> 16);
-  
+
   const heroNames = Object.keys(heroSplashData);
   const heroIndex = Math.abs(seed1) % heroNames.length;
   const heroName = heroNames[heroIndex];
-  
+
   // Mix seed for skin selection
   let seed2 = seed ^ 0x55555555;
   seed2 = seed2 ^ (seed2 >> 16);
@@ -61,22 +61,22 @@ function getDailySplashTarget(): TargetInfo {
   seed2 = seed2 ^ (seed2 >> 13);
   seed2 = Math.imul(seed2, 0x1a8b9d6f);
   seed2 = seed2 ^ (seed2 >> 16);
-  
+
   const skins = heroSplashData[heroName];
   const skinIndex = Math.abs(seed2) % skins.length;
   const skinFilename = skins[skinIndex];
-  
+
   // Mix seed for focal point coordinates (between 20 and 80 to prevent cropping off screen)
   let seed3 = seed ^ 0xaaaaaaaa;
   seed3 = seed3 ^ (seed3 >> 16);
   seed3 = Math.imul(seed3, 0x7febca6b);
   const focalX = 20 + (Math.abs(seed3) % 61);
-  
+
   let seed4 = seed ^ 0xf0f0f0f0;
   seed4 = seed4 ^ (seed4 >> 16);
   seed4 = Math.imul(seed4, 0x4fbc2a35);
   const focalY = 20 + (Math.abs(seed4) % 61);
-  
+
   return {
     heroName,
     skinFilename,
@@ -90,10 +90,10 @@ function getUnlimitedSplashTarget(): TargetInfo {
   const heroName = heroNames[Math.floor(Math.random() * heroNames.length)];
   const skins = heroSplashData[heroName];
   const skinFilename = skins[Math.floor(Math.random() * skins.length)];
-  
+
   const focalX = 20 + Math.floor(Math.random() * 61);
   const focalY = 20 + Math.floor(Math.random() * 61);
-  
+
   return {
     heroName,
     skinFilename,
@@ -109,7 +109,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   const [wonState, setWonState] = React.useState<boolean>(false);
   const [bonusWon, setBonusWon] = React.useState<boolean>(false);
   const [bonusGuesses, setBonusGuesses] = React.useState<string[]>([]);
-  
+
   // Force reset autocomplete input
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
   const [bonusKey, setBonusKey] = React.useState<number>(0);
@@ -220,7 +220,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
       const now = new Date();
       const nextMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
       const msRemaining = nextMidnight.getTime() - now.getTime();
-      
+
       const hours = Math.floor((msRemaining / (1000 * 60 * 60)) % 24);
       const minutes = Math.floor((msRemaining / (1000 * 60)) % 60);
       const seconds = Math.floor((msRemaining / 1000) % 60);
@@ -377,7 +377,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
 
   return (
     <div className="flex flex-col items-center w-full max-w-5xl mx-auto px-4 py-6">
-      
+
       {/* Daily vs Unlimited Select Toggle */}
       <div className="flex bg-[#111632] border border-white/5 rounded-xs p-1 mb-8 shadow-inner">
         <button
@@ -386,8 +386,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
             setIsDaily(true);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Daily Challenge
@@ -398,8 +398,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
             setIsDaily(false);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${!isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Unlimited Practice
@@ -436,7 +436,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
           onContextMenu={(e) => e.preventDefault()}
           draggable={false}
         />
-        
+
         {/* Help icon showing the random focal coordinates in developmental test if required */}
         <div className="absolute top-3 right-3 bg-black/50 text-white/50 text-[10px] px-2 py-1 rounded-xs uppercase tracking-wider backdrop-blur-sm pointer-events-none z-20">
           Try {guesses.length + 1} / 15
@@ -450,8 +450,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
           <div className="w-full flex justify-between items-center mb-3 text-xs font-bold text-white/50 uppercase tracking-widest">
             <span>Guesses: {guesses.length} / 15</span>
             <div className="w-40 h-1.5 bg-[#111632] border border-white/5 rounded-full overflow-hidden">
-              <div 
-                className="h-full bg-rivals-gold transition-all duration-300" 
+              <div
+                className="h-full bg-rivals-gold transition-all duration-300"
                 style={{ width: `${(guesses.length / 15) * 100}%` }}
               />
             </div>
@@ -528,7 +528,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
                   Bonus Round: Guess the Skinline!
                   <StarIcon className="size-4 text-rivals-gold animate-bounce-subtle" />
                 </h4>
-                
+
                 {bonusGuesses.length > 0 ? (
                   bonusWon ? (
                     <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-xs p-4 mt-3 animate-in zoom-in-95 duration-300">
@@ -625,11 +625,10 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
             return (
               <div
                 key={guess.name}
-                className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${
-                  isTarget
+                className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${isTarget
                     ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
                     : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
-                }`}
+                  }`}
               >
                 <div className="flex items-center gap-3">
                   <span className="text-xs font-bold opacity-60 w-5">#{idx + 1}</span>

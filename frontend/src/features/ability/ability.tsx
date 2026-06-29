@@ -361,8 +361,8 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
             setIsDaily(true);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Daily Challenge
@@ -373,8 +373,8 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
             setIsDaily(false);
           }}
           className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${!isDaily
-              ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
-              : "text-muted-foreground hover:text-white"
+            ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
+            : "text-muted-foreground hover:text-white"
             }`}
         >
           Unlimited Practice
@@ -563,10 +563,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                               src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbzj_5901af42.png"
                               alt="Left Click"
                               className={`h-6 object-contain transition-all ${bonusGuesses.length > 0
-                                  ? isCorrect
-                                    ? "brightness-125"
-                                    : "opacity-25 grayscale"
-                                  : ""
+                                ? isCorrect
+                                  ? "brightness-125"
+                                  : "opacity-25 grayscale"
+                                : ""
                                 }`}
                             />
                           ) : isRightClick ? (
@@ -574,10 +574,10 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
                               src="https://www.marvelrivals.com/pc/gw/20241128194803/img/sbyj_ec1b2d5e.png"
                               alt="Right Click"
                               className={`h-6 object-contain transition-all ${bonusGuesses.length > 0
-                                  ? isCorrect
-                                    ? "brightness-125"
-                                    : "opacity-25 grayscale"
-                                  : ""
+                                ? isCorrect
+                                  ? "brightness-125"
+                                  : "opacity-25 grayscale"
+                                : ""
                                 }`}
                             />
                           ) : (
@@ -637,8 +637,8 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
               <div
                 key={guess.name}
                 className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${isTarget
-                    ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
-                    : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
+                  ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
+                  : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
                   }`}
               >
                 <div className="flex items-center gap-3">

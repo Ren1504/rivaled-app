@@ -10,7 +10,6 @@ import { ClassicGame } from "./features/classic/classic"
 import { SplashGame } from "./features/splash/splash"
 import { AbilityGame } from "./features/ability/ability"
 import { QuoteGame } from "./features/quote/quote"
-import { HeroGallery } from "./features/gallery/gallery"
 import { StatsTracker } from "./features/stats/stats"
 
 // Inline custom icons
@@ -23,7 +22,6 @@ import {
   MoonIcon,
   HelpIcon,
   StarIcon,
-  GridIcon,
   BookOpenIcon,
   QuoteIcon
 } from "./components/shared/icons"
@@ -124,8 +122,7 @@ function App() {
     { id: "classic", label: "Classic Mode", icon: <StarIcon className="size-5" /> },
     { id: "splash", label: "Splash Mode", icon: <HelpIcon className="size-5" /> },
     { id: "ability", label: "Ability Mode", icon: <BookOpenIcon className="size-5" /> },
-    { id: "quote", label: "Quote Mode", icon: <QuoteIcon className="size-5" /> },
-    { id: "gallery", label: "Hero Gallery", icon: <GridIcon className="size-5" /> }
+    { id: "quote", label: "Quote Mode", icon: <QuoteIcon className="size-5" /> }
   ];
 
   return (
@@ -234,9 +231,6 @@ function App() {
             updateStats={updateStats}
             isActive={activeTab === "quote"}
           />
-        </div>
-        <div className={activeTab === "gallery" ? "w-full" : "hidden"}>
-          <HeroGallery />
         </div>
       </main>
 

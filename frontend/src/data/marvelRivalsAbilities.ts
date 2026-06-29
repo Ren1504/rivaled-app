@@ -24,7 +24,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "optic-blast",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/67d45b41-e124-4be6-a08f-28b7f6868a7e.png",
-      "localImgUrl": "/ability_images/cyclops/optic-blast.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156338/optic-blast_cp87k3.png",
       "properties": [
         {
           "key": "Tick Rate",
@@ -53,7 +53,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "concussive-beam",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/3f017cb2-5d18-4fcb-8ca4-15e3da0fdab6.png",
-      "localImgUrl": "/ability_images/cyclops/concussive-beam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156338/concussive-beam_y7faza.png",
       "properties": [
         {
           "key": "Tick Rate",
@@ -94,7 +94,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ricochet-force",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/f247fe64-7879-4363-b6be-609748fa254a.png",
-      "localImgUrl": "/ability_images/cyclops/ricochet-force.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156340/ricochet-force_rjcavc.png",
       "properties": [
         {
           "key": "Beam Damage",
@@ -135,7 +135,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "propulsion-burst",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/b8204ec4-4bc0-4d75-9e40-c75d9a80159a.png",
-      "localImgUrl": "/ability_images/cyclops/propulsion-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156339/propulsion-burst_beuwlf.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -168,7 +168,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "optic-ascent",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/e20c4dc4-44bd-4e8c-b872-d10e84ef478e.png",
-      "localImgUrl": "/ability_images/cyclops/optic-ascent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156338/optic-ascent_fu7hir.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -201,7 +201,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kinetic-hover",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/34579f57-e95c-49e5-a80e-9cd0b03350d8.png",
-      "localImgUrl": "/ability_images/cyclops/kinetic-hover.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156337/kinetic-hover_kfoybr.png",
       "properties": []
     },
     {
@@ -209,7 +209,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ruby-rage",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260611/a9a51b9e-f60d-494a-9ae7-3e185cde4c4d.png",
-      "localImgUrl": "/ability_images/cyclops/ruby-rage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156339/ruby-rage_jfzsin.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -244,7 +244,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "primal-bite",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/115176f7-366a-4c84-a53e-5cb01ce83315.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/primal-bite.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156365/primal-bite_gzuibg.png",
       "properties": [
         {
           "key": "Casting",
@@ -281,7 +281,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "impact-beam",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/8deeb802-0265-45e5-8ea0-8ac836bf938e.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/impact-beam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156364/impact-beam_uirirl.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -310,7 +310,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "buddy-barrier",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/5262ea98-9407-49e5-92c3-4630ededb30d.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/buddy-barrier.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/buddy-barrier_lqbtok.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -335,7 +335,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "savage-predation",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/d5b729a9-bd0a-4e51-9bd4-a4bf2b40b5ef.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/savage-predation.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156366/savage-predation_qb5ize.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -360,7 +360,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "frenzied-feast",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/e3644601-c665-47c0-b70b-eff7718330c8.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/frenzied-feast.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156364/frenzied-feast_tbfirw.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -381,7 +381,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "prehistoric-plating",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/c9b874b3-dde9-4453-9fb8-e49f5ecdec9d.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/prehistoric-plating.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156363/prehistoric-plating_rjg67c.png",
       "properties": [
         {
           "key": "Headshot Damage Taken Reduction",
@@ -398,7 +398,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "apex-advantage",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260515/750da25f-7267-479e-9161-ad9109a5209c.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/apex-advantage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/apex-advantage_q5exdd.png",
       "properties": [
         {
           "key": "Bonus Health",
@@ -411,7 +411,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "devil-beast-rampage",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260514/6acd3e0f-759b-44c1-b1bc-b42dd520aa74.png",
-      "localImgUrl": "/ability_images/devil-dinosaur/devil-beast-rampage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156363/devil-beast-rampage_lvdaq6.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -454,7 +454,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "feline-fury",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/b418cfa2-f3dd-4eae-b205-967e67831cf7.png",
-      "localImgUrl": "/ability_images/black-cat/feline-fury.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155920/feline-fury_fdzlgt.png",
       "properties": [
         {
           "key": "Casting",
@@ -475,7 +475,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "calling-card",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/c1b8429e-cbce-4c01-ad81-b1255d6ddbb8.png",
-      "localImgUrl": "/ability_images/black-cat/calling-card.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155899/calling-card_ytip5f.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -512,7 +512,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cats-cradle",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/0724214f-fa9d-4530-803b-02b40f0b9af7.png",
-      "localImgUrl": "/ability_images/black-cat/cats-cradle.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155900/cats-cradle_qcm9n2.png",
       "properties": [
         {
           "key": "Maximum Dash Distance",
@@ -533,7 +533,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "turn-of-fortune",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/46a0da80-3314-466d-aab1-41bc525fc793.png",
-      "localImgUrl": "/ability_images/black-cat/turn-of-fortune.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156325/turn-of-fortune_i0vgcg.png",
       "properties": [
         {
           "key": "Hook Speed",
@@ -562,7 +562,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thieving-grace",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/331db52b-ea1e-4d74-a4c7-c27fa17ec1a5.png",
-      "localImgUrl": "/ability_images/black-cat/thieving-grace.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156325/thieving-grace_jr37jk.png",
       "properties": []
     },
     {
@@ -570,7 +570,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fortunes-favor",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/f20a3d87-0110-46b5-ae9c-e942746833cd.png",
-      "localImgUrl": "/ability_images/black-cat/fortunes-favor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155949/fortunes-favor_s3nbkx.png",
       "properties": [
         {
           "key": "Grapple Swipe Fortune Consumption",
@@ -587,7 +587,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stealthy-catwalk",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/76e1a388-8bcd-40cb-b9b9-cbfea50d5264.png",
-      "localImgUrl": "/ability_images/black-cat/stealthy-catwalk.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155962/stealthy-catwalk_kjd3bq.png",
       "properties": []
     },
     {
@@ -595,7 +595,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "malkin-misfortune",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/048b7e20-1062-44e0-9ae2-588cbb9d4fc8.png",
-      "localImgUrl": "/ability_images/black-cat/malkin-misfortune.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155950/malkin-misfortune_o7rm3j.png",
       "properties": []
     },
     {
@@ -603,7 +603,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "claw-whip",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/5868fb3b-fb3d-4ed5-9907-0252b6687288.png",
-      "localImgUrl": "/ability_images/black-cat/claw-whip.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155900/claw-whip_o5ysgo.png",
       "properties": [
         {
           "key": "Spell Field Range",
@@ -636,7 +636,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "calling-card",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/542f0f37-1553-45e5-b794-9a5804088ccb.png",
-      "localImgUrl": "/ability_images/black-cat/calling-card.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155899/calling-card_ytip5f.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -673,7 +673,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cats-cradle",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/de907edd-e322-4e4b-b64d-26f1dd5bd08e.png",
-      "localImgUrl": "/ability_images/black-cat/cats-cradle.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155900/cats-cradle_qcm9n2.png",
       "properties": [
         {
           "key": "Maximum Dash Distance",
@@ -694,7 +694,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "phantom-pursuit",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/0f50962e-bc08-42a0-85db-7138a350d05f.png",
-      "localImgUrl": "/ability_images/black-cat/phantom-pursuit.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155950/phantom-pursuit_gk0w9n.png",
       "properties": [
         {
           "key": "Dash Duration",
@@ -719,7 +719,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thieving-grace",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/db492550-ee00-49bd-b8f2-a8725012dbe1.png",
-      "localImgUrl": "/ability_images/black-cat/thieving-grace.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156325/thieving-grace_jr37jk.png",
       "properties": []
     },
     {
@@ -727,7 +727,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fortunes-favor",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/aaaacbd7-f567-40c0-be49-494f0e6933db.png",
-      "localImgUrl": "/ability_images/black-cat/fortunes-favor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155949/fortunes-favor_s3nbkx.png",
       "properties": [
         {
           "key": "Grapple Swipe Fortune Consumption",
@@ -744,7 +744,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stealthy-catwalk",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/cf0e15f3-6715-49c6-8313-9513eed6fa61.png",
-      "localImgUrl": "/ability_images/black-cat/stealthy-catwalk.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155962/stealthy-catwalk_kjd3bq.png",
       "properties": []
     },
     {
@@ -752,7 +752,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "malkin-misfortune",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/f8475d37-2f3e-495d-8783-66a39a55e6a7.png",
-      "localImgUrl": "/ability_images/black-cat/malkin-misfortune.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155950/malkin-misfortune_o7rm3j.png",
       "properties": []
     },
     {
@@ -760,7 +760,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "gilded-deal",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/35b59c4e-01ea-4c4f-9321-2e378148df61.png",
-      "localImgUrl": "/ability_images/black-cat/gilded-deal.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155949/gilded-deal_ka2kyf.png",
       "properties": []
     },
     {
@@ -768,7 +768,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "tablet-of-destinies",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/ce5e92ec-444e-48f9-9a2e-73b4f86c07fe.png",
-      "localImgUrl": "/ability_images/black-cat/tablet-of-destinies.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156325/tablet-of-destinies_rip9u9.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -785,7 +785,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "helm-of-hades",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/b4507d88-ec34-4a0b-9303-96757d10cd5b.png",
-      "localImgUrl": "/ability_images/black-cat/helm-of-hades.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155949/helm-of-hades_gob5d8.png",
       "properties": [
         {
           "key": "Fortune Consumption",
@@ -810,7 +810,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "faltine-flame-orb",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/004aee58-b3ee-436d-bbe7-41ef6c00b4d5.png",
-      "localImgUrl": "/ability_images/black-cat/faltine-flame-orb.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155901/faltine-flame-orb_gaauqi.png",
       "properties": [
         {
           "key": "Fortune Consumption",
@@ -835,7 +835,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "chernobogs-crystal",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/d7499d6e-8126-4d52-b3c5-649961da300b.png",
-      "localImgUrl": "/ability_images/black-cat/chernobogs-crystal.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155900/chernobogs-crystal_xhrpne.png",
       "properties": [
         {
           "key": "Fortune Consumption",
@@ -852,7 +852,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ring-of-zona",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/37abc875-d763-4531-8095-c0d74aae0e22.png",
-      "localImgUrl": "/ability_images/black-cat/ring-of-zona.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155951/ring-of-zona_lddmn3.png",
       "properties": [
         {
           "key": "Fortune Consumption",
@@ -865,7 +865,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mento-fish",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/685beeba-23c2-457c-83a0-9beb64c100d9.png",
-      "localImgUrl": "/ability_images/black-cat/mento-fish.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155950/mento-fish_jvbe7d.png",
       "properties": [
         {
           "key": "Fortune Consumption",
@@ -894,7 +894,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "sticky-paws",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260416/d1950ebc-6411-4006-93b9-c6db6b41ee45.png",
-      "localImgUrl": "/ability_images/black-cat/sticky-paws.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156325/sticky-paws_pgjocb.png",
       "properties": [
         {
           "key": "Fortune Gained per Target Hit (Feline Fury)",
@@ -929,7 +929,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "yeowoo-guseul",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/c58d434c-4789-4937-961d-d27e5a1f80ef.png",
-      "localImgUrl": "/ability_images/white-fox/yeowoo-guseul.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156457/yeowoo-guseul_phfm8u.png",
       "properties": [
         {
           "key": "Projectile Speed",
@@ -966,7 +966,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "claw-strike",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/e738e469-d755-4bf3-93ae-0b5a252443ca.png",
-      "localImgUrl": "/ability_images/white-fox/claw-strike.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156456/claw-strike_jilkdi.png",
       "properties": [
         {
           "key": "Attack Interval",
@@ -987,7 +987,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spectral-surge",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/19bc9c00-28b2-4cb5-810c-183a9635f49b.png",
-      "localImgUrl": "/ability_images/white-fox/spectral-surge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156452/spectral-surge_g0nsvz.png",
       "properties": [
         {
           "key": "Projectile Speed",
@@ -1036,7 +1036,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fox-form-awakening",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/72a48398-8002-4dfa-9056-24f73c76bc01.png",
-      "localImgUrl": "/ability_images/white-fox/fox-form-awakening.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156451/fox-form-awakening_mu3ixu.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1069,7 +1069,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spirit-sanctuary",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/a69660c4-0140-4d93-b09e-88695bef6c4b.png",
-      "localImgUrl": "/ability_images/white-fox/spirit-sanctuary.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156452/spirit-sanctuary_zxmjge.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1106,7 +1106,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "tail-sweep",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/5c67a6c1-758c-467c-a4de-62f8fcf8ac11.png",
-      "localImgUrl": "/ability_images/white-fox/tail-sweep.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156451/tail-sweep_x0nhwd.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1127,7 +1127,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "predatory-pounce",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/5f574241-b3e7-46e1-83c5-658beb3885c9.png",
-      "localImgUrl": "/ability_images/white-fox/predatory-pounce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156452/predatory-pounce_kzg79o.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1164,7 +1164,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kumiho-unleashed",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/b089d7a9-c6dd-46d3-a000-4c0954353ad4.png",
-      "localImgUrl": "/ability_images/white-fox/kumiho-unleashed.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156451/kumiho-unleashed_bl9qii.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -1189,7 +1189,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ninefold-slam",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/246d56d8-a7ff-40e7-ace5-01c0fd4b9a66.png",
-      "localImgUrl": "/ability_images/white-fox/ninefold-slam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156456/ninefold-slam_gtavrv.png",
       "properties": [
         {
           "key": "Max Attack Range",
@@ -1226,7 +1226,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blessed-by-the-nine",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260320/36acf930-5edb-4ccb-b782-333bc20b2050.png",
-      "localImgUrl": "/ability_images/white-fox/blessed-by-the-nine.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156450/blessed-by-the-nine_i2hsgx.png",
       "properties": [
         {
           "key": "Maximum Select Distance",
@@ -1257,7 +1257,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "double-barrel-blaster",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/8a132243-9cec-4ed8-aa27-f374bc58d1a7.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/double-barrel-blaster.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156368/double-barrel-blaster_jdy4qd.png",
       "properties": [
         {
           "key": "Casting",
@@ -1298,7 +1298,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "monster-piercer",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/ff430438-d356-492c-bd28-2c68160d3a7a.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/monster-piercer.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156369/monster-piercer_n2fhzz.png",
       "properties": [
         {
           "key": "Casting",
@@ -1327,7 +1327,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "inherited-instinct",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/4b228e3f-c80f-4bd7-903f-c38148164bd9.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/inherited-instinct.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156369/inherited-instinct_uyxr0p.png",
       "properties": [
         {
           "key": "Instinct from KOs",
@@ -1356,7 +1356,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ruthless-pursuit",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/d3e00685-1ad7-4e9d-a9cc-4d176abfdf09.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/ruthless-pursuit.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156370/ruthless-pursuit_wjskfm.png",
       "properties": [
         {
           "key": "Casting",
@@ -1413,7 +1413,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "helix-advance",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/d5490ea6-b478-4c97-9ef7-20621038e83e.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/helix-advance.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156368/helix-advance_io3kb1.png",
       "properties": [
         {
           "key": "Max Dash Speed",
@@ -1442,7 +1442,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "living-bullet",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/4931ed8c-267e-4117-bc98-174750ceebdf.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/living-bullet.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156369/living-bullet_nc0f4m.png",
       "properties": [
         {
           "key": "Projectile Speed",
@@ -1483,7 +1483,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "smoky-snare",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/a23b9d06-1993-42ec-91af-c2e44696ba07.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/smoky-snare.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156370/smoky-snare_i2qtnl.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1536,7 +1536,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "apex-predator",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260210/baae636a-b026-4d93-b08f-3185544fbeb3.png",
-      "localImgUrl": "/ability_images/elsa-bloodstone/apex-predator.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156368/apex-predator_i8uuke.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -1587,7 +1587,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-vanguard",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/612130fb-e64b-45c5-a9fe-536fce19cb0a.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-vanguard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156348/dual-desert-eagles-vanguard_kyqroe.png",
       "properties": [
         {
           "key": "Casting",
@@ -1616,7 +1616,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "the-ban-hammer",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/2dd26fc5-baa0-418f-8130-fb8e96ff90b4.png",
-      "localImgUrl": "/ability_images/deadpool/the-ban-hammer.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156361/the-ban-hammer_qgsx1m.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -1649,7 +1649,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "magical-unicorn-shield",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/fef38c04-fee0-40a5-ad7f-79577aa45743.png",
-      "localImgUrl": "/ability_images/deadpool/magical-unicorn-shield.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/magical-unicorn-shield_sj2cxc.png",
       "properties": [
         {
           "key": "Summons' Health",
@@ -1670,7 +1670,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bunny-bounce",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/183eb974-55a8-488f-bd08-ef83ad4688e3.png",
-      "localImgUrl": "/ability_images/deadpool/bunny-bounce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156343/bunny-bounce_kwrqto.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1687,7 +1687,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/eb588f97-66b2-45b7-b543-88aeaa167a58.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -1712,7 +1712,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/fc477704-7f13-4fc9-a949-55a43fd0399a.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -1725,7 +1725,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/8581a805-ffde-468d-9b45-47ea9dc540da.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -1738,7 +1738,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-vanguard",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/947a7dad-eb1a-48ae-a028-0c018245d0bd.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-vanguard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156346/deadpool-in-your-area-vanguard_cbwoh9.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1775,7 +1775,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-vanguard",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/cd46d5e0-bd27-47b8-b5af-a50a3ae283e4.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-vanguard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156357/kick-katana-vanguard_gcvmma.png",
       "properties": [
         {
           "key": "Casting",
@@ -1800,7 +1800,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "the-big-test",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/01cf36e8-0774-4b0f-96eb-1860e9d8ad4a.png",
-      "localImgUrl": "/ability_images/deadpool/the-big-test.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156361/the-big-test_wigt6v.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -1833,7 +1833,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hazardous-hijinks-vanguard",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/bc056ad5-a545-497b-a4b3-296be9f62c3b.png",
-      "localImgUrl": "/ability_images/deadpool/hazardous-hijinks-vanguard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156350/hazardous-hijinks-vanguard_jozzzy.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1858,7 +1858,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bunny-bounce",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/f83e789b-8ec4-4623-9162-a873b479ada6.png",
-      "localImgUrl": "/ability_images/deadpool/bunny-bounce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156343/bunny-bounce_kwrqto.png",
       "properties": [
         {
           "key": "Maximum Dash Distance",
@@ -1875,7 +1875,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/68817e55-2b49-4e4f-9e54-36bc0530574e.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -1900,7 +1900,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/1e05f233-ac32-4fe9-b1b8-9c7cd4e165a3.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -1913,7 +1913,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/bf797f74-4018-4b36-85d6-89159ea831b4.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -1926,7 +1926,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-vanguard",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/b4f7983e-98fb-46bb-aabc-c8bb80041553.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-vanguard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156346/deadpool-in-your-area-vanguard_cbwoh9.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -1963,7 +1963,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-vanguard-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/9950e177-ed31-4cc3-9dd0-5e81a1ebd0f4.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-vanguard-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156348/dual-desert-eagles-vanguard-upgraded_qvklc2.png",
       "properties": [
         {
           "key": "Beam Damage",
@@ -2000,7 +2000,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-vanguard-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/bff49308-0b5f-46fc-81ca-46fe94f05f81.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-vanguard-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156357/kick-katana-vanguard-upgraded_xzac9b.png",
       "properties": [
         {
           "key": "Damage",
@@ -2021,7 +2021,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-vanguard-upgraded",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/dd186638-8506-401f-b1a7-c09436994ad7.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-vanguard-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156345/deadpool-in-your-area-vanguard-upgraded_nngpaf.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2058,7 +2058,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hazardous-hijinks-vanguard-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/5477ab5b-877f-48c7-9541-973e67722586.png",
-      "localImgUrl": "/ability_images/deadpool/hazardous-hijinks-vanguard-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156350/hazardous-hijinks-vanguard-upgraded_sk5z5x.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2083,7 +2083,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "magical-unicorn-shield-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/58a98547-303e-4b5d-b0ca-d05be7c951c6.png",
-      "localImgUrl": "/ability_images/deadpool/magical-unicorn-shield-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/magical-unicorn-shield-upgraded_tlxz4l.png",
       "properties": [
         {
           "key": "Summons' Health",
@@ -2104,7 +2104,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "the-big-test-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/917c3099-6c03-40db-a5af-da7bd907b710.png",
-      "localImgUrl": "/ability_images/deadpool/the-big-test-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156363/the-big-test-upgraded_jqz8as.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -2137,7 +2137,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "the-ban-hammer-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/944e9d57-7cfe-47fe-97bf-dbda97f0552c.png",
-      "localImgUrl": "/ability_images/deadpool/the-ban-hammer-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156361/the-ban-hammer-upgraded_ce4ttf.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -2174,7 +2174,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-duelist",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/bbbc1021-c26d-4d45-b504-41fecb1fd329.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156346/dual-desert-eagles-duelist_dqzbjs.png",
       "properties": [
         {
           "key": "Casting",
@@ -2203,7 +2203,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "skill-issue",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/32d6d205-925f-4e0b-ba3c-36c29e716545.png",
-      "localImgUrl": "/ability_images/deadpool/skill-issue.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156360/skill-issue_stx1to.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -2224,7 +2224,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "headshot-duelist",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/fe2d56e5-76f1-440b-b799-f3339fac8787.png",
-      "localImgUrl": "/ability_images/deadpool/headshot-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/headshot-duelist_kngb5v.png",
       "properties": [
         {
           "key": "Casting",
@@ -2261,7 +2261,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bunny-hop",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/e30a48d2-58b5-4ea4-9fbf-b0ea4237ce55.png",
-      "localImgUrl": "/ability_images/deadpool/bunny-hop.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156344/bunny-hop_zlosvm.png",
       "properties": [
         {
           "key": "Damage",
@@ -2286,7 +2286,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/34f96677-28fa-4445-ba68-7e5553a9452e.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -2311,7 +2311,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/f1818cfa-e96d-4f24-9aad-cbf41a68b80d.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2324,7 +2324,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/b0d6febd-72f5-45ad-8ed4-801c869b8959.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2337,7 +2337,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-duelist",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/c48ac808-c0fc-40ca-b988-4209f308059b.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156344/deadpool-in-your-area-duelist_xsloyu.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2374,7 +2374,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-duelist",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/f441fc76-d37a-495d-bff2-9c8a74fae424.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156353/kick-katana-duelist_j87lzs.png",
       "properties": [
         {
           "key": "Casting",
@@ -2399,7 +2399,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pop-quiz",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/ddeac56f-2a2b-458f-a09b-30c02e893bda.png",
-      "localImgUrl": "/ability_images/deadpool/pop-quiz.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156359/pop-quiz_pi6bwn.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -2424,7 +2424,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hazardous-hijinks-duelist",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/a97263d2-9d7d-4f0e-9846-952d3a8873f2.png",
-      "localImgUrl": "/ability_images/deadpool/hazardous-hijinks-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156349/hazardous-hijinks-duelist_b91jbw.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2449,7 +2449,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bunny-hop",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/61987493-d453-45cc-8f8b-6da0078b21ea.png",
-      "localImgUrl": "/ability_images/deadpool/bunny-hop.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156344/bunny-hop_zlosvm.png",
       "properties": [
         {
           "key": "Damage",
@@ -2474,7 +2474,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/d6633d77-4996-4afb-9640-29af2ad835f5.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -2499,7 +2499,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/13385900-a033-4e64-bf97-f8adac56bbea.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2512,7 +2512,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/0cf9ba9a-131e-4460-9205-2acfb9fdad48.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2525,7 +2525,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-duelist",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/68c29f6d-a09c-45e0-8d88-4ee6bd767f6c.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-duelist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156344/deadpool-in-your-area-duelist_xsloyu.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2562,7 +2562,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-duelist-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/1225939a-146b-4699-9d72-050fcaa16d4c.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-duelist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156347/dual-desert-eagles-duelist-upgraded_r1hd59.png",
       "properties": [
         {
           "key": "Beam Damage",
@@ -2599,7 +2599,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-duelist-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/b8b503aa-e398-45a1-8500-698622cc9de4.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-duelist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156353/kick-katana-duelist-upgraded_aj0ks9.png",
       "properties": [
         {
           "key": "Damage",
@@ -2620,7 +2620,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-duelist-upgraded",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/b43a5885-06d3-4e7f-a65a-862e8b0a75b8.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-duelist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156344/deadpool-in-your-area-duelist-upgraded_ya9awg.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2657,7 +2657,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hazardous-hijinks-duelist-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/6b324b73-b598-456a-9559-b42bf1e77176.png",
-      "localImgUrl": "/ability_images/deadpool/hazardous-hijinks-duelist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156349/hazardous-hijinks-duelist-upgraded_na7uqy.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2682,7 +2682,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "headshot-duelist-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/edddeceb-fcc3-4937-b3f3-ef12531eaf98.png",
-      "localImgUrl": "/ability_images/deadpool/headshot-duelist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156350/headshot-duelist-upgraded_rzdqyd.png",
       "properties": [
         {
           "key": "Projectile Damage",
@@ -2715,7 +2715,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pop-quiz-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/83b33337-d2fb-4d39-929e-096c8aa53056.png",
-      "localImgUrl": "/ability_images/deadpool/pop-quiz-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156359/pop-quiz-upgraded_zrqajw.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -2744,7 +2744,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "skill-issue-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/05a3bb0c-552b-48d5-9cd0-1f7e1e349923.png",
-      "localImgUrl": "/ability_images/deadpool/skill-issue-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156360/skill-issue-upgraded_rrzjcb.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -2773,7 +2773,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-strategist",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/742f6ca8-600f-484d-8675-bac5d7b3788a.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156347/dual-desert-eagles-strategist_mim5r4.png",
       "properties": [
         {
           "key": "Casting",
@@ -2802,7 +2802,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pwnage-pound",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/8480f602-9af4-45fd-b52d-1a12f22cb3b8.png",
-      "localImgUrl": "/ability_images/deadpool/pwnage-pound.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156360/pwnage-pound_s5zosv.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -2835,7 +2835,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bouncing-bobblehead-strategist",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/5d99dd32-9db1-4810-8b0d-6b760db4bdf7.png",
-      "localImgUrl": "/ability_images/deadpool/bouncing-bobblehead-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156343/bouncing-bobblehead-strategist_l5iauh.png",
       "properties": [
         {
           "key": "Casting",
@@ -2880,7 +2880,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-hop",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/ed8221fc-11a3-48a6-bfe8-03d37528203a.png",
-      "localImgUrl": "/ability_images/deadpool/healing-hop.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156352/healing-hop_onhmly.png",
       "properties": [
         {
           "key": "Damage",
@@ -2905,7 +2905,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/0ef403ed-dc90-4200-9d01-f46dc30be7e7.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -2930,7 +2930,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/aef6ba6f-d996-4c2d-ba9e-ef34a0cc9ddc.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2943,7 +2943,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/18700c8d-3453-49d2-8da7-622b77e22dae.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -2956,7 +2956,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-strategist",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/fa941747-fc9e-4138-af71-9dc6b0fc6a54.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156345/deadpool-in-your-area-strategist_mdu019.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -2993,7 +2993,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-strategist",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/e091b58b-f4c4-4094-9076-5aa489f85ec6.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156357/kick-katana-strategist_yux0fu.png",
       "properties": [
         {
           "key": "Casting",
@@ -3026,7 +3026,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "final-exam",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/cb9139a3-04c0-41b5-ad70-114a5e5baef5.png",
-      "localImgUrl": "/ability_images/deadpool/final-exam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156348/final-exam_otiyjd.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -3051,7 +3051,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-hijinks-strategist",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/cbd80a74-aafa-46b2-96c8-645bb247f439.png",
-      "localImgUrl": "/ability_images/deadpool/healing-hijinks-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156352/healing-hijinks-strategist_zllq6z.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3080,7 +3080,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-hop",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/d86afade-9135-4cbd-87d0-18d484cf7556.png",
-      "localImgUrl": "/ability_images/deadpool/healing-hop.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156352/healing-hop_onhmly.png",
       "properties": [
         {
           "key": "Damage",
@@ -3105,7 +3105,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-factor",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/257f524b-d3e0-438f-b7cc-01b8a2f7efdc.png",
-      "localImgUrl": "/ability_images/deadpool/healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-factor_ogs1mz.png",
       "properties": [
         {
           "key": "Healing over Time",
@@ -3130,7 +3130,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maximum-flair",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/7f9679be-20c5-48d5-b232-7ba2172b04b9.png",
-      "localImgUrl": "/ability_images/deadpool/maximum-flair.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156358/maximum-flair_dkhb1c.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -3143,7 +3143,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "upgrade",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/d628f429-4396-4fea-89bb-c9367cec8478.png",
-      "localImgUrl": "/ability_images/deadpool/upgrade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156362/upgrade_xgdtvr.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -3156,7 +3156,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-strategist",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/10363965-15e5-4296-8132-9732627c1c8f.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-strategist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156345/deadpool-in-your-area-strategist_mdu019.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3193,7 +3193,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dual-desert-eagles-strategist-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/78599d08-a3e3-40a7-a163-59e4135f91f9.png",
-      "localImgUrl": "/ability_images/deadpool/dual-desert-eagles-strategist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156347/dual-desert-eagles-strategist-upgraded_jh0shu.png",
       "properties": [
         {
           "key": "Beam Damage",
@@ -3242,7 +3242,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kick-katana-strategist-upgraded",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/351cd1a6-3b7e-4bd8-93b2-8f672d1528c6.png",
-      "localImgUrl": "/ability_images/deadpool/kick-katana-strategist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156354/kick-katana-strategist-upgraded_mga56i.png",
       "properties": [
         {
           "key": "Damage",
@@ -3271,7 +3271,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deadpool-in-your-area-strategist-upgraded",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/cf86463c-760f-4bbf-9dda-f45465f9872a.png",
-      "localImgUrl": "/ability_images/deadpool/deadpool-in-your-area-strategist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156345/deadpool-in-your-area-strategist-upgraded_ces8bv.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3312,7 +3312,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-hijinks-strategist-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260114/dec06e87-6750-4796-91bf-a77d08cb8ce9.png",
-      "localImgUrl": "/ability_images/deadpool/healing-hijinks-strategist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156351/healing-hijinks-strategist-upgraded_lwoxpt.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3345,7 +3345,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bouncing-bobblehead-strategist-upgraded",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/a0174fbe-7018-46bf-b960-9b88bbbbf227.png",
-      "localImgUrl": "/ability_images/deadpool/bouncing-bobblehead-strategist-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156343/bouncing-bobblehead-strategist-upgraded_fhp47c.png",
       "properties": [
         {
           "key": "Projectile Damage",
@@ -3390,7 +3390,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "final-exam-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/070f508b-a481-4fb2-8304-46bd0f690137.png",
-      "localImgUrl": "/ability_images/deadpool/final-exam-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156349/final-exam-upgraded_gwpo00.png",
       "properties": [
         {
           "key": "Ability Duration",
@@ -3419,7 +3419,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pwnage-pound-upgraded",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260116/f6c942a1-e1fd-4360-beda-fc4f62ceb0e0.png",
-      "localImgUrl": "/ability_images/deadpool/pwnage-pound-upgraded.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156359/pwnage-pound-upgraded_qijieq.png",
       "properties": [
         {
           "key": "Damage From Per Ability Missed",
@@ -3454,7 +3454,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "power-surge-punch",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/60a3fc70-a087-4e74-a818-74f20c3764b6.png",
-      "localImgUrl": "/ability_images/rogue/power-surge-punch.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156425/power-surge-punch_qg4z5v.png",
       "properties": [
         {
           "key": "Casting",
@@ -3479,7 +3479,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "defensive-stance",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/6df4eb8d-f7ba-4808-8680-073c0f1286af.png",
-      "localImgUrl": "/ability_images/rogue/defensive-stance.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156424/defensive-stance_qdea9e.png",
       "properties": [
         {
           "key": "Damage Reduction",
@@ -3524,7 +3524,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "southern-brawl",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/965eb4f6-cddc-4a8d-8c72-8be39286bc1a.png",
-      "localImgUrl": "/ability_images/rogue/southern-brawl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156425/southern-brawl_pdjhto.png",
       "properties": [
         {
           "key": "Dash Distance",
@@ -3557,7 +3557,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "chrono-kick-combo",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/f4b1d6b3-447e-47fd-bc18-9585ca699b80.png",
-      "localImgUrl": "/ability_images/rogue/chrono-kick-combo.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156424/chrono-kick-combo_mfoyry.png",
       "properties": [
         {
           "key": "Spell Field Range",
@@ -3606,7 +3606,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fatal-attraction",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/922413ba-afba-4475-b0f1-97e46caec2a3.png",
-      "localImgUrl": "/ability_images/rogue/fatal-attraction.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156425/fatal-attraction_b6xf5m.png",
       "properties": [
         {
           "key": "Dash Distance",
@@ -3643,7 +3643,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ability-absorption",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/20a291b6-507e-4d9b-bd23-b215f1feb887.png",
-      "localImgUrl": "/ability_images/rogue/ability-absorption.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156426/ability-absorption_ukt8mz.png",
       "properties": [
         {
           "key": "Dash Distance",
@@ -3708,7 +3708,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "heartbreaker",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251212/c5ba783e-9ca3-436c-bcaa-a1dc284b6355.png",
-      "localImgUrl": "/ability_images/rogue/heartbreaker.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156426/heartbreaker_tibauj.png",
       "properties": [
         {
           "key": "Duration",
@@ -3751,7 +3751,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kinetic-cards",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/803eab7e-6824-40ba-8439-6852d4d13098.png",
-      "localImgUrl": "/ability_images/gambit/kinetic-cards.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156379/kinetic-cards_fgegps.png",
       "properties": [
         {
           "key": "Casting",
@@ -3800,7 +3800,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ragin-royal-flush",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/1dca6707-3f6b-48ef-a180-1f2a6f2f0c6c.png",
-      "localImgUrl": "/ability_images/gambit/ragin-royal-flush.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156378/ragin-royal-flush_yoedos.png",
       "properties": [
         {
           "key": "Casting",
@@ -3853,7 +3853,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cajun-charge",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/ac36a353-d40b-4511-a13a-27f14a429c04.png",
-      "localImgUrl": "/ability_images/gambit/cajun-charge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156376/cajun-charge_cafaq0.png",
       "properties": [
         {
           "key": "Casting",
@@ -3874,7 +3874,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-hearts",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/6ac2c5f0-a2b1-4c61-9a9d-ad754bf80f8b.png",
-      "localImgUrl": "/ability_images/gambit/healing-hearts.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156378/healing-hearts_bpm9nu.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3899,7 +3899,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "breaking-spades",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/1ef52531-92a7-4f67-8087-c439b12fd268.png",
-      "localImgUrl": "/ability_images/gambit/breaking-spades.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156374/breaking-spades_zsjsdi.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -3924,7 +3924,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bayou-bash",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/c8149d2a-578d-425b-baef-97750a81d644.png",
-      "localImgUrl": "/ability_images/gambit/bayou-bash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156373/bayou-bash_mrcmry.png",
       "properties": [
         {
           "key": "Casting",
@@ -3985,7 +3985,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bridge-boost",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/c698518d-fcb9-49f7-88e4-6a0fdef24189.png",
-      "localImgUrl": "/ability_images/gambit/bridge-boost.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156375/bridge-boost_nhogqw.png",
       "properties": [
         {
           "key": "Casting",
@@ -4022,7 +4022,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "purifying-pick-up",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/4721ac14-6de6-4a2c-ad41-41f66bcf60ef.png",
-      "localImgUrl": "/ability_images/gambit/purifying-pick-up.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156378/purifying-pick-up_xqy5af.png",
       "properties": [
         {
           "key": "Casting",
@@ -4059,7 +4059,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "explosive-trick",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/fd0e01ed-c52f-47c1-bfcf-cf6f21d7489f.png",
-      "localImgUrl": "/ability_images/gambit/explosive-trick.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156377/explosive-trick_a9gfs2.png",
       "properties": [
         {
           "key": "Casting",
@@ -4092,7 +4092,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bidding-barrage",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251114/5b36fc07-c4e6-496a-9944-efb824adfe0f.png",
-      "localImgUrl": "/ability_images/gambit/bidding-barrage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156374/bidding-barrage_vbjgrb.png",
       "properties": [
         {
           "key": "Casting",
@@ -4131,7 +4131,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "justice-jab",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/9a0c9bf6-2e70-4a7a-8aac-92e1a9691ecb.png",
-      "localImgUrl": "/ability_images/daredevil/justice-jab.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156341/justice-jab_qj7px4.png",
       "properties": [
         {
           "key": "Casting",
@@ -4156,7 +4156,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "righteous-cross",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/ee03f218-5394-415f-b11a-3a4858128d81.png",
-      "localImgUrl": "/ability_images/daredevil/righteous-cross.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156342/righteous-cross_tyruay.png",
       "properties": [
         {
           "key": "Maximum Dash Distance",
@@ -4181,7 +4181,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "objection",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/0d23a7fb-886a-4f9c-91ef-22eddd0352a9.png",
-      "localImgUrl": "/ability_images/daredevil/objection.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156341/objection_ap5z08.png",
       "properties": [
         {
           "key": "Duration",
@@ -4202,7 +4202,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "devils-latch",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/39ffe656-8f28-43c4-be3d-cc79ed2df6a5.png",
-      "localImgUrl": "/ability_images/daredevil/devils-latch.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156340/devils-latch_xsco0v.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -4227,7 +4227,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "infernal-fury",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/e0e39493-ba93-4947-a38f-7d86f314b48b.png",
-      "localImgUrl": "/ability_images/daredevil/infernal-fury.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156340/infernal-fury_g6e0j1.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -4304,7 +4304,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "sonic-pursuit",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/041a40d0-92c7-4a69-9ddd-92af7dbaf73f.png",
-      "localImgUrl": "/ability_images/daredevil/sonic-pursuit.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156342/sonic-pursuit_sghts6.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -4349,7 +4349,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "radar-sense",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/1dd21aa7-df86-4264-9861-76e20570a272.png",
-      "localImgUrl": "/ability_images/daredevil/radar-sense.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156342/radar-sense_bgqyth.png",
       "properties": [
         {
           "key": "Maximum Detection Distance",
@@ -4362,7 +4362,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blind-ascent",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/ce9cbf4e-0c10-4fbe-bd57-af7eada7b84e.png",
-      "localImgUrl": "/ability_images/daredevil/blind-ascent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156340/blind-ascent_xjgojy.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -4375,7 +4375,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "let-the-devil-out",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251010/0aa73672-4753-4c5d-9f39-e501bd6dbbae.png",
-      "localImgUrl": "/ability_images/daredevil/let-the-devil-out.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156341/let-the-devil-out_pzncul.png",
       "properties": [
         {
           "key": "Time Required to Reach the Maximum Blind Range and Damage",
@@ -4414,7 +4414,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spear-of-ichors",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/5a3ec9ee-6a3b-44ac-b64c-ebb34f28c425.png",
-      "localImgUrl": "/ability_images/angela/spear-of-ichors.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155899/spear-of-ichors_w5yi12.png",
       "properties": [
         {
           "key": "Casting",
@@ -4447,7 +4447,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "axes-of-ichors",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/6e3c4ad4-32a2-4140-83f3-03e236885da2.png",
-      "localImgUrl": "/ability_images/angela/axes-of-ichors.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155897/axes-of-ichors_aijrak.png",
       "properties": [
         {
           "key": "Casting",
@@ -4480,7 +4480,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "shielded-stance",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/89c12b85-cd4c-4d3e-a6b8-b628c6de8eba.png",
-      "localImgUrl": "/ability_images/angela/shielded-stance.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155898/shielded-stance_seajyf.png",
       "properties": [
         {
           "key": "Maximum Shield Value",
@@ -4513,7 +4513,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "seraphic-soar",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/06ebb164-e0fe-494a-bfe9-58c81de0d369.png",
-      "localImgUrl": "/ability_images/angela/seraphic-soar.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155898/seraphic-soar_bguqj1.png",
       "properties": [
         {
           "key": "Time Required to Enter Glide",
@@ -4538,7 +4538,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "divine-judgement",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/4738a04f-deef-40f5-9e53-51c71b8dcaa7.png",
-      "localImgUrl": "/ability_images/angela/divine-judgement.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155897/divine-judgement_logzxh.png",
       "properties": [
         {
           "key": "Damage",
@@ -4575,7 +4575,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wingblade-ascent",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/32ac3b89-8941-4ee9-9b81-fd14fdfff36b.png",
-      "localImgUrl": "/ability_images/angela/wingblade-ascent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155899/wingblade-ascent_vdokm8.png",
       "properties": [
         {
           "key": "Ascent Height",
@@ -4596,7 +4596,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "assassins-charge",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/dc923ca4-e2a4-4448-92e0-cae6d029e5f1.png",
-      "localImgUrl": "/ability_images/angela/assassins-charge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155897/assassins-charge_jeutrb.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -4653,7 +4653,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hevens-retribution",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250911/0240ecc1-d434-46cc-82ba-abdae0c275ef.png",
-      "localImgUrl": "/ability_images/angela/hevens-retribution.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155898/hevens-retribution_jdzvqf.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -4704,7 +4704,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ancestral-sword",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/7fbc426f-d5a0-4566-9d1f-00f79ad25bc3.png",
-      "localImgUrl": "/ability_images/blade/ancestral-sword.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156330/ancestral-sword_xmra3f.png",
       "properties": [
         {
           "key": "Casting",
@@ -4729,7 +4729,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hunters-shotgun",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/2b532b79-61a8-4300-98a8-5cbaa4f5a29b.png",
-      "localImgUrl": "/ability_images/blade/hunters-shotgun.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156331/hunters-shotgun_zb5nsg.png",
       "properties": [
         {
           "key": "Casting",
@@ -4770,7 +4770,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "scarlet-shroud",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/38dda78b-768c-421d-a971-772db41ee3dd.png",
-      "localImgUrl": "/ability_images/blade/scarlet-shroud.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156331/scarlet-shroud_sjbz6e.png",
       "properties": [
         {
           "key": "Maximum Energy",
@@ -4811,7 +4811,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bloodline-awakening",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/407381d7-9280-4cfc-9f6e-2dac3d07e0ce.png",
-      "localImgUrl": "/ability_images/blade/bloodline-awakening.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156330/bloodline-awakening_o0p2hn.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -4868,7 +4868,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "daywalker-dash",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/317a7483-cdd2-4114-9fed-861f7973e7cf.png",
-      "localImgUrl": "/ability_images/blade/daywalker-dash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156330/daywalker-dash_h00wuz.png",
       "properties": [
         {
           "key": "Casting",
@@ -4921,7 +4921,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thousand-fold-slash",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250808/76a3bf21-fa7d-46b9-af37-db2c078fda6f.png",
-      "localImgUrl": "/ability_images/blade/thousand-fold-slash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156331/thousand-fold-slash_balzvt.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -4976,7 +4976,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cosmic-flames",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250710/e458821f-fbdc-4505-8407-0eafe85f5a22.png",
-      "localImgUrl": "/ability_images/phoenix/cosmic-flames.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156422/cosmic-flames_bbsy3v.png",
       "properties": [
         {
           "key": "Damage",
@@ -5017,7 +5017,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "telekinesis-burst",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250710/986f26e7-7141-4dc9-90ac-acff1b8c380a.png",
-      "localImgUrl": "/ability_images/phoenix/telekinesis-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156437/telekinesis-burst_gkf5pv.png",
       "properties": [
         {
           "key": "Target Explosion Damage",
@@ -5058,7 +5058,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dark-ascent",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250710/7ef4eae3-1354-41eb-ac11-0fefbcd96808.png",
-      "localImgUrl": "/ability_images/phoenix/dark-ascent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156437/dark-ascent_qx0rzu.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -5087,7 +5087,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "telepathic-illusion",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250710/18388d22-1918-4cfe-98e3-7a59f701b1a6.png",
-      "localImgUrl": "/ability_images/phoenix/telepathic-illusion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156438/telepathic-illusion_icfiqk.png",
       "properties": [
         {
           "key": "Dash Distance",
@@ -5116,7 +5116,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "endsong-inferno",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250710/4a733ade-7bcc-4152-b3e7-3dc01bfcdb06.png",
-      "localImgUrl": "/ability_images/phoenix/endsong-inferno.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156438/endsong-inferno_yznzz1.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -5155,7 +5155,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "encephalo-ray",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250529/71627fa8-a6b2-4c24-b4f3-8cf7f0a195d3.png",
-      "localImgUrl": "/ability_images/ultron/encephalo-ray.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156442/encephalo-ray_oi9mlk.png",
       "properties": [
         {
           "key": "Casting",
@@ -5184,7 +5184,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "imperative-firewall",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250529/da4eebd7-8dfc-406f-adaf-d02ea613d493.png",
-      "localImgUrl": "/ability_images/ultron/imperative-firewall.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156445/imperative-firewall_nj0th1.png",
       "properties": [
         {
           "key": "Casting",
@@ -5225,7 +5225,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "imperative-patch",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250529/dd94b605-3f0c-4bfc-9fc5-c16ac7b53da2.png",
-      "localImgUrl": "/ability_images/ultron/imperative-patch.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156444/imperative-patch_ghfs9m.png",
       "properties": [
         {
           "key": "Casting",
@@ -5266,7 +5266,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dynamic-flight",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250529/720ff240-78c6-49fa-92ba-fa695e6b0635.png",
-      "localImgUrl": "/ability_images/ultron/dynamic-flight.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156444/dynamic-flight_xywbxr.png",
       "properties": [
         {
           "key": "Casting",
@@ -5307,7 +5307,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "rage-of-ultron",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250529/4768132e-a560-432e-aa8b-b7fc01d321d9.png",
-      "localImgUrl": "/ability_images/ultron/rage-of-ultron.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156445/rage-of-ultron_bbkudo.png",
       "properties": [
         {
           "key": "Casting",
@@ -5378,7 +5378,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "telepathic-pulse",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/af9f583d-3891-4929-afe5-f41651b71edb.png",
-      "localImgUrl": "/ability_images/emma-frost/telepathic-pulse.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156373/telepathic-pulse_wny7t6.png",
       "properties": [
         {
           "key": "Casting",
@@ -5411,7 +5411,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "minds-aegis",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/32c4bdf3-c6de-4131-b202-db95bbd1fc07.png",
-      "localImgUrl": "/ability_images/emma-frost/minds-aegis.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156372/minds-aegis_l6xxis.png",
       "properties": [
         {
           "key": "Casting",
@@ -5444,7 +5444,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psychic-spear",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/091083f4-aa98-4bf7-8b9e-318798ee4939.png",
-      "localImgUrl": "/ability_images/emma-frost/psychic-spear.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156372/psychic-spear_j3d1ic.png",
       "properties": [
         {
           "key": "Casting",
@@ -5477,7 +5477,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "diamond-form",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/139006e1-78e5-443f-9b1e-271c3f6bc276.png",
-      "localImgUrl": "/ability_images/emma-frost/diamond-form.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156371/diamond-form_haioxn.png",
       "properties": [
         {
           "key": "Casting",
@@ -5502,7 +5502,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "faceted-fury",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/a5598975-b4ab-49a5-b99c-a9a4d044f37c.png",
-      "localImgUrl": "/ability_images/emma-frost/faceted-fury.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156371/faceted-fury_wovdcn.png",
       "properties": [
         {
           "key": "Casting",
@@ -5523,7 +5523,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "crystal-kick",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/dd86d9de-5844-4759-9692-5e0fac76579a.png",
-      "localImgUrl": "/ability_images/emma-frost/crystal-kick.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156370/crystal-kick_ytvlb4.png",
       "properties": [
         {
           "key": "Casting",
@@ -5552,7 +5552,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "carbon-crush",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/a30a134d-c77a-48c3-a212-ea7704c72453.png",
-      "localImgUrl": "/ability_images/emma-frost/carbon-crush.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156371/carbon-crush_ohkwip.png",
       "properties": [
         {
           "key": "Casting",
@@ -5581,7 +5581,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psionic-seduction",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250409/f186ffef-db20-4cce-ac54-f3963738fa64.png",
-      "localImgUrl": "/ability_images/emma-frost/psionic-seduction.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156372/psionic-seduction_yntves.png",
       "properties": [
         {
           "key": "Casting",
@@ -5616,7 +5616,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "rocky-jab",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/274bfd5f-02b6-4513-a80e-3f7685dc8556.png",
-      "localImgUrl": "/ability_images/the-thing/rocky-jab.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156443/rocky-jab_lkmsnp.png",
       "properties": [
         {
           "key": "Casting",
@@ -5641,7 +5641,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stone-haymaker",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/745e0798-e37f-431b-82d5-bc3d29f97d9b.png",
-      "localImgUrl": "/ability_images/the-thing/stone-haymaker.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156446/stone-haymaker_xhoy2o.png",
       "properties": [
         {
           "key": "Casting",
@@ -5666,7 +5666,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "yancy-street-charge",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/824cffd2-00d5-43a7-8e88-3c72d432ca92.png",
-      "localImgUrl": "/ability_images/the-thing/yancy-street-charge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156440/yancy-street-charge_pwfdt4.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -5699,7 +5699,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "embattled-leap",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/59664e33-bdbf-4243-b93a-7583f1712cad.png",
-      "localImgUrl": "/ability_images/the-thing/embattled-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156440/embattled-leap_a9nkd9.png",
       "properties": [
         {
           "key": "Casting",
@@ -5724,7 +5724,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "battle-blitz",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251104/22edee34-cf90-486d-9f16-4959ca72aec6.png",
-      "localImgUrl": "/ability_images/the-thing/battle-blitz.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156440/battle-blitz_uiwdmn.png",
       "properties": [
         {
           "key": "CASTING",
@@ -5749,7 +5749,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "clobberin-time",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/27486433-769b-4aec-ba7b-d7da3cabd52f.png",
-      "localImgUrl": "/ability_images/the-thing/clobberin-time.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156439/clobberin-time_wn8mcp.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -5774,7 +5774,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "unyielding-will",
       "button": "PASSIVE",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/3898e125-f9bf-4d44-8b4d-9aeec6873187.png",
-      "localImgUrl": "/ability_images/the-thing/unyielding-will.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156442/unyielding-will_ojvvhu.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -5789,7 +5789,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fire-cluster",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/2afdfcab-b55a-4a18-a47e-9c2a6bb175b8.png",
-      "localImgUrl": "/ability_images/human-torch/fire-cluster.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156387/fire-cluster_g35rjk.png",
       "properties": [
         {
           "key": "Casting",
@@ -5834,7 +5834,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blazing-blast",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/af838642-8301-4f48-b5ea-5c3413c7cb7f.png",
-      "localImgUrl": "/ability_images/human-torch/blazing-blast.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156386/blazing-blast_q4bahv.png",
       "properties": [
         {
           "key": "Casting",
@@ -5875,7 +5875,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "flaming-meteor",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/e3c91a9a-e174-4309-b2c6-975f0671805a.png",
-      "localImgUrl": "/ability_images/human-torch/flaming-meteor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156387/flaming-meteor_qux3ja.png",
       "properties": [
         {
           "key": "Max Dash Speed",
@@ -5912,7 +5912,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "plasma-body",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/bed6bb7e-ac4e-4b83-b75f-32b4c02b3249.png",
-      "localImgUrl": "/ability_images/human-torch/plasma-body.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156388/plasma-body_nsfu3q.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -5937,7 +5937,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pyro-prison",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/d20f2e24-4f10-4fd8-a3a9-73b2920b27ee.png",
-      "localImgUrl": "/ability_images/human-torch/pyro-prison.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156389/pyro-prison_mketeu.png",
       "properties": [
         {
           "key": "Max Link Distance",
@@ -5970,7 +5970,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "supernova",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250220/49ec9ee0-bff0-41c5-944f-ff679966e4d4.png",
-      "localImgUrl": "/ability_images/human-torch/supernova.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156389/supernova_mflnjn.png",
       "properties": [
         {
           "key": "Energy Cost",
@@ -6013,7 +6013,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "orb-projection",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250110/79e037c4-353c-46a1-abb1-1188ff3f98e3.png",
-      "localImgUrl": "/ability_images/invisible-woman/orb-projection.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156391/orb-projection_qweuct.png",
       "properties": [
         {
           "key": "Casting",
@@ -6062,7 +6062,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "guardian-shield",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/af32c3d3-713a-4faf-90f7-1be2dcfa8cbd.png",
-      "localImgUrl": "/ability_images/invisible-woman/guardian-shield.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156389/guardian-shield_azvwdk.png",
       "properties": [
         {
           "key": "Casting",
@@ -6115,7 +6115,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psionic-vortex",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/308c5ab3-2b3f-4f53-9eb6-05c171ad4863.png",
-      "localImgUrl": "/ability_images/invisible-woman/psionic-vortex.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156393/psionic-vortex_bh4zbx.png",
       "properties": [
         {
           "key": "Casting",
@@ -6156,7 +6156,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "force-physics",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/0d7893e9-e90e-483f-8b90-414535d6f133.png",
-      "localImgUrl": "/ability_images/invisible-woman/force-physics.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156390/force-physics_z8csdn.png",
       "properties": [
         {
           "key": "Casting",
@@ -6189,7 +6189,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "invisible-boundary",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/c10fa2f1-64e5-417a-abbe-0092e98b0afb.png",
-      "localImgUrl": "/ability_images/invisible-woman/invisible-boundary.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156390/invisible-boundary_bpluxc.png",
       "properties": [
         {
           "key": "Casting",
@@ -6230,7 +6230,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "covert-advance",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/d273333c-e1da-4d98-925d-b7ce8601144c.png",
-      "localImgUrl": "/ability_images/invisible-woman/covert-advance.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156390/covert-advance_rcf2xw.png",
       "properties": [
         {
           "key": "Healing Amount",
@@ -6243,7 +6243,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "veiled-step",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/eb7b6f46-9d82-4df8-a513-8d94c07546e9.png",
-      "localImgUrl": "/ability_images/invisible-woman/veiled-step.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156392/veiled-step_ekysw3.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -6258,7 +6258,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stretch-punch",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250110/6ca25ced-20ea-495c-b403-d84fa949b02a.png",
-      "localImgUrl": "/ability_images/mister-fantastic/stretch-punch.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156412/stretch-punch_vixfht.png",
       "properties": [
         {
           "key": "Casting",
@@ -6299,7 +6299,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "distended-grip",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/f2a1a063-eb4b-4274-a9b8-fac92c4abeba.png",
-      "localImgUrl": "/ability_images/mister-fantastic/distended-grip.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156410/distended-grip_xmvfnq.png",
       "properties": [
         {
           "key": "Casting",
@@ -6356,7 +6356,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "flexible-elongation",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/014f9fc0-5b64-4c2d-afb1-4669b7b5369c.png",
-      "localImgUrl": "/ability_images/mister-fantastic/flexible-elongation.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156411/flexible-elongation_cmm3xj.png",
       "properties": [
         {
           "key": "Maximum Select Distance",
@@ -6393,7 +6393,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "reflexive-rubber",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/d152620a-90bc-407e-a3f1-b137503624d0.png",
-      "localImgUrl": "/ability_images/mister-fantastic/reflexive-rubber.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156411/reflexive-rubber_qjcacx.png",
       "properties": [
         {
           "key": "Shield Value",
@@ -6426,7 +6426,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "brainiac-bounce",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/05dcb43c-4de3-483a-afc6-d06c6e76e4ff.png",
-      "localImgUrl": "/ability_images/mister-fantastic/brainiac-bounce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156411/brainiac-bounce_ff68p4.png",
       "properties": [
         {
           "key": "Casting",
@@ -6479,7 +6479,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "elastic-strength",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20250108/25010c9f-083e-4097-a443-544e0eeaa0ab.png",
-      "localImgUrl": "/ability_images/mister-fantastic/elastic-strength.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156409/elastic-strength_xxc0p3.png",
       "properties": [
         {
           "key": "Max Elasticity",
@@ -6518,7 +6518,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "burst-acorn",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/662dd801-7b3c-4929-bca7-4696b104811d.png",
-      "localImgUrl": "/ability_images/squirrel-girl/burst-acorn.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156430/burst-acorn_tl1ikh.png",
       "properties": [
         {
           "key": "Casting",
@@ -6559,7 +6559,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "unbeatable-squirrel-tsunami",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/f87d8f38-b7d1-4a62-9aaa-eb00423c38d2.png",
-      "localImgUrl": "/ability_images/squirrel-girl/unbeatable-squirrel-tsunami.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156432/unbeatable-squirrel-tsunami_t02m0t.png",
       "properties": [
         {
           "key": "Duration",
@@ -6596,7 +6596,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "tail-bounce",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/cc6be0d3-f369-4fcf-861d-5e0f2594af1a.png",
-      "localImgUrl": "/ability_images/squirrel-girl/tail-bounce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156431/tail-bounce_eqojhq.png",
       "properties": [
         {
           "key": "Jump Height",
@@ -6613,7 +6613,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mammal-bond",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/5714be78-0962-47d3-b231-1a3b6d8d98d3.png",
-      "localImgUrl": "/ability_images/squirrel-girl/mammal-bond.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156431/mammal-bond_fdan5t.png",
       "properties": [
         {
           "key": "Maximum Duration",
@@ -6630,7 +6630,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "squirrel-blockade",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/403af848-dda8-42f7-a2a0-b3d0959eeefe.png",
-      "localImgUrl": "/ability_images/squirrel-girl/squirrel-blockade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156431/squirrel-blockade_lv2liz.png",
       "properties": [
         {
           "key": "Casting",
@@ -6665,7 +6665,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "widows-bite-baton",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/66ad25fa-5a94-4087-8d1d-d626e1a5c798.png",
-      "localImgUrl": "/ability_images/black-widow/widows-bite-baton.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156329/widows-bite-baton_voz7xa.png",
       "properties": [
         {
           "key": "Casting",
@@ -6690,7 +6690,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "red-room-rifle",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/67bd0973-ab49-4e6d-a04b-70f67cb2514b.png",
-      "localImgUrl": "/ability_images/black-widow/red-room-rifle.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156329/red-room-rifle_fawjjn.png",
       "properties": [
         {
           "key": "Casting",
@@ -6731,7 +6731,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "electro-plasma-explosion",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/2ab04f37-ede8-4c33-aee0-ef47e6d4c495.png",
-      "localImgUrl": "/ability_images/black-widow/electro-plasma-explosion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156328/electro-plasma-explosion_u3ni0a.png",
       "properties": [
         {
           "key": "Projectile Speed",
@@ -6780,7 +6780,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fleet-foot",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/c54964b7-5c00-4229-8f65-5d156f05ce27.png",
-      "localImgUrl": "/ability_images/black-widow/fleet-foot.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156328/fleet-foot_fkvmp2.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -6809,7 +6809,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "edge-dancer",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/63a7474c-3d1a-4db1-933a-c70c5a37e9ca.png",
-      "localImgUrl": "/ability_images/black-widow/edge-dancer.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156328/edge-dancer_tsrwm2.png",
       "properties": [
         {
           "key": "Casting",
@@ -6850,7 +6850,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "straight-shooter",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/6361d366-98b8-4268-825e-1371bf7c99f0.png",
-      "localImgUrl": "/ability_images/black-widow/straight-shooter.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156329/straight-shooter_xwqu65.png",
       "properties": [
         {
           "key": "Casting",
@@ -6885,7 +6885,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "savage-claw",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/97b1d4c6-7ea2-43f2-b528-5ea88904853f.png",
-      "localImgUrl": "/ability_images/wolverine/savage-claw.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156455/savage-claw_we7prb.png",
       "properties": [
         {
           "key": "Casting",
@@ -6914,7 +6914,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "last-stand",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/6900d5e2-7074-4c28-a424-4015ad9780a8.png",
-      "localImgUrl": "/ability_images/wolverine/last-stand.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156455/last-stand_qdj9a5.png",
       "properties": [
         {
           "key": "Knockback Range",
@@ -6955,7 +6955,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "feral-leap",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/e88c7523-3fab-4cfb-a954-080c5824f0fe.png",
-      "localImgUrl": "/ability_images/wolverine/feral-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156459/feral-leap_dbf6m7.png",
       "properties": [
         {
           "key": "Snatch Damage",
@@ -7000,7 +7000,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "undying-animal",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/15a76d54-520c-447a-b8f1-2ab0a488faac.png",
-      "localImgUrl": "/ability_images/wolverine/undying-animal.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156459/undying-animal_hy3i5x.png",
       "properties": [
         {
           "key": "Duration",
@@ -7021,7 +7021,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "vicious-rampage",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/a015b659-87d4-4569-a870-4af03347ecb3.png",
-      "localImgUrl": "/ability_images/wolverine/vicious-rampage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156458/vicious-rampage_gtfwdb.png",
       "properties": [
         {
           "key": "Casting",
@@ -7058,7 +7058,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "regenerative-healing-factor",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/031e30b1-f8d7-4be1-9a03-b758bdddc6be.png",
-      "localImgUrl": "/ability_images/wolverine/regenerative-healing-factor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156458/regenerative-healing-factor_ay9wav.png",
       "properties": [
         {
           "key": "Bonus Health",
@@ -7087,7 +7087,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "berserker-rage",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/e97de2d3-6f28-4619-80cd-59da00931e8b.png",
-      "localImgUrl": "/ability_images/wolverine/berserker-rage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156458/berserker-rage_zw5boj.png",
       "properties": [
         {
           "key": "Max Rage",
@@ -7130,7 +7130,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "darkforce-cloak",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/94227f4c-02fd-4954-900c-f149b05b5cea.png",
-      "localImgUrl": "/ability_images/cloakdagger/darkforce-cloak.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156335/darkforce-cloak_c3ujd0.png",
       "properties": [
         {
           "key": "Casting",
@@ -7163,7 +7163,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "eternal-bond",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/9791de0a-9b39-4111-a535-77a8fccaef5a.png",
-      "localImgUrl": "/ability_images/cloakdagger/eternal-bond.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156335/eternal-bond_w0gvbu.png",
       "properties": [
         {
           "key": "Casting",
@@ -7196,7 +7196,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "lights-embrace",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/d79fe95c-03cf-4d39-97ce-a2af95dd180b.png",
-      "localImgUrl": "/ability_images/cloakdagger/lights-embrace.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156336/lights-embrace_tyowaa.png",
       "properties": [
         {
           "key": "Casting",
@@ -7209,7 +7209,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "terror-cape",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/a57ebbc2-dcf5-4511-8a5e-7291aefbaf3f.png",
-      "localImgUrl": "/ability_images/cloakdagger/terror-cape.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156337/terror-cape_okr3pv.png",
       "properties": [
         {
           "key": "Casting",
@@ -7262,7 +7262,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dark-teleportation",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/08104768-56d7-4bda-84ae-bd4cd7245223.png",
-      "localImgUrl": "/ability_images/cloakdagger/dark-teleportation.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156335/dark-teleportation_ans4ai.png",
       "properties": [
         {
           "key": "Casting",
@@ -7291,7 +7291,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "lightforce-dagger",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/5211b159-6fa8-4589-829f-facb1c455241.png",
-      "localImgUrl": "/ability_images/cloakdagger/lightforce-dagger.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156336/lightforce-dagger_dynmdo.png",
       "properties": [
         {
           "key": "Casting",
@@ -7336,7 +7336,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "eternal-bond",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/9791de0a-9b39-4111-a535-77a8fccaef5a.png",
-      "localImgUrl": "/ability_images/cloakdagger/eternal-bond.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156335/eternal-bond_w0gvbu.png",
       "properties": [
         {
           "key": "Casting",
@@ -7369,7 +7369,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "shadows-embrace",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/3e810039-6b5c-43e0-b1c6-22808f1ee3cf.png",
-      "localImgUrl": "/ability_images/cloakdagger/shadows-embrace.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156336/shadows-embrace_qaj9r6.png",
       "properties": [
         {
           "key": "Casting",
@@ -7382,7 +7382,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "veil-of-lightforce",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/b2149229-d3c4-4056-9fa4-04704c96c3af.png",
-      "localImgUrl": "/ability_images/cloakdagger/veil-of-lightforce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156337/veil-of-lightforce_mhoidp.png",
       "properties": [
         {
           "key": "Casting",
@@ -7427,7 +7427,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dagger-storm",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/a106ebc0-80b0-4dd9-bf68-0c19f464e8bc.png",
-      "localImgUrl": "/ability_images/cloakdagger/dagger-storm.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156334/dagger-storm_ynmlqz.png",
       "properties": [
         {
           "key": "Casting",
@@ -7462,7 +7462,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "jeet-kune-do",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/08e65caa-9aa0-425c-aeba-fa1544c03be2.png",
-      "localImgUrl": "/ability_images/iron-fist/jeet-kune-do.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156394/jeet-kune-do_vtovpm.png",
       "properties": [
         {
           "key": "Casting",
@@ -7495,7 +7495,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "yat-jee-chung-kuen",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/fd8bfe86-ffd7-4752-9da3-d005bafa8668.png",
-      "localImgUrl": "/ability_images/iron-fist/yat-jee-chung-kuen.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156394/yat-jee-chung-kuen_nnpkfr.png",
       "properties": [
         {
           "key": "Casting",
@@ -7536,7 +7536,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "living-chi",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/080f088b-94dd-45ac-9bc7-9e5c512d51d0.png",
-      "localImgUrl": "/ability_images/iron-fist/living-chi.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156395/living-chi_phnkjz.png",
       "properties": [
         {
           "key": "Duration",
@@ -7573,7 +7573,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kun-lun-kick",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/e5377516-d352-4169-bb87-7bd68523dda7.png",
-      "localImgUrl": "/ability_images/iron-fist/kun-lun-kick.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156395/kun-lun-kick_eyg8df.png",
       "properties": [
         {
           "key": "Casting",
@@ -7606,7 +7606,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "harmony-recovery",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/14e2c16b-cf9f-4e49-bef0-690bcc3d910c.png",
-      "localImgUrl": "/ability_images/iron-fist/harmony-recovery.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156392/harmony-recovery_xzk1no.png",
       "properties": [
         {
           "key": "Duration",
@@ -7631,7 +7631,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "crane-leap",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/62f2f94b-228c-4015-9d56-b9134c171cf5.png",
-      "localImgUrl": "/ability_images/iron-fist/crane-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156391/crane-leap_gc9blb.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -7644,7 +7644,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dragons-defense",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/5745baab-4f3f-47f0-9eb0-8b8ea67f81f2.png",
-      "localImgUrl": "/ability_images/iron-fist/dragons-defense.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156392/dragons-defense_dvrdlt.png",
       "properties": [
         {
           "key": "Block Time",
@@ -7673,7 +7673,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wall-runner",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/53125bd3-2ca7-4b39-a51c-bac18c6ecfdd.png",
-      "localImgUrl": "/ability_images/iron-fist/wall-runner.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156394/wall-runner_ageflg.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -7686,7 +7686,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "chi-absorption",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/2946ce20-8956-4efb-9729-afbdaa5efc51.png",
-      "localImgUrl": "/ability_images/iron-fist/chi-absorption.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156391/chi-absorption_kgbu7h.png",
       "properties": [
         {
           "key": "Bonus Health",
@@ -7701,7 +7701,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psionic-crossbow",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241127/95719d81-365d-4ad7-bf6b-026166c95aed.png",
-      "localImgUrl": "/ability_images/psylocke/psionic-crossbow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156423/psionic-crossbow_jzna3p.png",
       "properties": [
         {
           "key": "Casting",
@@ -7750,7 +7750,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dance-of-the-butterfly",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241127/dabcc1e3-5490-4fa4-87ab-b9440a74b69b.png",
-      "localImgUrl": "/ability_images/psylocke/dance-of-the-butterfly.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156422/dance-of-the-butterfly_uoqcei.png",
       "properties": [
         {
           "key": "Range",
@@ -7787,7 +7787,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psi-blade-dash",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241127/af147052-f9a1-416b-8bfc-0143471b18c1.png",
-      "localImgUrl": "/ability_images/psylocke/psi-blade-dash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156423/psi-blade-dash_sifcal.png",
       "properties": [
         {
           "key": "Average Speed",
@@ -7820,7 +7820,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "psychic-stealth",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241127/55b04754-bda5-4bcf-8a95-44479c836508.png",
-      "localImgUrl": "/ability_images/psylocke/psychic-stealth.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156423/psychic-stealth_gl7obq.png",
       "properties": [
         {
           "key": "Duration",
@@ -7845,7 +7845,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wing-shurikens",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241127/90b85285-ea24-4fb2-8ec4-b60d3f177569.png",
-      "localImgUrl": "/ability_images/psylocke/wing-shurikens.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156424/wing-shurikens_spfnnd.png",
       "properties": [
         {
           "key": "Casting",
@@ -7916,7 +7916,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "piercing-arrow",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/9107db4e-f275-49aa-87bf-96c697157a15.png",
-      "localImgUrl": "/ability_images/hawkeye/piercing-arrow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156381/piercing-arrow_htbfui.png",
       "properties": [
         {
           "key": "Casting",
@@ -7953,7 +7953,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blast-arrow",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/b54fcda9-4e31-4a7b-87c7-c7e8fd675434.png",
-      "localImgUrl": "/ability_images/hawkeye/blast-arrow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156379/blast-arrow_x22ykc.png",
       "properties": [
         {
           "key": "Casting",
@@ -8002,7 +8002,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hunters-sight",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/15af78f7-6723-402d-916e-0e17ebf4b6df.png",
-      "localImgUrl": "/ability_images/hawkeye/hunters-sight.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156380/hunters-sight_nyjvqe.png",
       "properties": [
         {
           "key": "Duration",
@@ -8035,7 +8035,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "crescent-slash",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/a598cd3c-e1d2-4403-8d48-13bf9dcf1b39.png",
-      "localImgUrl": "/ability_images/hawkeye/crescent-slash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156379/crescent-slash_um58gs.png",
       "properties": [
         {
           "key": "Casting",
@@ -8060,7 +8060,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hypersonic-arrow",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/96e35f6b-b42a-461a-9cd9-554ed05e3470.png",
-      "localImgUrl": "/ability_images/hawkeye/hypersonic-arrow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156381/hypersonic-arrow_zcrrrk.png",
       "properties": [
         {
           "key": "Casting",
@@ -8105,7 +8105,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ronin-slash",
       "button": "V",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/d8d9cc33-6737-4481-b442-ce0375138806.png",
-      "localImgUrl": "/ability_images/hawkeye/ronin-slash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156380/ronin-slash_cfni5w.png",
       "properties": [
         {
           "key": "Casting",
@@ -8126,7 +8126,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "skyward-leap",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/83892ce1-2db5-4c6c-a0f2-a4117ab86aab.png",
-      "localImgUrl": "/ability_images/hawkeye/skyward-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156380/skyward-leap_tldgo9.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -8139,7 +8139,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "archers-focus",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/54419864-579b-4029-bc38-150d604b96c2.png",
-      "localImgUrl": "/ability_images/hawkeye/archers-focus.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156377/archers-focus_vjsxt2.png",
       "properties": [
         {
           "key": "Bonus Damage",
@@ -8166,7 +8166,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "repulsor-blast",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d69cf17a-732e-486d-87e3-43c5892e42c3.png",
-      "localImgUrl": "/ability_images/iron-man/repulsor-blast.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156403/repulsor-blast_kkpjux.png",
       "properties": [
         {
           "key": "Casting",
@@ -8255,7 +8255,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "repulsor-blast-armor-overdrive",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d69cf17a-732e-486d-87e3-43c5892e42c3.png",
-      "localImgUrl": "/ability_images/iron-man/repulsor-blast-armor-overdrive.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156402/repulsor-blast-armor-overdrive_izdbik.png",
       "properties": [
         {
           "key": "Casting",
@@ -8300,7 +8300,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "unibeam",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5a005241-4e91-4240-9da0-671454971524.png",
-      "localImgUrl": "/ability_images/iron-man/unibeam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156402/unibeam_urrp3j.png",
       "properties": [
         {
           "key": "Casting",
@@ -8337,7 +8337,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "unibeam-armor-overdrive",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5a005241-4e91-4240-9da0-671454971524.png",
-      "localImgUrl": "/ability_images/iron-man/unibeam-armor-overdrive.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156402/unibeam-armor-overdrive_zitllc.png",
       "properties": [
         {
           "key": "Casting",
@@ -8366,7 +8366,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "invincible-pulse-cannon",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/35909ad4-f7f5-4d30-8d58-b076bebca067.png",
-      "localImgUrl": "/ability_images/iron-man/invincible-pulse-cannon.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156395/invincible-pulse-cannon_bhwbky.png",
       "properties": [
         {
           "key": "Casting",
@@ -8411,7 +8411,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hyper-velocity",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ea996cd4-74a0-40d7-9498-3253084b9be2.png",
-      "localImgUrl": "/ability_images/iron-man/hyper-velocity.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156401/hyper-velocity_klq1us.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -8436,7 +8436,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hyper-velocity-armor-overdrive",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ea996cd4-74a0-40d7-9498-3253084b9be2.png",
-      "localImgUrl": "/ability_images/iron-man/hyper-velocity-armor-overdrive.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156393/hyper-velocity-armor-overdrive_i83fuu.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -8453,7 +8453,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "armor-overdrive",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/27f07e85-4220-4227-892b-04c9850a7c02.png",
-      "localImgUrl": "/ability_images/iron-man/armor-overdrive.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156393/armor-overdrive_htkysq.png",
       "properties": [
         {
           "key": "Duration",
@@ -8478,7 +8478,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "micro-missile-barrage",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/19e4e5da-fa8d-4cf8-a817-1111d91dc389.png",
-      "localImgUrl": "/ability_images/iron-man/micro-missile-barrage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156401/micro-missile-barrage_jknrpm.png",
       "properties": [
         {
           "key": "Casting",
@@ -8515,7 +8515,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "micro-missile-barrage-armor-overdrive",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/19e4e5da-fa8d-4cf8-a817-1111d91dc389.png",
-      "localImgUrl": "/ability_images/iron-man/micro-missile-barrage-armor-overdrive.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156396/micro-missile-barrage-armor-overdrive_yaymgh.png",
       "properties": [
         {
           "key": "Casting",
@@ -8554,7 +8554,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "crescent-dart",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/f4bab63c-dd7b-4ddc-b9f5-d0481acffaf3.png",
-      "localImgUrl": "/ability_images/moon-knight/crescent-dart.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156418/crescent-dart_stoelu.png",
       "properties": [
         {
           "key": "Casting",
@@ -8603,7 +8603,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hand-of-khonshu",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9253ada4-37a7-4cc9-9008-2d3e748d8dc1.png",
-      "localImgUrl": "/ability_images/moon-knight/hand-of-khonshu.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156412/hand-of-khonshu_koh6oa.png",
       "properties": [
         {
           "key": "Casting",
@@ -8648,7 +8648,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "night-glider",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/815eee35-da1f-4c84-808b-ce71aa39df9c.png",
-      "localImgUrl": "/ability_images/moon-knight/night-glider.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156415/night-glider_u6i1iv.png",
       "properties": [
         {
           "key": "Horizontal Movement Speed",
@@ -8665,7 +8665,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ancient-ankh",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4dee2bf5-3255-4ce7-bfe4-463eb64bda06.png",
-      "localImgUrl": "/ability_images/moon-knight/ancient-ankh.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156415/ancient-ankh_a1vwhl.png",
       "properties": [
         {
           "key": "Casting",
@@ -8698,7 +8698,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "moonlight-hook",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/60e26c6a-92ea-4e8a-a669-4c3a9be668f7.png",
-      "localImgUrl": "/ability_images/moon-knight/moonlight-hook.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156415/moonlight-hook_kbnw1m.png",
       "properties": [
         {
           "key": "Casting",
@@ -8727,7 +8727,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "rising-leap",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/f7f1a460-7069-42b0-b926-a5fd1c43d171.png",
-      "localImgUrl": "/ability_images/moon-knight/rising-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156416/rising-leap_j36uxx.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -8740,7 +8740,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "moon-blade",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/7864c28b-7c4b-4cc4-8e74-d600e7c586ee.png",
-      "localImgUrl": "/ability_images/moon-knight/moon-blade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156416/moon-blade_oeyvqv.png",
       "properties": [
         {
           "key": "Casting",
@@ -8793,7 +8793,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "triple-eclipse",
       "button": "V",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241125/9b92fd1c-3cdc-4d9d-83cf-f43d6706a73d.png",
-      "localImgUrl": "/ability_images/moon-knight/triple-eclipse.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156417/triple-eclipse_vvchx9.png",
       "properties": [
         {
           "key": "Casting",
@@ -8812,7 +8812,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "trident-of-neptune",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cc74a8d7-aa7a-4bef-9777-6f2499ece5a4.png",
-      "localImgUrl": "/ability_images/namor/trident-of-neptune.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156419/trident-of-neptune_ogvxj9.png",
       "properties": [
         {
           "key": "Casting",
@@ -8849,7 +8849,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "horn-of-proteus",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/41fb388d-1b2c-433f-ab04-3a02562c5b19.png",
-      "localImgUrl": "/ability_images/namor/horn-of-proteus.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156417/horn-of-proteus_osjctg.png",
       "properties": [
         {
           "key": "Casting",
@@ -8886,7 +8886,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blessing-of-the-deep",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e301578f-ee43-42c9-a95a-f162259d62fb.png",
-      "localImgUrl": "/ability_images/namor/blessing-of-the-deep.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156419/blessing-of-the-deep_d89tie.png",
       "properties": [
         {
           "key": "Vertical Moving Distance",
@@ -8907,7 +8907,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "aquatic-dominion",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4bf22127-5c87-4163-82d7-ba90c1edae57.png",
-      "localImgUrl": "/ability_images/namor/aquatic-dominion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156418/aquatic-dominion_dhnxht.png",
       "properties": [
         {
           "key": "Casting",
@@ -8984,7 +8984,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wrath-of-the-seven-seas",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/0e8f873c-9edf-43ff-87f8-1db24dcb4500.png",
-      "localImgUrl": "/ability_images/namor/wrath-of-the-seven-seas.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156420/wrath-of-the-seven-seas_xkm2b4.png",
       "properties": [
         {
           "key": "Casting",
@@ -9031,7 +9031,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "element-guns",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/947d9975-ec6d-4d17-b00b-ce4642fafebc.png",
-      "localImgUrl": "/ability_images/star-lord/element-guns.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156432/element-guns_z1kmno.png",
       "properties": [
         {
           "key": "Casting",
@@ -9068,7 +9068,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "galactic-legend",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cdfdc8b1-27e7-4a28-a666-3a3387b92263.png",
-      "localImgUrl": "/ability_images/star-lord/galactic-legend.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156433/galactic-legend_gpe9ho.png",
       "properties": [
         {
           "key": "Casting",
@@ -9125,7 +9125,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "rocket-propulsion",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/2c065ae8-398d-4001-a38d-c30a2d4737bc.png",
-      "localImgUrl": "/ability_images/star-lord/rocket-propulsion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156433/rocket-propulsion_m7co4p.png",
       "properties": [
         {
           "key": "Movement Boost",
@@ -9150,7 +9150,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "blaster-barrage",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/00802ad1-6900-44dc-a134-258fae77b326.png",
-      "localImgUrl": "/ability_images/star-lord/blaster-barrage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156432/blaster-barrage_py2kc3.png",
       "properties": [
         {
           "key": "Casting",
@@ -9187,7 +9187,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stellar-shift",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8f25f3a9-7dba-437d-b794-fed37ea2fdd3.png",
-      "localImgUrl": "/ability_images/star-lord/stellar-shift.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156441/stellar-shift_k1pkco.png",
       "properties": [
         {
           "key": "Invincibility Duration",
@@ -9214,7 +9214,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "chaos-control",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9df1d11b-6486-4f0e-83a8-b7e5dca461b6.png",
-      "localImgUrl": "/ability_images/scarlet-witch/chaos-control.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156427/chaos-control_lubtt1.png",
       "properties": [
         {
           "key": "Casting",
@@ -9263,7 +9263,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "reality-erasure",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9fe279e3-1ca1-4202-b925-4eaddc649f14.png",
-      "localImgUrl": "/ability_images/scarlet-witch/reality-erasure.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156428/reality-erasure_wlh2bu.png",
       "properties": [
         {
           "key": "Casting",
@@ -9304,7 +9304,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mystic-projection",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a1bd056d-4040-4dda-a79a-c1c721718e2b.png",
-      "localImgUrl": "/ability_images/scarlet-witch/mystic-projection.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156428/mystic-projection_muxqud.png",
       "properties": [
         {
           "key": "Casting",
@@ -9337,7 +9337,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dark-seal",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/06d393d2-e8b7-443c-8e04-3696ecefac86.png",
-      "localImgUrl": "/ability_images/scarlet-witch/dark-seal.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156428/dark-seal_uknudd.png",
       "properties": [
         {
           "key": "Casting",
@@ -9378,7 +9378,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "telekinesis",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/2893e078-cc3e-49ec-8447-4ff73a549139.png",
-      "localImgUrl": "/ability_images/scarlet-witch/telekinesis.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156429/telekinesis_hzzccn.png",
       "properties": [
         {
           "key": "Horizontal Movement Speed",
@@ -9395,7 +9395,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "chthonian-burst",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/97e67269-1308-46d2-aef0-99ef179d9748.png",
-      "localImgUrl": "/ability_images/scarlet-witch/chthonian-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156429/chthonian-burst_bareo8.png",
       "properties": [
         {
           "key": "Casting",
@@ -9434,7 +9434,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "roterstern",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c394a786-61e2-4311-af38-ddbb77fb0c17.png",
-      "localImgUrl": "/ability_images/winter-soldier/roterstern.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156454/roterstern_uf5dhy.png",
       "properties": [
         {
           "key": "Casting",
@@ -9483,7 +9483,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "kraken-impact",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a53ce147-45d7-472a-b01d-27c0824f21e0.png",
-      "localImgUrl": "/ability_images/winter-soldier/kraken-impact.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156453/kraken-impact_oganbe.png",
       "properties": [
         {
           "key": "Casting",
@@ -9520,7 +9520,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "troopers-fist",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/239b4e01-33ed-4f71-afd9-845810e96b8e.png",
-      "localImgUrl": "/ability_images/winter-soldier/troopers-fist.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156455/troopers-fist_p3zb88.png",
       "properties": [
         {
           "key": "Casting",
@@ -9557,7 +9557,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "tainted-voltage",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/65cf216c-9ad1-4a8e-9e2c-d7f1c2a9964c.png",
-      "localImgUrl": "/ability_images/winter-soldier/tainted-voltage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156454/tainted-voltage_hhfzvi.png",
       "properties": [
         {
           "key": "Casting",
@@ -9594,7 +9594,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bionic-hook",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4173fa58-8641-47f9-9ee5-b63472fe074e.png",
-      "localImgUrl": "/ability_images/winter-soldier/bionic-hook.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156453/bionic-hook_hwh4au.png",
       "properties": [
         {
           "key": "Casting",
@@ -9635,7 +9635,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ceaseless-charge",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/55a1b572-78dd-47c3-8006-5b26e8d8813a.png",
-      "localImgUrl": "/ability_images/winter-soldier/ceaseless-charge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156453/ceaseless-charge_uumecm.png",
       "properties": [
         {
           "key": "Bonus Health (Self)",
@@ -9650,7 +9650,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "soulsword",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3c254667-aec0-4d1f-bac8-8f74e5c7ec57.png",
-      "localImgUrl": "/ability_images/magik/soulsword.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156410/soulsword_tb5osw.png",
       "properties": [
         {
           "key": "Casting",
@@ -9679,7 +9679,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "darkchild",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/54ceb957-f089-4149-9b6e-f19b0b434f76.png",
-      "localImgUrl": "/ability_images/magik/darkchild.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156404/darkchild_pwlczo.png",
       "properties": [
         {
           "key": "Casting",
@@ -9704,7 +9704,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stepping-discs",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/83bdc026-b6c1-4c72-8a4e-b82036d06a5b.png",
-      "localImgUrl": "/ability_images/magik/stepping-discs.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156405/stepping-discs_zedtte.png",
       "properties": [
         {
           "key": "Casting",
@@ -9745,7 +9745,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "umbral-incursion",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/23e2f98e-b25d-465f-8aca-92772da73677.png",
-      "localImgUrl": "/ability_images/magik/umbral-incursion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156404/umbral-incursion_b72o8l.png",
       "properties": [
         {
           "key": "Casting",
@@ -9774,7 +9774,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "eldritch-whirl",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a360c242-9475-4d7b-ba43-efb57fdbc44a.png",
-      "localImgUrl": "/ability_images/magik/eldritch-whirl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156404/eldritch-whirl_ksdpqq.png",
       "properties": [
         {
           "key": "Casting",
@@ -9795,7 +9795,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "magik-slash",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ddcc3be2-0a9f-4588-bbeb-b6ecc289d8cf.png",
-      "localImgUrl": "/ability_images/magik/magik-slash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156407/magik-slash_ty1dxc.png",
       "properties": [
         {
           "key": "Casting",
@@ -9828,7 +9828,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "demons-rage",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a9c67524-0a71-4106-8a95-f26d78aa15e1.png",
-      "localImgUrl": "/ability_images/magik/demons-rage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156407/demons-rage_t6gu7r.png",
       "properties": [
         {
           "key": "Casting",
@@ -9861,7 +9861,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "limbos-might",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ca2c47d6-8349-4bae-b6bc-58436c47776b.png",
-      "localImgUrl": "/ability_images/magik/limbos-might.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156405/limbos-might_z8rq15.png",
       "properties": [
         {
           "key": "Conversion Rate",
@@ -9882,7 +9882,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "soulsword",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/1429fdcf-3e9f-4dd9-873e-4ccf6f758cfd.png",
-      "localImgUrl": "/ability_images/magik/soulsword.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156410/soulsword_tb5osw.png",
       "properties": [
         {
           "key": "Casting",
@@ -9911,7 +9911,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "stepping-discs",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/77738b7f-79a1-4eae-8d72-8bbda393bd5e.png",
-      "localImgUrl": "/ability_images/magik/stepping-discs.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156405/stepping-discs_zedtte.png",
       "properties": [
         {
           "key": "Casting",
@@ -9952,7 +9952,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "umbral-incursion",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d5f0b817-5275-4e8f-a1cf-7674cfe5e077.png",
-      "localImgUrl": "/ability_images/magik/umbral-incursion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156404/umbral-incursion_b72o8l.png",
       "properties": [
         {
           "key": "Casting",
@@ -9981,7 +9981,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "eldritch-whirl",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ab4444b3-e2b2-4855-bce8-ac5e4aadec45.png",
-      "localImgUrl": "/ability_images/magik/eldritch-whirl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156404/eldritch-whirl_ksdpqq.png",
       "properties": [
         {
           "key": "Casting",
@@ -10002,7 +10002,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "magik-slash",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/055e35e2-253d-45da-ae04-82984115f741.png",
-      "localImgUrl": "/ability_images/magik/magik-slash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156407/magik-slash_ty1dxc.png",
       "properties": [
         {
           "key": "Casting",
@@ -10031,7 +10031,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "demons-rage",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/7c8271e5-5e8c-4394-a7d5-7a9e6f578295.png",
-      "localImgUrl": "/ability_images/magik/demons-rage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156407/demons-rage_t6gu7r.png",
       "properties": [
         {
           "key": "Casting",
@@ -10066,7 +10066,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spider-power",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b69dc2e7-1a28-471e-a000-19b06a1adac4.png",
-      "localImgUrl": "/ability_images/spider-man/spider-power.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156427/spider-power_l3zm6n.png",
       "properties": [
         {
           "key": "Casting",
@@ -10115,7 +10115,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "web-cluster",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/51836fcc-b278-46b2-80d6-3450f9902f18.png",
-      "localImgUrl": "/ability_images/spider-man/web-cluster.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156439/web-cluster_e5qmik.png",
       "properties": [
         {
           "key": "Casting",
@@ -10160,7 +10160,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spectacular-spin",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/df0e1190-adea-471c-aa47-186aaabe41dc.png",
-      "localImgUrl": "/ability_images/spider-man/spectacular-spin.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156433/spectacular-spin_di19nb.png",
       "properties": [
         {
           "key": "Casting",
@@ -10217,7 +10217,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "web-swing",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/fb95e6a5-5e9d-44d7-b565-2cda190e0cb8.png",
-      "localImgUrl": "/ability_images/spider-man/web-swing.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156435/web-swing_vabi2p.png",
       "properties": [
         {
           "key": "Casting",
@@ -10242,7 +10242,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "get-over-here",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d3b40d5d-cb78-4e6d-990c-0ec61404f8e0.png",
-      "localImgUrl": "/ability_images/spider-man/get-over-here.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156459/get-over-here_hkocrc.png",
       "properties": [
         {
           "key": "Casting",
@@ -10283,7 +10283,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "amazing-combo",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/db4cbe9c-98b6-47b2-849b-655e63c86f87.png",
-      "localImgUrl": "/ability_images/spider-man/amazing-combo.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156430/amazing-combo_gupage.png",
       "properties": [
         {
           "key": "Casting",
@@ -10316,7 +10316,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thwip-and-flip",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241124/82debb10-0166-41c3-914e-9dee98cd30af.png",
-      "localImgUrl": "/ability_images/spider-man/thwip-and-flip.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156430/thwip-and-flip_pfdrbw.png",
       "properties": [
         {
           "key": "Special Mechanic",
@@ -10329,7 +10329,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spider-sense",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/70f075d3-fdcc-4339-b537-061af16fae55.png",
-      "localImgUrl": "/ability_images/spider-man/spider-sense.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156439/spider-sense_e0jqxp.png",
       "properties": [
         {
           "key": "Disappearance Time To Trigger Detection",
@@ -10346,7 +10346,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wall-crawl",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e0ab4409-cfaa-4e13-9731-240a09a6a553.png",
-      "localImgUrl": "/ability_images/spider-man/wall-crawl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/wall-crawl_g585xc.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -10365,7 +10365,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "vibranium-claws",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/095862fd-2dce-4947-8996-58741ba3e326.png",
-      "localImgUrl": "/ability_images/black-panther/vibranium-claws.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156327/vibranium-claws_rdlikm.png",
       "properties": [
         {
           "key": "Casting",
@@ -10390,7 +10390,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "basts-descent",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/796baaa9-278e-464f-a394-bc5869dbc473.png",
-      "localImgUrl": "/ability_images/black-panther/basts-descent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156326/basts-descent_xz3rhc.png",
       "properties": [
         {
           "key": "Casting",
@@ -10423,7 +10423,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spirit-rend",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5420a5ab-0ba8-4c9c-8953-7f60adf79cd2.png",
-      "localImgUrl": "/ability_images/black-panther/spirit-rend.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156327/spirit-rend_mw8hep.png",
       "properties": [
         {
           "key": "Casting",
@@ -10460,7 +10460,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spinning-kick",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a56f606b-d519-49aa-9570-cc615be6f239.png",
-      "localImgUrl": "/ability_images/black-panther/spinning-kick.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156326/spinning-kick_a6t70x.png",
       "properties": [
         {
           "key": "Casting",
@@ -10489,7 +10489,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "subtle-step",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/715f8f12-5bf3-4f11-a583-ee4ad606136d.png",
-      "localImgUrl": "/ability_images/black-panther/subtle-step.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156327/subtle-step_zbyflh.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -10502,7 +10502,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spear-toss",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4ccd846a-f72e-4d69-aa9f-6c459f67648c.png",
-      "localImgUrl": "/ability_images/black-panther/spear-toss.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156326/spear-toss_rfzzrs.png",
       "properties": [
         {
           "key": "Casting",
@@ -10535,7 +10535,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "panthers-cunning",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/07bd1118-a93b-49f7-8789-696e0480ee44.png",
-      "localImgUrl": "/ability_images/black-panther/panthers-cunning.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156326/panthers-cunning_hbximc.png",
       "properties": [
         {
           "key": "Trigger Condition",
@@ -10554,7 +10554,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "nightsword-thorn",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ea4b3942-f0b3-43b4-a2fc-d5b43b6a8b35.png",
-      "localImgUrl": "/ability_images/hela/nightsword-thorn.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156383/nightsword-thorn_j86y97.png",
       "properties": [
         {
           "key": "Casting",
@@ -10587,7 +10587,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "goddess-of-death",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cc37d07b-7128-47a0-8706-240fda571a47.png",
-      "localImgUrl": "/ability_images/hela/goddess-of-death.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156382/goddess-of-death_obadjy.png",
       "properties": [
         {
           "key": "Casting",
@@ -10632,7 +10632,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "astral-flock",
       "button": "Shift",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e9a46cd0-2dcc-4835-9f4b-f18302c03eac.png",
-      "localImgUrl": "/ability_images/hela/astral-flock.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156381/astral-flock_rpbhnu.png",
       "properties": [
         {
           "key": "Casting",
@@ -10665,7 +10665,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "soul-drainer",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/558313fc-c58a-4507-a812-18e9acf92b97.png",
-      "localImgUrl": "/ability_images/hela/soul-drainer.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156383/soul-drainer_ivajg1.png",
       "properties": [
         {
           "key": "Casting",
@@ -10702,7 +10702,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "piercing-night",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b40f4698-b5ca-4cd1-a8fd-4ff916f1a5da.png",
-      "localImgUrl": "/ability_images/hela/piercing-night.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156383/piercing-night_vc9a76.png",
       "properties": [
         {
           "key": "Casting",
@@ -10747,7 +10747,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "nastrond-crowstorm",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/f7bbe4b0-932e-421b-a60e-d5fb5560c6f7.png",
-      "localImgUrl": "/ability_images/hela/nastrond-crowstorm.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156382/nastrond-crowstorm_zwjsyv.png",
       "properties": [
         {
           "key": "Delay",
@@ -10768,7 +10768,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hels-descent",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/29f6f04d-087b-4e97-8aeb-3b505b3c2952.png",
-      "localImgUrl": "/ability_images/hela/hels-descent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156382/hels-descent_bvmok1.png",
       "properties": [
         {
           "key": "Horizontal Movement Speed",
@@ -10787,7 +10787,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wind-blade",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ac2de8df-0a48-4c10-b0be-090c2662d5e6.png",
-      "localImgUrl": "/ability_images/storm/wind-blade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156435/wind-blade_xas9wl.png",
       "properties": [
         {
           "key": "Casting",
@@ -10828,7 +10828,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "omega-hurricane",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/618d0d4a-f522-4ea9-9f11-64de62abe3ad.png",
-      "localImgUrl": "/ability_images/storm/omega-hurricane.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156434/omega-hurricane_m1edt9.png",
       "properties": [
         {
           "key": "Casting",
@@ -10873,7 +10873,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "weather-control",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/10b670aa-f6c6-4775-811a-5d9c4e3ae6cf.png",
-      "localImgUrl": "/ability_images/storm/weather-control.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156435/weather-control_ytgkkw.png",
       "properties": [
         {
           "key": "Casting",
@@ -10922,7 +10922,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "goddess-boost",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/af7bafa6-fe10-45d2-8a65-f1523f9c5223.png",
-      "localImgUrl": "/ability_images/storm/goddess-boost.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156434/goddess-boost_vaiegf.png",
       "properties": [
         {
           "key": "Casting",
@@ -10983,7 +10983,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bolt-rush",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/644cd425-b90f-41dd-b750-8d11c36e04d1.png",
-      "localImgUrl": "/ability_images/storm/bolt-rush.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156434/bolt-rush_axma65.png",
       "properties": [
         {
           "key": "Casting",
@@ -11010,7 +11010,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "gamma-ray-gun",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8cb6a38e-5f26-483e-8b6c-92ff443084d1.png",
-      "localImgUrl": "/ability_images/hulk/gamma-ray-gun.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156385/gamma-ray-gun_m6buyn.png",
       "properties": [
         {
           "key": "Casting",
@@ -11043,7 +11043,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "puny-banner",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9a3b272b-318b-45e2-a863-274aa7bcf288.png",
-      "localImgUrl": "/ability_images/hulk/puny-banner.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156387/puny-banner_gaw7my.png",
       "properties": [
         {
           "key": "Casting",
@@ -11064,7 +11064,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "gamma-grenade",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3187b7a0-06b5-4e1c-babe-796554bc2430.png",
-      "localImgUrl": "/ability_images/hulk/gamma-grenade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156385/gamma-grenade_nqgetj.png",
       "properties": [
         {
           "key": "Casting",
@@ -11093,7 +11093,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "heavy-blow",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cc774c86-d162-462f-95d0-1b11d36eed83.png",
-      "localImgUrl": "/ability_images/hulk/heavy-blow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156384/heavy-blow_apcwpg.png",
       "properties": [
         {
           "key": "Casting",
@@ -11118,7 +11118,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hulk-smash",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a3a3990b-5005-4616-abc2-96e48a971420.png",
-      "localImgUrl": "/ability_images/hulk/hulk-smash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156386/hulk-smash_wotewm.png",
       "properties": [
         {
           "key": "Casting",
@@ -11143,7 +11143,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "indestructible-guard",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4879fdb5-3227-4af4-9264-dd04c12941b4.png",
-      "localImgUrl": "/ability_images/hulk/indestructible-guard.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156386/indestructible-guard_e7mncn.png",
       "properties": [
         {
           "key": "Casting",
@@ -11180,7 +11180,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "radioactive-lockdown",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/172254e3-9768-4dec-9157-76b456d5383d.png",
-      "localImgUrl": "/ability_images/hulk/radioactive-lockdown.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156388/radioactive-lockdown_ofzbvx.png",
       "properties": [
         {
           "key": "Casting",
@@ -11213,7 +11213,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "incredible-leap",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b74339de-5816-4639-ba7f-d32d39f620cd.png",
-      "localImgUrl": "/ability_images/hulk/incredible-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156385/incredible-leap_kdcs6a.png",
       "properties": [
         {
           "key": "Casting",
@@ -11246,7 +11246,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "gamma-burst",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c55bb9d3-8b8b-44ad-ac43-4fb9bcf02130.png",
-      "localImgUrl": "/ability_images/hulk/gamma-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156384/gamma-burst_bytc7p.png",
       "properties": [
         {
           "key": "Casting",
@@ -11275,7 +11275,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "heavy-blow",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cc774c86-d162-462f-95d0-1b11d36eed83.png",
-      "localImgUrl": "/ability_images/hulk/heavy-blow.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156384/heavy-blow_apcwpg.png",
       "properties": [
         {
           "key": "Casting",
@@ -11300,7 +11300,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "world-breaker",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e2c65ff1-2180-4f19-b7b0-1cf08ad1b1c4.png",
-      "localImgUrl": "/ability_images/hulk/world-breaker.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156388/world-breaker_zlrbdu.png",
       "properties": [
         {
           "key": "Casting",
@@ -11329,7 +11329,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "radioactive-lockdown",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5965d229-691b-42be-859e-bc83191b3d1d.png",
-      "localImgUrl": "/ability_images/hulk/radioactive-lockdown.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156388/radioactive-lockdown_ofzbvx.png",
       "properties": [
         {
           "key": "Casting",
@@ -11362,7 +11362,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "incredible-leap",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b74339de-5816-4639-ba7f-d32d39f620cd.png",
-      "localImgUrl": "/ability_images/hulk/incredible-leap.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156385/incredible-leap_kdcs6a.png",
       "properties": [
         {
           "key": "Casting",
@@ -11395,7 +11395,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "gamma-burst",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/0ac60cf3-6b01-485b-b205-900f7ac674a4.png",
-      "localImgUrl": "/ability_images/hulk/gamma-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156384/gamma-burst_bytc7p.png",
       "properties": [
         {
           "key": "Casting",
@@ -11422,7 +11422,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "joyful-splash",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/404c171f-9a95-4341-8313-b2f6d16fd6f1.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/joyful-splash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156397/joyful-splash_wqnhff.png",
       "properties": [
         {
           "key": "Casting",
@@ -11459,7 +11459,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "aqua-burst",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/247fc32e-57f7-4bc3-a52a-ed9e9a46e49e.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/aqua-burst.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156414/aqua-burst_cddgav.png",
       "properties": [
         {
           "key": "Casting",
@@ -11504,7 +11504,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "its-jeff",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/25d707ba-9f22-4b05-bb8e-d2eb22a8f1f5.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/its-jeff.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156418/its-jeff_nhbqbx.png",
       "properties": [
         {
           "key": "Casting",
@@ -11549,7 +11549,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hide-and-seek",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ef573d4e-d703-4015-982f-e171765bc65f.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/hide-and-seek.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156413/hide-and-seek_mkhma9.png",
       "properties": [
         {
           "key": "Casting",
@@ -11586,7 +11586,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-bubble",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/4d341032-2db5-4cb1-84eb-2ecaa167bd2f.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/healing-bubble.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156408/healing-bubble_jlpua0.png",
       "properties": [
         {
           "key": "Casting",
@@ -11627,7 +11627,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "oblivious-cuteness",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d976ea1f-f15a-4b12-8a47-edbb88304548.png",
-      "localImgUrl": "/ability_images/jeff-the-land-shark/oblivious-cuteness.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156413/oblivious-cuteness_muu9co.png",
       "properties": [
         {
           "key": "Critical Hit Damage Reduction",
@@ -11642,7 +11642,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "adjudication",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e755fe97-976b-43f7-90d8-e791ca310df1.png",
-      "localImgUrl": "/ability_images/the-punisher/adjudication.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156436/adjudication_fj7s8n.png",
       "properties": [
         {
           "key": "Casting",
@@ -11679,7 +11679,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deliverance",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b420c662-6d55-438d-932a-d2947005b6de.png",
-      "localImgUrl": "/ability_images/the-punisher/deliverance.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156436/deliverance_bqga1s.png",
       "properties": [
         {
           "key": "Casting",
@@ -11720,7 +11720,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "final-judgement",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6695cf9f-352c-4bf3-aab1-1824ecf39c95.png",
-      "localImgUrl": "/ability_images/the-punisher/final-judgement.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156437/final-judgement_z4fg6z.png",
       "properties": [
         {
           "key": "Casting",
@@ -11809,7 +11809,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "vantage-connection",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e39565ca-3dfd-4794-bb51-23ec19256130.png",
-      "localImgUrl": "/ability_images/the-punisher/vantage-connection.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156449/vantage-connection_j0euow.png",
       "properties": [
         {
           "key": "Casting",
@@ -11838,7 +11838,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "culling-turret",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3806a440-7ae1-4a86-8b75-09c34be080fd.png",
-      "localImgUrl": "/ability_images/the-punisher/culling-turret.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156436/culling-turret_oevmzt.png",
       "properties": [
         {
           "key": "Casting",
@@ -11883,7 +11883,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "scourge-grenade",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d9b61f83-54c3-42e7-9ac1-aadb46562237.png",
-      "localImgUrl": "/ability_images/the-punisher/scourge-grenade.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156449/scourge-grenade_vk3whw.png",
       "properties": [
         {
           "key": "Casting",
@@ -11920,7 +11920,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "warriors-gaze",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c121a9dc-8597-45f7-8495-4dea1b7c043b.png",
-      "localImgUrl": "/ability_images/the-punisher/warriors-gaze.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156450/warriors-gaze_ttzeyw.png",
       "properties": [
         {
           "key": "Special Effect",
@@ -11943,7 +11943,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "light-dark-ice",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9b9358c8-4975-450c-8f88-5e18d637d0c4.png",
-      "localImgUrl": "/ability_images/luna-snow/light-dark-ice.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156401/light-dark-ice_ycp5az.png",
       "properties": [
         {
           "key": "Casting",
@@ -11980,7 +11980,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "fate-of-both-worlds",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/47cd68fc-feb1-45d8-b204-69e09294dc80.png",
-      "localImgUrl": "/ability_images/luna-snow/fate-of-both-worlds.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156400/fate-of-both-worlds_aki82e.png",
       "properties": [
         {
           "key": "Casting",
@@ -12017,7 +12017,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ice-arts",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/db8d7bd7-8433-4b9c-b79a-4893df673815.png",
-      "localImgUrl": "/ability_images/luna-snow/ice-arts.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156400/ice-arts_vevk5g.png",
       "properties": [
         {
           "key": "Casting",
@@ -12058,7 +12058,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "share-the-stage",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c5d05de8-094f-4003-81bc-449b5e9b65d0.png",
-      "localImgUrl": "/ability_images/luna-snow/share-the-stage.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156400/share-the-stage_xpottz.png",
       "properties": [
         {
           "key": "Casting",
@@ -12079,7 +12079,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "absolute-zero",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3bbafdb7-d05d-4040-ac35-ba3ef0e021ba.png",
-      "localImgUrl": "/ability_images/luna-snow/absolute-zero.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156399/absolute-zero_cd7plq.png",
       "properties": [
         {
           "key": "Casting",
@@ -12108,7 +12108,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cryo-heart",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/1e2f39fb-fb72-4b78-923d-09ba6b076e4f.png",
-      "localImgUrl": "/ability_images/luna-snow/cryo-heart.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156399/cryo-heart_uuxfsd.png",
       "properties": [
         {
           "key": "Healing Amount",
@@ -12121,7 +12121,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "smooth-skate",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c672e9c6-8368-4a9b-88b5-d78fefe000ba.png",
-      "localImgUrl": "/ability_images/luna-snow/smooth-skate.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156403/smooth-skate_q7ovuj.png",
       "properties": [
         {
           "key": "Time Required to Start Skating",
@@ -12138,7 +12138,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "number-one-idol",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20251222/b4210d02-0f6e-4b2b-9550-dd23e58547fa.png",
-      "localImgUrl": "/ability_images/luna-snow/number-one-idol.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156403/number-one-idol_z3pjhe.png",
       "properties": [
         {
           "key": "Healing Boost",
@@ -12157,7 +12157,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "quantum-magic",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/996e6c76-b2b8-42c6-9e17-c74f25768123.png",
-      "localImgUrl": "/ability_images/adam-warlock/quantum-magic.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155896/quantum-magic_ykaaiq.png",
       "properties": [
         {
           "key": "Casting",
@@ -12190,7 +12190,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "karmic-flight",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20260311/6c4e7eed-03e0-472a-a3a5-8f81cbd9cf4a.png",
-      "localImgUrl": "/ability_images/adam-warlock/karmic-flight.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155895/karmic-flight_ri4fli.png",
       "properties": [
         {
           "key": "MOVEMENT BOOST",
@@ -12215,7 +12215,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "karmic-revival",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bedb33ea-a7d7-482f-a3ba-695afc84d7df.png",
-      "localImgUrl": "/ability_images/adam-warlock/karmic-revival.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155895/karmic-revival_kvud7g.png",
       "properties": [
         {
           "key": "Casting",
@@ -12252,7 +12252,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "soul-bond",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6d9c5f2f-ad6d-4f5e-9a1d-bf039b2d6fdc.png",
-      "localImgUrl": "/ability_images/adam-warlock/soul-bond.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155896/soul-bond_hdd8wy.png",
       "properties": [
         {
           "key": "Casting",
@@ -12293,7 +12293,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "avatar-life-stream",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/00ceedf0-0fab-45f5-bcb6-009797271b65.png",
-      "localImgUrl": "/ability_images/adam-warlock/avatar-life-stream.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155895/avatar-life-stream_zreit9.png",
       "properties": [
         {
           "key": "Casting",
@@ -12330,7 +12330,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cosmic-cluster",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cac2ca73-29e2-4ea4-87f9-1f1c0c24f382.png",
-      "localImgUrl": "/ability_images/adam-warlock/cosmic-cluster.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155895/cosmic-cluster_zfsknm.png",
       "properties": [
         {
           "key": "Casting",
@@ -12363,7 +12363,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "regenerative-cocoon",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b85e229f-e718-4402-9c78-3ce82b3b5ee0.png",
-      "localImgUrl": "/ability_images/adam-warlock/regenerative-cocoon.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782155896/regenerative-cocoon_suqwwl.png",
       "properties": [
         {
           "key": "Cooldown",
@@ -12378,7 +12378,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bombard-mode",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6d5fc9e6-f194-494f-bcb9-a0eea60e7f60.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/bombard-mode.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156427/bombard-mode_rwkgya.png",
       "properties": [
         {
           "key": "Casting",
@@ -12415,7 +12415,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "repair-mode",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8e83a73c-dbc6-4d8b-bf0e-2f6fbffe20a4.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/repair-mode.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156426/repair-mode_qzzxie.png",
       "properties": [
         {
           "key": "Casting",
@@ -12468,7 +12468,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cya",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8fa6c871-fb91-4115-bf94-a1ccf6f12d2c.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/cya.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156448/cya_tm0cvs.png",
       "properties": [
         {
           "key": "Casting",
@@ -12513,7 +12513,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "jetpack-dash",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/66c6ccca-0e2b-4c87-87c3-29fddfa3b4c1.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/jetpack-dash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156447/jetpack-dash_cj0nfl.png",
       "properties": [
         {
           "key": "Casting",
@@ -12538,7 +12538,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "brb",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/f5f99d54-aeaa-4dc8-bad1-7c0e390434cf.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/brb.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156447/brb_f3ggqw.png",
       "properties": [
         {
           "key": "Casting",
@@ -12571,7 +12571,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wild-crawl",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/2bf79c26-d564-4a9e-8148-85e5b44add4f.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/wild-crawl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156447/wild-crawl_ahem9t.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -12584,7 +12584,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "flying-ace",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/75456c26-a53f-4d7e-955f-b663d7dd337a.png",
-      "localImgUrl": "/ability_images/rocket-raccoon/flying-ace.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156446/flying-ace_atcdbq.png",
       "properties": [
         {
           "key": "Descending Speed",
@@ -12599,7 +12599,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mystical-missile",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ed396f47-c71d-47d9-b81b-3345b8dc9622.png",
-      "localImgUrl": "/ability_images/loki/mystical-missile.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156398/mystical-missile_cbxvte.png",
       "properties": [
         {
           "key": "Casting",
@@ -12648,7 +12648,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "god-of-mischief",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8348514b-e03f-442b-9aa2-ab90fcd2186a.png",
-      "localImgUrl": "/ability_images/loki/god-of-mischief.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156399/god-of-mischief_qfuhv1.png",
       "properties": [
         {
           "key": "Casting",
@@ -12673,7 +12673,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "regeneration-domain",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e7dd8ace-749c-49a0-bc71-bb9c59a8ba2f.png",
-      "localImgUrl": "/ability_images/loki/regeneration-domain.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156398/regeneration-domain_ladrr0.png",
       "properties": [
         {
           "key": "Casting",
@@ -12714,7 +12714,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "doppelganger",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ef9f3e86-7ad9-4ad4-8ca5-490d580e567b.png",
-      "localImgUrl": "/ability_images/loki/doppelganger.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156397/doppelganger_k1diao.png",
       "properties": [
         {
           "key": "Casting",
@@ -12739,7 +12739,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "devious-exchange",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ac0da903-c22d-4471-bff9-d7df0a2a6ba6.png",
-      "localImgUrl": "/ability_images/loki/devious-exchange.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156397/devious-exchange_ifchgj.png",
       "properties": [
         {
           "key": "Casting",
@@ -12760,7 +12760,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "backstab",
       "button": "V",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/fe10c19c-0649-4c4d-a406-4e7ea9ada27a.png",
-      "localImgUrl": "/ability_images/loki/backstab.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156396/backstab_ugx2zn.png",
       "properties": [
         {
           "key": "Casting",
@@ -12781,7 +12781,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "deception",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ed974a34-cbea-4529-b613-028bb481b125.png",
-      "localImgUrl": "/ability_images/loki/deception.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156396/deception_z8vkuu.png",
       "properties": [
         {
           "key": "Casting",
@@ -12808,7 +12808,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "life-energy-blast",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/53a8b0e2-f33b-4630-a318-b11feeb63da7.png",
-      "localImgUrl": "/ability_images/mantis/life-energy-blast.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156413/life-energy-blast_dgiynw.png",
       "properties": [
         {
           "key": "Casting",
@@ -12849,7 +12849,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "soul-resurgence",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6185722d-c92f-4eab-8a8c-106168ad6e1a.png",
-      "localImgUrl": "/ability_images/mantis/soul-resurgence.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156412/soul-resurgence_iz939p.png",
       "properties": [
         {
           "key": "Casting",
@@ -12894,7 +12894,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spore-slumber",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/297739c8-b9b1-4d0c-9578-0ba4d2cede4e.png",
-      "localImgUrl": "/ability_images/mantis/spore-slumber.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156409/spore-slumber_o8f44l.png",
       "properties": [
         {
           "key": "Casting",
@@ -12931,7 +12931,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "allied-inspiration",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/c43c7aff-d641-4b43-829b-ddf53bf2b3e7.png",
-      "localImgUrl": "/ability_images/mantis/allied-inspiration.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156409/allied-inspiration_oqpavn.png",
       "properties": [
         {
           "key": "Casting",
@@ -12960,7 +12960,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "natural-anger",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a414ebec-b637-44c3-83dd-4db27749575b.png",
-      "localImgUrl": "/ability_images/mantis/natural-anger.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156408/natural-anger_cqzibh.png",
       "properties": [
         {
           "key": "Casting",
@@ -12985,7 +12985,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "healing-flower",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/cd2771ec-d276-4a64-91fd-faa67a121da6.png",
-      "localImgUrl": "/ability_images/mantis/healing-flower.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156408/healing-flower_eycm8a.png",
       "properties": [
         {
           "key": "Casting",
@@ -13018,7 +13018,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "natures-favor",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b921470f-e723-4129-847e-be24fd974552.png",
-      "localImgUrl": "/ability_images/mantis/natures-favor.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156408/natures-favor_qjyhww.png",
       "properties": [
         {
           "key": "Time Required to Leave Combat",
@@ -13049,7 +13049,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cyber-web-cluster",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/2b24b421-99cf-4e20-b584-8f8e755911af.png",
-      "localImgUrl": "/ability_images/peni-parker/cyber-web-cluster.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/cyber-web-cluster_ppwsii.png",
       "properties": [
         {
           "key": "Casting",
@@ -13086,7 +13086,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spider-sweeper",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bcccc074-f210-4239-a6e1-05ae478859a6.png",
-      "localImgUrl": "/ability_images/peni-parker/spider-sweeper.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156422/spider-sweeper_btxz6u.png",
       "properties": [
         {
           "key": "Casting",
@@ -13139,7 +13139,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "bionic-spider-nest",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b0a9458d-2a87-483c-a165-c362bf34d179.png",
-      "localImgUrl": "/ability_images/peni-parker/bionic-spider-nest.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156419/bionic-spider-nest_uqp7f1.png",
       "properties": [
         {
           "key": "Casting",
@@ -13176,7 +13176,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "arachno-mine",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a0c17f1d-4984-4961-af7a-515078b751a4.png",
-      "localImgUrl": "/ability_images/peni-parker/arachno-mine.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156420/arachno-mine_ob4frf.png",
       "properties": [
         {
           "key": "Casting",
@@ -13201,7 +13201,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cyber-bond",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6146023c-4c46-4135-aba6-79eff6014d3b.png",
-      "localImgUrl": "/ability_images/peni-parker/cyber-bond.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156420/cyber-bond_grmfcm.png",
       "properties": [
         {
           "key": "Casting",
@@ -13238,7 +13238,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wall-crawl",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a812a9bf-dcaa-443a-870f-79586813d558.png",
-      "localImgUrl": "/ability_images/peni-parker/wall-crawl.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/wall-crawl_g585xc.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -13251,7 +13251,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cyber-web-snare",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/036e9648-779e-48a7-ab8b-0e60bc0c5bd1.png",
-      "localImgUrl": "/ability_images/peni-parker/cyber-web-snare.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/cyber-web-snare_wjhie1.png",
       "properties": [
         {
           "key": "Casting",
@@ -13290,7 +13290,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mjolnir-bash",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5767ff16-bdb0-4e38-be05-f86ae73aef7e.png",
-      "localImgUrl": "/ability_images/thor/mjolnir-bash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156441/mjolnir-bash_xcyki4.png",
       "properties": [
         {
           "key": "Casting",
@@ -13315,7 +13315,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "god-of-thunder",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/68c2df37-4e4b-48be-af36-22a545b1cb8d.png",
-      "localImgUrl": "/ability_images/thor/god-of-thunder.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156442/god-of-thunder_jit5rc.png",
       "properties": [
         {
           "key": "Casting",
@@ -13352,7 +13352,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "storm-surge",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b18044b4-d344-4400-95aa-1db27f994c9c.png",
-      "localImgUrl": "/ability_images/thor/storm-surge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156444/storm-surge_gsok78.png",
       "properties": [
         {
           "key": "Casting",
@@ -13381,7 +13381,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "lightning-realm",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/37d0dc4d-ca68-48f0-8e5a-d7511b05b02e.png",
-      "localImgUrl": "/ability_images/thor/lightning-realm.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156457/lightning-realm_mb7ahz.png",
       "properties": [
         {
           "key": "Casting",
@@ -13414,7 +13414,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "awakening-rune",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/77bc01c1-2967-4660-a899-87a8b6c3efe5.png",
-      "localImgUrl": "/ability_images/thor/awakening-rune.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156441/awakening-rune_k1oaxm.png",
       "properties": [
         {
           "key": "Casting",
@@ -13463,7 +13463,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "hammer-throw",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/06301e2b-a041-47cb-bf81-009ef24c3a3d.png",
-      "localImgUrl": "/ability_images/thor/hammer-throw.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156443/hammer-throw_szxezr.png",
       "properties": [
         {
           "key": "Casting",
@@ -13500,7 +13500,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thorforce",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/78caf91d-ecd4-431c-9e43-31558f4e5fa9.png",
-      "localImgUrl": "/ability_images/thor/thorforce.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156457/thorforce_gre0mg.png",
       "properties": [
         {
           "key": "Maximum Thorforce",
@@ -13535,7 +13535,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "iron-volley",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3401f142-e87e-40ad-8ff2-3a749a6f4984.png",
-      "localImgUrl": "/ability_images/magneto/iron-volley.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156414/iron-volley_vkvmuc.png",
       "properties": [
         {
           "key": "Casting",
@@ -13572,7 +13572,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "meteor-m",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9cd870bb-e876-438b-9416-b230d990d3e8.png",
-      "localImgUrl": "/ability_images/magneto/meteor-m.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156405/meteor-m_aneshm.png",
       "properties": [
         {
           "key": "Casting",
@@ -13613,7 +13613,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "metallic-curtain",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e834f5cc-ab25-4c64-8c84-4fc1e19f4f7c.png",
-      "localImgUrl": "/ability_images/magneto/metallic-curtain.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156407/metallic-curtain_rblz6i.png",
       "properties": [
         {
           "key": "Casting",
@@ -13646,7 +13646,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "metal-bulwark",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/3b28340a-e0b8-4801-98b5-32ca9934bb01.png",
-      "localImgUrl": "/ability_images/magneto/metal-bulwark.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156414/metal-bulwark_szrlod.png",
       "properties": [
         {
           "key": "Casting",
@@ -13679,7 +13679,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "iron-bulwark",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/02e7eb06-6242-43ba-bd8d-3ae7e124f774.png",
-      "localImgUrl": "/ability_images/magneto/iron-bulwark.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156417/iron-bulwark_mb1yuw.png",
       "properties": [
         {
           "key": "Shield Value",
@@ -13704,7 +13704,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "mag-cannon",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/fa0cf0a3-32cc-4104-8c74-4fe98a7b8628.png",
-      "localImgUrl": "/ability_images/magneto/mag-cannon.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156406/mag-cannon_yc6j7o.png",
       "properties": [
         {
           "key": "Casting",
@@ -13737,7 +13737,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "magnetic-descent",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/d59de34f-22d9-459b-9469-8a2bb8ce714c.png",
-      "localImgUrl": "/ability_images/magneto/magnetic-descent.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156406/magnetic-descent_l3k8p3.png",
       "properties": [
         {
           "key": "Horizontal Movement Speed",
@@ -13756,7 +13756,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "dark-predation",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bc30fb5a-7d0a-4acb-9cc7-68d9ce23471f.png",
-      "localImgUrl": "/ability_images/venom/dark-predation.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156456/dark-predation_ulzafg.png",
       "properties": [
         {
           "key": "Casting",
@@ -13785,7 +13785,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "feast-of-the-abyss",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/8d6946a4-fdcd-4260-a36b-4d6367c22910.png",
-      "localImgUrl": "/ability_images/venom/feast-of-the-abyss.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156448/feast-of-the-abyss_yix6fr.png",
       "properties": [
         {
           "key": "Casting",
@@ -13830,7 +13830,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "venom-swing",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e3d5d3b0-9605-4bdd-8e7d-5b10a96f6fdc.png",
-      "localImgUrl": "/ability_images/venom/venom-swing.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156450/venom-swing_tqmw46.png",
       "properties": [
         {
           "key": "Casting",
@@ -13851,7 +13851,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "symbiotic-resilience",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6cbe943b-e6aa-46d3-9c54-bff3d7264fcc.png",
-      "localImgUrl": "/ability_images/venom/symbiotic-resilience.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156449/symbiotic-resilience_pzutlc.png",
       "properties": [
         {
           "key": "Casting",
@@ -13872,7 +13872,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "frenzied-arrival",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bd5d9e69-ca07-465d-aafa-c7225d6a6f7f.png",
-      "localImgUrl": "/ability_images/venom/frenzied-arrival.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156448/frenzied-arrival_teq95p.png",
       "properties": [
         {
           "key": "Casting",
@@ -13909,7 +13909,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cellular-corrosion",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/67d47ae7-0b50-42ec-98d4-b704e68e8c0d.png",
-      "localImgUrl": "/ability_images/venom/cellular-corrosion.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156445/cellular-corrosion_budqes.png",
       "properties": [
         {
           "key": "Casting",
@@ -13938,7 +13938,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "alien-biology",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/5ac60cab-09a4-4f2a-8236-75b82ed43c39.png",
-      "localImgUrl": "/ability_images/venom/alien-biology.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156446/alien-biology_blgeaf.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -13957,7 +13957,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "vine-strike",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/b1e08b7f-2364-45cb-9ebc-6b73214d8529.png",
-      "localImgUrl": "/ability_images/groot/vine-strike.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156377/vine-strike_f81ei0.png",
       "properties": [
         {
           "key": "Casting",
@@ -13990,7 +13990,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "strangling-prison",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/72a68f64-ac6b-4b4d-a6c2-a96d8ba932f2.png",
-      "localImgUrl": "/ability_images/groot/strangling-prison.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156376/strangling-prison_tx1src.png",
       "properties": [
         {
           "key": "Casting",
@@ -14023,7 +14023,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "thornlash-wall",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/22175d18-5214-4a59-a1a2-b20d042ac46c.png",
-      "localImgUrl": "/ability_images/groot/thornlash-wall.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156376/thornlash-wall_p8w4q6.png",
       "properties": [
         {
           "key": "Casting",
@@ -14052,7 +14052,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "ironwood-wall",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/6b671ac4-7312-4702-8062-5f3d93cdbcd4.png",
-      "localImgUrl": "/ability_images/groot/ironwood-wall.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156375/ironwood-wall_dwb4ds.png",
       "properties": [
         {
           "key": "Casting",
@@ -14081,7 +14081,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "spore-bomb",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bba9fe65-f6c7-46de-807c-0ba36c78e505.png",
-      "localImgUrl": "/ability_images/groot/spore-bomb.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156375/spore-bomb_zlsoch.png",
       "properties": [
         {
           "key": "Casting",
@@ -14114,7 +14114,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "flora-colossus",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9a004657-cc4f-47c9-8f81-a4d3471a03bb.png",
-      "localImgUrl": "/ability_images/groot/flora-colossus.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156374/flora-colossus_i2alxa.png",
       "properties": [
         {
           "key": "Casting",
@@ -14131,7 +14131,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "furious-flora",
       "button": "V",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241125/32653d8e-2a57-460d-af0a-72f35b84b607.png",
-      "localImgUrl": "/ability_images/groot/furious-flora.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156373/furious-flora_cdowzc.png",
       "properties": [
         {
           "key": "Range",
@@ -14146,7 +14146,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "sentinel-strike",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/588f99a1-b1e0-4133-a626-35f8e6e4b158.png",
-      "localImgUrl": "/ability_images/captain-america/sentinel-strike.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156333/sentinel-strike_fi8wo7.png",
       "properties": [
         {
           "key": "Casting",
@@ -14191,7 +14191,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "freedom-charge",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/301a3e56-eeee-47e4-b3b6-08c164b5f780.png",
-      "localImgUrl": "/ability_images/captain-america/freedom-charge.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156332/freedom-charge_h7n01b.png",
       "properties": [
         {
           "key": "Casting",
@@ -14232,7 +14232,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "leading-dash",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/dfc71932-8e4a-47e1-8eaf-3dffddf51cb4.png",
-      "localImgUrl": "/ability_images/captain-america/leading-dash.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156332/leading-dash_gr7lun.png",
       "properties": [
         {
           "key": "Casting",
@@ -14253,7 +14253,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "vibranium-energy-saw",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/ba7fc0c4-f0c7-4ce7-a792-63374163cc22.png",
-      "localImgUrl": "/ability_images/captain-america/vibranium-energy-saw.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156334/vibranium-energy-saw_zjf9ar.png",
       "properties": [
         {
           "key": "Casting",
@@ -14286,7 +14286,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "liberty-rush",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/63eef162-7c33-46a8-8f48-aa74b29f910a.png",
-      "localImgUrl": "/ability_images/captain-america/liberty-rush.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156332/liberty-rush_zmzjed.png",
       "properties": [
         {
           "key": "Casting",
@@ -14311,7 +14311,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "super-soldier-slam",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/0261fd68-7164-4852-a86a-a5d02f914b2a.png",
-      "localImgUrl": "/ability_images/captain-america/super-soldier-slam.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156334/super-soldier-slam_qwt1iz.png",
       "properties": [
         {
           "key": "Casting",
@@ -14336,7 +14336,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "living-legend",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/97a1851f-7f3d-4297-a8ba-3d4650422a58.png",
-      "localImgUrl": "/ability_images/captain-america/living-legend.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156333/living-legend_pblfw3.png",
       "properties": [
         {
           "key": "Casting",
@@ -14375,7 +14375,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "daggers-of-denak",
       "button": "Left Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/005933a8-1d97-42c6-aac7-27e1bc018038.png",
-      "localImgUrl": "/ability_images/doctor-strange/daggers-of-denak.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156365/daggers-of-denak_lhhljw.png",
       "properties": [
         {
           "key": "Casting",
@@ -14412,7 +14412,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "eye-of-agamotto",
       "button": "Q",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/0fd358bd-cf3c-4029-9455-3693bc12cbb5.png",
-      "localImgUrl": "/ability_images/doctor-strange/eye-of-agamotto.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156366/eye-of-agamotto_ed4vd6.png",
       "properties": [
         {
           "key": "Casting",
@@ -14441,7 +14441,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "cloak-of-levitation",
       "button": "SHIFT",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/bcd20b65-6414-40bd-9f37-524652c0ed5b.png",
-      "localImgUrl": "/ability_images/doctor-strange/cloak-of-levitation.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156364/cloak-of-levitation_do655r.png",
       "properties": [
         {
           "key": "Casting",
@@ -14466,7 +14466,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "maelstrom-of-madness",
       "button": "E",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/fc0621cc-3ee2-490c-bd45-28986775291c.png",
-      "localImgUrl": "/ability_images/doctor-strange/maelstrom-of-madness.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156366/maelstrom-of-madness_u25atj.png",
       "properties": [
         {
           "key": "Casting",
@@ -14491,7 +14491,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "pentagram-of-farallah",
       "button": "F",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9161c8ab-2eb3-4546-b454-c9d18e0ddad5.png",
-      "localImgUrl": "/ability_images/doctor-strange/pentagram-of-farallah.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156367/pentagram-of-farallah_ne4d5s.png",
       "properties": [
         {
           "key": "Casting",
@@ -14512,7 +14512,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "shield-of-the-seraphim",
       "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/9a8c0b57-316f-42da-bcca-9923be81d771.png",
-      "localImgUrl": "/ability_images/doctor-strange/shield-of-the-seraphim.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156367/shield-of-the-seraphim_mpw2wc.png",
       "properties": [
         {
           "key": "Casting",
@@ -14541,7 +14541,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "price-of-magic",
       "button": "Passive",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/14622714-9438-4212-8a0b-738f282a64bc.png",
-      "localImgUrl": "/ability_images/doctor-strange/price-of-magic.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156367/price-of-magic_z2pnob.png",
       "properties": [
         {
           "key": "Anti-Heal Activation Delay at Peak Dark Magic",
