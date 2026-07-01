@@ -2,6 +2,7 @@ import * as React from "react"
 import { heroes } from "../../data/marvelRivalsData"
 import type { Hero } from "../../data/marvelRivalsData"
 import { heroSplashData } from "../../data/splashData"
+import { heroSplashUrls } from "../../data/marvelRivalsSplashUrls"
 import { audioSynth } from "../../lib/audio"
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 import { Button } from "../../components/ui/button"
@@ -368,7 +369,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
 
   // Target image path inside the public/mvp_last_frames folder
   const folderName = target.heroName.replace(/&/g, "and");
-  const imageUrl = `/mvp_last_frames/${encodeURIComponent(folderName)}/${encodeURIComponent(target.skinFilename)}`;
+  const fallbackUrl = `/mvp_last_frames/${encodeURIComponent(folderName)}/${encodeURIComponent(target.skinFilename)}`;
+  const imageUrl = (heroSplashUrls[target.heroName] && heroSplashUrls[target.heroName][target.skinFilename]) || fallbackUrl;
 
   // Math formula to decrease zoom: starts at 4.0x zoom, steps down slightly on each wrong guess, but never hits 1.0x until game over.
   // We use Math.max(1.3, ...) so it stays zoomed in at least 1.3x during all 15 tries.
