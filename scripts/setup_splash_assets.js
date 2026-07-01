@@ -10,7 +10,11 @@ function walkDir(dir, baseDirName) {
     const stat = fs.statSync(itemPath);
     
     if (stat.isDirectory()) {
-      results[item] = fs.readdirSync(itemPath)
+      let key = item;
+      if (item === "Cloak and Dagger") {
+        key = "Cloak & Dagger";
+      }
+      results[key] = fs.readdirSync(itemPath)
         .filter(f => f.endsWith('.png') || f.endsWith('.webp'));
     }
   }

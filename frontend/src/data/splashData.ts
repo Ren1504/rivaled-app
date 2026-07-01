@@ -292,7 +292,7 @@ export const heroSplashData: HeroSplashData = {
     "Floral Frights.png",
     "Peni Parker- The Freshman.png",
     "Snow-sp--dr.png",
-    "Ven#m.png",
+    "Venom.png",
     "Wasteland Mech.png",
     "Yatsukahagi.png"
   ],
