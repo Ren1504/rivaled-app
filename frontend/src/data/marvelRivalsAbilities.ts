@@ -10346,7 +10346,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wall-crawl",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/e0ab4409-cfaa-4e13-9731-240a09a6a553.png",
-      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/wall-crawl_g585xc.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156438/wall-crawl_r2rppx.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
@@ -13238,7 +13238,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "slug": "wall-crawl",
       "button": "Space",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241120/a812a9bf-dcaa-443a-870f-79586813d558.png",
-      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156421/wall-crawl_g585xc.png",
+      "localImgUrl": "https://res.cloudinary.com/djxtnmm8v/image/upload/v1782156438/wall-crawl_r2rppx.png",
       "properties": [
         {
           "key": "Wall-Crawling Speed",
