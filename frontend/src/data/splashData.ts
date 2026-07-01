@@ -33,6 +33,7 @@ export const heroSplashData: HeroSplashData = {
     "Thrice-cursed King.png"
   ],
   "Black Widow": [
+    "Aquatic Assassin.png",
     "Default.png",
     "Lion's Heartbeat.png",
     "Midnight Suspense.png",
@@ -68,6 +69,15 @@ export const heroSplashData: HeroSplashData = {
     "SHADOWFLAME DUET.png",
     "WINTER REALM WALTZ.png"
   ],
+  "Cloak and Dagger": [
+    "Balance of Nature.png",
+    "DEFAULT.png",
+    "Duality Duet.png",
+    "Mafia Attack.png",
+    "NO REGRETS.png",
+    "SHADOWFLAME DUET.png",
+    "WINTER REALM WALTZ.png"
+  ],
   "Cyclops": [
     "Weapon M.png"
   ],
@@ -76,7 +86,8 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Devil 2099.png",
     "Not Daredevil.png",
-    "Shadowed Start.png"
+    "Shadowed Start.png",
+    "Sonar Saviour.png"
   ],
   "Deadpool": [
     "Captain Pool.png",
@@ -91,6 +102,7 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "God Of Magic.png",
     "In The Multiverse Of Madness.png",
+    "Nautical Mystic.png",
     "Phantom Sorcerer.png",
     "Sorcerer Immortal.png",
     "Sorcerer Supreme Of The Galaxy.png",
@@ -107,6 +119,7 @@ export const heroSplashData: HeroSplashData = {
     "Hellfire Protocol.png",
     "Phoenix Diamond.png",
     "Queen Of Diamonds.png",
+    "White Wave Queen.png",
     "X-revolution.png"
   ],
   "Gambit": [
@@ -257,6 +270,7 @@ export const heroSplashData: HeroSplashData = {
     "Dad-tastic Reed.png",
     "Danum Ket- The Professor.png",
     "Default.png",
+    "Fantastic Beach Dad.png",
     "Future Foundation.png",
     "The Life Fantastic.png",
     "The Maker.png"
@@ -287,6 +301,7 @@ export const heroSplashData: HeroSplashData = {
     "Floral Frights.png",
     "Peni Parker- The Freshman.png",
     "Snow-sp--dr.png",
+    "Ven#m.png",
     "Venom.png",
     "Wasteland Mech.png",
     "Yatsukahagi.png"
@@ -340,6 +355,7 @@ export const heroSplashData: HeroSplashData = {
   "Spider-Man": [
     "Bag-man Beyond.png",
     "Black Suit.png",
+    "Coastal Wall Crawler.png",
     "Default.png",
     "Future Foundation.png",
     "Groovy Swing.png",
@@ -444,6 +460,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Wolverine": [
     "Blood Berserker.png",
+    "Deadpool & Wolverine.png",
     "Deadpool and Wolverine.png",
     "Default.png",
     "Dog Brother X.png",
