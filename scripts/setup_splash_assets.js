@@ -45,7 +45,7 @@ function main() {
   console.log("Copy completed.");
   
   console.log("Scanning files to build data mapping...");
-  const mapping = walkDir(destDir);
+  const mapping = walkDir(sourceDir);
   
   const tsContent = `// Auto-generated mapping database of heroes and their downloaded skin names
 export interface HeroSplashData {

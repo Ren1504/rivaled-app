@@ -69,15 +69,6 @@ export const heroSplashData: HeroSplashData = {
     "SHADOWFLAME DUET.png",
     "WINTER REALM WALTZ.png"
   ],
-  "Cloak and Dagger": [
-    "Balance of Nature.png",
-    "DEFAULT.png",
-    "Duality Duet.png",
-    "Mafia Attack.png",
-    "NO REGRETS.png",
-    "SHADOWFLAME DUET.png",
-    "WINTER REALM WALTZ.png"
-  ],
   "Cyclops": [
     "Weapon M.png"
   ],
@@ -302,7 +293,6 @@ export const heroSplashData: HeroSplashData = {
     "Peni Parker- The Freshman.png",
     "Snow-sp--dr.png",
     "Ven#m.png",
-    "Venom.png",
     "Wasteland Mech.png",
     "Yatsukahagi.png"
   ],
@@ -461,7 +451,6 @@ export const heroSplashData: HeroSplashData = {
   "Wolverine": [
     "Blood Berserker.png",
     "Deadpool & Wolverine.png",
-    "Deadpool and Wolverine.png",
     "Default.png",
     "Dog Brother X.png",
     "Patch.png",
