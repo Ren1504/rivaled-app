@@ -398,7 +398,7 @@ export function AbilityGame({ updateStats, isActive: _isActive }: AbilityGamePro
         <div
           className="w-24 h-24 bg-contain bg-no-repeat bg-center transition-all hover:scale-105 duration-300 filter drop-shadow-[0_0_8px_rgba(0,0,0,0.15)]"
           style={{
-            backgroundImage: `url("${target.localImgUrl.replace(/"/g, '\\"')}")`
+            backgroundImage: `url("https://ik.imagekit.io/veiuag1gp/ability_images/${target.heroName.toLowerCase().replace(/\s*&\s*/g, "-and-").replace(/\s+/g, "-").replace(/[.']/g, "")}/${target.abilitySlug}.png")`
           }}
         />
 
