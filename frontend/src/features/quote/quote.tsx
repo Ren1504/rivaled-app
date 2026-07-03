@@ -236,7 +236,7 @@ export function QuoteGame({ updateStats }: QuoteGameProps) {
             audioSynth.playClick();
             setIsDaily(true);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase cursor-pointer ${
             isDaily
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
               : "text-muted-foreground hover:text-white"
@@ -249,7 +249,7 @@ export function QuoteGame({ updateStats }: QuoteGameProps) {
             audioSynth.playClick();
             setIsDaily(false);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase cursor-pointer ${
             !isDaily
               ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
               : "text-muted-foreground hover:text-white"

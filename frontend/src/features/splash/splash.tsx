@@ -101,7 +101,7 @@ function getUnlimitedSplashTarget(): TargetInfo {
   };
 }
 
-export function SplashGame({ updateStats, isActive }: SplashGameProps) {
+export function SplashGame({ updateStats, isActive: _isActive }: SplashGameProps) {
   const [isDaily, setIsDaily] = React.useState<boolean>(true);
   const [target, setTarget] = React.useState<TargetInfo>(getDailySplashTarget);
   const [guesses, setGuesses] = React.useState<Hero[]>([]);
@@ -114,30 +114,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
   const [comboboxKey, setComboboxKey] = React.useState<number>(0);
   const [bonusKey, setBonusKey] = React.useState<number>(0);
 
-  // Ref to the splash image container so we can directly toggle its CSS transition.
-  // Direct DOM writes are synchronous and bypass React batching, making them
-  // reliable for suppressing the zoom-in animation before React commits new state.
   const imgRef = React.useRef<HTMLDivElement>(null);
-
-  // Instantly snaps the image to whatever scale React is about to render,
-  // then re-enables the smooth transition after the browser has painted.
-  // Double RAF: first frame gives React time to commit, second lets the browser paint.
-  const snapTransition = React.useCallback(() => {
-    const el = imgRef.current;
-    if (!el) return;
-    el.style.transition = 'none';
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        if (imgRef.current) imgRef.current.style.transition = '';
-      });
-    });
-  }, []);
-
-  // Reset transition whenever the tab becomes visible (display:none -> block
-  // causes the browser to repaint from scratch, replaying the scale animation).
-  React.useEffect(() => {
-    if (isActive) snapTransition();
-  }, [isActive, snapTransition]);
 
   // Persistence for Daily Mode
   const [dailyState, setDailyState] = useLocalStorage<any>("rivaled_splash_daily_state", {
@@ -160,10 +137,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
     bonusGuesses: []
   });
 
-  // Sync state with Daily vs Practice toggle
   React.useEffect(() => {
-    // Snap transition when swapping modes so the new scale appears instantly
-    snapTransition();
 
     if (isDaily) {
       const todayStr = new Date().toDateString();
@@ -241,8 +215,6 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
 
   const startUnlimited = () => {
     const randomTarget = getUnlimitedSplashTarget();
-    // Snap transition so the new random target appears instantly without animation
-    snapTransition();
     setTarget(randomTarget);
     setGuesses([]);
     setGameOver(false);
@@ -385,7 +357,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
             audioSynth.playClick();
             setIsDaily(true);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${isDaily
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase cursor-pointer ${isDaily
             ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
             : "text-muted-foreground hover:text-white"
             }`}
@@ -397,7 +369,7 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
             audioSynth.playClick();
             setIsDaily(false);
           }}
-          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer ${!isDaily
+          className={`px-5 py-1.5 rounded-xs text-sm font-bold tracking-wider uppercase cursor-pointer ${!isDaily
             ? "bg-rivals-gold text-rivals-obsidian shadow-lg"
             : "text-muted-foreground hover:text-white"
             }`}
@@ -418,11 +390,11 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
         </p>
       </div>
 
-      {/* Zoomed Splash Art frame */}
+      {/* Splash Art frame */}
       <div className="relative w-full aspect-video max-w-xl overflow-hidden rounded-xs border-2 border-rivals-gold/20 bg-[#0e1227]/90 shadow-2xl mb-8 flex items-center justify-center">
         <div
           ref={imgRef}
-          className="w-full h-full bg-cover bg-no-repeat transition-all duration-700 ease-out"
+          className="w-full h-full bg-cover bg-no-repeat"
           style={{
             backgroundImage: `url("${imageUrl.replace(/"/g, '\\"')}")`,
             transform: `scale(${currentScale})`,
@@ -626,8 +598,8 @@ export function SplashGame({ updateStats, isActive }: SplashGameProps) {
               <div
                 key={guess.name}
                 className={`flex items-center justify-between border rounded-xs p-3 duration-500 animate-in fade-in-50 duration-300 ${isTarget
-                    ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
-                    : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
+                  ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
+                  : "bg-rivals-crimson/10 border-rivals-crimson/25 text-rivals-crimson"
                   }`}
               >
                 <div className="flex items-center gap-3">
