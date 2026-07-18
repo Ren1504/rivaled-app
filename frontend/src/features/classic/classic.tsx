@@ -534,13 +534,12 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
       {/* Columns Headers */}
       {guesses.length > 0 && (
         <div className="w-full overflow-x-auto pb-4 no-scrollbar">
-          <div className="min-w-[850px] flex flex-col gap-2.5">
+          <div className="min-w-[720px] flex flex-col gap-2.5">
             {/* Headers row */}
-            <div className="grid grid-cols-7 gap-2 px-1 text-center font-black text-base tracking-wider uppercase text-muted-foreground">
+            <div className="grid grid-cols-6 gap-2 px-1 text-center font-black text-base tracking-wider uppercase text-muted-foreground">
               <div>Hero</div>
               <div>Attack Type</div>
               <div>Has Passive</div>
-              <div>Team-Up Anchor</div>
               <div>MCU Debut</div>
               <div>Comic Debut</div>
               <div>Affiliations</div>
@@ -550,7 +549,7 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
             {guesses.map((guess) => (
               <div
                 key={guess.name}
-                className="grid grid-cols-7 gap-2"
+                className="grid grid-cols-6 gap-2"
               >
                 {/* 1. Hero Card */}
                 <div
@@ -584,18 +583,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   <span className="text-lg font-black">{guess.hasPassive ? "Yes" : "No"}</span>
                 </div>
 
-                {/* 4. Team-Up Anchor Card */}
-                <div
-                  className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.isTeamUpAnchor, targetHero.isTeamUpAnchor)}`}
-                  style={{ animationDelay: '450ms' }}
-                >
-                  <span className="text-lg font-black">{guess.isTeamUpAnchor ? "Yes" : "No"}</span>
-                </div>
-
-                {/* 5. MCU Debut Card */}
+                {/* 4. MCU Debut Card */}
                 <div
                   className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.mcuDebutYear, targetHero.mcuDebutYear, true)}`}
-                  style={{ animationDelay: '600ms' }}
+                  style={{ animationDelay: '450ms' }}
                 >
                   <span className="text-lg font-black">
                     {guess.mcuDebutYear ?? "N/A"}
@@ -603,10 +594,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   </span>
                 </div>
 
-                {/* 6. Comic Debut Card */}
+                {/* 5. Comic Debut Card */}
                 <div
                   className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
-                  style={{ animationDelay: '750ms' }}
+                  style={{ animationDelay: '600ms' }}
                 >
                   <span className="text-lg font-black">
                     {guess.comicDebutYear}
@@ -614,10 +605,10 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   </span>
                 </div>
 
-                {/* 7. Team Affiliations Card */}
+                {/* 6. Team Affiliations Card */}
                 <div
                   className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 overflow-y-auto no-scrollbar duration-500 animate-card-reveal ${getAffiliationsColor(guess.affiliations, targetHero.affiliations)}`}
-                  style={{ animationDelay: '900ms' }}
+                  style={{ animationDelay: '750ms' }}
                 >
                   <span className="text-xs font-black leading-tight uppercase tracking-wider">
                     {guess.affiliations && guess.affiliations.length > 0
