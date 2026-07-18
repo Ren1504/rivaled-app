@@ -243,16 +243,33 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     .filter(h => !guesses.some(g => g.name === h.name))
     .map(h => h.name);
 
+  // Helper to extract the numeric year from string or number values
+  const parseYear = (val: any): number | null => {
+    if (typeof val === 'number') return val;
+    if (typeof val === 'string') {
+      const match = val.match(/\d+/);
+      return match ? parseInt(match[0], 10) : null;
+    }
+    return null;
+  };
+
   // Checks and Colors for Grid Columns
   const getCellColor = (guessValue: any, targetValue: any, isYear = false) => {
     if (guessValue === targetValue) {
       return "bg-[#10b981] border-[#10b981]/50 text-white animate-pulse-subtle"; // Green Match
     }
 
-    if (isYear && guessValue && targetValue) {
-      const diff = Math.abs(guessValue - targetValue);
-      if (diff <= 10) {
-        return "bg-amber-500 border-amber-500/50 text-white"; // Near match (Orange)
+    if (isYear && guessValue !== undefined && guessValue !== null && targetValue !== undefined && targetValue !== null) {
+      const gYear = parseYear(guessValue);
+      const tYear = parseYear(targetValue);
+      if (gYear !== null && tYear !== null) {
+        if (gYear === tYear) {
+          return "bg-[#10b981] border-[#10b981]/50 text-white animate-pulse-subtle"; // Green Match (years are identical)
+        }
+        const diff = Math.abs(gYear - tYear);
+        if (diff <= 10) {
+          return "bg-amber-500 border-amber-500/50 text-white"; // Near match (Orange)
+        }
       }
     }
 
@@ -279,14 +296,18 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
     return "bg-[#1e293b] border-white/10 text-white/80"; // No Match
   };
 
-  const getArrowIcon = (guessValue: number | null, targetValue: number | null) => {
-    if (!guessValue || !targetValue || guessValue === targetValue) return null;
-    return targetValue > guessValue ? (
+  const getArrowIcon = (guessValue: any, targetValue: any) => {
+    const gYear = parseYear(guessValue);
+    const tYear = parseYear(targetValue);
+    if (gYear === null || tYear === null || gYear === tYear) return null;
+    return tYear > gYear ? (
       <ArrowUpIcon className="inline size-6 text-white animate-bounce-subtle ml-1" />
     ) : (
       <ArrowDownIcon className="inline size-6 text-white animate-bounce-subtle ml-1" />
     );
   };
+
+
 
 
   return (
@@ -599,10 +620,28 @@ export function ClassicGame({ onWin, onLose, updateStats }: ClassicGameProps) {
                   className={`flex flex-col items-center justify-center p-2 rounded-xs border text-center h-28 duration-500 animate-card-reveal ${getCellColor(guess.comicDebutYear, targetHero.comicDebutYear, true)}`}
                   style={{ animationDelay: '600ms' }}
                 >
-                  <span className="text-lg font-black">
-                    {guess.comicDebutYear}
-                    {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
-                  </span>
+                  {(() => {
+                    const match = guess.comicDebutYear.match(/^(\d+)\s*\((.+)\)$/);
+                    if (match) {
+                      return (
+                        <div className="flex flex-col items-center justify-center">
+                          <span className="text-lg font-black leading-none flex items-center justify-center">
+                            {match[1]}
+                            {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
+                          </span>
+                          <span className="text-xs font-bold text-white/90 mt-1.5 leading-tight max-w-[115px] uppercase tracking-wider line-clamp-2">
+                            {match[2]}
+                          </span>
+                        </div>
+                      );
+                    }
+                    return (
+                      <span className="text-lg font-black">
+                        {guess.comicDebutYear}
+                        {getArrowIcon(guess.comicDebutYear, targetHero.comicDebutYear)}
+                      </span>
+                    );
+                  })()}
                 </div>
 
                 {/* 6. Team Affiliations Card */}

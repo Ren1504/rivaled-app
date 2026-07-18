@@ -10,7 +10,7 @@ export interface Hero {
   primaryAttack: PrimaryAttack;
   hasPassive: boolean;
   mcuDebutYear: number | null;
-  comicDebutYear: number;
+  comicDebutYear: string;
   difficulty: 0 | 1 | 2 | 3 | 4 | 5;
   affiliations: string[];
 }
@@ -22,7 +22,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": 2023,
-    "comicDebutYear": 1967,
+    "comicDebutYear": "1967 (Fantastic Four #67)",
     "difficulty": 3,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -36,7 +36,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 2013,
+    "comicDebutYear": "2013 (Age of Ultron #10)",
     "difficulty": 4,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -49,7 +49,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1979,
+    "comicDebutYear": "1979 (The Amazing Spider-Man #194)",
     "difficulty": 4,
     "affiliations": [
       "Heroes for Hire",
@@ -62,7 +62,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2018,
-    "comicDebutYear": 1966,
+    "comicDebutYear": "1966 (Fantastic Four #52)",
     "difficulty": 4,
     "affiliations": [
       "Avengers",
@@ -76,7 +76,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": 2010,
-    "comicDebutYear": 1964,
+    "comicDebutYear": "1964 (Tales of Suspense #52)",
     "difficulty": 4,
     "affiliations": [
       "Avengers",
@@ -91,7 +91,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1973,
+    "comicDebutYear": "1973 (The Tomb of Dracula #10)",
     "difficulty": 3,
     "affiliations": [
       "Midnight Sons",
@@ -105,7 +105,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": false,
     "mcuDebutYear": 2011,
-    "comicDebutYear": 1941,
+    "comicDebutYear": "1941 (Captain America Comics #1)",
     "difficulty": 3,
     "affiliations": [
       "Avengers",
@@ -119,7 +119,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1982,
+    "comicDebutYear": "1982 (Peter Parker, the Spectacular Spider-Man #64)",
     "difficulty": 3,
     "affiliations": [
       "Runaways",
@@ -133,7 +133,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1963,
+    "comicDebutYear": "1963 (The X-Men #1)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
@@ -147,7 +147,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2015,
-    "comicDebutYear": 1964,
+    "comicDebutYear": "1964 (Daredevil #1)",
     "difficulty": 3,
     "affiliations": [
       "Defenders",
@@ -161,7 +161,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": 2024,
-    "comicDebutYear": 1991,
+    "comicDebutYear": "1991 (The New Mutants #98)",
     "difficulty": 0,
     "affiliations": [
       "X-Force",
@@ -177,7 +177,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1978,
+    "comicDebutYear": "1978 (Devil Dinosaur #1)",
     "difficulty": 3,
     "affiliations": [
       "Pet Avengers",
@@ -190,7 +190,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": 2016,
-    "comicDebutYear": 1963,
+    "comicDebutYear": "1963 (Strange Tales #110)",
     "difficulty": 2,
     "affiliations": [
       "Defenders",
@@ -205,7 +205,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": 2022,
-    "comicDebutYear": 1976,
+    "comicDebutYear": "1976 (Marvel Presents #3)",
     "difficulty": 3,
     "affiliations": [
       "Midnight Sons",
@@ -219,7 +219,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1980,
+    "comicDebutYear": "1980 (The Uncanny X-Men #129)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
@@ -233,7 +233,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1990,
+    "comicDebutYear": "1990 (The Uncanny X-Men #266)",
     "difficulty": 4,
     "affiliations": [
       "X-Men",
@@ -247,7 +247,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2014,
-    "comicDebutYear": 1960,
+    "comicDebutYear": "1960 (Tales to Astonish #13)",
     "difficulty": 2,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -260,7 +260,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": 2011,
-    "comicDebutYear": 1964,
+    "comicDebutYear": "1964 (Tales of Suspense #57)",
     "difficulty": 4,
     "affiliations": [
       "Avengers",
@@ -276,7 +276,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": 2017,
-    "comicDebutYear": 1964,
+    "comicDebutYear": "1964 (Journey into Mystery #102)",
     "difficulty": 3,
     "affiliations": []
   },
@@ -286,7 +286,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": false,
     "mcuDebutYear": 2008,
-    "comicDebutYear": 1962,
+    "comicDebutYear": "1962 (The Incredible Hulk #1)",
     "difficulty": 4,
     "affiliations": [
       "Avengers",
@@ -300,7 +300,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": 2025,
-    "comicDebutYear": 1961,
+    "comicDebutYear": "1961 (The Fantastic Four #1)",
     "difficulty": 3,
     "affiliations": [
       "Fantastic Four",
@@ -313,7 +313,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": 2025,
-    "comicDebutYear": 1961,
+    "comicDebutYear": "1961 (The Fantastic Four #1)",
     "difficulty": 4,
     "affiliations": [
       "Fantastic Four",
@@ -327,7 +327,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1974,
+    "comicDebutYear": "1974 (Marvel Premiere #15)",
     "difficulty": 4,
     "affiliations": [
       "Heroes for Hire",
@@ -341,7 +341,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": 2008,
-    "comicDebutYear": 1963,
+    "comicDebutYear": "1963 (Tales of Suspense #39)",
     "difficulty": 2,
     "affiliations": [
       "Avengers",
@@ -356,7 +356,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 2016,
+    "comicDebutYear": "2016 (West Coast Avengers #6)",
     "difficulty": 1,
     "affiliations": [
       "West Coast Avengers"
@@ -368,7 +368,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": 2011,
-    "comicDebutYear": 1962,
+    "comicDebutYear": "1962 (Journey into Mystery #85)",
     "difficulty": 4,
     "affiliations": [
       "Young Avengers",
@@ -381,7 +381,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 2018,
+    "comicDebutYear": "2018 (Marvel Future Fight #1)",
     "difficulty": 2,
     "affiliations": [
       "Agents of Atlas",
@@ -394,7 +394,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1975,
+    "comicDebutYear": "1975 (Giant-Size X-Men #1)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
@@ -408,7 +408,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1963,
+    "comicDebutYear": "1963 (The X-Men #1)",
     "difficulty": 2,
     "affiliations": [
       "X-Men",
@@ -422,7 +422,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": 2017,
-    "comicDebutYear": 1973,
+    "comicDebutYear": "1973 (The Avengers #112)",
     "difficulty": 1,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -435,7 +435,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2025,
-    "comicDebutYear": 1961,
+    "comicDebutYear": "1961 (The Fantastic Four #1)",
     "difficulty": 3,
     "affiliations": [
       "Fantastic Four",
@@ -450,7 +450,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": 2022,
-    "comicDebutYear": 1975,
+    "comicDebutYear": "1975 (Werewolf by Night #32)",
     "difficulty": 3,
     "affiliations": [
       "Midnight Sons",
@@ -465,7 +465,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": 2022,
-    "comicDebutYear": 1939,
+    "comicDebutYear": "1939 (Motion Picture Funnies Weekly #1)",
     "difficulty": 2,
     "affiliations": [
       "Invaders",
@@ -481,7 +481,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1992,
+    "comicDebutYear": "1992 (Edge of Spider-Verse #5)",
     "difficulty": 4,
     "affiliations": [
       "Web-Warriors"
@@ -493,7 +493,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1963,
+    "comicDebutYear": "1963 (The X-Men #1)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
@@ -506,7 +506,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1976,
+    "comicDebutYear": "1976 (Captain Britain #8)",
     "difficulty": 5,
     "affiliations": [
       "X-Men",
@@ -519,7 +519,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": 2014,
-    "comicDebutYear": 1976,
+    "comicDebutYear": "1976 (Marvel Preview #7)",
     "difficulty": 1,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -532,7 +532,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1981,
+    "comicDebutYear": "1981 (Avengers Annual #10)",
     "difficulty": 5,
     "affiliations": [
       "X-Men",
@@ -546,7 +546,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": 2015,
-    "comicDebutYear": 1964,
+    "comicDebutYear": "1964 (The X-Men #4)",
     "difficulty": 1,
     "affiliations": [
       "Avengers",
@@ -560,7 +560,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2016,
-    "comicDebutYear": 1962,
+    "comicDebutYear": "1962 (Amazing Fantasy #15)",
     "difficulty": 5,
     "affiliations": [
       "Avengers",
@@ -574,7 +574,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1992,
+    "comicDebutYear": "1992 (Marvel Super-Heroes vol. 2 #8)",
     "difficulty": 1,
     "affiliations": [
       "Great Lakes Avengers",
@@ -588,7 +588,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": 2014,
-    "comicDebutYear": 1976,
+    "comicDebutYear": "1976 (Marvel Preview #4)",
     "difficulty": 2,
     "affiliations": [
       "Guardians of the Galaxy",
@@ -601,7 +601,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1975,
+    "comicDebutYear": "1975 (Giant-Size X-Men #1)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
@@ -615,7 +615,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": true,
     "mcuDebutYear": null,
-    "comicDebutYear": 1974,
+    "comicDebutYear": "1974 (The Amazing Spider-Man #129)",
     "difficulty": 1,
     "affiliations": [
       "Thunderbolts",
@@ -628,7 +628,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2025,
-    "comicDebutYear": 1961,
+    "comicDebutYear": "1961 (The Fantastic Four #1)",
     "difficulty": 1,
     "affiliations": [
       "Fantastic Four",
@@ -642,7 +642,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2011,
-    "comicDebutYear": 1962,
+    "comicDebutYear": "1962 (Journey into Mystery #83)",
     "difficulty": 3,
     "affiliations": [
       "Avengers",
@@ -655,7 +655,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Hitscan",
     "hasPassive": false,
     "mcuDebutYear": 2015,
-    "comicDebutYear": 1968,
+    "comicDebutYear": "1968 (The Avengers #54)",
     "difficulty": 2,
     "affiliations": [
       "Masters of Evil"
@@ -667,7 +667,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 1988,
+    "comicDebutYear": "1988 (The Amazing Spider-Man #299)",
     "difficulty": 1,
     "affiliations": [
       "Thunderbolts",
@@ -681,7 +681,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": false,
     "mcuDebutYear": null,
-    "comicDebutYear": 2012,
+    "comicDebutYear": "2012 (Avengers: Electric Rain #1)",
     "difficulty": 3,
     "affiliations": [
       "Agents of Atlas",
@@ -694,7 +694,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Projectile",
     "hasPassive": true,
     "mcuDebutYear": 2011,
-    "comicDebutYear": 1968,
+    "comicDebutYear": "1968 (Captain America #100)",
     "difficulty": 3,
     "affiliations": [
       "Avengers",
@@ -709,7 +709,7 @@ export const heroes: Hero[] = [
     "primaryAttack": "Melee",
     "hasPassive": true,
     "mcuDebutYear": 2024,
-    "comicDebutYear": 1974,
+    "comicDebutYear": "1974 (The Incredible Hulk #180)",
     "difficulty": 3,
     "affiliations": [
       "X-Men",
