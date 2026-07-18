@@ -6688,7 +6688,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
     {
       "name": "Red Room Rifle",
       "slug": "red-room-rifle",
-      "button": "Left Click",
+      "button": "Right Click",
       "originalImgUrl": "https://r.res.easebar.com/pic/20241205/67bd0973-ab49-4e6d-a04b-70f67cb2514b.png",
       "localImgUrl": "/ability_images/black-widow/red-room-rifle.png",
       "properties": [
@@ -6709,7 +6709,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
           "value": "0.83 rounds per second"
         },
         {
-          "key": "Fire Rate",
+          "key": "Magazine Capacity",
           "value": "15"
         },
         {
@@ -6717,7 +6717,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
           "value": "Yes"
         },
         {
-          "key": "Aiming down sights times",
+          "key": "Aiming Down Sights Times",
           "value": "0.3s"
         },
         {
@@ -6727,80 +6727,76 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       ]
     },
     {
-      "name": "Electro-Plasma Explosion",
-      "slug": "electro-plasma-explosion",
+      "name": "Assassin's Focus",
+      "slug": "assassins-focus",
       "button": "Q",
-      "originalImgUrl": "https://r.res.easebar.com/pic/20241205/2ab04f37-ede8-4c33-aee0-ef47e6d4c495.png",
-      "localImgUrl": "/ability_images/black-widow/electro-plasma-explosion.png",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260709/4dabe2ca-e173-4016-97c5-0e91244405ff.png",
+      "localImgUrl": "/ability_images/black-widow/assassins-focus.png",
       "properties": [
-        {
-          "key": "Projectile Speed",
-          "value": "100m/s"
-        },
-        {
-          "key": "Explosion Range",
-          "value": "5.6m - 8m (Maximum range is achieved after 0.6s of charging)"
-        },
-        {
-          "key": "Explosion Damage",
-          "value": "120 - 170 (Maximum damage is achieved after 0.6s of charging)"
-        },
-        {
-          "key": "Number of Plasma Globules",
-          "value": "7 - 20 (Maximum amount is achieved after 0.6s of charging)"
-        },
-        {
-          "key": "Plasma Range",
-          "value": "1.5m spherical radius"
-        },
-        {
-          "key": "Slow Rate",
-          "value": "-55%"
-        },
-        {
-          "key": "Plasma Duration",
-          "value": "10s"
-        },
-        {
-          "key": "Vulnerability Effect Duration",
-          "value": "4s"
-        },
-        {
-          "key": "Vulnerability Effect Rate",
-          "value": "15%"
-        },
         {
           "key": "Energy Cost",
           "value": "2800"
+        },
+        {
+          "key": "Bullet Damage",
+          "value": "160"
+        },
+        {
+          "key": "Rounds",
+          "value": "6"
+        },
+        {
+          "key": "Critical Hit",
+          "value": "Yes"
+        },
+        {
+          "key": "Critical Hit Multiplier",
+          "value": "1.5x"
+        },
+        {
+          "key": "Fire Rate",
+          "value": "0.8s/Round"
+        },
+        {
+          "key": "Maximum Duration",
+          "value": "12s"
         }
       ]
     },
     {
-      "name": "Fleet Foot",
-      "slug": "fleet-foot",
-      "button": "SHIFT",
-      "originalImgUrl": "https://r.res.easebar.com/pic/20241205/c54964b7-5c00-4229-8f65-5d156f05ce27.png",
-      "localImgUrl": "/ability_images/black-widow/fleet-foot.png",
+      "name": "Electro-Plasma Blast",
+      "slug": "electro-plasma-blast",
+      "button": "L-Shift",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260709/04b1c193-17bf-45cb-8837-9044d0c15b7d.png",
+      "localImgUrl": "/ability_images/black-widow/electro-plasma-blast.png",
       "properties": [
         {
-          "key": "Movement Boost",
-          "value": "33%"
+          "key": "Casting",
+          "value": "Charged release, with delayed projectiles."
         },
         {
-          "key": "Maximum Energy",
-          "value": "120"
+          "key": "Cooldown",
+          "value": "10s"
         },
         {
-          "key": "Energy Cost (Sprinting)",
-          "value": "12/s"
+          "key": "Projectile Speed",
+          "value": "100 m/s"
         },
         {
-          "key": "Power Jump Energy Cost",
-          "value": "24 per leap"
+          "key": "Explosion Range",
+          "value": "3.5m to 5m radius spherical spell field"
         },
         {
-          "key": "Energy Recovery Speed",
-          "value": "30/s"
+          "key": "Explosion Damage",
+          "value": "40~60"
+        },
+        {
+          "key": "Slow Rate",
+          "value": "-0.40"
+        },
+        {
+          "key": "Maximum Charge Time",
+          "value": "1s"
         }
       ]
     },
@@ -6808,7 +6804,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       "name": "Edge Dancer",
       "slug": "edge-dancer",
       "button": "E",
-      "originalImgUrl": "https://r.res.easebar.com/pic/20241205/63a7474c-3d1a-4db1-933a-c70c5a37e9ca.png",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260709/5344178b-3361-46ab-9df0-aa58876ddb5b.png",
       "localImgUrl": "/ability_images/black-widow/edge-dancer.png",
       "properties": [
         {
@@ -6816,7 +6812,7 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
           "value": "Melee"
         },
         {
-          "key": "CastingSpinning Kick Damage",
+          "key": "Spinning Kick Damage",
           "value": "35"
         },
         {
@@ -6828,12 +6824,12 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
           "value": "12m"
         },
         {
-          "key": "Flying Kick Damage",
+          "key": "Second Flying Kick Damage",
           "value": "35"
         },
         {
           "key": "Flying Kick Stun Duration",
-          "value": "1s"
+          "value": "0.2s"
         },
         {
           "key": "Flying Kick Casting Window",
@@ -6846,35 +6842,27 @@ export const heroAbilitiesData: HeroAbilitiesDatabase = {
       ]
     },
     {
-      "name": "Straight Shooter",
-      "slug": "straight-shooter",
-      "button": "Right Click",
-      "originalImgUrl": "https://r.res.easebar.com/pic/20241205/6361d366-98b8-4268-825e-1371bf7c99f0.png",
-      "localImgUrl": "/ability_images/black-widow/straight-shooter.png",
+      "name": "Widow's Bite Slam",
+      "slug": "widows-bite-slam",
+      "button": "F",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260709/632db193-8e88-4aa2-9bb3-4dbff266e5df.png",
+      "localImgUrl": "/ability_images/black-widow/widows-bite-slam.png",
       "properties": [
         {
           "key": "Casting",
-          "value": "Single-cast direct hit"
+          "value": "Targeted"
         },
         {
           "key": "Damage",
-          "value": "120 damage per hit"
+          "value": "30"
         },
         {
-          "key": "Fire Rate",
-          "value": "0.83 rounds per second"
+          "key": "Cooldown",
+          "value": "15s"
         },
         {
-          "key": "Fire Rate",
-          "value": "15"
-        },
-        {
-          "key": "Critical Hit",
-          "value": "Yes"
-        },
-        {
-          "key": "Special Effect",
-          "value": "Shares the same magazine with Red Room Rifle"
+          "key": "Damage Range",
+          "value": "5m radius"
         }
       ]
     }
