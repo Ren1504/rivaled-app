@@ -363,6 +363,19 @@ export const heroes: Hero[] = [
     ]
   },
   {
+    "name": "Jubilee",
+    "role": "Strategist",
+    "primaryAttack": "Projectile",
+    "hasPassive": true,
+    "mcuDebutYear": null,
+    "comicDebutYear": "1989 (The Uncanny X-Men #244)",
+    "difficulty": 4,
+    "affiliations": [
+      "X-Men",
+      "New Mutants"
+    ]
+  },
+  {
     "name": "Loki",
     "role": "Strategist",
     "primaryAttack": "Projectile",

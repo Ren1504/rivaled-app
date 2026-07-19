@@ -1,0 +1,258 @@
+{
+  "JUBILEE": [
+    {
+      "name": "Energy Plasmoids",
+      "slug": "energy-plasmoids",
+      "button": "Left Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/a5b1d5f1-4fb5-4181-8bb2-67857d31b837.png",
+      "localImgUrl": "/ability_images/jubilee/energy-plasmoids.png",
+      "properties": [
+        {
+          "key": "Fire Rate",
+          "value": "8 per second"
+        },
+        {
+          "key": "Projectile Speed",
+          "value": "200m/s"
+        },
+        {
+          "key": "Damage",
+          "value": "10 per hit"
+        },
+        {
+          "key": "Healing",
+          "value": "14 per hit"
+        },
+        {
+          "key": "Energy",
+          "value": "48"
+        },
+        {
+          "key": "Speed Boost: Fire Rate",
+          "value": "20 per second"
+        },
+        {
+          "key": "Speed Boost: Damage",
+          "value": "5 per hit"
+        },
+        {
+          "key": "Speed Boost: Healing",
+          "value": "6.5 per hit"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 10m, decreasing to 70% at 30m"
+        },
+        {
+          "key": "Attack Speed Boost Duration Per Sparkle Mark Triggered",
+          "value": "6s"
+        }
+      ]
+    },
+    {
+      "name": "Blooming Ball",
+      "slug": "blooming-ball",
+      "button": "Right Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/9b787ce0-b3bc-432c-a29c-926d8d1f8da8.png",
+      "localImgUrl": "/ability_images/jubilee/blooming-ball.png",
+      "properties": [
+        {
+          "key": "Fire Rate",
+          "value": "8 per second"
+        },
+        {
+          "key": "Projectile Speed",
+          "value": "200m/s"
+        },
+        {
+          "key": "Damage",
+          "value": "10 per hit"
+        },
+        {
+          "key": "Healing",
+          "value": "14 per hit"
+        },
+        {
+          "key": "Energy",
+          "value": "48"
+        },
+        {
+          "key": "Speed Boost: Fire Rate",
+          "value": "20 per second"
+        },
+        {
+          "key": "Speed Boost: Damage",
+          "value": "5 per hit"
+        },
+        {
+          "key": "Speed Boost: Healing",
+          "value": "6.5 per hit"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 10m, decreasing to 70% at 30m"
+        },
+        {
+          "key": "Attack Speed Boost Duration Per Sparkle Mark Triggered",
+          "value": "6s"
+        }
+      ]
+    },
+    {
+      "name": "Sparking Sprint",
+      "slug": "sparking-sprint",
+      "button": "Shift",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/7c12355a-46aa-45ba-b9d1-b5e3147d3579.png",
+      "localImgUrl": "/ability_images/jubilee/sparking-sprint.png",
+      "properties": [
+        {
+          "key": "Speed Boost Multiplier",
+          "value": "40%"
+        },
+        {
+          "key": "Maximum Energy",
+          "value": "12"
+        },
+        {
+          "key": "Energy Cost",
+          "value": "4/s"
+        },
+        {
+          "key": "Energy Recovery",
+          "value": "1/s"
+        },
+        {
+          "key": "Cooldown",
+          "value": "4s"
+        },
+        {
+          "key": "Spell Field Range",
+          "value": "5m spherical radius"
+        },
+        {
+          "key": "Damage",
+          "value": "45"
+        },
+        {
+          "key": "Healing Amount",
+          "value": "30"
+        }
+      ]
+    },
+    {
+      "name": "Dazzling Detonation",
+      "slug": "dazzling-detonation",
+      "button": "E",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/8209ad6b-5369-49a5-9479-4f02893b7a9a.png",
+      "localImgUrl": "/ability_images/jubilee/dazzling-detonation.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "12s"
+        },
+        {
+          "key": "Spell Field Range",
+          "value": "Matches current range of selected orb"
+        },
+        {
+          "key": "Damage",
+          "value": "50"
+        },
+        {
+          "key": "Blind Duration",
+          "value": "1.5s"
+        },
+        {
+          "key": "Vulnerability",
+          "value": "10% for 3s"
+        },
+        {
+          "key": "Healing Spell Field Generation Interval",
+          "value": "0.2s"
+        },
+        {
+          "key": "One-time Healing Amount",
+          "value": "65"
+        },
+        {
+          "key": "Healing Over Time Amount",
+          "value": "25/sec for 3s"
+        },
+        {
+          "key": "Speed Boost Multiplier",
+          "value": "40% for 3s"
+        }
+      ]
+    },
+    {
+      "name": "Sparkle Mark",
+      "slug": "sparkle-mark",
+      "button": "Passive",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/856e249b-ea9e-4fc9-8f8f-11e9ad0d3d3e.png",
+      "localImgUrl": "/ability_images/jubilee/sparkle-mark.png",
+      "properties": [
+        {
+          "key": "Bonus Health",
+          "value": "50"
+        },
+        {
+          "key": "Healing Boost",
+          "value": "20% for 3s"
+        },
+        {
+          "key": "One-Time Damage",
+          "value": "25"
+        }
+      ]
+    },
+    {
+      "name": "Firework Finale",
+      "slug": "firework-finale",
+      "button": "Q",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260707/14872c10-8520-4914-b9ca-8d6e0536cba5.png",
+      "localImgUrl": "/ability_images/jubilee/firework-finale.png",
+      "properties": [
+        {
+          "key": "Energy Cost",
+          "value": "4500"
+        },
+        {
+          "key": "Ability Duration",
+          "value": "10s"
+        },
+        {
+          "key": "Spell Field Range",
+          "value": "Inner circle radius 6m; Outer circle radius 10m"
+        },
+        {
+          "key": "Spell Field Damage",
+          "value": "20/s"
+        },
+        {
+          "key": "Spell Field Healing",
+          "value": "150/s"
+        },
+        {
+          "key": "Firework Cluster Range",
+          "value": "2m radius"
+        },
+        {
+          "key": "Firework Cluster Healing Amount",
+          "value": "40 per hit"
+        },
+        {
+          "key": "Firework Cluster Damage",
+          "value": "25 per hit"
+        },
+        {
+          "key": "Firework Cluster",
+          "value": "20 m/s"
+        },
+        {
+          "key": "Firework Cluster Amount",
+          "value": "5"
+        }
+      ]
+    }
+  ]
+}
