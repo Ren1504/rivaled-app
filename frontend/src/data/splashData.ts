@@ -6,6 +6,7 @@ export interface HeroSplashData {
 export const heroSplashData: HeroSplashData = {
   "Adam Warlock": [
     "Blood Soul.png",
+    "Brand Ambassador.png",
     "Cosmic Warlock.png",
     "Default.png",
     "Guardians of The Galaxy Vol. 3.png",
@@ -58,6 +59,7 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Galactic Talon.png",
     "Primal Patriot.png",
+    "Seaside Sentinel.png",
     "Star Spangled Style.png"
   ],
   "Cloak & Dagger": [
@@ -82,11 +84,13 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Deadpool": [
     "Captain Pool.png",
+    "Dead Mummy.png",
     "Maid-pool.png",
     "Monster King.png"
   ],
   "Devil Dinosaur": [
-    "Chrono-armor.png"
+    "Chrono-armor.png",
+    "Jeff the Dinosaur.png"
   ],
   "Doctor Strange": [
     "Bleeker Street Strut.png",
@@ -101,6 +105,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Elsa Bloodstone": [
     "Bloody Bloodstone.png",
+    "Primal Predator.png",
     "Young Blood.png"
   ],
   "Emma Frost": [
@@ -116,6 +121,7 @@ export const heroSplashData: HeroSplashData = {
   "Gambit": [
     "Alluring Ace.png",
     "Barrier Buster.png",
+    "Dead man's Hand.png",
     "Default.png",
     "Mr. X.png",
     "Thieves Guildmaster.png"
@@ -129,6 +135,7 @@ export const heroSplashData: HeroSplashData = {
     "Yggroot.png"
   ],
   "Hawkeye": [
+    "Bed-Stuy's Best.png",
     "Default.png",
     "Freefall.png",
     "Galactic Fangs.png",
@@ -162,6 +169,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Invisible Woman": [
     "Azure Shade.png",
+    "Baxter Building Beauty.png",
     "Default.png",
     "Disappearing Dessert.png",
     "Future Foundation.png",
@@ -186,6 +194,7 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Extrembiote Armor.png",
     "Iron Mariner.png",
+    "Iron Pharaoh.png",
     "Iron Samurai.png",
     "Mark I.png",
     "Steam Power.png",
@@ -204,6 +213,9 @@ export const heroSplashData: HeroSplashData = {
     "Maid To Chomp.png",
     "Sunshine Land Shark.png"
   ],
+  "Jubilee": [
+    "Midnight Mutant.png"
+  ],
   "Loki": [
     "All-butcher.png",
     "Default.png",
@@ -212,6 +224,7 @@ export const heroSplashData: HeroSplashData = {
     "Low-key Loki.png",
     "Presidential Attire.png",
     "Robe Of Relaxation.png",
+    "Seaside Siren.png",
     "Season 2.png",
     "Shin Sagi-shi.png",
     "The Avengers.png"
@@ -242,6 +255,7 @@ export const heroSplashData: HeroSplashData = {
     "Binary Sword.png",
     "Default.png",
     "King Magnus.png",
+    "Magnetic Vintage.png",
     "Master Of Magnetism.png",
     "Seat Of Autumn.png",
     "Temporal Tyrant.png",
@@ -249,6 +263,7 @@ export const heroSplashData: HeroSplashData = {
     "Untamed Overlord.png"
   ],
   "Mantis": [
+    "Akkaban Acolyte.png",
     "Default.png",
     "Galactic Gladiator.png",
     "Galactic Wings.png",
@@ -320,6 +335,7 @@ export const heroSplashData: HeroSplashData = {
     "Bounty Hunter.png",
     "Default.png",
     "Giant Panda.png",
+    "Golden Artificer.png",
     "Guardians Of The Galaxy Vol. 3.png",
     "Rocket Of The Rafters.png",
     "Sunshine Raccoon.png",
@@ -329,6 +345,7 @@ export const heroSplashData: HeroSplashData = {
   "Rogue": [
     "Default.png",
     "Mrs. X.png",
+    "Raider Prime.png",
     "Redux.png",
     "Starlit Rebel.png"
   ],
@@ -421,6 +438,7 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Infinity Ultron.png",
     "Odinforce Ultron.png",
+    "Ultron 15.png",
     "Wasteland Robot.png",
     "X-tron.png"
   ],
@@ -433,9 +451,11 @@ export const heroSplashData: HeroSplashData = {
     "Snow Symbiote.png",
     "Space Corsair.png",
     "Space Knight.png",
+    "Venom Bloom.png",
     "War Of The Realms.png"
   ],
   "White Fox": [
+    "Coastal Kumiho.png",
     "Default.png",
     "Yoon Ji-woo- The Leader.png"
   ],
@@ -450,6 +470,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Wolverine": [
     "Blood Berserker.png",
+    "Bloodless Berserker.png",
     "Deadpool & Wolverine.png",
     "Default.png",
     "Dog Brother X.png",
