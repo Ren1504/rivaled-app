@@ -29,17 +29,17 @@ export function Tabs({
 
   return (
     <div className={`flex items-center justify-center ${className}`}>
-      <div className="flex items-center justify-center gap-1.5 sm:gap-4 md:gap-8 flex-nowrap overflow-x-auto no-scrollbar max-w-full px-2">
+      <div className="flex items-center justify-center gap-2 sm:gap-4 md:gap-6 flex-nowrap overflow-x-auto no-scrollbar max-w-full px-2 py-1">
         {options.map((option) => {
           const isActive = option.id === activeTab;
           return (
             <button
               key={option.id}
               onClick={() => handleTabClick(option.id)}
-              className={`relative flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-4 md:px-5 py-1.5 sm:py-2 text-xs sm:text-sm md:text-base font-bold tracking-wider uppercase transition-all duration-200 cursor-pointer outline-hidden select-none whitespace-nowrap shrink-0
+              className={`relative flex items-center gap-2 px-3.5 sm:px-5 md:px-6 py-2 rounded-xs text-xs sm:text-sm md:text-base font-black tracking-wider uppercase transition-all duration-200 cursor-pointer outline-hidden select-none whitespace-nowrap shrink-0 border
                 ${isActive 
-                  ? "text-rivals-gold" 
-                  : "text-muted-foreground hover:text-white"
+                  ? "text-rivals-gold bg-rivals-gold/10 border-rivals-gold/40 shadow-[0_0_15px_rgba(234,179,8,0.25)]" 
+                  : "text-muted-foreground border-transparent hover:text-white hover:bg-white/5 hover:border-white/10"
                 }
               `}
             >

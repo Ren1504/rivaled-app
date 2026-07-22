@@ -182,10 +182,10 @@ function App() {
             <img
               src="/rivaled_logo.png"
               alt="RIVALED"
-              className="h-32 sm:h-44 md:h-56 lg:h-64 max-w-full w-auto object-contain drop-shadow-[0_0_35px_rgba(234,179,8,0.5)] transition-all duration-300 transform hover:scale-105"
+              className="h-20 sm:h-26 md:h-32 lg:h-36 max-w-full w-auto object-contain drop-shadow-[0_0_30px_rgba(234,179,8,0.5)] transition-all duration-300 transform hover:scale-105"
               draggable={false}
             />
-            <span className="text-xs sm:text-sm font-bold text-muted-foreground uppercase tracking-widest block mt-2 sm:mt-3 leading-none">
+            <span className="text-[10px] sm:text-xs md:text-sm font-bold text-muted-foreground uppercase tracking-widest block mt-2 sm:mt-2.5 leading-none">
               Marvel Rivals Guessing Game
             </span>
           </div>
@@ -193,14 +193,16 @@ function App() {
         </div>
       </header>
 
-      {/* Standalone Mode Tabs */}
-      <div className="w-full my-2">
-        <Tabs
-          options={tabOptions}
-          activeTab={activeTab}
-          onChange={setActiveTab}
-          className="w-full"
-        />
+      {/* Game Mode Menu Bar (Centered Floating Capsule Bar) */}
+      <div className="sticky top-3 z-30 w-full max-w-3xl sm:max-w-4xl mx-auto px-4 my-2">
+        <nav className="bg-[#080c1d]/90 backdrop-blur-md border border-rivals-gold/25 rounded-full shadow-2xl shadow-black/60 px-3 sm:px-6 py-1.5 flex items-center justify-center transition-all duration-300">
+          <Tabs
+            options={tabOptions}
+            activeTab={activeTab}
+            onChange={setActiveTab}
+            className="w-full"
+          />
+        </nav>
       </div>
 
       {/* Primary Content Container */}
