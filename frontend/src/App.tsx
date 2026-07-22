@@ -194,7 +194,7 @@ function App() {
       </header>
 
       {/* Game Mode Menu Bar (Square Corners: rounded-none) */}
-      <div className="sticky top-3 z-30 w-full max-w-3xl sm:max-w-4xl mx-auto px-4 my-2">
+      <div className="w-full max-w-3xl sm:max-w-4xl mx-auto px-4 my-2 relative z-30">
         <nav className="bg-[#080c1d]/90 backdrop-blur-md border border-rivals-gold/25 rounded-none shadow-2xl shadow-black/60 px-3 sm:px-6 py-1.5 flex items-center justify-center transition-all duration-300">
           <Tabs
             options={tabOptions}
