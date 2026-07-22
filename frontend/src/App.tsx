@@ -128,82 +128,80 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-transparent text-foreground transition-colors duration-300">
 
-      {/* Top Header Section */}
-      <header className="relative w-full border-b border-white/5 bg-[#060814]/70 backdrop-blur-md sticky top-0 z-40 px-6 py-5 flex items-center justify-between">
+      {/* Top Header & Navigation Section (Unified Cohesive Component) */}
+      <header className="w-full border-b border-white/10 bg-[#060814]/90 backdrop-blur-md sticky top-0 z-40 shadow-2xl transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-2 pb-1.5 flex flex-col items-center relative">
 
-        {/* Title / Logo (Left) */}
-        <div className="w-36 flex items-center gap-3">
-          <img
-            src="/logo.png"
-            alt="Rivaled Logo"
-            className="h-9 w-auto object-contain hidden sm:block"
-            draggable={false}
-          />
-        </div>
+          {/* Action Controls (Top Right) */}
+          <div className="absolute top-2.5 right-4 sm:right-6 flex items-center gap-1 sm:gap-1.5 z-20">
+            {/* Help Instructions */}
+            <Button
+              variant="ghost"
+              size="icon-sm"
+              onClick={() => {
+                audioSynth.playClick();
+                setIsInstructionsOpen(true);
+              }}
+              className="text-muted-foreground hover:text-white rounded-xs cursor-pointer p-1"
+              title="How to Play"
+            >
+              <HelpIcon className="size-4 sm:size-5" />
+            </Button>
 
-        {/* Centered App Title */}
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center pointer-events-none">
-          <h1 className="text-3xl md:text-4xl font-black tracking-widest text-gold-gradient uppercase leading-none">
-            RIVALED
-          </h1>
-          <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest block mt-1 hidden md:block">
-            Marvel Rivals Guessing Game
-          </span>
-        </div>
+            {/* Statistics Toggle */}
+            <Button
+              variant="ghost"
+              size="icon-sm"
+              onClick={() => {
+                audioSynth.playClick();
+                setIsStatsOpen(true);
+              }}
+              className="text-muted-foreground hover:text-white rounded-xs cursor-pointer p-1"
+              title="Stats"
+            >
+              <TrophyIcon className="size-4 sm:size-5" />
+            </Button>
 
-        {/* Action Controls (Right) */}
-        <div className="w-36 flex items-center justify-end gap-2 z-10">
-          {/* Help Instructions */}
-          <Button
-            variant="ghost"
-            size="icon-sm"
-            onClick={() => {
-              audioSynth.playClick();
-              setIsInstructionsOpen(true);
-            }}
-            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
-            title="How to Play"
-          >
-            <HelpIcon className="size-5" />
-          </Button>
+            {/* Settings Toggle */}
+            <Button
+              variant="ghost"
+              size="icon-sm"
+              onClick={() => {
+                audioSynth.playClick();
+                setIsSettingsOpen(true);
+              }}
+              className="text-muted-foreground hover:text-white rounded-xs cursor-pointer p-1"
+              title="Settings"
+            >
+              <SettingsIcon className="size-4 sm:size-5" />
+            </Button>
+          </div>
 
-          {/* Statistics Toggle */}
-          <Button
-            variant="ghost"
-            size="icon-sm"
-            onClick={() => {
-              audioSynth.playClick();
-              setIsStatsOpen(true);
-            }}
-            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
-            title="Stats"
-          >
-            <TrophyIcon className="size-5" />
-          </Button>
+          {/* Centered Brand Identity (Large Crisp Logo + Tight Tagline) */}
+          <div className="flex flex-col items-center justify-center text-center">
+            <img
+              src="/rivaled_logo.png"
+              alt="RIVALED"
+              className="h-14 sm:h-18 md:h-22 lg:h-24 max-w-full w-auto object-contain drop-shadow-[0_0_20px_rgba(234,179,8,0.4)] transition-all duration-300"
+              draggable={false}
+            />
+            <span className="text-[10px] sm:text-xs font-bold text-muted-foreground uppercase tracking-widest block mt-1.5 leading-none">
+              Marvel Rivals Guessing Game
+            </span>
+          </div>
 
-          {/* Settings Toggle */}
-          <Button
-            variant="ghost"
-            size="icon-sm"
-            onClick={() => {
-              audioSynth.playClick();
-              setIsSettingsOpen(true);
-            }}
-            className="text-muted-foreground hover:text-white rounded-xs cursor-pointer"
-            title="Settings"
-          >
-            <SettingsIcon className="size-5" />
-          </Button>
+          {/* Cohesive Navigation Bar */}
+          <nav className="w-full flex items-center justify-center border-t border-white/5 pt-1.5 mt-2">
+            <Tabs
+              options={tabOptions}
+              activeTab={activeTab}
+              onChange={setActiveTab}
+              className="w-full"
+            />
+          </nav>
+
         </div>
       </header>
-
-      {/* Main Tab Options Navigation */}
-      <Tabs
-        options={tabOptions}
-        activeTab={activeTab}
-        onChange={setActiveTab}
-        className="w-full bg-[#060814]/30"
-      />
 
       {/* Primary Content Container */}
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
