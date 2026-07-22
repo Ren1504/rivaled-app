@@ -128,12 +128,12 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col bg-transparent text-foreground transition-colors duration-300">
 
-      {/* Top Header & Navigation Section (Unified Cohesive Component) */}
-      <header className="w-full border-b border-white/10 bg-[#060814]/90 backdrop-blur-md sticky top-0 z-40 shadow-2xl transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-2 pb-1.5 flex flex-col items-center relative">
+      {/* Top Brand & Header Section */}
+      <header className="w-full bg-transparent relative z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col items-center relative">
 
           {/* Action Controls (Top Right) */}
-          <div className="absolute top-2.5 right-4 sm:right-6 flex items-center gap-1 sm:gap-1.5 z-20">
+          <div className="absolute top-4 right-4 sm:right-6 flex items-center gap-1 sm:gap-1.5 z-20">
             {/* Help Instructions */}
             <Button
               variant="ghost"
@@ -177,31 +177,31 @@ function App() {
             </Button>
           </div>
 
-          {/* Centered Brand Identity (Large Crisp Logo + Tight Tagline) */}
+          {/* Centered Brand Identity (RIVALED Logo + Tagline) */}
           <div className="flex flex-col items-center justify-center text-center">
             <img
               src="/rivaled_logo.png"
               alt="RIVALED"
-              className="h-14 sm:h-18 md:h-22 lg:h-24 max-w-full w-auto object-contain drop-shadow-[0_0_20px_rgba(234,179,8,0.4)] transition-all duration-300"
+              className="h-32 sm:h-44 md:h-56 lg:h-64 max-w-full w-auto object-contain drop-shadow-[0_0_35px_rgba(234,179,8,0.5)] transition-all duration-300 transform hover:scale-105"
               draggable={false}
             />
-            <span className="text-[10px] sm:text-xs font-bold text-muted-foreground uppercase tracking-widest block mt-1.5 leading-none">
+            <span className="text-xs sm:text-sm font-bold text-muted-foreground uppercase tracking-widest block mt-2 sm:mt-3 leading-none">
               Marvel Rivals Guessing Game
             </span>
           </div>
 
-          {/* Cohesive Navigation Bar */}
-          <nav className="w-full flex items-center justify-center border-t border-white/5 pt-1.5 mt-2">
-            <Tabs
-              options={tabOptions}
-              activeTab={activeTab}
-              onChange={setActiveTab}
-              className="w-full"
-            />
-          </nav>
-
         </div>
       </header>
+
+      {/* Standalone Mode Tabs */}
+      <div className="w-full my-2">
+        <Tabs
+          options={tabOptions}
+          activeTab={activeTab}
+          onChange={setActiveTab}
+          className="w-full"
+        />
+      </div>
 
       {/* Primary Content Container */}
       <main className="flex-1 w-full max-w-7xl mx-auto px-4 py-8 flex flex-col items-center">
