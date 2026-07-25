@@ -151,7 +151,8 @@ export const heroSplashData: HeroSplashData = {
     "Queen In Black.png",
     "Savage Monarch.png",
     "The Grim Lady.png",
-    "Yami No Karasu.png"
+    "Yami No Karasu.png",
+    "Consort of Khonsu.png"
   ],
   "Hulk": [
     "Default.png",
@@ -329,7 +330,8 @@ export const heroSplashData: HeroSplashData = {
     "Fleeting Butterfly.png",
     "Once-captive Corsair.png",
     "Psychedelic Pulse.png",
-    "Vengeance.png"
+    "Vengeance.png",
+    "Pinned Butterfly.png"
   ],
   "Rocket Raccoon": [
     "Bounty Hunter.png",
