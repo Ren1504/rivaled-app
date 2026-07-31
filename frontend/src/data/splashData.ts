@@ -160,7 +160,8 @@ export const heroSplashData: HeroSplashData = {
     "Infinity Hulk.png",
     "Joe Fixit.png",
     "Maestro.png",
-    "Punk Rage.png"
+    "Punk Rage.png",
+    "Spiderman Brand new Day.png"
   ],
   "Human Torch": [
     "Default.png",
@@ -239,7 +240,8 @@ export const heroSplashData: HeroSplashData = {
     "Mirae 2099.png",
     "Park Sun-young- The Dancer.png",
     "Shining Star.png",
-    "Sonic Trailblazer.png"
+    "Sonic Trailblazer.png",
+    "Carmine Cassette.png"
   ],
   "Magik": [
     "Default.png",
@@ -359,7 +361,8 @@ export const heroSplashData: HeroSplashData = {
     "Phoenix Chaos.png",
     "The Queen Of The Dead.png",
     "Twisted Conjurer.png",
-    "Witch Of The Evil Eye.png"
+    "Witch Of The Evil Eye.png",
+    "Avengers Age of Ultron.png"
   ],
   "Spider-Man": [
     "Bag-man Beyond.png",
@@ -373,7 +376,8 @@ export const heroSplashData: HeroSplashData = {
     "Peter Parker- The Photographer.png",
     "Spider-man- No Way Home.png",
     "Spider-oni.png",
-    "Spider-punk 2099.png"
+    "Spider-punk 2099.png",
+    "Spiderman Brand new Day.png"
   ],
   "Squirrel Girl": [
     "Cheerful Dragoness.png",
@@ -442,7 +446,8 @@ export const heroSplashData: HeroSplashData = {
     "Odinforce Ultron.png",
     "Ultron 15.png",
     "Wasteland Robot.png",
-    "X-tron.png"
+    "X-tron.png",
+    "Avengers Age of Ultron.png"
   ],
   "Venom": [
     "Default.png",
@@ -468,7 +473,8 @@ export const heroSplashData: HeroSplashData = {
     "Revolution.png",
     "Starlit Gunslinger.png",
     "Thunderbolts-.png",
-    "Winter Buckaroo.png"
+    "Winter Buckaroo.png",
+    "Captain America The Winter Soldier.png"
   ],
   "Wolverine": [
     "Blood Berserker.png",
