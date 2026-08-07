@@ -636,6 +636,20 @@ export const heroes: Hero[] = [
     ]
   },
   {
+    "name": "The Hood",
+    "role": "Vanguard",
+    "primaryAttack": "Hitscan",
+    "hasPassive": true,
+    "mcuDebutYear": null,
+    "comicDebutYear": "2002 (The Hood #1)",
+    "difficulty": 2,
+    "affiliations": [
+      "Illuminati",
+      "Thunderbolts",
+      "Dark Avengers"
+    ]
+  },
+  {
     "name": "The Thing",
     "role": "Vanguard",
     "primaryAttack": "Melee",

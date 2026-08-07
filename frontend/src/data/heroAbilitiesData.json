@@ -588,7 +588,7 @@
       "properties": [
         {
           "key": "Spell Field Range",
-          "value": "150° cone spell field with a radius of 7.5m and a height of 2.5m"
+          "value": "150\u00b0 cone spell field with a radius of 7.5m and a height of 2.5m"
         },
         {
           "key": "Spell Field Damage",
@@ -600,7 +600,7 @@
         },
         {
           "key": "Damage Falloff",
-          "value": "Falloff begins at 30°, drop to 30% of maximum damage at 75°"
+          "value": "Falloff begins at 30\u00b0, drop to 30% of maximum damage at 75\u00b0"
         },
         {
           "key": "Bonus Health Per Hit",
@@ -645,7 +645,7 @@
         },
         {
           "key": "2nd Claw Strike Damage",
-          "value": "30+20% Target’s Maximum Health"
+          "value": "30+20% Target\u2019s Maximum Health"
         }
       ]
     },
@@ -3744,7 +3744,7 @@
         },
         {
           "key": "Angle Between the Side Cards and the Center Card",
-          "value": "2°"
+          "value": "2\u00b0"
         },
         {
           "key": "Card Damage",
@@ -3793,7 +3793,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone shape spell field, angle range: 110°, length: 40m"
+          "value": "Cone shape spell field, angle range: 110\u00b0, length: 40m"
         },
         {
           "key": "Special Effect",
@@ -4543,7 +4543,7 @@
         },
         {
           "key": "Bonus Health",
-          "value": "Within the Divine Judgement zone, Angela’s each Axes of Ichors hit grants 50 Bonus Health to herself and 25 Bonus Health to allies within the area."
+          "value": "Within the Divine Judgement zone, Angela\u2019s each Axes of Ichors hit grants 50 Bonus Health to herself and 25 Bonus Health to allies within the area."
         },
         {
           "key": "Bonus Max Health",
@@ -4568,7 +4568,7 @@
         },
         {
           "key": "Ascent Elevation Angle",
-          "value": "60°"
+          "value": "60\u00b0"
         }
       ]
     },
@@ -5574,11 +5574,11 @@
         },
         {
           "key": "Range",
-          "value": "Cone shape spell field, angle range: 80°, length: 30m"
+          "value": "Cone shape spell field, angle range: 80\u00b0, length: 30m"
         },
         {
           "key": "Damage",
-          "value": "Basic damage 80/s; distance falloff: falloff begins at 10m, decreasing to 70% at 30m; angle falloff: falloff begins at 7° from the center of view, decreasing to 80% at 20°"
+          "value": "Basic damage 80/s; distance falloff: falloff begins at 10m, decreasing to 70% at 30m; angle falloff: falloff begins at 7\u00b0 from the center of view, decreasing to 80% at 20\u00b0"
         },
         {
           "key": "Energy Cost",
@@ -7131,7 +7131,7 @@
         },
         {
           "key": "Ammo",
-          "value": "∞"
+          "value": "\u221e"
         },
         {
           "key": "Critical Hit",
@@ -7866,7 +7866,7 @@
         },
         {
           "key": "Spread Angle",
-          "value": "0.86°"
+          "value": "0.86\u00b0"
         },
         {
           "key": "Maximum Distance",
@@ -7966,7 +7966,7 @@
         },
         {
           "key": "Spread Angle",
-          "value": "11.3°"
+          "value": "11.3\u00b0"
         },
         {
           "key": "Cooldown",
@@ -9431,7 +9431,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone-shaped spell field with a 5m radius and an apex angle of 90°"
+          "value": "Cone-shaped spell field with a 5m radius and an apex angle of 90\u00b0"
         },
         {
           "key": "Spell Field Damage",
@@ -9599,7 +9599,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone-shaped spell field with a 4.5m radius and an apex angle of 80°"
+          "value": "Cone-shaped spell field with a 4.5m radius and an apex angle of 80\u00b0"
         },
         {
           "key": "Spell Field Damage",
@@ -10383,7 +10383,7 @@
         },
         {
           "key": "Casting Angle",
-          "value": "150°"
+          "value": "150\u00b0"
         },
         {
           "key": "Damage",
@@ -11798,7 +11798,7 @@
         },
         {
           "key": "Cable Attachment Angle",
-          "value": "20° - 160°"
+          "value": "20\u00b0 - 160\u00b0"
         },
         {
           "key": "Cable Length",
@@ -12436,7 +12436,7 @@
         },
         {
           "key": "Special Effect",
-          "value": "One-time healing for allies when projectile hits them，Bouncing Spheres will bounce off surfaces upon contact, with a maximum of 10 bounces. When they approach injured allies, their speed will reduce"
+          "value": "One-time healing for allies when projectile hits them\uff0cBouncing Spheres will bounce off surfaces upon contact, with a maximum of 10 bounces. When they approach injured allies, their speed will reduce"
         },
         {
           "key": "Projectile Speed Reduction",
@@ -13881,7 +13881,7 @@
         },
         {
           "key": "Special Effect",
-          "value": "Knocks enemies inward, with an inward knockback angle of 75°"
+          "value": "Knocks enemies inward, with an inward knockback angle of 75\u00b0"
         }
       ]
     },
@@ -14597,44 +14597,32 @@
       "localImgUrl": "/ability_images/jubilee/blooming-ball.png",
       "properties": [
         {
-          "key": "Fire Rate",
-          "value": "8 per second"
+          "key": "Cooldown",
+          "value": "2 charges, with each charge taking 12s to recharge."
         },
         {
-          "key": "Projectile Speed",
-          "value": "200m/s"
+          "key": "Orb Maximum Duration",
+          "value": "6 seconds; when reaching its max charge for the first time, duration is increased by 6 seconds"
         },
         {
-          "key": "Damage",
-          "value": "10 per hit"
+          "key": "Energy Required to Charge Orb",
+          "value": "250 Healing/Damage"
+        },
+        {
+          "key": "Range",
+          "value": "4m radius, increasing linearly with energy; up to 8m at max energy"
         },
         {
           "key": "Healing",
-          "value": "14 per hit"
+          "value": "35/sec, increasing linearly with energy; up to 50/sec at max energy"
         },
         {
-          "key": "Energy",
-          "value": "48"
+          "key": "Damage",
+          "value": "10 per second"
         },
         {
-          "key": "Speed Boost: Fire Rate",
-          "value": "20 per second"
-        },
-        {
-          "key": "Speed Boost: Damage",
-          "value": "5 per hit"
-        },
-        {
-          "key": "Speed Boost: Healing",
-          "value": "6.5 per hit"
-        },
-        {
-          "key": "Damage Falloff",
-          "value": "Falloff begins at 10m, decreasing to 70% at 30m"
-        },
-        {
-          "key": "Attack Speed Boost Duration Per Sparkle Mark Triggered",
-          "value": "6s"
+          "key": "Returned Energy on Recall",
+          "value": "0; increases linearly with energy, reaching max when the orb's remaining duration is greater than 6 seconds, restoring 1 charge"
         }
       ]
     },
@@ -14754,7 +14742,7 @@
       "properties": [
         {
           "key": "Energy Cost",
-          "value": "4500"
+          "value": "4300"
         },
         {
           "key": "Ability Duration",
@@ -14791,6 +14779,243 @@
         {
           "key": "Firework Cluster Amount",
           "value": "5"
+        }
+      ]
+    }
+  ],
+  "THE HOOD": [
+    {
+      "name": "Accursed Pistols",
+      "slug": "accursed-pistols",
+      "button": "Left Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/7534b549-9d70-4acc-bb2e-a8f41a149c25.png",
+      "localImgUrl": "/ability_images/the-hood/accursed-pistols.png",
+      "properties": [
+        {
+          "key": "Shooting Damage",
+          "value": "26 per round"
+        },
+        {
+          "key": "Shooting Interval",
+          "value": "0.2s"
+        },
+        {
+          "key": "Shooting Damage after Demonic Energy exceeds 50%",
+          "value": "21 per round"
+        },
+        {
+          "key": "Shooting Interval after Demonic Energy exceeds 50%",
+          "value": "0.15s"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 8m, decreasing to 55% at 20m"
+        },
+        {
+          "key": "Ammo",
+          "value": "40"
+        }
+      ]
+    },
+    {
+      "name": "Leaded Transformation",
+      "slug": "leaded-transformation",
+      "button": "Left Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/4ca514f5-22ab-4b3f-99d1-7c71bbfd8a30.png",
+      "localImgUrl": "/ability_images/the-hood/leaded-transformation.png",
+      "properties": [
+        {
+          "key": "Shooting Damage",
+          "value": "4 per round"
+        },
+        {
+          "key": "Shooting Interval",
+          "value": "0.05s"
+        },
+        {
+          "key": "Lifesteal Ratio",
+          "value": "10%"
+        },
+        {
+          "key": "Leaded Transformation Damage/Bonus Health Conversion",
+          "value": "40%, Max100"
+        },
+        {
+          "key": "Bullet Spread Radius",
+          "value": "Spread radius reaches 0.5m after 10 consecutive shots (calculated at 10m distance)"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 8m, decreasing to 80% at 20m"
+        }
+      ]
+    },
+    {
+      "name": "Mantle of Oblivion",
+      "slug": "mantle-of-oblivion",
+      "button": "Right Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/609ce727-56eb-4037-b892-cf519e448a0b.png",
+      "localImgUrl": "/ability_images/the-hood/mantle-of-oblivion.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "10"
+        },
+        {
+          "key": "Max Duration",
+          "value": "1s"
+        },
+        {
+          "key": "Sphere Radius",
+          "value": "2m"
+        },
+        {
+          "key": "Sphere Radius after Demonic Energy exceeds 50%",
+          "value": "3m"
+        }
+      ]
+    },
+    {
+      "name": "Abyssal Veil",
+      "slug": "abyssal-veil",
+      "button": "E",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/3f3f96fb-25e4-481b-8d83-1b47cd1207c3.png",
+      "localImgUrl": "/ability_images/the-hood/abyssal-veil.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "10s"
+        },
+        {
+          "key": "Summon Duration",
+          "value": "6s"
+        },
+        {
+          "key": "Veil Size",
+          "value": "Width: 8m, Height: 3.5m."
+        },
+        {
+          "key": "Damage Reduction",
+          "value": "35%"
+        },
+        {
+          "key": "Healing Reduction",
+          "value": "20%"
+        },
+        {
+          "key": "Leaded Transformation Lifesteal Ratio",
+          "value": "10%"
+        },
+        {
+          "key": "Energy Gain Increased Per Accursed Pistols Hit",
+          "value": "0.75"
+        },
+        {
+          "key": "Blind Duration",
+          "value": "1s"
+        },
+        {
+          "key": "Damage",
+          "value": "60.00"
+        }
+      ]
+    },
+    {
+      "name": "Void Walk",
+      "slug": "void-walk",
+      "button": "Shift",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/159f1fa3-b73a-4835-87e3-6055ac4fc848.png",
+      "localImgUrl": "/ability_images/the-hood/void-walk.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "15s"
+        },
+        {
+          "key": "Movement Boost",
+          "value": "40% during the Ability, decaying to 0% over 2s after it ends"
+        },
+        {
+          "key": "Damage",
+          "value": "40"
+        },
+        {
+          "key": "Spell Field Range",
+          "value": "4.5m spherical radius"
+        },
+        {
+          "key": "Max Duration",
+          "value": "1.2s"
+        }
+      ]
+    },
+    {
+      "name": "Ruinous Pact",
+      "slug": "ruinous-pact",
+      "button": "Passive",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/d65c0319-1bc3-4016-83b6-a6bb492a0e24.png",
+      "localImgUrl": "/ability_images/the-hood/ruinous-pact.png",
+      "properties": [
+        {
+          "key": "Max Energy",
+          "value": "100"
+        },
+        {
+          "key": "Energy Gain Per Accursed Pistols Hit",
+          "value": "2"
+        },
+        {
+          "key": "Mantle of Oblivion Block Damage/Energy Conversion",
+          "value": "3.75%"
+        },
+        {
+          "key": "Energy Gain from Void Walk",
+          "value": "20"
+        }
+      ]
+    },
+    {
+      "name": "Demon of the End",
+      "slug": "demon-of-the-end",
+      "button": "Q",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260807/336a58df-f1e5-4dfa-8b8e-d066f9130ec8.png",
+      "localImgUrl": "/ability_images/the-hood/demon-of-the-end.png",
+      "properties": [
+        {
+          "key": "Energy Cost",
+          "value": "3400"
+        },
+        {
+          "key": "Max Duration",
+          "value": "12"
+        },
+        {
+          "key": "Demon State Health",
+          "value": "1000"
+        },
+        {
+          "key": "First 5 Rounds Damage",
+          "value": "90 + 10% of Target's Max Health"
+        },
+        {
+          "key": "Final Round Damage",
+          "value": "140 + 15% of Target's Max Health"
+        },
+        {
+          "key": "Bonus Health Per Firing",
+          "value": "50"
+        },
+        {
+          "key": "Damage/Bonus Health Conversion",
+          "value": "60%"
+        },
+        {
+          "key": "Bonus Health Range",
+          "value": "8m radius"
+        },
+        {
+          "key": "Max Bonus Health",
+          "value": "200"
         }
       ]
     }

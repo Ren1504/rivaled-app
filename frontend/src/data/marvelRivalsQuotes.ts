@@ -17662,6 +17662,12 @@ export const heroQuotes: HeroQuote[] = [
     "type": "interaction"
   },
   {
+    "quote": "\"Sorry\"\u2026? Why, Logan?",
+    "character": "Jubilee",
+    "clue": "Wolverine",
+    "type": "interaction"
+  },
+  {
     "quote": "A bit extreme\u2026 but if that\u2019s the way we go, blowing stuff up happens to be my specialty!",
     "character": "Jubilee",
     "clue": "The Punisher",
@@ -17728,12 +17734,6 @@ export const heroQuotes: HeroQuote[] = [
     "type": "interaction"
   },
   {
-    "quote": "Arakko",
-    "character": "Jubilee",
-    "clue": "Ultron",
-    "type": "interaction"
-  },
-  {
     "quote": "Are you kidding? If you hadn't trained me, I wouldn\u2019t have survived any of this!",
     "character": "Jubilee",
     "clue": "Wolverine",
@@ -17791,18 +17791,6 @@ export const heroQuotes: HeroQuote[] = [
     "quote": "Can you be trusted to serve our cause over your masters' whims?",
     "character": "Jubilee",
     "clue": "Angela",
-    "type": "interaction"
-  },
-  {
-    "quote": "Central Park",
-    "character": "Jubilee",
-    "clue": "Elsa Bloodstone",
-    "type": "interaction"
-  },
-  {
-    "quote": "Central Park",
-    "character": "Jubilee",
-    "clue": "Human Torch",
     "type": "interaction"
   },
   {
@@ -17864,12 +17852,6 @@ export const heroQuotes: HeroQuote[] = [
     "character": "Jubilee",
     "clue": "The Thing",
     "type": "interaction"
-  },
-  {
-    "quote": "Empire of Eternal Night mapsOof. This is not the best place for a recovering vampire\u2026",
-    "character": "Jubilee",
-    "clue": "Set-Up /Match StartSpecific Maps",
-    "type": "chatter"
   },
   {
     "quote": "Energy core detonated!",
@@ -18364,12 +18346,6 @@ export const heroQuotes: HeroQuote[] = [
     "type": "interaction"
   },
   {
-    "quote": "Midtown",
-    "character": "Jubilee",
-    "clue": "The Punisher",
-    "type": "interaction"
-  },
-  {
     "quote": "Mutant. Vampire. Horseman of Apocalypse. Single mom. That's quite a resume, kid. You're hired.",
     "character": "Jubilee",
     "clue": "Iron Man",
@@ -18586,12 +18562,6 @@ export const heroQuotes: HeroQuote[] = [
     "type": "interaction"
   },
   {
-    "quote": "Sorry\"\u2026? Why, Logan?",
-    "character": "Jubilee",
-    "clue": "Wolverine",
-    "type": "interaction"
-  },
-  {
     "quote": "Sorry, big fella. Is it the bright lights or the big booms that are getting to you most?",
     "character": "Jubilee",
     "clue": "HulkHero Hulk",
@@ -18763,12 +18733,6 @@ export const heroQuotes: HeroQuote[] = [
     "quote": "To be fair, I didn't get a whole lot of say in the matter.",
     "character": "Jubilee",
     "clue": "Angela",
-    "type": "interaction"
-  },
-  {
-    "quote": "Tokyo 2099 maps",
-    "character": "Jubilee",
-    "clue": "Peni Parker",
     "type": "interaction"
   },
   {
@@ -19034,12 +18998,6 @@ export const heroQuotes: HeroQuote[] = [
     "character": "Jubilee",
     "clue": "Revenge",
     "type": "chatter"
-  },
-  {
-    "quote": "Yggsgard maps",
-    "character": "Jubilee",
-    "clue": "Thor",
-    "type": "interaction"
   },
   {
     "quote": "You and me both, dude. If I figure it out, I\u2019ll let ya know!",
