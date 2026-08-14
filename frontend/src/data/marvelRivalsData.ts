@@ -640,7 +640,7 @@ export const heroes: Hero[] = [
     "role": "Vanguard",
     "primaryAttack": "Hitscan",
     "hasPassive": true,
-    "mcuDebutYear": null,
+    "mcuDebutYear": 2025,
     "comicDebutYear": "2002 (The Hood #1)",
     "difficulty": 2,
     "affiliations": [
