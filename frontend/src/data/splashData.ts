@@ -21,6 +21,7 @@ export const heroSplashData: HeroSplashData = {
     "Skuld 2099.png"
   ],
   "Black Cat": [
+    "Coastal Cat.png",
     "Default.webp",
     "Urban Predator.png",
     "Wild Card.png"
@@ -143,6 +144,7 @@ export const heroSplashData: HeroSplashData = {
     "Ronin.png"
   ],
   "Hela": [
+    "Consort of Khonsu.png",
     "Default.png",
     "Disco Of The Dead.png",
     "Empress Of The Cosmos.png",
@@ -151,8 +153,7 @@ export const heroSplashData: HeroSplashData = {
     "Queen In Black.png",
     "Savage Monarch.png",
     "The Grim Lady.png",
-    "Yami No Karasu.png",
-    "Consort of Khonsu.png"
+    "Yami No Karasu.png"
   ],
   "Hulk": [
     "Default.png",
@@ -183,6 +184,7 @@ export const heroSplashData: HeroSplashData = {
   "Iron Fist": [
     "Binary Fist.png",
     "Default.png",
+    "Furious Flow.png",
     "Immortal Weapon Of Agamotto.png",
     "Lin Shao- The Knockout.png",
     "Lion's Gaze.png",
@@ -212,6 +214,7 @@ export const heroSplashData: HeroSplashData = {
     "Duck Defender.png",
     "Incognito Dolphin.png",
     "Jeff O'lantern.png",
+    "Jeff Pool.png",
     "Maid To Chomp.png",
     "Sunshine Land Shark.png"
   ],
@@ -233,6 +236,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Luna Snow": [
     "Abyssal Glow.png",
+    "Carmine Cassette.png",
     "Cherry Delight.png",
     "Cool Summer.png",
     "Default.png",
@@ -240,8 +244,7 @@ export const heroSplashData: HeroSplashData = {
     "Mirae 2099.png",
     "Park Sun-young- The Dancer.png",
     "Shining Star.png",
-    "Sonic Trailblazer.png",
-    "Carmine Cassette.png"
+    "Sonic Trailblazer.png"
   ],
   "Magik": [
     "Default.png",
@@ -252,6 +255,7 @@ export const heroSplashData: HeroSplashData = {
     "New Millennia Might.png",
     "Phoenix Demon.png",
     "Punkchild.png",
+    "Soul Surfer.png",
     "Soulless Sword.png"
   ],
   "Magneto": [
@@ -287,6 +291,7 @@ export const heroSplashData: HeroSplashData = {
   "Moon Knight": [
     "Default.png",
     "Eclipse Knight.png",
+    "Fist of Khonshu.png",
     "Fist Of Vengeance.png",
     "King Of Clubs.png",
     "Lunar General.png",
@@ -331,9 +336,9 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Fleeting Butterfly.png",
     "Once-captive Corsair.png",
+    "Pinned Butterfly.png",
     "Psychedelic Pulse.png",
-    "Vengeance.png",
-    "Pinned Butterfly.png"
+    "Vengeance.png"
   ],
   "Rocket Raccoon": [
     "Bounty Hunter.png",
@@ -354,15 +359,16 @@ export const heroSplashData: HeroSplashData = {
     "Starlit Rebel.png"
   ],
   "Scarlet Witch": [
+    "Avengers Age of Ultron.png",
     "Default.png",
     "Doctor Strange In The Multiverse Of Madness.png",
     "Emporium Matron.png",
     "Immortal Sovereign.png",
     "Phoenix Chaos.png",
+    "Seasider Sorceress.png",
     "The Queen Of The Dead.png",
     "Twisted Conjurer.png",
-    "Witch Of The Evil Eye.png",
-    "Avengers Age of Ultron.png"
+    "Witch Of The Evil Eye.png"
   ],
   "Spider-Man": [
     "Bag-man Beyond.png",
@@ -399,6 +405,7 @@ export const heroSplashData: HeroSplashData = {
     "King Of Spartax.png",
     "Lion's Mane.png",
     "Master Of The Sun.png",
+    "Star Swimmer.png",
     "Starcracker.png",
     "Starlit Outlaw.png"
   ],
@@ -407,8 +414,12 @@ export const heroSplashData: HeroSplashData = {
     "Goddess Of Thunder.png",
     "Judicator Xiezhi.png",
     "Mohawk Rock.png",
+    "Sacred Skies.png",
     "Symbiote Storm.png",
     "Ultimate Wind-rider.png"
+  ],
+  "The Hood": [
+    "Sinful Blackout.png"
   ],
   "The Punisher": [
     "Aqua Arsenal.png",
@@ -417,7 +428,8 @@ export const heroSplashData: HeroSplashData = {
     "Default.png",
     "Franken-castle.png",
     "Marauder Marksman.png",
-    "Punisher 2099.png"
+    "Punisher 2099.png",
+    "Sandstorm Soldier.png"
   ],
   "The Thing": [
     "Default.png",
@@ -441,13 +453,13 @@ export const heroSplashData: HeroSplashData = {
     "Worthy Waves.png"
   ],
   "Ultron": [
+    "Avengers Age of Ultron.png",
     "Default.png",
     "Infinity Ultron.png",
     "Odinforce Ultron.png",
     "Ultron 15.png",
     "Wasteland Robot.png",
-    "X-tron.png",
-    "Avengers Age of Ultron.png"
+    "X-tron.png"
   ],
   "Venom": [
     "Default.png",
@@ -468,13 +480,14 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Winter Soldier": [
     "Blood Soldier.png",
+    "Captain America The Winter Soldier.png",
     "Default.png",
     "Polarity Soldier.png",
     "Revolution.png",
     "Starlit Gunslinger.png",
+    "Summer Soldier.png",
     "Thunderbolts-.png",
-    "Winter Buckaroo.png",
-    "Captain America The Winter Soldier.png"
+    "Winter Buckaroo.png"
   ],
   "Wolverine": [
     "Blood Berserker.png",
