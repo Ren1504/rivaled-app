@@ -73,9 +73,11 @@ export const heroSplashData: HeroSplashData = {
     "WINTER REALM WALTZ.png"
   ],
   "Cyclops": [
-    "Weapon M.png"
+    "Weapon M.png",
+    "Elegant Eye.png"
   ],
   "Daredevil": [
+    "Attorney at Law.png",
     "Daredevil- Born Again Season 2.png",
     "Default.png",
     "Devil 2099.png",
@@ -326,6 +328,7 @@ export const heroSplashData: HeroSplashData = {
     "Ice Phoenix.png",
     "Seat Of Spring.png",
     "Verdant Vogue.png",
+    "Viridian Vogue.png",
     "White Crown Phoenix.png"
   ],
   "Psylocke": [
