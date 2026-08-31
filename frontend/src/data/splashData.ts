@@ -15,6 +15,7 @@ export const heroSplashData: HeroSplashData = {
     "Magus.png"
   ],
   "Angela": [
+    "Queen of Hel.png",
     "Ace Of Spades.png",
     "Default.png",
     "Odin's Beautiful Daughter.png",
@@ -312,6 +313,7 @@ export const heroSplashData: HeroSplashData = {
     "Sea Samba.png"
   ],
   "Peni Parker": [
+    "Liquid Shell.png",
     "Badlands Lullaby.png",
     "Default.png",
     "Floral Frights.png",
@@ -389,6 +391,7 @@ export const heroSplashData: HeroSplashData = {
     "Spiderman Brand new Day.png"
   ],
   "Squirrel Girl": [
+    "Acorn Divinity.png",
     "Cheerful Dragoness.png",
     "Default.png",
     "Maureen Allene- The Programmer.png",
