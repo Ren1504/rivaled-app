@@ -52,6 +52,7 @@ export const heroSplashData: HeroSplashData = {
     "Starlit Shadow.png"
   ],
   "Captain America": [
+    "Astral Aegis.png",
     "Avengers- Infinity War.png",
     "Brett Hendrick- The Star.png",
     "Captain Gladiator.png",
@@ -70,6 +71,7 @@ export const heroSplashData: HeroSplashData = {
     "Duality Duet.png",
     "Mafia Attack.png",
     "NO REGRETS.png",
+    "Pastel Peace.png",
     "SHADOWFLAME DUET.png",
     "WINTER REALM WALTZ.png"
   ],
@@ -97,6 +99,7 @@ export const heroSplashData: HeroSplashData = {
     "Jeff the Dinosaur.png"
   ],
   "Doctor Strange": [
+    "Astral Arcana.png",
     "Bleeker Street Strut.png",
     "Default.png",
     "God Of Magic.png",
@@ -114,6 +117,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Emma Frost": [
     "Black Queen Of The Marauders.png",
+    "Dark Diamond.png",
     "Default.png",
     "Gala Glam.png",
     "Hellfire Protocol.png",
@@ -128,10 +132,16 @@ export const heroSplashData: HeroSplashData = {
     "Dead man's Hand.png",
     "Default.png",
     "Mr. X.png",
-    "Thieves Guildmaster.png"
+    "Thieves Guildmaster.png",
+    "X-Men '97 Season 2.png"
+  ],
+  "Gorr The God Butcher": [
+    "Default.png",
+    "Divine Destroyer.png"
   ],
   "Groot": [
     "Default.png",
+    "Grootlactus.png",
     "Guardians Of The Galaxy Vol. 3.png",
     "Holiday Happiness.png",
     "Ironwood Serpent.png",
@@ -219,10 +229,12 @@ export const heroSplashData: HeroSplashData = {
     "Jeff O'lantern.png",
     "Jeff Pool.png",
     "Maid To Chomp.png",
+    "Shark in Sheep's Clothing.png",
     "Sunshine Land Shark.png"
   ],
   "Jubilee": [
-    "Midnight Mutant.png"
+    "Midnight Mutant.png",
+    "Vampy Jammies.png"
   ],
   "Loki": [
     "All-butcher.png",
@@ -235,7 +247,8 @@ export const heroSplashData: HeroSplashData = {
     "Seaside Siren.png",
     "Season 2.png",
     "Shin Sagi-shi.png",
-    "The Avengers.png"
+    "The Avengers.png",
+    "The Chronicler.png"
   ],
   "Luna Snow": [
     "Abyssal Glow.png",
@@ -267,6 +280,7 @@ export const heroSplashData: HeroSplashData = {
     "King Magnus.png",
     "Magnetic Vintage.png",
     "Master Of Magnetism.png",
+    "Master of Slumber.png",
     "Seat Of Autumn.png",
     "Temporal Tyrant.png",
     "The Trial Of Magneto.png",
@@ -294,6 +308,7 @@ export const heroSplashData: HeroSplashData = {
   "Moon Knight": [
     "Default.png",
     "Eclipse Knight.png",
+    "Eternity Knight.png",
     "Fist of Khonshu.png",
     "Fist Of Vengeance.png",
     "King Of Clubs.png",
@@ -336,6 +351,7 @@ export const heroSplashData: HeroSplashData = {
   "Psylocke": [
     "Blood Kariudo.png",
     "Breezy Butterfly.png",
+    "Business Elite.png",
     "Chouko Takahashi- The Prodigy.png",
     "Daring Daifuku.png",
     "Default.png",
@@ -361,7 +377,9 @@ export const heroSplashData: HeroSplashData = {
     "Mrs. X.png",
     "Raider Prime.png",
     "Redux.png",
-    "Starlit Rebel.png"
+    "Slumber Sugah.png",
+    "Starlit Rebel.png",
+    "X-Men '97 Season 2.png"
   ],
   "Scarlet Witch": [
     "Avengers Age of Ultron.png",
@@ -397,6 +415,7 @@ export const heroSplashData: HeroSplashData = {
     "Maureen Allene- The Programmer.png",
     "Nut Rocker.png",
     "Red Panda.png",
+    "Savage Squirrel.png",
     "Sunshine Squirrel.png",
     "Symbiote Squirrel.png",
     "Tinsel Tail.png",
@@ -460,6 +479,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "Ultron": [
     "Avengers Age of Ultron.png",
+    "B-Boy Prime.png",
     "Default.png",
     "Infinity Ultron.png",
     "Odinforce Ultron.png",
@@ -472,6 +492,7 @@ export const heroSplashData: HeroSplashData = {
     "Gummy Surprise.png",
     "Lingering Imprint.png",
     "Marvel Cosmic Invasion.png",
+    "President Ozzy.png",
     "Reborn King In Black.png",
     "Snow Symbiote.png",
     "Space Corsair.png",
@@ -481,6 +502,7 @@ export const heroSplashData: HeroSplashData = {
   ],
   "White Fox": [
     "Coastal Kumiho.png",
+    "Cosmic Kumiho.png",
     "Default.png",
     "Yoon Ji-woo- The Leader.png"
   ],

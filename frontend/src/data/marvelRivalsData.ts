@@ -255,6 +255,18 @@ export const heroes: Hero[] = [
     ]
   },
   {
+    "name": "Gorr the God Butcher",
+    "role": "Duelist",
+    "primaryAttack": "Melee",
+    "hasPassive": true,
+    "mcuDebutYear": 2022,
+    "comicDebutYear": "2012 (Thor Vol. 3 #6)",
+    "difficulty": 4,
+    "affiliations": [
+      "Black Berserkers"
+    ]
+  },
+  {
     "name": "Hawkeye",
     "role": "Duelist",
     "primaryAttack": "Projectile",

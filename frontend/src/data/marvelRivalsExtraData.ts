@@ -241,6 +241,21 @@ export const heroExtraData: Record<string, HeroExtra> = {
     gender: "Male",
     species: "Flora Colossus"
   },
+  "Gorr the God Butcher": {
+    quotes: [
+      "All gods will die.",
+      "The gods have never cared for the cries of mortals.",
+      "The Necrosword hungers for divine blood."
+    ],
+    abilities: [
+      { name: "Necrosword Strike", key: "LMB", description: "Slashes enemies with the living blade All-Black." },
+      { name: "Black Berserkers", key: "E", description: "Summons shadowy berserkers to swarm and devour targets." },
+      { name: "Shadow Meld", key: "LShift", description: "Melds into the dark realm to traverse unseen." }
+    ],
+    skins: ["Default", "Divine Destroyer"],
+    gender: "Male",
+    species: "Alien"
+  },
   "Hawkeye": {
     quotes: [
       "I don't miss.",

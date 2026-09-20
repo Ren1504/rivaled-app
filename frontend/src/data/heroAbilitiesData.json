@@ -588,7 +588,7 @@
       "properties": [
         {
           "key": "Spell Field Range",
-          "value": "150\u00b0 cone spell field with a radius of 7.5m and a height of 2.5m"
+          "value": "150° cone spell field with a radius of 7.5m and a height of 2.5m"
         },
         {
           "key": "Spell Field Damage",
@@ -600,7 +600,7 @@
         },
         {
           "key": "Damage Falloff",
-          "value": "Falloff begins at 30\u00b0, drop to 30% of maximum damage at 75\u00b0"
+          "value": "Falloff begins at 30°, drop to 30% of maximum damage at 75°"
         },
         {
           "key": "Bonus Health Per Hit",
@@ -645,7 +645,7 @@
         },
         {
           "key": "2nd Claw Strike Damage",
-          "value": "30+20% Target\u2019s Maximum Health"
+          "value": "30+20% Target’s Maximum Health"
         }
       ]
     },
@@ -3744,7 +3744,7 @@
         },
         {
           "key": "Angle Between the Side Cards and the Center Card",
-          "value": "2\u00b0"
+          "value": "2°"
         },
         {
           "key": "Card Damage",
@@ -3793,7 +3793,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone shape spell field, angle range: 110\u00b0, length: 40m"
+          "value": "Cone shape spell field, angle range: 110°, length: 40m"
         },
         {
           "key": "Special Effect",
@@ -4543,7 +4543,7 @@
         },
         {
           "key": "Bonus Health",
-          "value": "Within the Divine Judgement zone, Angela\u2019s each Axes of Ichors hit grants 50 Bonus Health to herself and 25 Bonus Health to allies within the area."
+          "value": "Within the Divine Judgement zone, Angela’s each Axes of Ichors hit grants 50 Bonus Health to herself and 25 Bonus Health to allies within the area."
         },
         {
           "key": "Bonus Max Health",
@@ -4568,7 +4568,7 @@
         },
         {
           "key": "Ascent Elevation Angle",
-          "value": "60\u00b0"
+          "value": "60°"
         }
       ]
     },
@@ -5574,11 +5574,11 @@
         },
         {
           "key": "Range",
-          "value": "Cone shape spell field, angle range: 80\u00b0, length: 30m"
+          "value": "Cone shape spell field, angle range: 80°, length: 30m"
         },
         {
           "key": "Damage",
-          "value": "Basic damage 80/s; distance falloff: falloff begins at 10m, decreasing to 70% at 30m; angle falloff: falloff begins at 7\u00b0 from the center of view, decreasing to 80% at 20\u00b0"
+          "value": "Basic damage 80/s; distance falloff: falloff begins at 10m, decreasing to 70% at 30m; angle falloff: falloff begins at 7° from the center of view, decreasing to 80% at 20°"
         },
         {
           "key": "Energy Cost",
@@ -7131,7 +7131,7 @@
         },
         {
           "key": "Ammo",
-          "value": "\u221e"
+          "value": "∞"
         },
         {
           "key": "Critical Hit",
@@ -7866,7 +7866,7 @@
         },
         {
           "key": "Spread Angle",
-          "value": "0.86\u00b0"
+          "value": "0.86°"
         },
         {
           "key": "Maximum Distance",
@@ -7966,7 +7966,7 @@
         },
         {
           "key": "Spread Angle",
-          "value": "11.3\u00b0"
+          "value": "11.3°"
         },
         {
           "key": "Cooldown",
@@ -9431,7 +9431,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone-shaped spell field with a 5m radius and an apex angle of 90\u00b0"
+          "value": "Cone-shaped spell field with a 5m radius and an apex angle of 90°"
         },
         {
           "key": "Spell Field Damage",
@@ -9599,7 +9599,7 @@
         },
         {
           "key": "Range",
-          "value": "Cone-shaped spell field with a 4.5m radius and an apex angle of 80\u00b0"
+          "value": "Cone-shaped spell field with a 4.5m radius and an apex angle of 80°"
         },
         {
           "key": "Spell Field Damage",
@@ -10383,7 +10383,7 @@
         },
         {
           "key": "Casting Angle",
-          "value": "150\u00b0"
+          "value": "150°"
         },
         {
           "key": "Damage",
@@ -11798,7 +11798,7 @@
         },
         {
           "key": "Cable Attachment Angle",
-          "value": "20\u00b0 - 160\u00b0"
+          "value": "20° - 160°"
         },
         {
           "key": "Cable Length",
@@ -12436,7 +12436,7 @@
         },
         {
           "key": "Special Effect",
-          "value": "One-time healing for allies when projectile hits them\uff0cBouncing Spheres will bounce off surfaces upon contact, with a maximum of 10 bounces. When they approach injured allies, their speed will reduce"
+          "value": "One-time healing for allies when projectile hits them，Bouncing Spheres will bounce off surfaces upon contact, with a maximum of 10 bounces. When they approach injured allies, their speed will reduce"
         },
         {
           "key": "Projectile Speed Reduction",
@@ -13881,7 +13881,7 @@
         },
         {
           "key": "Special Effect",
-          "value": "Knocks enemies inward, with an inward knockback angle of 75\u00b0"
+          "value": "Knocks enemies inward, with an inward knockback angle of 75°"
         }
       ]
     },
@@ -15016,6 +15016,464 @@
         {
           "key": "Max Bonus Health",
           "value": "200"
+        }
+      ]
+    }
+  ],
+  "Gorr the God Butcher": [
+    {
+      "name": "All-Black",
+      "slug": "all-black",
+      "button": "Left Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/1791f0e0-b7e6-4ff6-9ebb-5e36ed1a657a.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/all-black.png",
+      "properties": [
+        {
+          "key": "Type",
+          "value": "Melee"
+        },
+        {
+          "key": "Damage",
+          "value": "40 for the 1st/3rd hits, 60 for the 2nd/4th hits"
+        },
+        {
+          "key": "Attack Interval",
+          "value": "0.4s for the 1st/3rd hits, 0.6s for the 2nd/4th hits"
+        },
+        {
+          "key": "Maximum Distance",
+          "value": "7m"
+        }
+      ]
+    },
+    {
+      "name": "Necro-Power",
+      "slug": "necro-power",
+      "button": "Right Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/6734624c-4fde-471c-a8a5-e68ec70818a2.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/necro-power.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "6s"
+        },
+        {
+          "key": "Damage",
+          "value": "30"
+        },
+        {
+          "key": "Berserker Summon Range",
+          "value": "12m radius"
+        },
+        {
+          "key": "Black Berserker Melee Damage",
+          "value": "20 per hit, 2 hits"
+        },
+        {
+          "key": "Slow Effect",
+          "value": "15% for 2s"
+        }
+      ]
+    },
+    {
+      "name": "Shadow Harvest",
+      "slug": "shadow-harvest",
+      "button": "F",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/f8bb12b8-55a0-4a4a-9c28-aa9292ce75cc.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/shadow-harvest.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "3s"
+        },
+        {
+          "key": "Maximum Select Distance",
+          "value": "22m"
+        },
+        {
+          "key": "Bonus Health",
+          "value": "50% of the Black Berserker's remaining Health, up to 50; shares the Bonus Health cap with Berserker Swarm"
+        },
+        {
+          "key": "Explosion Damage",
+          "value": "5 + 5% Max Health"
+        },
+        {
+          "key": "Explosion Range",
+          "value": "5m radius"
+        },
+        {
+          "key": "Shadow Scythe Damage",
+          "value": "55 + 2% Max Health"
+        },
+        {
+          "key": "Shadow Scythe Attack Interval",
+          "value": "0.6s"
+        },
+        {
+          "key": "Shadow Scythe Maximum Distance",
+          "value": "8m"
+        },
+        {
+          "key": "Shockwave Damage",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "name": "Black Berserker",
+      "slug": "black-berserker",
+      "button": "E",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/91e1a2df-26cf-4b3a-b35f-05d3205d069d.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/black-berserker.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "2 charges, 10s recharge each."
+        },
+        {
+          "key": "Summon Duration",
+          "value": "6s"
+        },
+        {
+          "key": "Summon Maximum Health",
+          "value": "150"
+        },
+        {
+          "key": "Summon Damage",
+          "value": "7.5 per hit"
+        },
+        {
+          "key": "Summon Attack Interval",
+          "value": "0.7s"
+        },
+        {
+          "key": "Summon Attack Range",
+          "value": "30m radius"
+        },
+        {
+          "key": "Black Berserker Melee Damage",
+          "value": "20 per hit, 2 hits"
+        }
+      ]
+    },
+    {
+      "name": "Living Abyss",
+      "slug": "living-abyss",
+      "button": "Shift",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/a560f893-79c1-49c8-baa1-5f2248f661d6.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/living-abyss.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "15s"
+        },
+        {
+          "key": "Ability Duration",
+          "value": "1.5s"
+        },
+        {
+          "key": "Movement Boost",
+          "value": "13m/s"
+        },
+        {
+          "key": "Attack Speed Boost to Frenzied Berserkers",
+          "value": "40%"
+        },
+        {
+          "key": "Necroverse Damage",
+          "value": "30/s"
+        },
+        {
+          "key": "Necroverse Range",
+          "value": "10m radius"
+        },
+        {
+          "key": "Damage/Health Conversion",
+          "value": "100%, up to 50"
+        }
+      ]
+    },
+    {
+      "name": "Berserker Swarm",
+      "slug": "berserker-swarm",
+      "button": "Passive",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/a92eba1c-fe73-4693-b407-f43f6f0c74c2.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/berserker-swarm.png",
+      "properties": [
+        {
+          "key": "Summon Damage/Health Conversion",
+          "value": "100%, up to 50; shares the Bonus Health cap with Shadow Harvest"
+        }
+      ]
+    },
+    {
+      "name": "Twilight of the Gods",
+      "slug": "twilight-of-the-gods",
+      "button": "Q",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/dd44d0ed-f0d4-4ddf-891f-ec06a86cba26.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/twilight-of-the-gods.png",
+      "properties": [
+        {
+          "key": "Energy Cost",
+          "value": "3400"
+        },
+        {
+          "key": "Maximum Duration",
+          "value": "12"
+        },
+        {
+          "key": "Berserker Spawn Range",
+          "value": "10m radius"
+        },
+        {
+          "key": "Necroverse Range",
+          "value": "30m radius"
+        },
+        {
+          "key": "Annihilablade Damage",
+          "value": "65 + 10% Max Health"
+        },
+        {
+          "key": "Annihilablade Attack Interval",
+          "value": "0.6s"
+        },
+        {
+          "key": "Annihilablade Maximum Distance",
+          "value": "10m"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 8m, decreasing to 80% at 10m"
+        }
+      ]
+    }
+  ],
+  "GORR THE GOD BUTCHER": [
+    {
+      "name": "All-Black",
+      "slug": "all-black",
+      "button": "Left Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/1791f0e0-b7e6-4ff6-9ebb-5e36ed1a657a.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/all-black.png",
+      "properties": [
+        {
+          "key": "Type",
+          "value": "Melee"
+        },
+        {
+          "key": "Damage",
+          "value": "40 for the 1st/3rd hits, 60 for the 2nd/4th hits"
+        },
+        {
+          "key": "Attack Interval",
+          "value": "0.4s for the 1st/3rd hits, 0.6s for the 2nd/4th hits"
+        },
+        {
+          "key": "Maximum Distance",
+          "value": "7m"
+        }
+      ]
+    },
+    {
+      "name": "Necro-Power",
+      "slug": "necro-power",
+      "button": "Right Click",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/6734624c-4fde-471c-a8a5-e68ec70818a2.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/necro-power.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "6s"
+        },
+        {
+          "key": "Damage",
+          "value": "30"
+        },
+        {
+          "key": "Berserker Summon Range",
+          "value": "12m radius"
+        },
+        {
+          "key": "Black Berserker Melee Damage",
+          "value": "20 per hit, 2 hits"
+        },
+        {
+          "key": "Slow Effect",
+          "value": "15% for 2s"
+        }
+      ]
+    },
+    {
+      "name": "Shadow Harvest",
+      "slug": "shadow-harvest",
+      "button": "F",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/f8bb12b8-55a0-4a4a-9c28-aa9292ce75cc.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/shadow-harvest.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "3s"
+        },
+        {
+          "key": "Maximum Select Distance",
+          "value": "22m"
+        },
+        {
+          "key": "Bonus Health",
+          "value": "50% of the Black Berserker's remaining Health, up to 50; shares the Bonus Health cap with Berserker Swarm"
+        },
+        {
+          "key": "Explosion Damage",
+          "value": "5 + 5% Max Health"
+        },
+        {
+          "key": "Explosion Range",
+          "value": "5m radius"
+        },
+        {
+          "key": "Shadow Scythe Damage",
+          "value": "55 + 2% Max Health"
+        },
+        {
+          "key": "Shadow Scythe Attack Interval",
+          "value": "0.6s"
+        },
+        {
+          "key": "Shadow Scythe Maximum Distance",
+          "value": "8m"
+        },
+        {
+          "key": "Shockwave Damage",
+          "value": "60"
+        }
+      ]
+    },
+    {
+      "name": "Black Berserker",
+      "slug": "black-berserker",
+      "button": "E",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/91e1a2df-26cf-4b3a-b35f-05d3205d069d.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/black-berserker.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "2 charges, 10s recharge each."
+        },
+        {
+          "key": "Summon Duration",
+          "value": "6s"
+        },
+        {
+          "key": "Summon Maximum Health",
+          "value": "150"
+        },
+        {
+          "key": "Summon Damage",
+          "value": "7.5 per hit"
+        },
+        {
+          "key": "Summon Attack Interval",
+          "value": "0.7s"
+        },
+        {
+          "key": "Summon Attack Range",
+          "value": "30m radius"
+        },
+        {
+          "key": "Black Berserker Melee Damage",
+          "value": "20 per hit, 2 hits"
+        }
+      ]
+    },
+    {
+      "name": "Living Abyss",
+      "slug": "living-abyss",
+      "button": "Shift",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/a560f893-79c1-49c8-baa1-5f2248f661d6.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/living-abyss.png",
+      "properties": [
+        {
+          "key": "Cooldown",
+          "value": "15s"
+        },
+        {
+          "key": "Ability Duration",
+          "value": "1.5s"
+        },
+        {
+          "key": "Movement Boost",
+          "value": "13m/s"
+        },
+        {
+          "key": "Attack Speed Boost to Frenzied Berserkers",
+          "value": "40%"
+        },
+        {
+          "key": "Necroverse Damage",
+          "value": "30/s"
+        },
+        {
+          "key": "Necroverse Range",
+          "value": "10m radius"
+        },
+        {
+          "key": "Damage/Health Conversion",
+          "value": "100%, up to 50"
+        }
+      ]
+    },
+    {
+      "name": "Berserker Swarm",
+      "slug": "berserker-swarm",
+      "button": "Passive",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/a92eba1c-fe73-4693-b407-f43f6f0c74c2.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/berserker-swarm.png",
+      "properties": [
+        {
+          "key": "Summon Damage/Health Conversion",
+          "value": "100%, up to 50; shares the Bonus Health cap with Shadow Harvest"
+        }
+      ]
+    },
+    {
+      "name": "Twilight of the Gods",
+      "slug": "twilight-of-the-gods",
+      "button": "Q",
+      "originalImgUrl": "https://r.res.easebar.com/pic/20260911/dd44d0ed-f0d4-4ddf-891f-ec06a86cba26.png",
+      "localImgUrl": "/ability_images/gorr-the-god-butcher/twilight-of-the-gods.png",
+      "properties": [
+        {
+          "key": "Energy Cost",
+          "value": "3400"
+        },
+        {
+          "key": "Maximum Duration",
+          "value": "12"
+        },
+        {
+          "key": "Berserker Spawn Range",
+          "value": "10m radius"
+        },
+        {
+          "key": "Necroverse Range",
+          "value": "30m radius"
+        },
+        {
+          "key": "Annihilablade Damage",
+          "value": "65 + 10% Max Health"
+        },
+        {
+          "key": "Annihilablade Attack Interval",
+          "value": "0.6s"
+        },
+        {
+          "key": "Annihilablade Maximum Distance",
+          "value": "10m"
+        },
+        {
+          "key": "Damage Falloff",
+          "value": "Falloff begins at 8m, decreasing to 80% at 10m"
         }
       ]
     }
