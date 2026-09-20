@@ -54,30 +54,6 @@ Guess the hero from their in-game voice lines and quotes.
 
 ---
 
-## 🛠️ Development & Local Setup
-
-The frontend is built using **React, TypeScript, Vite, and Tailwind CSS**.
-
-### Prerequisites
-*   Node.js (v18+)
-
-### Installation
-1.  Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Run the local development server:
-    ```bash
-    npm run dev
-    ```
-4.  Build for production:
-    ```bash
-    npm run build
-    ```
 
 ---
 
