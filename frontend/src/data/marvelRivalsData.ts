@@ -569,7 +569,7 @@ export const heroes: Hero[] = [
     "name": "Scarlet Witch",
     "role": "Duelist",
     "primaryAttack": "Hitscan",
-    "hasPassive": false,
+    "hasPassive": true,
     "mcuDebutYear": 2015,
     "comicDebutYear": "1964 (The X-Men #4)",
     "difficulty": 1,
