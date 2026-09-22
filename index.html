@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIVALED - Marvel Rivals Guessing Game</title>
+  <meta name="description" content="A daily Marvel Rivals guessing game featuring Classic, Splash, Ability, and Quote modes.">
+  <link rel="icon" type="image/jpeg" href="https://rivaled-app.vercel.app/rivaled_logo.jpg">
+  
+  <!-- Instant Redirects -->
+  <meta http-equiv="refresh" content="0; url=https://rivaled-app.vercel.app/">
+  <link rel="canonical" href="https://rivaled-app.vercel.app/">
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rivaled-app.vercel.app/">
+  <meta property="og:title" content="RIVALED - Marvel Rivals Guessing Game">
+  <meta property="og:description" content="Test your knowledge of Marvel Rivals heroes across 4 unique game modes!">
+  <meta property="og:image" content="https://rivaled-app.vercel.app/logo.png">
+
+  <script>
+    // Fast client-side redirection
+    window.location.replace("https://rivaled-app.vercel.app/");
+  </script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at 50% 30%, #171b35 0%, #0b0e1e 80%, #060810 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .preview-card {
+      background: rgba(17, 22, 50, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 215, 0, 0.25);
+      border-radius: 12px;
+      padding: 40px 32px;
+      max-width: 460px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 215, 0, 0.08);
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .logo-container {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+      max-height: 90px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 20px rgba(245, 158, 11, 0.4));
+    }
+
+    .subtitle {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+
+    .redirect-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 26px;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      border-top-color: #f59e0b;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    .redirect-text {
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    .launch-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 14px 24px;
+      background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid rgba(251, 191, 36, 0.4);
+      box-shadow: 0 4px 15px rgba(217, 119, 6, 0.3);
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .launch-btn:hover {
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+      transform: translateY(-1px);
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-card">
+    <div class="logo-container">
+      <img class="logo" src="frontend/src/assets/logo.png" alt="Rivaled Logo" onerror="this.src='https://rivaled-app.vercel.app/logo.png'">
+    </div>
+    <div class="subtitle">Marvel Rivals Guessing Game</div>
+    <div class="redirect-box">
+      <div class="spinner"></div>
+      <span class="redirect-text">Connecting to live game...</span>
+    </div>
+    <a class="launch-btn" href="https://rivaled-app.vercel.app/">Launch Game Now →</a>
+  </div>
+</body>
+</html>
